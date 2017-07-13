@@ -1,0 +1,425 @@
+{
+  "characteristics_list": [
+    {
+      "compile": {
+        "binary_size": 32808, 
+        "compilation_success": "yes", 
+        "compilation_success_bool": true, 
+        "compilation_time": 4.925685167312622, 
+        "compilation_time_with_module": 6.700319766998291, 
+        "joined_compiler_flags": "-O3 -fira-algorithm=priority -fcaller-saves -fno-devirtualize-speculatively -fno-function-cse -fgcse-sm -fno-guess-branch-probability -fno-if-conversion -fno-inline-functions-called-once -fipa-reference -fno-ira-loop-pressure -fira-share-save-slots -fno-isolate-erroneous-paths-dereference -fno-ivopts -floop-nest-optimize -fmath-errno -fmove-loop-invariants -fsched-last-insn-heuristic -fsched2-use-superblocks -fno-schedule-insns -fno-signed-zeros -fsingle-precision-constant -fno-tree-sink -fno-unsafe-loop-optimizations --param asan-instrument-reads=1 --param gcse-unrestricted-cost=5 --param l1-cache-size=11 --param large-function-growth=33 --param loop-invariant-max-bbs-in-loop=636 --param max-completely-peel-loop-nest-depth=7 --param max-delay-slot-live-search=163 --param max-gcse-insertion-ratio=28 --param max-inline-insns-single=282 --param max-inline-recursive-depth-auto=0 --param max-jump-thread-duplication-stmts=6 --param max-last-value-rtl=4062 --param max-pipeline-region-insns=326 --param max-sched-region-blocks=17 --param max-tail-merge-iterations=2 --param max-unswitch-insns=5 --param max-vartrack-expr-depth=6 --param min-spec-prob=1 --param omega-eliminate-redundant-constraints=1 --param omega-max-keys=366 --param omega-max-wild-cards=36 --param sms-dfa-history=0", 
+        "md5_sum": "4969d9d03f74f36591f63b88485aef2c", 
+        "obj_size": 26844, 
+        "obj_sizes": {
+          "susan.o": 26844
+        }, 
+        "program_git_hash": "5fb023fdf70c0c5022b8e9a5b333838cb3fddfb1"
+      }, 
+      "run": {
+        "execution_time": 0.04615856, 
+        "execution_time_kernel_0": 4.615856, 
+        "execution_time_with_module": 8.440708875656128, 
+        "output_check_failed": "no", 
+        "output_check_failed_bool": false, 
+        "repeat": 100, 
+        "return_code": 0, 
+        "run_success": "yes", 
+        "run_success_bool": true, 
+        "run_time_state": {
+          "image_size_x": 600, 
+          "image_size_y": 450
+        }, 
+        "total_execution_time": 4.615856
+      }
+    }, 
+    {
+      "run": {
+        "execution_time": 0.045998359999999995, 
+        "execution_time_kernel_0": 4.599836, 
+        "execution_time_with_module": 5.2063210010528564, 
+        "output_check_failed": "no", 
+        "output_check_failed_bool": false, 
+        "repeat": 100, 
+        "return_code": 0, 
+        "run_success": "yes", 
+        "run_success_bool": true, 
+        "run_time_state": {
+          "image_size_x": 600, 
+          "image_size_y": 450
+        }, 
+        "total_execution_time": 4.599836
+      }
+    }, 
+    {
+      "run": {
+        "execution_time": 0.04635838, 
+        "execution_time_kernel_0": 4.635838, 
+        "execution_time_with_module": 5.24234414100647, 
+        "output_check_failed": "no", 
+        "output_check_failed_bool": false, 
+        "repeat": 100, 
+        "return_code": 0, 
+        "run_success": "yes", 
+        "run_success_bool": true, 
+        "run_time_state": {
+          "image_size_x": 600, 
+          "image_size_y": 450
+        }, 
+        "total_execution_time": 4.635838
+      }
+    }
+  ], 
+  "choices": {
+    "calibration_time": 10.0, 
+    "cmd_key": "corners", 
+    "compile_type": "dynamic", 
+    "compiler_description_uoa": "gcc-4.9.0-auto", 
+    "compiler_flags": {
+      "base_opt": "-O3", 
+      "bool--fira-algorithm=": "-fira-algorithm=priority", 
+      "bool-caller-saves": "-fcaller-saves", 
+      "bool-devirtualize-speculatively": "-fno-devirtualize-speculatively", 
+      "bool-function-cse": "-fno-function-cse", 
+      "bool-gcse-sm": "-fgcse-sm", 
+      "bool-guess-branch-probability": "-fno-guess-branch-probability", 
+      "bool-if-conversion": "-fno-if-conversion", 
+      "bool-inline-functions-called-once": "-fno-inline-functions-called-once", 
+      "bool-ipa-reference": "-fipa-reference", 
+      "bool-ira-loop-pressure": "-fno-ira-loop-pressure", 
+      "bool-ira-share-save-slots": "-fira-share-save-slots", 
+      "bool-isolate-erroneous-paths-dereference": "-fno-isolate-erroneous-paths-dereference", 
+      "bool-ivopts": "-fno-ivopts", 
+      "bool-loop-nest-optimize": "-floop-nest-optimize", 
+      "bool-math-errno": "-fmath-errno", 
+      "bool-move-loop-invariants": "-fmove-loop-invariants", 
+      "bool-sched-last-insn-heuristic": "-fsched-last-insn-heuristic", 
+      "bool-sched2-use-superblocks": "-fsched2-use-superblocks", 
+      "bool-schedule-insns": "-fno-schedule-insns", 
+      "bool-signed-zeros": "-fno-signed-zeros", 
+      "bool-single-precision-constant": "-fsingle-precision-constant", 
+      "bool-tree-sink": "-fno-tree-sink", 
+      "bool-unsafe-loop-optimizations": "-fno-unsafe-loop-optimizations", 
+      "param-asan-instrument-reads": "--param asan-instrument-reads=1", 
+      "param-gcse-unrestricted-cost": "--param gcse-unrestricted-cost=5", 
+      "param-l1-cache-size": "--param l1-cache-size=11", 
+      "param-large-function-growth": "--param large-function-growth=33", 
+      "param-loop-invariant-max-bbs-in-loop": "--param loop-invariant-max-bbs-in-loop=636", 
+      "param-max-completely-peel-loop-nest-depth": "--param max-completely-peel-loop-nest-depth=7", 
+      "param-max-delay-slot-live-search": "--param max-delay-slot-live-search=163", 
+      "param-max-gcse-insertion-ratio": "--param max-gcse-insertion-ratio=28", 
+      "param-max-inline-insns-single": "--param max-inline-insns-single=282", 
+      "param-max-inline-recursive-depth-auto": "--param max-inline-recursive-depth-auto=0", 
+      "param-max-jump-thread-duplication-stmts": "--param max-jump-thread-duplication-stmts=6", 
+      "param-max-last-value-rtl": "--param max-last-value-rtl=4062", 
+      "param-max-pipeline-region-insns": "--param max-pipeline-region-insns=326", 
+      "param-max-sched-region-blocks": "--param max-sched-region-blocks=17", 
+      "param-max-tail-merge-iterations": "--param max-tail-merge-iterations=2", 
+      "param-max-unswitch-insns": "--param max-unswitch-insns=5", 
+      "param-max-vartrack-expr-depth": "--param max-vartrack-expr-depth=6", 
+      "param-min-spec-prob": "--param min-spec-prob=1", 
+      "param-omega-eliminate-redundant-constraints": "--param omega-eliminate-redundant-constraints=1", 
+      "param-omega-max-keys": "--param omega-max-keys=366", 
+      "param-omega-max-wild-cards": "--param omega-max-wild-cards=36", 
+      "param-sms-dfa-history": "--param sms-dfa-history=0"
+    }, 
+    "data_uoa": "cbench-automotive-susan", 
+    "dataset_file": "data.pgm", 
+    "dataset_uoa": "image-pgm-0001", 
+    "device_cfg": {}, 
+    "device_id": "", 
+    "host_os": "linux-32", 
+    "module_uoa": "b0ac08fe1d3c2615", 
+    "no_state_check": "yes", 
+    "program_tags": "", 
+    "repeat": 100, 
+    "target": "", 
+    "target_os": "linux-32", 
+    "target_os_bits": "32"
+  }, 
+  "choices_order": [
+    "##compiler_flags#base_opt", 
+    "##compiler_flags#bool--fira-algorithm=", 
+    "##compiler_flags#bool-caller-saves", 
+    "##compiler_flags#bool-devirtualize-speculatively", 
+    "##compiler_flags#bool-function-cse", 
+    "##compiler_flags#bool-gcse-sm", 
+    "##compiler_flags#bool-guess-branch-probability", 
+    "##compiler_flags#bool-if-conversion", 
+    "##compiler_flags#bool-inline-functions-called-once", 
+    "##compiler_flags#bool-ipa-reference", 
+    "##compiler_flags#bool-ira-loop-pressure", 
+    "##compiler_flags#bool-ira-share-save-slots", 
+    "##compiler_flags#bool-isolate-erroneous-paths-dereference", 
+    "##compiler_flags#bool-ivopts", 
+    "##compiler_flags#bool-loop-nest-optimize", 
+    "##compiler_flags#bool-math-errno", 
+    "##compiler_flags#bool-move-loop-invariants", 
+    "##compiler_flags#bool-sched-last-insn-heuristic", 
+    "##compiler_flags#bool-sched2-use-superblocks", 
+    "##compiler_flags#bool-schedule-insns", 
+    "##compiler_flags#bool-signed-zeros", 
+    "##compiler_flags#bool-single-precision-constant", 
+    "##compiler_flags#bool-tree-sink", 
+    "##compiler_flags#bool-unsafe-loop-optimizations", 
+    "##compiler_flags#param-asan-instrument-reads", 
+    "##compiler_flags#param-gcse-unrestricted-cost", 
+    "##compiler_flags#param-l1-cache-size", 
+    "##compiler_flags#param-large-function-growth", 
+    "##compiler_flags#param-loop-invariant-max-bbs-in-loop", 
+    "##compiler_flags#param-max-completely-peel-loop-nest-depth", 
+    "##compiler_flags#param-max-delay-slot-live-search", 
+    "##compiler_flags#param-max-gcse-insertion-ratio", 
+    "##compiler_flags#param-max-inline-insns-single", 
+    "##compiler_flags#param-max-inline-recursive-depth-auto", 
+    "##compiler_flags#param-max-jump-thread-duplication-stmts", 
+    "##compiler_flags#param-max-last-value-rtl", 
+    "##compiler_flags#param-max-pipeline-region-insns", 
+    "##compiler_flags#param-max-sched-region-blocks", 
+    "##compiler_flags#param-max-tail-merge-iterations", 
+    "##compiler_flags#param-max-unswitch-insns", 
+    "##compiler_flags#param-max-vartrack-expr-depth", 
+    "##compiler_flags#param-min-spec-prob", 
+    "##compiler_flags#param-omega-eliminate-redundant-constraints", 
+    "##compiler_flags#param-omega-max-keys", 
+    "##compiler_flags#param-omega-max-wild-cards", 
+    "##compiler_flags#param-sms-dfa-history"
+  ], 
+  "features": {
+    "compiler_version": {
+      "list": [
+        4, 
+        9, 
+        2
+      ], 
+      "raw": [
+        "gcc (Raspbian 4.9.2-10) 4.9.2", 
+        "Copyright (C) 2014 Free Software Foundation, Inc.", 
+        "This is free software; see the source for copying conditions.  There is NO", 
+        "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.", 
+        "", 
+        ""
+      ], 
+      "str": "4.9.2"
+    }, 
+    "dataset": {
+      "compression": "", 
+      "format": "PPM", 
+      "height": 450, 
+      "mode": "L", 
+      "raw_info": {}, 
+      "total_size": 270015, 
+      "width": 600
+    }, 
+    "number_of_selected_compiler_flags": 46, 
+    "platform": {
+      "cpu": {
+        "all_freqs": {
+          "0": [
+            600000, 
+            1200000
+          ], 
+          "1": [
+            600000, 
+            1200000
+          ], 
+          "2": [
+            600000, 
+            1200000
+          ], 
+          "3": [
+            600000, 
+            1200000
+          ]
+        }, 
+        "cpu_abi": "", 
+        "cpu_features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+        "current_freq": {
+          "0": 1200.0, 
+          "1": 1200.0, 
+          "2": 1200.0, 
+          "3": 1200.0
+        }, 
+        "max_freq": {
+          "0": 1200.0, 
+          "1": 1200.0, 
+          "2": 1200.0, 
+          "3": 1200.0
+        }, 
+        "name": "BCM2709", 
+        "num_proc": "4", 
+        "sub_name": "ARMv7 Processor rev 4 (v7l)", 
+        "workload_automation": {
+          "device_config": {
+            "core_clusters": [
+              0, 
+              0, 
+              0, 
+              1
+            ], 
+            "core_names": [
+              "ARMv7 Processor rev 4 (v7l)", 
+              "ARMv7 Processor rev 4 (v7l)", 
+              "ARMv7 Processor rev 4 (v7l)", 
+              "BCM2709"
+            ]
+          }
+        }
+      }, 
+      "cpu_misc": {
+        "0": {
+          "BogoMIPS": "76.80", 
+          "CPU architecture": "7", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd03", 
+          "CPU revision": "4", 
+          "CPU variant": "0x0", 
+          "Features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "all_freqs": [
+            "0", 
+            "0"
+          ], 
+          "ck_cpu_name": "ARMv7 Processor rev 4 (v7l)", 
+          "ck_cpu_subname": "ARMv7 Processor rev 4 (v7l)", 
+          "cpu_features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "cur_freq": 1200.0, 
+          "max_freq": 1200.0, 
+          "model name": "ARMv7 Processor rev 4 (v7l)", 
+          "processor": "0"
+        }, 
+        "1": {
+          "BogoMIPS": "76.80", 
+          "CPU architecture": "7", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd03", 
+          "CPU revision": "4", 
+          "CPU variant": "0x0", 
+          "Features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "all_freqs": [
+            "1", 
+            "1"
+          ], 
+          "ck_cpu_name": "ARMv7 Processor rev 4 (v7l)", 
+          "ck_cpu_subname": "ARMv7 Processor rev 4 (v7l)", 
+          "cpu_features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "cur_freq": 1200.0, 
+          "max_freq": 1200.0, 
+          "model name": "ARMv7 Processor rev 4 (v7l)", 
+          "processor": "1"
+        }, 
+        "2": {
+          "BogoMIPS": "76.80", 
+          "CPU architecture": "7", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd03", 
+          "CPU revision": "4", 
+          "CPU variant": "0x0", 
+          "Features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "all_freqs": [
+            "2", 
+            "2"
+          ], 
+          "ck_cpu_name": "ARMv7 Processor rev 4 (v7l)", 
+          "ck_cpu_subname": "ARMv7 Processor rev 4 (v7l)", 
+          "cpu_features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "cur_freq": 1200.0, 
+          "max_freq": 1200.0, 
+          "model name": "ARMv7 Processor rev 4 (v7l)", 
+          "processor": "2"
+        }, 
+        "3": {
+          "BogoMIPS": "76.80", 
+          "CPU architecture": "7", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd03", 
+          "CPU revision": "4", 
+          "CPU variant": "0x0", 
+          "Features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "Hardware": "BCM2709", 
+          "Revision": "a02082", 
+          "Serial": "00000000e27f2dc3", 
+          "all_freqs": [
+            "3", 
+            "3"
+          ], 
+          "ck_cpu_name": "BCM2709", 
+          "ck_cpu_subname": "ARMv7 Processor rev 4 (v7l)", 
+          "cpu_features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "cur_freq": 1200.0, 
+          "max_freq": 1200.0, 
+          "model name": "ARMv7 Processor rev 4 (v7l)", 
+          "processor": "3"
+        }
+      }, 
+      "cpu_new_format": "", 
+      "cpu_unique": [
+        {
+          "BogoMIPS": "76.80", 
+          "CPU architecture": "7", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd03", 
+          "CPU revision": "4", 
+          "CPU variant": "0x0", 
+          "Features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "all_freqs": [
+            "0", 
+            "0"
+          ], 
+          "ck_cpu_name": "ARMv7 Processor rev 4 (v7l)", 
+          "ck_cpu_subname": "ARMv7 Processor rev 4 (v7l)", 
+          "cpu_features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "cur_freq": 1200.0, 
+          "max_freq": 1200.0, 
+          "model name": "ARMv7 Processor rev 4 (v7l)", 
+          "processor": "0"
+        }, 
+        {
+          "BogoMIPS": "76.80", 
+          "CPU architecture": "7", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd03", 
+          "CPU revision": "4", 
+          "CPU variant": "0x0", 
+          "Features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "Hardware": "BCM2709", 
+          "Revision": "a02082", 
+          "Serial": "00000000e27f2dc3", 
+          "all_freqs": [
+            "3", 
+            "3"
+          ], 
+          "ck_cpu_name": "BCM2709", 
+          "ck_cpu_subname": "ARMv7 Processor rev 4 (v7l)", 
+          "cpu_features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "cur_freq": 1200.0, 
+          "max_freq": 1200.0, 
+          "model name": "ARMv7 Processor rev 4 (v7l)", 
+          "processor": "3"
+        }
+      ], 
+      "gpu": {
+        "name": "", 
+        "vendor": ""
+      }, 
+      "gpu_misc": {}, 
+      "os": {
+        "abi": "armv7l", 
+        "bits": "32", 
+        "ck_os_base_uoa": "", 
+        "ck_os_uoa": "linux-32", 
+        "name": "Raspbian GNU/Linux 8 (jessie)", 
+        "name_long": "Linux-4.4.50-v7+-armv7l-with-debian-8.0", 
+        "name_short": "Linux 4.4.50", 
+        "serial_number": ""
+      }, 
+      "os_misc": {}, 
+      "platform": {
+        "model": "Raspberry Pi 3 Model B", 
+        "name": "Raspberry Pi (Raspberry Pi 3 Model B)", 
+        "vendor": "Sony"
+      }, 
+      "platform_misc": {}
+    }, 
+    "solution_uid": "e3847be451ebd6fa", 
+    "statistical_repetitions": 3
+  }
+}

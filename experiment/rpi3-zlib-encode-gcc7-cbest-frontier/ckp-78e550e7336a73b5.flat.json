@@ -1,0 +1,451 @@
+{
+  "##characteristics#compile#binary_size#all": [
+    119084
+  ], 
+  "##characteristics#compile#binary_size#all_unique": [
+    119084
+  ], 
+  "##characteristics#compile#binary_size#center": 119084, 
+  "##characteristics#compile#binary_size#halfrange": 0, 
+  "##characteristics#compile#binary_size#max": 119084, 
+  "##characteristics#compile#binary_size#mean": 119084.0, 
+  "##characteristics#compile#binary_size#min": 119084, 
+  "##characteristics#compile#binary_size#range": 0, 
+  "##characteristics#compile#binary_size#range_percent": 0, 
+  "##characteristics#compile#binary_size#repeats": 1, 
+  "##characteristics#compile#compilation_success#all": [
+    "yes"
+  ], 
+  "##characteristics#compile#compilation_success#all_unique": [
+    "yes"
+  ], 
+  "##characteristics#compile#compilation_success#min": "yes", 
+  "##characteristics#compile#compilation_success#repeats": 1, 
+  "##characteristics#compile#compilation_success_bool#all": [
+    true
+  ], 
+  "##characteristics#compile#compilation_success_bool#all_unique": [
+    true
+  ], 
+  "##characteristics#compile#compilation_success_bool#min": true, 
+  "##characteristics#compile#compilation_success_bool#repeats": 1, 
+  "##characteristics#compile#compilation_time#all": [
+    70.84308385848999
+  ], 
+  "##characteristics#compile#compilation_time#all_unique": [
+    70.84308385848999
+  ], 
+  "##characteristics#compile#compilation_time#center": 70.84308385848999, 
+  "##characteristics#compile#compilation_time#halfrange": 0.0, 
+  "##characteristics#compile#compilation_time#max": 70.84308385848999, 
+  "##characteristics#compile#compilation_time#mean": 70.84308385848999, 
+  "##characteristics#compile#compilation_time#min": 70.84308385848999, 
+  "##characteristics#compile#compilation_time#range": 0.0, 
+  "##characteristics#compile#compilation_time#range_percent": 0.0, 
+  "##characteristics#compile#compilation_time#repeats": 1, 
+  "##characteristics#compile#compilation_time_with_module#all": [
+    72.56068801879883
+  ], 
+  "##characteristics#compile#compilation_time_with_module#all_unique": [
+    72.56068801879883
+  ], 
+  "##characteristics#compile#compilation_time_with_module#center": 72.56068801879883, 
+  "##characteristics#compile#compilation_time_with_module#halfrange": 0.0, 
+  "##characteristics#compile#compilation_time_with_module#max": 72.56068801879883, 
+  "##characteristics#compile#compilation_time_with_module#mean": 72.56068801879883, 
+  "##characteristics#compile#compilation_time_with_module#min": 72.56068801879883, 
+  "##characteristics#compile#compilation_time_with_module#range": 0.0, 
+  "##characteristics#compile#compilation_time_with_module#range_percent": 0.0, 
+  "##characteristics#compile#compilation_time_with_module#repeats": 1, 
+  "##characteristics#compile#joined_compiler_flags#all": [
+    "-O3"
+  ], 
+  "##characteristics#compile#joined_compiler_flags#all_unique": [
+    "-O3"
+  ], 
+  "##characteristics#compile#joined_compiler_flags#min": "-O3", 
+  "##characteristics#compile#joined_compiler_flags#repeats": 1, 
+  "##characteristics#compile#md5_sum#all": [
+    "d94c28436b867070c5ac2be9c4fe8a0e"
+  ], 
+  "##characteristics#compile#md5_sum#all_unique": [
+    "d94c28436b867070c5ac2be9c4fe8a0e"
+  ], 
+  "##characteristics#compile#md5_sum#min": "d94c28436b867070c5ac2be9c4fe8a0e", 
+  "##characteristics#compile#md5_sum#repeats": 1, 
+  "##characteristics#compile#obj_size#all": [
+    137532
+  ], 
+  "##characteristics#compile#obj_size#all_unique": [
+    137532
+  ], 
+  "##characteristics#compile#obj_size#center": 137532, 
+  "##characteristics#compile#obj_size#halfrange": 0, 
+  "##characteristics#compile#obj_size#max": 137532, 
+  "##characteristics#compile#obj_size#mean": 137532.0, 
+  "##characteristics#compile#obj_size#min": 137532, 
+  "##characteristics#compile#obj_size#range": 0, 
+  "##characteristics#compile#obj_size#range_percent": 0, 
+  "##characteristics#compile#obj_size#repeats": 1, 
+  "##characteristics#compile#obj_sizes#adler32.o#all": [
+    2536
+  ], 
+  "##characteristics#compile#obj_sizes#adler32.o#all_unique": [
+    2536
+  ], 
+  "##characteristics#compile#obj_sizes#adler32.o#center": 2536, 
+  "##characteristics#compile#obj_sizes#adler32.o#halfrange": 0, 
+  "##characteristics#compile#obj_sizes#adler32.o#max": 2536, 
+  "##characteristics#compile#obj_sizes#adler32.o#mean": 2536.0, 
+  "##characteristics#compile#obj_sizes#adler32.o#min": 2536, 
+  "##characteristics#compile#obj_sizes#adler32.o#range": 0, 
+  "##characteristics#compile#obj_sizes#adler32.o#range_percent": 0, 
+  "##characteristics#compile#obj_sizes#adler32.o#repeats": 1, 
+  "##characteristics#compile#obj_sizes#compress.o#all": [
+    1564
+  ], 
+  "##characteristics#compile#obj_sizes#compress.o#all_unique": [
+    1564
+  ], 
+  "##characteristics#compile#obj_sizes#compress.o#center": 1564, 
+  "##characteristics#compile#obj_sizes#compress.o#halfrange": 0, 
+  "##characteristics#compile#obj_sizes#compress.o#max": 1564, 
+  "##characteristics#compile#obj_sizes#compress.o#mean": 1564.0, 
+  "##characteristics#compile#obj_sizes#compress.o#min": 1564, 
+  "##characteristics#compile#obj_sizes#compress.o#range": 0, 
+  "##characteristics#compile#obj_sizes#compress.o#range_percent": 0, 
+  "##characteristics#compile#obj_sizes#compress.o#repeats": 1, 
+  "##characteristics#compile#obj_sizes#crc32.o#all": [
+    11160
+  ], 
+  "##characteristics#compile#obj_sizes#crc32.o#all_unique": [
+    11160
+  ], 
+  "##characteristics#compile#obj_sizes#crc32.o#center": 11160, 
+  "##characteristics#compile#obj_sizes#crc32.o#halfrange": 0, 
+  "##characteristics#compile#obj_sizes#crc32.o#max": 11160, 
+  "##characteristics#compile#obj_sizes#crc32.o#mean": 11160.0, 
+  "##characteristics#compile#obj_sizes#crc32.o#min": 11160, 
+  "##characteristics#compile#obj_sizes#crc32.o#range": 0, 
+  "##characteristics#compile#obj_sizes#crc32.o#range_percent": 0, 
+  "##characteristics#compile#obj_sizes#crc32.o#repeats": 1, 
+  "##characteristics#compile#obj_sizes#ctuning-rtl.o#all": [
+    5344
+  ], 
+  "##characteristics#compile#obj_sizes#ctuning-rtl.o#all_unique": [
+    5344
+  ], 
+  "##characteristics#compile#obj_sizes#ctuning-rtl.o#center": 5344, 
+  "##characteristics#compile#obj_sizes#ctuning-rtl.o#halfrange": 0, 
+  "##characteristics#compile#obj_sizes#ctuning-rtl.o#max": 5344, 
+  "##characteristics#compile#obj_sizes#ctuning-rtl.o#mean": 5344.0, 
+  "##characteristics#compile#obj_sizes#ctuning-rtl.o#min": 5344, 
+  "##characteristics#compile#obj_sizes#ctuning-rtl.o#range": 0, 
+  "##characteristics#compile#obj_sizes#ctuning-rtl.o#range_percent": 0, 
+  "##characteristics#compile#obj_sizes#ctuning-rtl.o#repeats": 1, 
+  "##characteristics#compile#obj_sizes#deflate.o#all": [
+    33268
+  ], 
+  "##characteristics#compile#obj_sizes#deflate.o#all_unique": [
+    33268
+  ], 
+  "##characteristics#compile#obj_sizes#deflate.o#center": 33268, 
+  "##characteristics#compile#obj_sizes#deflate.o#halfrange": 0, 
+  "##characteristics#compile#obj_sizes#deflate.o#max": 33268, 
+  "##characteristics#compile#obj_sizes#deflate.o#mean": 33268.0, 
+  "##characteristics#compile#obj_sizes#deflate.o#min": 33268, 
+  "##characteristics#compile#obj_sizes#deflate.o#range": 0, 
+  "##characteristics#compile#obj_sizes#deflate.o#range_percent": 0, 
+  "##characteristics#compile#obj_sizes#deflate.o#repeats": 1, 
+  "##characteristics#compile#obj_sizes#gzclose.o#all": [
+    956
+  ], 
+  "##characteristics#compile#obj_sizes#gzclose.o#all_unique": [
+    956
+  ], 
+  "##characteristics#compile#obj_sizes#gzclose.o#center": 956, 
+  "##characteristics#compile#obj_sizes#gzclose.o#halfrange": 0, 
+  "##characteristics#compile#obj_sizes#gzclose.o#max": 956, 
+  "##characteristics#compile#obj_sizes#gzclose.o#mean": 956.0, 
+  "##characteristics#compile#obj_sizes#gzclose.o#min": 956, 
+  "##characteristics#compile#obj_sizes#gzclose.o#range": 0, 
+  "##characteristics#compile#obj_sizes#gzclose.o#range_percent": 0, 
+  "##characteristics#compile#obj_sizes#gzclose.o#repeats": 1, 
+  "##characteristics#compile#obj_sizes#gzlib.o#all": [
+    9764
+  ], 
+  "##characteristics#compile#obj_sizes#gzlib.o#all_unique": [
+    9764
+  ], 
+  "##characteristics#compile#obj_sizes#gzlib.o#center": 9764, 
+  "##characteristics#compile#obj_sizes#gzlib.o#halfrange": 0, 
+  "##characteristics#compile#obj_sizes#gzlib.o#max": 9764, 
+  "##characteristics#compile#obj_sizes#gzlib.o#mean": 9764.0, 
+  "##characteristics#compile#obj_sizes#gzlib.o#min": 9764, 
+  "##characteristics#compile#obj_sizes#gzlib.o#range": 0, 
+  "##characteristics#compile#obj_sizes#gzlib.o#range_percent": 0, 
+  "##characteristics#compile#obj_sizes#gzlib.o#repeats": 1, 
+  "##characteristics#compile#obj_sizes#gzread.o#all": [
+    6404
+  ], 
+  "##characteristics#compile#obj_sizes#gzread.o#all_unique": [
+    6404
+  ], 
+  "##characteristics#compile#obj_sizes#gzread.o#center": 6404, 
+  "##characteristics#compile#obj_sizes#gzread.o#halfrange": 0, 
+  "##characteristics#compile#obj_sizes#gzread.o#max": 6404, 
+  "##characteristics#compile#obj_sizes#gzread.o#mean": 6404.0, 
+  "##characteristics#compile#obj_sizes#gzread.o#min": 6404, 
+  "##characteristics#compile#obj_sizes#gzread.o#range": 0, 
+  "##characteristics#compile#obj_sizes#gzread.o#range_percent": 0, 
+  "##characteristics#compile#obj_sizes#gzread.o#repeats": 1, 
+  "##characteristics#compile#obj_sizes#gzwrite.o#all": [
+    8844
+  ], 
+  "##characteristics#compile#obj_sizes#gzwrite.o#all_unique": [
+    8844
+  ], 
+  "##characteristics#compile#obj_sizes#gzwrite.o#center": 8844, 
+  "##characteristics#compile#obj_sizes#gzwrite.o#halfrange": 0, 
+  "##characteristics#compile#obj_sizes#gzwrite.o#max": 8844, 
+  "##characteristics#compile#obj_sizes#gzwrite.o#mean": 8844.0, 
+  "##characteristics#compile#obj_sizes#gzwrite.o#min": 8844, 
+  "##characteristics#compile#obj_sizes#gzwrite.o#range": 0, 
+  "##characteristics#compile#obj_sizes#gzwrite.o#range_percent": 0, 
+  "##characteristics#compile#obj_sizes#gzwrite.o#repeats": 1, 
+  "##characteristics#compile#obj_sizes#infback.o#all": [
+    10208
+  ], 
+  "##characteristics#compile#obj_sizes#infback.o#all_unique": [
+    10208
+  ], 
+  "##characteristics#compile#obj_sizes#infback.o#center": 10208, 
+  "##characteristics#compile#obj_sizes#infback.o#halfrange": 0, 
+  "##characteristics#compile#obj_sizes#infback.o#max": 10208, 
+  "##characteristics#compile#obj_sizes#infback.o#mean": 10208.0, 
+  "##characteristics#compile#obj_sizes#infback.o#min": 10208, 
+  "##characteristics#compile#obj_sizes#infback.o#range": 0, 
+  "##characteristics#compile#obj_sizes#infback.o#range_percent": 0, 
+  "##characteristics#compile#obj_sizes#infback.o#repeats": 1, 
+  "##characteristics#compile#obj_sizes#inffast.o#all": [
+    6988
+  ], 
+  "##characteristics#compile#obj_sizes#inffast.o#all_unique": [
+    6988
+  ], 
+  "##characteristics#compile#obj_sizes#inffast.o#center": 6988, 
+  "##characteristics#compile#obj_sizes#inffast.o#halfrange": 0, 
+  "##characteristics#compile#obj_sizes#inffast.o#max": 6988, 
+  "##characteristics#compile#obj_sizes#inffast.o#mean": 6988.0, 
+  "##characteristics#compile#obj_sizes#inffast.o#min": 6988, 
+  "##characteristics#compile#obj_sizes#inffast.o#range": 0, 
+  "##characteristics#compile#obj_sizes#inffast.o#range_percent": 0, 
+  "##characteristics#compile#obj_sizes#inffast.o#repeats": 1, 
+  "##characteristics#compile#obj_sizes#inflate.o#all": [
+    18516
+  ], 
+  "##characteristics#compile#obj_sizes#inflate.o#all_unique": [
+    18516
+  ], 
+  "##characteristics#compile#obj_sizes#inflate.o#center": 18516, 
+  "##characteristics#compile#obj_sizes#inflate.o#halfrange": 0, 
+  "##characteristics#compile#obj_sizes#inflate.o#max": 18516, 
+  "##characteristics#compile#obj_sizes#inflate.o#mean": 18516.0, 
+  "##characteristics#compile#obj_sizes#inflate.o#min": 18516, 
+  "##characteristics#compile#obj_sizes#inflate.o#range": 0, 
+  "##characteristics#compile#obj_sizes#inflate.o#range_percent": 0, 
+  "##characteristics#compile#obj_sizes#inflate.o#repeats": 1, 
+  "##characteristics#compile#obj_sizes#inftrees.o#all": [
+    4404
+  ], 
+  "##characteristics#compile#obj_sizes#inftrees.o#all_unique": [
+    4404
+  ], 
+  "##characteristics#compile#obj_sizes#inftrees.o#center": 4404, 
+  "##characteristics#compile#obj_sizes#inftrees.o#halfrange": 0, 
+  "##characteristics#compile#obj_sizes#inftrees.o#max": 4404, 
+  "##characteristics#compile#obj_sizes#inftrees.o#mean": 4404.0, 
+  "##characteristics#compile#obj_sizes#inftrees.o#min": 4404, 
+  "##characteristics#compile#obj_sizes#inftrees.o#range": 0, 
+  "##characteristics#compile#obj_sizes#inftrees.o#range_percent": 0, 
+  "##characteristics#compile#obj_sizes#inftrees.o#repeats": 1, 
+  "##characteristics#compile#obj_sizes#trees.o#all": [
+    14640
+  ], 
+  "##characteristics#compile#obj_sizes#trees.o#all_unique": [
+    14640
+  ], 
+  "##characteristics#compile#obj_sizes#trees.o#center": 14640, 
+  "##characteristics#compile#obj_sizes#trees.o#halfrange": 0, 
+  "##characteristics#compile#obj_sizes#trees.o#max": 14640, 
+  "##characteristics#compile#obj_sizes#trees.o#mean": 14640.0, 
+  "##characteristics#compile#obj_sizes#trees.o#min": 14640, 
+  "##characteristics#compile#obj_sizes#trees.o#range": 0, 
+  "##characteristics#compile#obj_sizes#trees.o#range_percent": 0, 
+  "##characteristics#compile#obj_sizes#trees.o#repeats": 1, 
+  "##characteristics#compile#obj_sizes#uncompr.o#all": [
+    1284
+  ], 
+  "##characteristics#compile#obj_sizes#uncompr.o#all_unique": [
+    1284
+  ], 
+  "##characteristics#compile#obj_sizes#uncompr.o#center": 1284, 
+  "##characteristics#compile#obj_sizes#uncompr.o#halfrange": 0, 
+  "##characteristics#compile#obj_sizes#uncompr.o#max": 1284, 
+  "##characteristics#compile#obj_sizes#uncompr.o#mean": 1284.0, 
+  "##characteristics#compile#obj_sizes#uncompr.o#min": 1284, 
+  "##characteristics#compile#obj_sizes#uncompr.o#range": 0, 
+  "##characteristics#compile#obj_sizes#uncompr.o#range_percent": 0, 
+  "##characteristics#compile#obj_sizes#uncompr.o#repeats": 1, 
+  "##characteristics#compile#obj_sizes#zutil.o#all": [
+    1652
+  ], 
+  "##characteristics#compile#obj_sizes#zutil.o#all_unique": [
+    1652
+  ], 
+  "##characteristics#compile#obj_sizes#zutil.o#center": 1652, 
+  "##characteristics#compile#obj_sizes#zutil.o#halfrange": 0, 
+  "##characteristics#compile#obj_sizes#zutil.o#max": 1652, 
+  "##characteristics#compile#obj_sizes#zutil.o#mean": 1652.0, 
+  "##characteristics#compile#obj_sizes#zutil.o#min": 1652, 
+  "##characteristics#compile#obj_sizes#zutil.o#range": 0, 
+  "##characteristics#compile#obj_sizes#zutil.o#range_percent": 0, 
+  "##characteristics#compile#obj_sizes#zutil.o#repeats": 1, 
+  "##characteristics#compile#program_git_hash#all": [
+    "76c1692f0b94c51d15dd626e1fed906d11b9539d"
+  ], 
+  "##characteristics#compile#program_git_hash#all_unique": [
+    "76c1692f0b94c51d15dd626e1fed906d11b9539d"
+  ], 
+  "##characteristics#compile#program_git_hash#min": "76c1692f0b94c51d15dd626e1fed906d11b9539d", 
+  "##characteristics#compile#program_git_hash#repeats": 1, 
+  "##characteristics#run#execution_time#all": [
+    1.3223549, 
+    1.3205214
+  ], 
+  "##characteristics#run#execution_time#all_unique": [
+    1.3223549, 
+    1.3205214
+  ], 
+  "##characteristics#run#execution_time#center": 1.32143815, 
+  "##characteristics#run#execution_time#halfrange": 0.0009167500000000217, 
+  "##characteristics#run#execution_time#max": 1.3223549, 
+  "##characteristics#run#execution_time#mean": 1.32143815, 
+  "##characteristics#run#execution_time#min": 1.3205214, 
+  "##characteristics#run#execution_time#range": 0.0018335000000000434, 
+  "##characteristics#run#execution_time#range_percent": 0.0013884667071658537, 
+  "##characteristics#run#execution_time#repeats": 2, 
+  "##characteristics#run#execution_time_kernel_0#all": [
+    13.223549, 
+    13.205214
+  ], 
+  "##characteristics#run#execution_time_kernel_0#all_unique": [
+    13.223549, 
+    13.205214
+  ], 
+  "##characteristics#run#execution_time_kernel_0#center": 13.2143815, 
+  "##characteristics#run#execution_time_kernel_0#halfrange": 0.009167500000000217, 
+  "##characteristics#run#execution_time_kernel_0#max": 13.223549, 
+  "##characteristics#run#execution_time_kernel_0#mean": 13.2143815, 
+  "##characteristics#run#execution_time_kernel_0#min": 13.205214, 
+  "##characteristics#run#execution_time_kernel_0#range": 0.018335000000000434, 
+  "##characteristics#run#execution_time_kernel_0#range_percent": 0.001388466707165854, 
+  "##characteristics#run#execution_time_kernel_0#repeats": 2, 
+  "##characteristics#run#execution_time_with_module#all": [
+    13.834090948104858, 
+    13.820449113845825
+  ], 
+  "##characteristics#run#execution_time_with_module#all_unique": [
+    13.834090948104858, 
+    13.820449113845825
+  ], 
+  "##characteristics#run#execution_time_with_module#center": 13.827270030975342, 
+  "##characteristics#run#execution_time_with_module#halfrange": 0.0068209171295166016, 
+  "##characteristics#run#execution_time_with_module#max": 13.834090948104858, 
+  "##characteristics#run#execution_time_with_module#mean": 13.827270030975342, 
+  "##characteristics#run#execution_time_with_module#min": 13.820449113845825, 
+  "##characteristics#run#execution_time_with_module#range": 0.013641834259033203, 
+  "##characteristics#run#execution_time_with_module#range_percent": 0.0009870760455509598, 
+  "##characteristics#run#execution_time_with_module#repeats": 2, 
+  "##characteristics#run#output_check_failed#all": [
+    "no", 
+    "no"
+  ], 
+  "##characteristics#run#output_check_failed#all_unique": [
+    "no"
+  ], 
+  "##characteristics#run#output_check_failed#min": "no", 
+  "##characteristics#run#output_check_failed#repeats": 2, 
+  "##characteristics#run#output_check_failed_bool#all": [
+    false, 
+    false
+  ], 
+  "##characteristics#run#output_check_failed_bool#all_unique": [
+    false
+  ], 
+  "##characteristics#run#output_check_failed_bool#min": false, 
+  "##characteristics#run#output_check_failed_bool#repeats": 2, 
+  "##characteristics#run#repeat#all": [
+    10, 
+    10
+  ], 
+  "##characteristics#run#repeat#all_unique": [
+    10
+  ], 
+  "##characteristics#run#repeat#center": 10, 
+  "##characteristics#run#repeat#halfrange": 0, 
+  "##characteristics#run#repeat#max": 10, 
+  "##characteristics#run#repeat#mean": 10.0, 
+  "##characteristics#run#repeat#min": 10, 
+  "##characteristics#run#repeat#range": 0, 
+  "##characteristics#run#repeat#range_percent": 0, 
+  "##characteristics#run#repeat#repeats": 2, 
+  "##characteristics#run#return_code#all": [
+    0, 
+    0
+  ], 
+  "##characteristics#run#return_code#all_unique": [
+    0
+  ], 
+  "##characteristics#run#return_code#center": 0, 
+  "##characteristics#run#return_code#halfrange": 0, 
+  "##characteristics#run#return_code#max": 0, 
+  "##characteristics#run#return_code#mean": 0.0, 
+  "##characteristics#run#return_code#min": 0, 
+  "##characteristics#run#return_code#range": 0, 
+  "##characteristics#run#return_code#repeats": 2, 
+  "##characteristics#run#run_success#all": [
+    "yes", 
+    "yes"
+  ], 
+  "##characteristics#run#run_success#all_unique": [
+    "yes"
+  ], 
+  "##characteristics#run#run_success#min": "yes", 
+  "##characteristics#run#run_success#repeats": 2, 
+  "##characteristics#run#run_success_bool#all": [
+    true, 
+    true
+  ], 
+  "##characteristics#run#run_success_bool#all_unique": [
+    true
+  ], 
+  "##characteristics#run#run_success_bool#min": true, 
+  "##characteristics#run#run_success_bool#repeats": 2, 
+  "##characteristics#run#total_execution_time#all": [
+    13.223549, 
+    13.205214
+  ], 
+  "##characteristics#run#total_execution_time#all_unique": [
+    13.223549, 
+    13.205214
+  ], 
+  "##characteristics#run#total_execution_time#center": 13.2143815, 
+  "##characteristics#run#total_execution_time#halfrange": 0.009167500000000217, 
+  "##characteristics#run#total_execution_time#max": 13.223549, 
+  "##characteristics#run#total_execution_time#mean": 13.2143815, 
+  "##characteristics#run#total_execution_time#min": 13.205214, 
+  "##characteristics#run#total_execution_time#range": 0.018335000000000434, 
+  "##characteristics#run#total_execution_time#range_percent": 0.001388466707165854, 
+  "##characteristics#run#total_execution_time#repeats": 2
+}

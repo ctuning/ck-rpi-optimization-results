@@ -1,0 +1,30 @@
+{
+  "added": {
+    "engine": "CK",
+    "iso_datetime": "2017-07-04T16:32:28.469802",
+    "version": [
+      "1",
+      "9",
+      "1"
+    ]
+  },
+  "meta": {
+    "cmd_key": "encode",
+    "compiler": "GCC 7.1.0",
+    "cpu_name": "BCM2709",
+    "dataset_file": "data.y4m",
+    "dataset_uoa": "video-raw-0001",
+    "objective": "min",
+    "program_uoa": "zlib",
+    "scenario_desc": "auto/crowd-tune GCC compiler flags (minimize execution time and code size)",
+    "scenario_module_uoa": "759e460c08f9bdc7",
+    "subscenario_desc": "explore random program/cmd/data set"
+  },
+  "pipeline_uid": "b0ac08fe1d3c2615",
+  "pipeline_uoa": "b0ac08fe1d3c2615",
+  "points": "3",
+  "tags": [
+    "crowdtuning",
+    "tmp"
+  ]
+}

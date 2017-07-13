@@ -1,0 +1,15 @@
+{
+  "backup_data_uid": "0b887293d1a74eb6",
+  "backup_module_uid": "bc0409fb61f0aa82",
+  "backup_module_uoa": "experiment",
+  "control": {
+    "engine": "CK",
+    "iso_datetime": "2017-07-09T13:05:59.727743",
+    "version": [
+      "1",
+      "9",
+      "1"
+    ]
+  },
+  "data_name": "rpi3-zlib-decode-gcc7-cbest-size"
+}

@@ -1,0 +1,1493 @@
+{
+  "features": {
+    "compiler_version": {
+      "raw": [
+        "clang version 3.8.1 (tags/RELEASE_381/final)", 
+        "Target: armv7l-unknown-linux-gnueabihf", 
+        "Thread model: posix", 
+        "InstalledDir: /home/fursin/fggprogs/clang+llvm-3.8.1-armv7a-linux-gnueabihf/bin", 
+        ""
+      ], 
+      "list": [
+        3, 
+        8, 
+        1
+      ], 
+      "str": "3.8.1"
+    }
+  }, 
+  "characteristics": {}, 
+  "target_device_id": "", 
+  "choices": {
+    "cmd_key": "encode", 
+    "no_state_check": "yes", 
+    "target": "", 
+    "module_uoa": "b0ac08fe1d3c2615", 
+    "dataset_uoa": "video-raw-0001", 
+    "calibration_time": 10.0, 
+    "device_cfg": {}, 
+    "compiler_description_uoa": "llvm-3.8.0-auto", 
+    "dataset_file": "data.y4m", 
+    "program_tags": "", 
+    "repeat": "10", 
+    "data_uoa": "zlib", 
+    "compile_type": "dynamic", 
+    "target_os_bits": "32", 
+    "host_os": "linux-32", 
+    "target_os": "linux-32", 
+    "device_id": ""
+  }, 
+  "ready": "yes", 
+  "state": {
+    "tmp_dir": "tmp-ck-7DyYzK", 
+    "cur_dir": "/home/fursin/CK/ck-rpi-optimization/program/zlib/tmp-ck-7DyYzK"
+  }, 
+  "dependencies": {
+    "xopenme": {
+      "sort": 20, 
+      "bat": ". /home/fursin/CK/local/env/fa9c7d045ad726da/env.sh\n", 
+      "cus": {
+        "dynamic_lib": "librtlxopenme.so", 
+        "static_lib": "librtlxopenme.a", 
+        "skip_path": "yes", 
+        "path_include": "/home/fursin/CK-TOOLS/lib-rtl-xopenme-0.3-gcc-4.9.2-linux-32/include", 
+        "include_name": "xopenme.h", 
+        "version": "0.3", 
+        "full_path": "/home/fursin/CK-TOOLS/lib-rtl-xopenme-0.3-gcc-4.9.2-linux-32/lib/librtlxopenme.a", 
+        "extra_dir": "", 
+        "version_split": [
+          0, 
+          3
+        ], 
+        "env_prefix": "CK_ENV_LIB_RTL_XOPENME", 
+        "path_lib": "/home/fursin/CK-TOOLS/lib-rtl-xopenme-0.3-gcc-4.9.2-linux-32/lib"
+      }, 
+      "tags": "lib,xopenme", 
+      "uoa": "fa9c7d045ad726da", 
+      "choices": [
+        "fa9c7d045ad726da"
+      ], 
+      "num_entries": 1, 
+      "dict": {
+        "env_script": "env.sh", 
+        "env": {
+          "CK_ENV_LIB_RTL_XOPENME_INCLUDE_NAME": "xopenme.h", 
+          "CK_ENV_LIB_RTL_XOPENME_DYNAMIC_NAME": "librtlxopenme.so", 
+          "CK_ENV_LIB_RTL_XOPENME": "/home/fursin/CK-TOOLS/lib-rtl-xopenme-0.3-gcc-4.9.2-linux-32", 
+          "CK_ENV_LIB_RTL_XOPENME_STATIC_NAME": "librtlxopenme.a"
+        }, 
+        "tags": [
+          "32bits", 
+          "host-os-linux-32", 
+          "lang-c", 
+          "lang-cpp", 
+          "lang-f77", 
+          "lang-f90", 
+          "lang-f95", 
+          "lib", 
+          "rtl", 
+          "target-os-linux-32", 
+          "v0", 
+          "v0.3", 
+          "xopenme"
+        ], 
+        "customize": {
+          "dynamic_lib": "librtlxopenme.so", 
+          "static_lib": "librtlxopenme.a", 
+          "skip_path": "yes", 
+          "path_include": "/home/fursin/CK-TOOLS/lib-rtl-xopenme-0.3-gcc-4.9.2-linux-32/include", 
+          "include_name": "xopenme.h", 
+          "version": "0.3", 
+          "full_path": "/home/fursin/CK-TOOLS/lib-rtl-xopenme-0.3-gcc-4.9.2-linux-32/lib/librtlxopenme.a", 
+          "extra_dir": "", 
+          "version_split": [
+            0, 
+            3
+          ], 
+          "env_prefix": "CK_ENV_LIB_RTL_XOPENME", 
+          "path_lib": "/home/fursin/CK-TOOLS/lib-rtl-xopenme-0.3-gcc-4.9.2-linux-32/lib"
+        }, 
+        "setup": {
+          "deps_compiler": "7e149c8504752933", 
+          "version": "0.3", 
+          "version_split": [
+            0, 
+            3
+          ], 
+          "target_os_bits": "32", 
+          "host_os_uoa": "fb525e34243f49c1", 
+          "target_os_uoa": "fb525e34243f49c1"
+        }, 
+        "data_name": "xOpenME run-time library", 
+        "package_uoa": "0573487b8121d094", 
+        "soft_uoa": "673507878d649b4a", 
+        "deps": {
+          "compiler": {
+            "detected_ver": "4.9.2", 
+            "sort": 0, 
+            "bat": ". /home/fursin/CK/local/env/7e149c8504752933/env.sh\n", 
+            "cus": {
+              "can_strip_dynamic_lib": "yes", 
+              "build_dir_name": "gcc", 
+              "skip_path": "yes", 
+              "tool_prefix_configured": "yes", 
+              "tool_prefix": "", 
+              "tool_postfix_configured": "yes", 
+              "env_prefix": "CK_ENV_COMPILER_GCC", 
+              "soft_version_cmd": {
+                "win": " --version > $#filename#$ 2>&1", 
+                "linux": "--version > $#filename#$ 2>&1"
+              }, 
+              "soft_path_example": {
+                "win": "C:\\Program Files\\GCC-4.9.2-x64\\bin\\gcc.exe", 
+                "linux": "/usr/bin/gcc"
+              }, 
+              "languages": [
+                "C", 
+                "CPP"
+              ], 
+              "version": "4.9.2", 
+              "soft_file_from_host_os": "yes", 
+              "tool_postfix": "", 
+              "soft_file": {
+                "win": "gcc.exe", 
+                "linux": "gcc"
+              }, 
+              "search_numeric_ext_on_linux": "yes", 
+              "retarget": "no", 
+              "add_to_path": "yes", 
+              "add_only_with_version": "yes", 
+              "version_split": [
+                4, 
+                9, 
+                2
+              ], 
+              "limit_recursion_dir_search": {
+                "win": 4, 
+                "linux": 3
+              }, 
+              "check_that_exists": "yes", 
+              "ck_version": 10, 
+              "only_for_target_os_tags": [
+                "mingw", 
+                "windows", 
+                "linux"
+              ], 
+              "full_path": "/usr/bin/gcc"
+            }, 
+            "name": "C++ compiler", 
+            "tags": "compiler,lang-cpp", 
+            "build_dir_name": "gcc", 
+            "num_entries": 1, 
+            "choices": [
+              "7e149c8504752933"
+            ], 
+            "uoa": "7e149c8504752933", 
+            "dict": {
+              "data_name": "GNU C compiler", 
+              "env": {
+                "CK_FLAGS_DYNAMIC_BIN": " ", 
+                "CK_FLAGS_DLL_EXTRA": "", 
+                "CK_COMPILER_FLAGS_OBLIGATORY": "", 
+                "CK_AR": "ar", 
+                "CK_COMPILER_POSTFIX": "", 
+                "CK_COMPILER_TOOLCHAIN_NAME": "gcc", 
+                "CK_LIB_EXT": ".a", 
+                "CK_OPT_SIZE": "-Os", 
+                "CK_FLAGS_CREATE_OBJ": "-c", 
+                "CK_COMPILER_FLAG_PTHREAD_LIB": "-lpthread", 
+                "CK_CC": "gcc", 
+                "CK_COMPILER_FLAG_GPROF": "-pg", 
+                "CK_OPT_ALL_WARNINGS": "-Wall", 
+                "CK_LB_OUTPUT": "-o ", 
+                "CK_FLAGS_STATIC_LIB": "-fPIC", 
+                "CK_FLAG_PREFIX_VAR": "-D", 
+                "CK_COMPILER_FLAG_STD90": "-std=c90", 
+                "CK_EXTRA_LIB_M": "-lm", 
+                "CK_COMPILER_FLAG_STD99": "-std=c99", 
+                "CK_FLAG_PREFIX_LIB_DIR": "-L", 
+                "CK_OPT_SPEED": "-O3", 
+                "CK_LINKER_FLAG_OPENMP": "-lgomp -lrt", 
+                "CK_EXTRA_LIB_DL": "-ldl", 
+                "CK_OPT_UNWIND": " ", 
+                "CK_OBJ_EXT": ".o", 
+                "CK_FLAGS_OUTPUT": "-o ", 
+                "CK_LB": "ar rcs", 
+                "CK_LD": "ld", 
+                "CK_COMPILER_FLAG_CPP11": "-std=c++11", 
+                "CK_COMPILER_FLAG_OPENMP": "-fopenmp", 
+                "CK_COMPILER_FLAG_PLUGIN": "-fplugin=", 
+                "CK_PLUGIN_FLAG": "-fplugin=", 
+                "CK_DLL_EXT": ".so", 
+                "CK_CXX": "g++", 
+                "CK_ASM_EXT": ".s", 
+                "CK_FLAG_PREFIX_INCLUDE": "-I", 
+                "CK_LD_FLAGS_EXTRA": "", 
+                "CK_OBJDUMP": "objdump -d", 
+                "CK_OPT_SPEED_SAFE": "-O2", 
+                "CK_PROFILER": "gprof", 
+                "CK_FLAGS_DLL": "-shared -fPIC", 
+                "CK_FLAGS_STATIC_BIN": "-static -fPIC", 
+                "CK_ENV_COMPILER_GCC": "/usr", 
+                "CK_EXE_EXT": ".out", 
+                "CK_GPROF_OUT_FILE": "gmon.out", 
+                "CK_MAKE": "make", 
+                "CK_COMPILER_FLAG_CPP0X": "-std=c++0x", 
+                "CK_RANLIB": "ranlib", 
+                "CK_FLAGS_CREATE_ASM": "-S"
+              }, 
+              "tags": [
+                "32bits", 
+                "compiler", 
+                "gcc", 
+                "host-os-linux-32", 
+                "lang-c", 
+                "lang-cpp", 
+                "target-os-linux-32", 
+                "v4", 
+                "v4.9", 
+                "v4.9.2"
+              ], 
+              "customize": {
+                "can_strip_dynamic_lib": "yes", 
+                "build_dir_name": "gcc", 
+                "skip_path": "yes", 
+                "tool_prefix_configured": "yes", 
+                "tool_prefix": "", 
+                "tool_postfix_configured": "yes", 
+                "env_prefix": "CK_ENV_COMPILER_GCC", 
+                "soft_version_cmd": {
+                  "win": " --version > $#filename#$ 2>&1", 
+                  "linux": "--version > $#filename#$ 2>&1"
+                }, 
+                "soft_path_example": {
+                  "win": "C:\\Program Files\\GCC-4.9.2-x64\\bin\\gcc.exe", 
+                  "linux": "/usr/bin/gcc"
+                }, 
+                "languages": [
+                  "C", 
+                  "CPP"
+                ], 
+                "version": "4.9.2", 
+                "soft_file_from_host_os": "yes", 
+                "tool_postfix": "", 
+                "soft_file": {
+                  "win": "gcc.exe", 
+                  "linux": "gcc"
+                }, 
+                "search_numeric_ext_on_linux": "yes", 
+                "retarget": "no", 
+                "add_to_path": "yes", 
+                "add_only_with_version": "yes", 
+                "version_split": [
+                  4, 
+                  9, 
+                  2
+                ], 
+                "limit_recursion_dir_search": {
+                  "win": 4, 
+                  "linux": 3
+                }, 
+                "check_that_exists": "yes", 
+                "ck_version": 10, 
+                "only_for_target_os_tags": [
+                  "mingw", 
+                  "windows", 
+                  "linux"
+                ], 
+                "full_path": "/usr/bin/gcc"
+              }, 
+              "setup": {
+                "version_split": [
+                  4, 
+                  9, 
+                  2
+                ], 
+                "target_os_bits": "32", 
+                "version": "4.9.2", 
+                "host_os_uoa": "fb525e34243f49c1", 
+                "target_os_uoa": "fb525e34243f49c1"
+              }, 
+              "env_script": "env.sh", 
+              "soft_uoa": "3a8a82fa40bf992d", 
+              "deps": {}, 
+              "soft_alias": "compiler.gcc"
+            }, 
+            "ver": "4.9.2", 
+            "local": "yes"
+          }
+        }, 
+        "soft_alias": "lib.rtl.xopenme"
+      }, 
+      "ver": "0.3", 
+      "local": "yes"
+    }, 
+    "compiler": {
+      "sort": 10, 
+      "detected_ver": "3.8.1", 
+      "bat": ". /home/fursin/CK/local/env/8e66a1d34e9e93ea/env.sh\n", 
+      "cus": {
+        "can_strip_dynamic_lib": "yes", 
+        "build_dir_name": "llvm", 
+        "skip_path": "yes", 
+        "tool_prefix_configured": "yes", 
+        "tool_prefix": "", 
+        "tool_postfix_configured": "yes", 
+        "env_prefix": "CK_ENV_COMPILER_LLVM", 
+        "soft_version_cmd": {
+          "win": " --version > $#filename#$ 2>&1", 
+          "linux": "--version > $#filename#$ 2>&1"
+        }, 
+        "soft_path_example": {
+          "win": "C:\\Program Files (x86)\\llvm\\bin\\clang.exe", 
+          "linux": "/usr/bin/clang"
+        }, 
+        "languages": [
+          "C", 
+          "CPP"
+        ], 
+        "version": "3.8.1", 
+        "soft_file_from_host_os": "yes", 
+        "path_lib": "/home/fursin/fggprogs/clang+llvm-3.8.1-armv7a-linux-gnueabihf/lib", 
+        "tool_postfix": "-3.8", 
+        "soft_file": {
+          "win": "clang.exe", 
+          "linux": "clang"
+        }, 
+        "search_numeric_ext_on_linux": "yes", 
+        "retarget": "no", 
+        "add_to_path": "yes", 
+        "add_only_with_version": "yes", 
+        "version_split": [
+          3, 
+          8, 
+          1
+        ], 
+        "limit_recursion_dir_search": {
+          "win": 4, 
+          "linux": 3
+        }, 
+        "check_that_exists": "yes", 
+        "ck_version": 10, 
+        "path_include": "/home/fursin/fggprogs/clang+llvm-3.8.1-armv7a-linux-gnueabihf/include", 
+        "only_for_target_os_tags": [
+          "windows", 
+          "linux"
+        ], 
+        "full_path": "/home/fursin/fggprogs/clang+llvm-3.8.1-armv7a-linux-gnueabihf/bin/clang-3.8"
+      }, 
+      "tags": "compiler", 
+      "build_dir_name": "llvm", 
+      "uoa": "8e66a1d34e9e93ea", 
+      "choices": [
+        "8e66a1d34e9e93ea"
+      ], 
+      "num_entries": 1, 
+      "dict": {
+        "env_script": "env.sh", 
+        "env": {
+          "CK_FLAGS_DYNAMIC_BIN": " ", 
+          "CK_FLAGS_DLL_EXTRA": "", 
+          "CK_COMPILER_FLAGS_OBLIGATORY": "", 
+          "CK_AR": "llvm-ar", 
+          "CK_COMPILER_POSTFIX": "-3.8", 
+          "CK_COMPILER_TOOLCHAIN_NAME": "clang", 
+          "CK_LIB_EXT": ".a", 
+          "CK_OPT_SIZE": "-Os", 
+          "CK_FLAGS_CREATE_OBJ": "-c", 
+          "CK_COMPILER_FLAG_PTHREAD_LIB": "-lpthread", 
+          "CK_CC": "clang-3.8", 
+          "CK_COMPILER_FLAG_GPROF": "-pg", 
+          "CK_LB_OUTPUT": "", 
+          "CK_COMPILER_ENABLE_EXCEPTIONS": "-fcxx-exceptions", 
+          "CK_CXX": "clang++", 
+          "CK_FLAG_PREFIX_VAR": "-D", 
+          "CK_COMPILER_FLAG_STD90": "-std=c90", 
+          "CK_EXTRA_LIB_M": "-lm", 
+          "CK_COMPILER_FLAG_STD99": "-std=c99", 
+          "CK_FLAG_PREFIX_LIB_DIR": "-L", 
+          "CK_OPT_SPEED": "-O3", 
+          "CK_LINKER_FLAG_OPENMP": "-fopenmp", 
+          "CK_ENV_COMPILER_LLVM_BIN": "/home/fursin/fggprogs/clang+llvm-3.8.1-armv7a-linux-gnueabihf/bin", 
+          "CK_EXTRA_LIB_DL": "-ldl", 
+          "CK_OPT_UNWIND": " ", 
+          "CK_OBJ_EXT": ".o", 
+          "CK_FLAGS_OUTPUT": "-o ", 
+          "CK_LB": "llvm-ar rcs", 
+          "CK_MAKE": "make", 
+          "CK_COMPILER_FLAG_CPP11": "-std=c++11", 
+          "CK_COMPILER_FLAG_OPENMP": "-fopenmp", 
+          "CK_COMPILER_FLAG_PLUGIN": "-fplugin=", 
+          "CK_PLUGIN_FLAG": "-fplugin=", 
+          "CK_DLL_EXT": ".so", 
+          "CK_ENV_COMPILER_LLVM": "/home/fursin/fggprogs/clang+llvm-3.8.1-armv7a-linux-gnueabihf", 
+          "CK_ASM_EXT": ".s", 
+          "CK_FLAG_PREFIX_INCLUDE": "-I", 
+          "CK_LD_FLAGS_EXTRA": "", 
+          "CK_OBJDUMP": "llvm-objdump -d", 
+          "CK_OPT_SPEED_SAFE": "-O2", 
+          "CK_PROFILER": "gprof", 
+          "CK_FLAGS_DLL": "-shared -fPIC", 
+          "CK_FLAGS_STATIC_BIN": "-static -fPIC", 
+          "CK_FLAGS_STATIC_LIB": "-fPIC", 
+          "CK_EXE_EXT": ".out", 
+          "CK_GPROF_OUT_FILE": "gmon.out", 
+          "CK_COMPILER_FLAG_CPP0X": "-std=c++0x", 
+          "CK_RANLIB": "llvm-ranlib", 
+          "CK_FLAGS_CREATE_ASM": "-S", 
+          "CK_COMPILER_PREFIX": ""
+        }, 
+        "tags": [
+          "32bits", 
+          "compiler", 
+          "host-os-linux-32", 
+          "lang-c", 
+          "lang-cpp", 
+          "llvm", 
+          "target-os-linux-32", 
+          "v3", 
+          "v3.8", 
+          "v3.8.1"
+        ], 
+        "customize": {
+          "can_strip_dynamic_lib": "yes", 
+          "build_dir_name": "llvm", 
+          "skip_path": "yes", 
+          "tool_prefix_configured": "yes", 
+          "tool_prefix": "", 
+          "tool_postfix_configured": "yes", 
+          "env_prefix": "CK_ENV_COMPILER_LLVM", 
+          "soft_version_cmd": {
+            "win": " --version > $#filename#$ 2>&1", 
+            "linux": "--version > $#filename#$ 2>&1"
+          }, 
+          "soft_path_example": {
+            "win": "C:\\Program Files (x86)\\llvm\\bin\\clang.exe", 
+            "linux": "/usr/bin/clang"
+          }, 
+          "languages": [
+            "C", 
+            "CPP"
+          ], 
+          "version": "3.8.1", 
+          "soft_file_from_host_os": "yes", 
+          "path_lib": "/home/fursin/fggprogs/clang+llvm-3.8.1-armv7a-linux-gnueabihf/lib", 
+          "tool_postfix": "-3.8", 
+          "soft_file": {
+            "win": "clang.exe", 
+            "linux": "clang"
+          }, 
+          "search_numeric_ext_on_linux": "yes", 
+          "retarget": "no", 
+          "add_to_path": "yes", 
+          "add_only_with_version": "yes", 
+          "version_split": [
+            3, 
+            8, 
+            1
+          ], 
+          "limit_recursion_dir_search": {
+            "win": 4, 
+            "linux": 3
+          }, 
+          "check_that_exists": "yes", 
+          "ck_version": 10, 
+          "path_include": "/home/fursin/fggprogs/clang+llvm-3.8.1-armv7a-linux-gnueabihf/include", 
+          "only_for_target_os_tags": [
+            "windows", 
+            "linux"
+          ], 
+          "full_path": "/home/fursin/fggprogs/clang+llvm-3.8.1-armv7a-linux-gnueabihf/bin/clang-3.8"
+        }, 
+        "setup": {
+          "version_split": [
+            3, 
+            8, 
+            1
+          ], 
+          "target_os_bits": "32", 
+          "version": "3.8.1", 
+          "host_os_uoa": "fb525e34243f49c1", 
+          "target_os_uoa": "fb525e34243f49c1"
+        }, 
+        "data_name": "LLVM compiler", 
+        "soft_uoa": "1c2eb494b8ae3bc4", 
+        "deps": {
+          "ndk-gcc": {
+            "local": "yes", 
+            "name": "Android NDK GCC", 
+            "only_for_target_os_tags": [
+              "android"
+            ], 
+            "tags": "compiler,gcc,ndk"
+          }, 
+          "mvsc": {
+            "local": "yes", 
+            "name": "microsoft C compiler", 
+            "only_for_target_os_tags": [
+              "windows"
+            ], 
+            "tags": "microsoft,compiler"
+          }
+        }, 
+        "soft_alias": "compiler.llvm"
+      }, 
+      "ver": "3.8.1", 
+      "local": "yes"
+    }
+  }, 
+  "fail": "no", 
+  "skip_local": "yes", 
+  "choices_desc": {
+    "##compiler_flags#fno-merge-all-constants": {
+      "sort": 10180, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fno-merge-all-constants", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fno-merge-all-constants"
+    }, 
+    "##compiler_flags#fvisibility-inlines-hidden": {
+      "sort": 10490, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fvisibility-inlines-hidden", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fvisibility-inlines-hidden"
+    }, 
+    "##compiler_flags#fvectorize": {
+      "sort": 10467, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fvectorize", 
+        "-fno-vectorize"
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fvectorize"
+    }, 
+    "##dataset_file": {
+      "has_choice": "yes", 
+      "sort": 1100, 
+      "tags": [
+        "setup"
+      ], 
+      "type": "text", 
+      "choices": [
+        "data.y4m"
+      ]
+    }, 
+    "##compiler_flags#fno-rtti": {
+      "sort": 10200, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fno-rtti", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fno-rtti"
+    }, 
+    "##compiler_flags#ftemplate-backtrace-limit": {
+      "sort": 30020, 
+      "explore_stop": 800, 
+      "tags": [
+        "basic", 
+        "parametric", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "explore_start": 200, 
+      "explore_prefix": "-ftemplate-backtrace-limit=", 
+      "type": "integer", 
+      "explore_step": 1, 
+      "desc": "compiler flag: -ftemplate-backtrace-limit"
+    }, 
+    "##compiler_flags#mrelax-all": {
+      "sort": 10909, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-mrelax-all", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -mrelax-all"
+    }, 
+    "##compiler_flags#ffp-contract": {
+      "sort": 31000, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-ffp-contract=off", 
+        "-ffp-contract=fast", 
+        "-ffp-contract=on"
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -ffp-contract"
+    }, 
+    "##compiler_flags#fno-elide-constructors": {
+      "sort": 10130, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fno-elide-constructors", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fno-elide-constructors"
+    }, 
+    "##compiler_flags#fslp-vectorize": {
+      "sort": 10902, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fslp-vectorize", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fslp-vectorize"
+    }, 
+    "##compiler_flags#mstackrealign": {
+      "sort": 10912, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-mstackrealign", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -mstackrealign"
+    }, 
+    "##compiler_flags#arch-mcrc": {
+      "sort": 30993, 
+      "tags": [
+        "basic", 
+        "optimization", 
+        "arm-specific"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-mcrc", 
+        "-mno-crc"
+      ], 
+      "type": "text", 
+      "desc": "compiler flag (ARM specific): -mcrc"
+    }, 
+    "##compiler_flags#fno-inline": {
+      "sort": 10150, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fno-inline", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fno-inline"
+    }, 
+    "##compiler_flags#base_opt": {
+      "sort": 10000, 
+      "tags": [
+        "base", 
+        "basic", 
+        "optimization"
+      ], 
+      "default": "", 
+      "choice": [
+        "-O3", 
+        "-O1", 
+        "-O2"
+      ], 
+      "type": "text", 
+      "desc": "base compiler flag"
+    }, 
+    "##compiler_flags#fmerge-all-constants": {
+      "sort": 10050, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fmerge-all-constants", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fmerge-all-constants"
+    }, 
+    "##compiler_env_uoa": {
+      "has_choice": "yes", 
+      "sort": 2000, 
+      "type": "uoa", 
+      "choices": [
+        "8e66a1d34e9e93ea"
+      ]
+    }, 
+    "##compiler_flags#fno-signed-char": {
+      "sort": 10240, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fno-signed-char", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fno-signed-char"
+    }, 
+    "##compiler_flags#flto": {
+      "sort": 10468, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-flto=full", 
+        "-flto=thin", 
+        "-fno-lto"
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -flto"
+    }, 
+    "##compiler_flags#arch-ffixed-r9": {
+      "sort": 30996, 
+      "tags": [
+        "basic", 
+        "optimization", 
+        "arm-specific"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-ffixed-r9", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag (ARM specific): -ffixed-r9"
+    }, 
+    "##compiler_flags#arch-munaligned-access": {
+      "sort": 30992, 
+      "tags": [
+        "basic", 
+        "optimization", 
+        "arm-specific"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-munaligned-access", 
+        "-mno-unaligned-access"
+      ], 
+      "type": "text", 
+      "desc": "compiler flag (ARM specific): -munaligned-access"
+    }, 
+    "##compiler_flags#fmax-type-align": {
+      "sort": 30002, 
+      "explore_stop": 32, 
+      "tags": [
+        "basic", 
+        "parametric", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "explore_start": 1, 
+      "explore_prefix": "-fmax-type-align=", 
+      "type": "integer", 
+      "explore_step": 1, 
+      "desc": "compiler flag: -fmax-type-align="
+    }, 
+    "##compiler_flags#fshort-enums": {
+      "sort": 10390, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fshort-enums", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fshort-enums"
+    }, 
+    "##compiler_flags#funroll-loops": {
+      "sort": 10460, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-funroll-loops", 
+        "-fno-unroll-loops"
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -funroll-loops"
+    }, 
+    "##compiler_flags#ftree-vectorize": {
+      "sort": 10440, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-ftree-vectorize", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -ftree-vectorize"
+    }, 
+    "##compiler_flags#msoft-float": {
+      "sort": 10580, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-msoft-float", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -msoft-float"
+    }, 
+    "##compiler_flags#fno-builtin": {
+      "sort": 10080, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fno-builtin", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fno-builtin"
+    }, 
+    "##compiler_flags#fomit-frame-pointer ": {
+      "sort": 10330, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fomit-frame-pointer ", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fomit-frame-pointer "
+    }, 
+    "##compiler_flags#fno-signed-zeros": {
+      "sort": 10250, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fno-signed-zeros", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fno-signed-zeros"
+    }, 
+    "##compiler_flags#fslp-vectorize-aggressive": {
+      "sort": 10901, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fslp-vectorize-aggressive", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fslp-vectorize-aggressive"
+    }, 
+    "##compiler_flags#arch-mtune-native": {
+      "sort": 30991, 
+      "tags": [
+        "basic", 
+        "optimization", 
+        "cpu-specific"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-mtune=native", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag (CPU specific): -mtune=native"
+    }, 
+    "##compiler_flags#foptimize-sibling-calls": {
+      "sort": 10340, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-foptimize-sibling-calls", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -foptimize-sibling-calls"
+    }, 
+    "##compiler_flags#fno-autolink": {
+      "sort": 10070, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fno-autolink", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fno-autolink"
+    }, 
+    "##compiler_flags#fno-assume-sane-operator-new": {
+      "sort": 10060, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fno-assume-sane-operator-new", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fno-assume-sane-operator-new"
+    }, 
+    "##compiler_flags#mno-global-merge": {
+      "sort": 10550, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-mno-global-merge", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -mno-global-merge"
+    }, 
+    "##compiler_flags#ffinite-math-only": {
+      "sort": 10030, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-ffinite-math-only", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -ffinite-math-only"
+    }, 
+    "##compiler_flags#arch-mno-movt": {
+      "sort": 30995, 
+      "tags": [
+        "basic", 
+        "optimization", 
+        "arm-specific"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-mno-movt", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag (ARM specific): -mno-movt"
+    }, 
+    "##compiler_flags#fno-constant-cfstrings": {
+      "sort": 10100, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fno-constant-cfstrings", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fno-constant-cfstrings"
+    }, 
+    "##compiler_flags#mstrict-align": {
+      "sort": 10590, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-mstrict-align", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -mstrict-align"
+    }, 
+    "##compiler_flags#fmodules-prune-after": {
+      "sort": 30000, 
+      "explore_stop": 120, 
+      "tags": [
+        "basic", 
+        "parametric", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "explore_start": 10, 
+      "explore_prefix": "-fmodules-prune-after=", 
+      "type": "integer", 
+      "explore_step": 1, 
+      "desc": "compiler flag: -fmodules-prune-after"
+    }, 
+    "##compiler_flags#fstrict-aliasing": {
+      "sort": 10400, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fstrict-aliasing", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fstrict-aliasing"
+    }, 
+    "##compiler_flags#mno-long-calls": {
+      "sort": 10907, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-mno-long-calls", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -mno-long-calls"
+    }, 
+    "##compiler_flags#fsched-interblock": {
+      "sort": 10380, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fsched-interblock", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fsched-interblock"
+    }, 
+    "##compiler_flags#mglobal-merge": {
+      "sort": 10905, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-mglobal-merge", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -mglobal-merge"
+    }, 
+    "##compiler_flags#ftree-slp-vectorize": {
+      "sort": 10430, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-ftree-slp-vectorize", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -ftree-slp-vectorize"
+    }, 
+    "##compiler_flags#mlong-calls": {
+      "sort": 10906, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-mlong-calls", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -mlong-calls"
+    }, 
+    "##compiler_flags#fno-sanitize-stats": {
+      "sort": 10210, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fno-sanitize-stats", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fno-sanitize-stats"
+    }, 
+    "##compiler_flags#fshort-wchar": {
+      "sort": 10903, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fshort-wchar", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fshort-wchar"
+    }, 
+    "##compiler_flags#fmodules-prune-interval": {
+      "sort": 30010, 
+      "explore_stop": 120, 
+      "tags": [
+        "basic", 
+        "parametric", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "explore_start": 10, 
+      "explore_prefix": "-fmodules-prune-interval=", 
+      "type": "integer", 
+      "explore_step": 1, 
+      "desc": "compiler flag: -fmodules-prune-interval"
+    }, 
+    "##compiler_flags#fno-diagnostics-fixit-info": {
+      "sort": 10110, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fno-diagnostics-fixit-info", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fno-diagnostics-fixit-info"
+    }, 
+    "##compiler_flags#mno-implicit-float": {
+      "sort": 10908, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-mno-implicit-float", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -mno-implicit-float"
+    }, 
+    "##compiler_flags#mstack-alignment": {
+      "sort": 30001, 
+      "explore_stop": 32, 
+      "tags": [
+        "basic", 
+        "parametric", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "explore_start": 1, 
+      "explore_prefix": "-mstack-alignment=", 
+      "type": "integer", 
+      "explore_step": 1, 
+      "desc": "compiler flag: -mstack-alignment="
+    }, 
+    "##compiler_flags#fassociative-math": {
+      "sort": 10010, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fassociative-math", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fassociative-math"
+    }, 
+    "##compiler_flags#fwrapv": {
+      "sort": 10500, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fwrapv", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fwrapv"
+    }, 
+    "##compiler_flags#fno-unroll-loops": {
+      "sort": 10290, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fno-unroll-loops", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fno-unroll-loops"
+    }, 
+    "##compiler_flags#ffast-math": {
+      "sort": 10020, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-ffast-math", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -ffast-math"
+    }, 
+    "##compiler_flags#fno-lax-vector-conversions": {
+      "sort": 10160, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fno-lax-vector-conversions", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fno-lax-vector-conversions"
+    }, 
+    "##compiler_flags#fstrict-enums": {
+      "sort": 10410, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fstrict-enums", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fstrict-enums"
+    }, 
+    "##compiler_flags#freroll-loops": {
+      "sort": 10465, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-freroll-loops", 
+        "-fno-reroll-loops"
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -freroll-loops"
+    }, 
+    "##compiler_flags#fstrict-vtable-pointers": {
+      "sort": 10904, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-fstrict-vtable-pointers", 
+        ""
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: -fstrict-vtable-pointers"
+    }, 
+    "##compiler_flags#trigraphs": {
+      "sort": 10466, 
+      "tags": [
+        "basic", 
+        "boolean", 
+        "optimization"
+      ], 
+      "default": "", 
+      "can_omit": "yes", 
+      "choice": [
+        "-trigraphs", 
+        "-no-trigraphs"
+      ], 
+      "type": "text", 
+      "desc": "compiler flag: trigraphs"
+    }
+  }, 
+  "speed": "yes"
+}

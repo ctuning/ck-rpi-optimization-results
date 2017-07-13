@@ -1,0 +1,15 @@
+{
+  "backup_data_uid": "166a8443e880ea8d",
+  "backup_module_uid": "bc0409fb61f0aa82",
+  "backup_module_uoa": "experiment",
+  "control": {
+    "engine": "CK",
+    "iso_datetime": "2017-07-09T19:44:39.184339",
+    "version": [
+      "1",
+      "9",
+      "1"
+    ]
+  },
+  "data_name": "rpi3-zlib-decode-clang381-main"
+}

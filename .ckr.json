@@ -1,0 +1,10 @@
+{
+  "data_uoa": "ck-rpi-optimization-results",
+  "data_uid": "147d284ae646bb5a",
+  "data_alias": "ck-rpi-optimization-results",
+  "data_name": "ck-rpi-optimization-results",
+  "dict": {
+    "shared": "git",
+    "url": "https://github.com/ctuning/ck-rpi-optimization-results"
+  }
+}

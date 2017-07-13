@@ -1,0 +1,15 @@
+{
+  "backup_data_uid": "573db3c041a38224",
+  "backup_module_uid": "bc0409fb61f0aa82",
+  "backup_module_uoa": "experiment",
+  "control": {
+    "engine": "CK",
+    "iso_datetime": "2017-07-10T19:53:35.196709",
+    "version": [
+      "1",
+      "9",
+      "1"
+    ]
+  },
+  "data_name": "rpi3-zlib-decode-gcc7-150b-rnd-frontier"
+}

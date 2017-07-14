@@ -1,0 +1,15 @@
+{
+  "backup_data_uid": "cb3b24542864dc4e",
+  "backup_module_uid": "bc0409fb61f0aa82",
+  "backup_module_uoa": "experiment",
+  "control": {
+    "engine": "CK",
+    "iso_datetime": "2017-07-13T19:39:38.983380",
+    "version": [
+      "1",
+      "9",
+      "1"
+    ]
+  },
+  "data_name": "rpi3-susan-corners-gcc7-150bpc-rnd"
+}

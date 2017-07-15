@@ -57,6 +57,7 @@
     "no_state_check": "yes", 
     "program_tags": "", 
     "repeat": 100, 
+    "skip_best_base_flag": "yes", 
     "target": "", 
     "target_os": "linux-32", 
     "target_os_bits": "32"

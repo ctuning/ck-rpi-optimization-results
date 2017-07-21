@@ -1,0 +1,15 @@
+{
+  "backup_data_uid": "85a9d07941d187e4", 
+  "backup_module_uid": "bc0409fb61f0aa82", 
+  "backup_module_uoa": "experiment", 
+  "control": {
+    "engine": "CK", 
+    "iso_datetime": "2017-07-19T22:07:40.670045", 
+    "version": [
+      "1", 
+      "9", 
+      "1"
+    ]
+  }, 
+  "data_name": "rpi3-zlib-encode-gcc4-150b-rnd-frontier-pruned1"
+}

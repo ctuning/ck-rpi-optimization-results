@@ -1,0 +1,249 @@
+{
+  "choices": {
+    "cmd_key": "encode", 
+    "compile_type": "dynamic", 
+    "compiler_description_uoa": "gcc-7.1.0-auto", 
+    "compiler_flags": {}, 
+    "cpu_freq": "max", 
+    "data_uoa": "zlib", 
+    "dataset_file": "data.y4m", 
+    "dataset_uoa": "video-raw-0001", 
+    "device_cfg": {}, 
+    "device_id": "", 
+    "flags": "-Os -flto -fno-associative-math -fauto-inc-dec -fno-branch-probabilities -fno-branch-target-load-optimize2 -fno-btr-bb-exclusive -fno-check-data-deps -fno-combine-stack-adjustments -fno-conserve-stack -fno-compare-elim -fcprop-registers -fcrossjumping -fcse-follow-jumps -fno-cse-skip-blocks -fno-cx-fortran-rules -fno-cx-limited-range -fno-data-sections -fdce -fno-delayed-branch -fdelete-null-pointer-checks -fno-devirtualize -fno-devirtualize-speculatively -fno-devirtualize-at-ltrans -fdse -fno-early-inlining -fno-ipa-sra -fno-expensive-optimizations -fno-finite-math-only -fno-float-store -fno-forward-propagate -fno-function-sections -fgcse -fno-gcse-after-reload -fno-gcse-las -fgcse-lm -fno-graphite-identity -fno-gcse-sm -fif-conversion -fif-conversion2 -finline-functions-called-once -finline-small-functions -fipa-cp -fno-ipa-cp-clone -fno-ipa-cp-alignment -fno-ipa-pta -fno-ipa-pure-const -fno-ipa-reference -fno-ipa-icf -fira-hoist-pressure -fno-ira-loop-pressure -fira-share-spill-slots -fno-isolate-erroneous-paths-dereference -fno-isolate-erroneous-paths-attribute -fno-ivopts -fno-keep-inline-functions -fno-keep-static-consts -fno-loop-block -fno-loop-interchange -fno-loop-strip-mine -fno-loop-unroll-and-jam -fno-loop-nest-optimize -fno-loop-parallelize-all -flra-remat -fno-merge-all-constants -fno-merge-constants -fno-modulo-sched -fno-modulo-sched-allow-regmoves -fmove-loop-invariants -fno-defer-pop -fno-function-cse -fguess-branch-probability -finline -fno-math-errno -fno-peephole -fpeephole2 -fno-signed-zeros -fno-trapping-math -fno-zero-initialized-in-bss -fomit-frame-pointer -foptimize-sibling-calls -fno-partial-inlining -fno-peel-loops -fno-predictive-commoning -fno-prefetch-loop-arrays -fno-reciprocal-math -fno-ree -fno-rename-registers -freorder-blocks -fno-reorder-blocks-and-partition -fno-reorder-functions -frerun-cse-after-loop -fno-reschedule-modulo-scheduled-loops -fno-rounding-math -fno-sched2-use-superblocks -fno-sched-pressure -fno-sched-spec-load -fno-sched-spec-load-dangerous -fno-sched-group-heuristic -fsched-critical-path-heuristic -fno-sched-spec-insn-heuristic -fno-sched-rank-heuristic -fno-sched-last-insn-heuristic -fno-sched-dep-count-heuristic -fno-schedule-fusion -fno-schedule-insns -fschedule-insns2 -fsection-anchors -fno-selective-scheduling -fno-selective-scheduling2 -fno-sel-sched-pipelining -fno-sel-sched-pipelining-outer-loops -fno-semantic-interposition -fno-shrink-wrap -fno-signaling-nans -fno-split-wide-types -fssa-phiopt -fno-stdarg-opt -fstrict-aliasing -fno-strict-overflow -fno-thread-jumps -fno-tracer -ftree-bit-ccp -fno-tree-builtin-call-dce -ftree-ccp -fno-tree-ch -ftree-coalesce-vars -ftree-copy-prop -fno-tree-copyrename -ftree-dce -ftree-dominator-opts -ftree-dse -fno-tree-forwprop -fno-tree-fre -fno-tree-loop-if-convert -fno-tree-loop-if-convert-stores -fno-tree-loop-im -fno-tree-loop-distribution -fno-tree-loop-distribute-patterns -fno-tree-loop-ivcanon -fno-tree-loop-linear -fno-tree-loop-optimize -fno-tree-loop-vectorize -fno-tree-pre -fno-tree-partial-pre -fno-tree-pta -fno-tree-reassoc -ftree-sink -ftree-slsr -ftree-sra -fno-tree-switch-conversion -fno-tree-tail-merge -ftree-ter -fno-tree-vectorize -ftree-vrp -fno-unroll-all-loops -fno-unroll-loops -fno-unsafe-math-optimizations -fno-unswitch-loops -fipa-ra -fno-variable-expansion-in-unroller -fno-vect-cost-model -fno-web -fno-whole-program -fno-wpa -fno-use-linker-plugin -fexcess-precision=standard -ffp-contract=off -fira-algorithm=CB -fira-region=one -flto-partition=none", 
+    "gpu_freq": "max", 
+    "host_os": "linux-32", 
+    "module_uoa": "b0ac08fe1d3c2615", 
+    "no_state_check": "yes", 
+    "repeat": 10, 
+    "target": "", 
+    "target_os": "linux-32", 
+    "target_os_bits": "32"
+  }, 
+  "choices_order": [], 
+  "features": {
+    "compiler_version": {
+      "list": [
+        7, 
+        1, 
+        0
+      ], 
+      "raw": [], 
+      "str": "7.1.0"
+    }, 
+    "dataset": {
+      "total_size": 5703338
+    }, 
+    "number_of_selected_compiler_flags": 0, 
+    "platform": {
+      "cpu": {
+        "all_freqs": {
+          "0": [
+            600000, 
+            1200000
+          ], 
+          "1": [
+            600000, 
+            1200000
+          ], 
+          "2": [
+            600000, 
+            1200000
+          ], 
+          "3": [
+            600000, 
+            1200000
+          ]
+        }, 
+        "cpu_abi": "", 
+        "cpu_features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+        "current_freq": {
+          "0": 1200.0, 
+          "1": 1200.0, 
+          "2": 1200.0, 
+          "3": 1200.0
+        }, 
+        "max_freq": {
+          "0": 1200.0, 
+          "1": 1200.0, 
+          "2": 1200.0, 
+          "3": 1200.0
+        }, 
+        "name": "BCM2709", 
+        "num_proc": "4", 
+        "sub_name": "ARMv7 Processor rev 4 (v7l)", 
+        "workload_automation": {
+          "device_config": {
+            "core_clusters": [
+              0, 
+              0, 
+              0, 
+              1
+            ], 
+            "core_names": [
+              "ARMv7 Processor rev 4 (v7l)", 
+              "ARMv7 Processor rev 4 (v7l)", 
+              "ARMv7 Processor rev 4 (v7l)", 
+              "BCM2709"
+            ]
+          }
+        }
+      }, 
+      "cpu_misc": {
+        "0": {
+          "BogoMIPS": "76.80", 
+          "CPU architecture": "7", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd03", 
+          "CPU revision": "4", 
+          "CPU variant": "0x0", 
+          "Features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "all_freqs": [
+            "0", 
+            "0"
+          ], 
+          "ck_cpu_name": "ARMv7 Processor rev 4 (v7l)", 
+          "ck_cpu_subname": "ARMv7 Processor rev 4 (v7l)", 
+          "cpu_features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "cur_freq": 1200.0, 
+          "max_freq": 1200.0, 
+          "model name": "ARMv7 Processor rev 4 (v7l)", 
+          "processor": "0"
+        }, 
+        "1": {
+          "BogoMIPS": "76.80", 
+          "CPU architecture": "7", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd03", 
+          "CPU revision": "4", 
+          "CPU variant": "0x0", 
+          "Features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "all_freqs": [
+            "1", 
+            "1"
+          ], 
+          "ck_cpu_name": "ARMv7 Processor rev 4 (v7l)", 
+          "ck_cpu_subname": "ARMv7 Processor rev 4 (v7l)", 
+          "cpu_features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "cur_freq": 1200.0, 
+          "max_freq": 1200.0, 
+          "model name": "ARMv7 Processor rev 4 (v7l)", 
+          "processor": "1"
+        }, 
+        "2": {
+          "BogoMIPS": "76.80", 
+          "CPU architecture": "7", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd03", 
+          "CPU revision": "4", 
+          "CPU variant": "0x0", 
+          "Features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "all_freqs": [
+            "2", 
+            "2"
+          ], 
+          "ck_cpu_name": "ARMv7 Processor rev 4 (v7l)", 
+          "ck_cpu_subname": "ARMv7 Processor rev 4 (v7l)", 
+          "cpu_features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "cur_freq": 1200.0, 
+          "max_freq": 1200.0, 
+          "model name": "ARMv7 Processor rev 4 (v7l)", 
+          "processor": "2"
+        }, 
+        "3": {
+          "BogoMIPS": "76.80", 
+          "CPU architecture": "7", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd03", 
+          "CPU revision": "4", 
+          "CPU variant": "0x0", 
+          "Features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "Hardware": "BCM2709", 
+          "Revision": "a02082", 
+          "Serial": "00000000e27f2dc3", 
+          "all_freqs": [
+            "3", 
+            "3"
+          ], 
+          "ck_cpu_name": "BCM2709", 
+          "ck_cpu_subname": "ARMv7 Processor rev 4 (v7l)", 
+          "cpu_features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "cur_freq": 1200.0, 
+          "max_freq": 1200.0, 
+          "model name": "ARMv7 Processor rev 4 (v7l)", 
+          "processor": "3"
+        }
+      }, 
+      "cpu_new_format": "", 
+      "cpu_unique": [
+        {
+          "BogoMIPS": "76.80", 
+          "CPU architecture": "7", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd03", 
+          "CPU revision": "4", 
+          "CPU variant": "0x0", 
+          "Features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "all_freqs": [
+            "0", 
+            "0"
+          ], 
+          "ck_cpu_name": "ARMv7 Processor rev 4 (v7l)", 
+          "ck_cpu_subname": "ARMv7 Processor rev 4 (v7l)", 
+          "cpu_features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "cur_freq": 1200.0, 
+          "max_freq": 1200.0, 
+          "model name": "ARMv7 Processor rev 4 (v7l)", 
+          "processor": "0"
+        }, 
+        {
+          "BogoMIPS": "76.80", 
+          "CPU architecture": "7", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd03", 
+          "CPU revision": "4", 
+          "CPU variant": "0x0", 
+          "Features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "Hardware": "BCM2709", 
+          "Revision": "a02082", 
+          "Serial": "00000000e27f2dc3", 
+          "all_freqs": [
+            "3", 
+            "3"
+          ], 
+          "ck_cpu_name": "BCM2709", 
+          "ck_cpu_subname": "ARMv7 Processor rev 4 (v7l)", 
+          "cpu_features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "cur_freq": 1200.0, 
+          "max_freq": 1200.0, 
+          "model name": "ARMv7 Processor rev 4 (v7l)", 
+          "processor": "3"
+        }
+      ], 
+      "gpu": {
+        "name": "", 
+        "vendor": ""
+      }, 
+      "gpu_misc": {}, 
+      "os": {
+        "abi": "armv7l", 
+        "bits": "32", 
+        "ck_os_base_uoa": "", 
+        "ck_os_uoa": "linux-32", 
+        "name": "Raspbian GNU/Linux 8 (jessie)", 
+        "name_long": "Linux-4.4.50-v7+-armv7l-with-debian-8.0", 
+        "name_short": "Linux 4.4.50", 
+        "serial_number": ""
+      }, 
+      "os_misc": {}, 
+      "platform": {
+        "model": "Raspberry Pi 3 Model B", 
+        "name": "Raspberry Pi (Raspberry Pi 3 Model B)", 
+        "vendor": "Sony"
+      }, 
+      "platform_misc": {}
+    }, 
+    "statistical_repetitions": 4
+  }, 
+  "sub_points": 1
+}

@@ -8,7 +8,7 @@
     "url": "https://github.com/ctuning/ck-rpi-optimization-results",
      "repo_deps": [
        {
-         "repo_uoa": "ck-rpi-optimization"
+         "repo_uoa": "ck-rpi-optimization",
          "repo_url": "http://github.com/dividiti/ck-rpi-optimization"
        },
        {

@@ -1,0 +1,27 @@
+{
+  "experiment_1_pipeline_update": {
+    "choices_order": [
+      [
+        "##compiler_flags#base_opt"
+      ]
+    ],
+    "choices_selection": [
+      {
+        "notags": "",
+        "choice": ["-O3"],
+        "type": "loop"
+      }
+    ]
+  },
+
+  "customize_solution_conditions": [
+    [
+      "##characteristics#run#execution_time_kernel_0$#objective#$",
+      "_imp",
+      ">",
+      0.95
+    ]
+  ],
+
+  "iterations": -1
+}

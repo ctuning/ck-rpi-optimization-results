@@ -1,0 +1,44 @@
+{
+  "experiment_module_uoa":"experiment",
+
+  "data_uoa_list":["rpi3-susan-corners-gcc7-300-rnd",
+                   "rpi3-susan-corners-gcc7-300-rnd-frontier",
+                   "rpi3-susan-corners-gcc7-main",
+                   "rpi3-susan-corners-clang381-main",
+                   "rpi3-susan-corners-gcc4-300-rnd-frontier"],
+
+  "flat_keys_list":[
+      "##characteristics#compile#binary_size#min",
+      "##characteristics#run#execution_time_kernel_0#center",
+      "##characteristics#run#execution_time_kernel_0#halfrange"
+  ],
+
+  "plot_type":"mpl_2d_scatter",
+  "display_x_error_bar":"no",
+  "display_y_error_bar":"yes",
+
+  "title":"Powered by Collective Knowledge",
+
+  "axis_x_desc":"Binary size (bytes)",
+  "axis_y_desc":"Execution time (sec.)",
+
+  "plot_grid":"yes",
+
+  "xmin":29500,
+  "xmax":38000,
+
+  "ymin":2.5,
+  "ymax":5.5,
+
+  "mpl_image_size_x":"12",
+  "mpl_image_size_y":"6",
+  "mpl_image_dpi":"100",
+
+  "bound_lines":"no",
+
+  "point_style":{"4":{"size":10, "color":"#dc3912", "frontier":"yes", "line_style":"--", "remove_permanent":"yes", "reuse_dims":"yes", "capsize":2},
+                 "3":{"size":40, "elinewidth":"7", "color":"#FF7F00", "fmt":".", "capsize":2},
+                 "2":{"size":40, "elinewidth":"7", "color":"#000000", "fmt":".", "capsize":2},
+                 "1":{"size":10, "color":"#7f1010", "frontier":"yes", "line_style":"--", "remove_permanent":"yes", "reuse_dims":"yes", "capsize":2},
+                 "0":{"size":40, "color":"#3366cc", "capsize":2}}
+}

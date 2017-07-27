@@ -1,0 +1,19 @@
+ {
+  "url_base":"http://cknowledge.org/repo/web.php?",
+
+  "from_repo":"remote-ck",
+  "change_module_uoa":"experiment.tune.compiler.flags.gcc.e",
+
+  "data_uoa":"d24a4fde9f120e10",
+
+  "out":"json_file",
+  "out_file":"6fa4e9181faa1385.json",
+
+  "save_graph_title":" ",
+  "save_graph_axis_x_desc":"Distinct optimization solutions (highest improvement vs worst degradation)",
+  "save_graph_axis_y_desc":"Execution time speedup over -O3 (variation < 3%)",
+  "save_graph_axis_x_rotation":-70,
+  "save_font_size":12,
+
+  "save_to_file":"6fa4e9181faa1385.pdf"
+ }

@@ -1,0 +1,51 @@
+    \begin{tabular}{|r|p{4.5in}|p{0.5in}|p{0.5in}|}
+     \hline
+     \textbf{Solution} & \textbf{Pruned flags (complexity reduction)} & \textbf{Best species} & \textbf{Worst species} \\ 
+     \hline
+      1 & -O3 -flto & 6 & 3 \\
+     \hline
+      2 & -O3 -fno-inline -flto & 1 & 1 \\
+     \hline
+      3 & -O3 -fno-if-conversion2 -funroll-loops & 2 & 1 \\
+     \hline
+      4 & -O3 -fpeel-loops -ftracer & 1 & 3 \\
+     \hline
+      5 & -O3 -floop-nest-optimize -fno-sched-interblock -fno-tree-copy-prop -funroll-all-loops & 4 & 1 \\
+     \hline
+      6 & -O3 -funroll-loops & 2 & 3 \\
+     \hline
+      7 & -O3 -floop-strip-mine -funroll-loops & 1 & 1 \\
+     \hline
+      8 & -O3 -fno-inline -fno-merge-all-constants -fno-tree-ccp -funroll-all-loops & 2 & 3 \\
+     \hline
+      9 & -O3 -fno-tree-loop-if-convert -funroll-all-loops & 3 & 2 \\
+     \hline
+      10 & -O3 -fno-section-anchors -fselective-scheduling2 -fno-tree-forwprop -funroll-all-loops & 2 & 2 \\
+     \hline
+      11 & -O3 -fno-ivopts -funroll-loops & 4 & 1 \\
+     \hline
+      12 & -O3 -fno-tree-ch -funroll-all-loops & 1 & 1 \\
+     \hline
+      13 & -O3 -fno-move-loop-invariants -fno-tree-ch -funroll-loops & 1 & 2 \\
+     \hline
+      14 & -O3 -fira-algorithm=priority -fno-ivopts & 1 & 2 \\
+     \hline
+      15 & -O3 -fno-ivopts & 2 & 4 \\
+     \hline
+      16 & -O3 -fno-sched-spec -fno-tree-ch & 1 & 2 \\
+     \hline
+      17 & -O3 -fno-ivopts -fselective-scheduling -fwhole-program & 1 & 1 \\
+     \hline
+      18 & -O3 -fno-omit-frame-pointer -fno-tree-loop-optimize & 1 & 4 \\
+     \hline
+      19 & -O3 -fno-auto-inc-dec -ffinite-math-only & 1 & 2 \\
+     \hline
+      20 & -O3 -fno-guess-branch-probability -fira-loop-pressure -fno-toplevel-reorder & 1 & 5 \\
+     \hline
+      21 & -O3 -fselective-scheduling2 -fno-tree-pre & 2 & 2 \\
+     \hline
+      22 & -O3 -fgcse-sm -fno-move-loop-invariants -fno-tree-forwprop -funroll-all-loops -fno-web & 1 & 0 \\
+     \hline
+      23 & -O3 -fno-schedule-insns -fselective-scheduling2 & 1 & 2 \\
+     \hline
+    \end{tabular}

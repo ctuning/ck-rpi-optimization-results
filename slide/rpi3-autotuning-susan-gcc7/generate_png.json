@@ -1,12 +1,13 @@
 {
   "experiment_module_uoa":"experiment",
 
-  "data_uoa_list":["rpi3-susan-corners-gcc4-300-rnd", 
-                   "rpi3-susan-corners-gcc4-300-rnd-frontier", 
-                   "rpi3-susan-corners-gcc4-main", 
-                   "rpi3-susan-corners-gcc4-main-o3", 
+  "data_uoa_list":["rpi3-susan-corners-gcc7-300-rnd", 
+                   "rpi3-susan-corners-gcc7-300-rnd-frontier", 
+                   "rpi3-susan-corners-gcc7-main", 
+                   "rpi3-susan-corners-gcc7-main-o3", 
                    "rpi3-susan-corners-clang381-main",
-                   "rpi3-susan-corners-clang381-main-o3"],
+                   "rpi3-susan-corners-clang381-main-o3",
+                   "rpi3-susan-corners-gcc4-300-rnd-frontier"],
 
   "flat_keys_list":[
       "##characteristics#compile#binary_size#min",
@@ -31,18 +32,19 @@
 
   "bound_lines":"no",
 
-  "point_style":{"5":{"size":40, "elinewidth":"2", "color":"#3F0000", "fmt":"x", "capsize":4},
+  "point_style":{"6":{"size":10, "color":"#dc3912", "frontier":"yes", "line_style":"--", "remove_permanent":"yes", "reuse_dims":"yes", "capsize":2},
+                 "5":{"size":40, "elinewidth":"2", "color":"#3F0000", "fmt":"x", "capsize":4},
                  "4":{"size":40, "elinewidth":"2", "color":"#6F0000", "fmt":"x", "capsize":4},
                  "3":{"size":40, "elinewidth":"2", "color":"#000000", "fmt":".", "capsize":4},
                  "2":{"size":40, "elinewidth":"2", "color":"#004F00", "fmt":".", "capsize":4},
-                 "1":{"size":10, "color":"#dc3912", "frontier":"yes", "line_style":"--", "remove_permanent":"yes", "capsize":2},
+                 "1":{"size":10, "color":"#5f0000", "frontier":"yes", "line_style":"--", "remove_permanent":"yes", "capsize":2},
                  "0":{"size":40, "color":"#6699ff", "capsize":2}},
 
-  "ymin":2,
-  "ymax":12,
+  "xmin":29000,
+  "xmax":38000,
 
-  "xmin":30000,
-  "xmax":60000,
+  "ymin":2.5,
+  "ymax":5.5,
 
   "font_size":16,
 

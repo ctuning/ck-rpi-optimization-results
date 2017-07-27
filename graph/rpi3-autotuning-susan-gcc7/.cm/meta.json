@@ -1,7 +1,7 @@
 {
   "graphs": [
     {
-      "id": "rpi3-autotuning-susan-gcc4-interactive",
+      "id": "rpi3-autotuning-susan-gcc7-interactive",
       "output": "html",
       "params": {
         "add_x_loop": "no",
@@ -9,12 +9,13 @@
         "axis_y_desc": "Execution time (sec.)",
         "bound_lines": "no",
         "data_uoa_list": [
-          "rpi3-susan-corners-gcc4-300-rnd",
-          "rpi3-susan-corners-gcc4-300-rnd-frontier",
-          "rpi3-susan-corners-gcc4-main",
-          "rpi3-susan-corners-gcc4-main-o3",
+          "rpi3-susan-corners-gcc7-300-rnd",
+          "rpi3-susan-corners-gcc7-300-rnd-frontier",
+          "rpi3-susan-corners-gcc7-main",
+          "rpi3-susan-corners-gcc7-main-o3",
           "rpi3-susan-corners-clang381-main",
-          "rpi3-susan-corners-clang381-main-o3"
+          "rpi3-susan-corners-clang381-main-o3",
+          "rpi3-susan-corners-gcc4-300-rnd-frontier"
         ],
         "display_x_error_bar": "no",
         "display_y_error_bar": "yes",
@@ -46,7 +47,7 @@
           },
           "1": {
             "capsize": 2,
-            "color": "#dc3912",
+            "color": "#5f0000",
             "frontier": "no",
             "line_style": "--",
             "remove_permanent": "yes",
@@ -79,34 +80,44 @@
             "elinewidth": "2",
             "fmt": "x",
             "size": 4
+          },
+          "6": {
+            "capsize": 2,
+            "color": "#dc3912",
+            "frontier": "yes",
+            "line_style": "--",
+            "remove_permanent": "yes",
+            "reuse_dims": "yes",
+            "size": 3
           }
         },
         "separate_permanent_to_graphs": "no",
         "size_x": 700,
         "size_y": 450,
         "title": "Powered by Collective Knowledge",
-        "xmax": 60000,
-        "xmin": 30000,
-        "ymax": 12,
-        "ymin": 2
+        "xmax": 38000,
+        "xmin": 29000,
+        "ymax": 5.5,
+        "ymin": 2.5
       },
       "skip_control": "yes",
       "skip_reproduce": "yes"
     },
     {
-      "id": "rpi3-autotuning-susan-gcc4",
+      "id": "rpi3-autotuning-susan-gcc7",
       "params": {
         "add_x_loop": "no",
         "axis_x_desc": "Binary size (bytes)",
         "axis_y_desc": "Execution time (sec.)",
         "bound_lines": "no",
         "data_uoa_list": [
-          "rpi3-susan-corners-gcc4-300-rnd",
-          "rpi3-susan-corners-gcc4-300-rnd-frontier",
-          "rpi3-susan-corners-gcc4-main",
-          "rpi3-susan-corners-gcc4-main-o3",
+          "rpi3-susan-corners-gcc7-300-rnd",
+          "rpi3-susan-corners-gcc7-300-rnd-frontier",
+          "rpi3-susan-corners-gcc7-main",
+          "rpi3-susan-corners-gcc7-main-o3",
           "rpi3-susan-corners-clang381-main",
-          "rpi3-susan-corners-clang381-main-o3"
+          "rpi3-susan-corners-clang381-main-o3",
+          "rpi3-susan-corners-gcc4-300-rnd-frontier"
         ],
         "display_x_error_bar": "no",
         "display_y_error_bar": "yes",
@@ -163,18 +174,31 @@
             "color": "#3F0000",
             "elinewidth": "2",
             "fmt": "x",
-            "size": 40
+            "size": 4
+          },
+          "6": {
+            "capsize": 2,
+            "color": "#dc3912",
+            "frontier": "no",
+            "line_style": "--",
+            "remove_permanent": "yes",
+            "reuse_dims": "yes",
+            "size": 3
           }
         },
-        "save_info_table_to_json_file": "rpi3-autotuning-susan-gcc4-info.json",
-        "save_table_to_csv_file": "rpi3-autotuning-susan-gcc4.csv",
-        "save_table_to_json_file": "rpi3-autotuning-susan-gcc4.json",
+        "save_info_table_to_json_file": "rpi3-autotuning-susan-gcc7-info.json",
+        "save_table_to_csv_file": "rpi3-autotuning-susan-gcc7.csv",
+        "save_table_to_json_file": "rpi3-autotuning-susan-gcc7.json",
         "separate_permanent_to_graphs": "no",
         "size_x": 700,
         "size_y": 400,
-        "title": "Powered by Collective Knowledge"
+        "title": "Powered by Collective Knowledge",
+        "xmax": 38000,
+        "xmin": 29000,
+        "ymax": 5.5,
+        "ymin": 2.5
       }
     }
   ],
-  "name": "Interactive graph for RPi3 auto/crowd-tuning of susan corners workloads using GCC 4.9.2"
+  "name": "Interactive graph for RPi3 auto/crowd-tuning of susan corners workloads using GCC 7.1.0"
 }

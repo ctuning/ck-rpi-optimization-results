@@ -1,0 +1,62 @@
+{
+  "experiment_module_uoa":"experiment",
+
+  "data_uoa_list":["rpi3-zlib-decode-gcc7-150bpc-rnd",
+                   "rpi3-zlib-decode-gcc7-150bpc-rnd-frontier",
+                   "rpi3-zlib-decode-gcc7-main",
+                   "rpi3-zlib-decode-gcc7-main-o3",
+                   "rpi3-zlib-decode-clang381-main",
+                   "rpi3-zlib-decode-clang381-main-o3",
+                   "rpi3-zlib-decode-gcc4-150b-rnd-frontier"],
+
+  "flat_keys_list":[
+      "##characteristics#compile#binary_size#min",
+      "##characteristics#run#execution_time_kernel_0#center",
+      "##characteristics#run#execution_time_kernel_0#halfrange"
+  ],
+
+  "plot_type":"d3_2d_scatter",
+  "display_x_error_bar":"no",
+  "display_y_error_bar":"yes",
+
+  "title":"Powered by Collective Knowledge",
+
+  "axis_x_desc":"Binary size (bytes)",
+  "axis_y_desc":"Execution time (sec.)",
+
+  "plot_grid":"yes",
+
+  "bound_lines":"no",
+
+  "point_style":{"6":{"size":10, "color":"#dc3912", "frontier":"yes", "line_style":"--", "remove_permanent":"yes", "reuse_dims":"yes", "capsize":2},
+                 "5":{"size":40, "elinewidth":"2", "color":"#3F0000", "fmt":"x", "capsize":4},
+                 "4":{"size":40, "elinewidth":"2", "color":"#6F0000", "fmt":"x", "capsize":4},
+                 "3":{"size":40, "elinewidth":"2", "color":"#000000", "fmt":".", "capsize":4},
+                 "2":{"size":40, "elinewidth":"2", "color":"#004F00", "fmt":".", "capsize":4},
+                 "1":{"size":10, "color":"#5f0000", "frontier":"yes", "line_style":"--", "remove_permanent":"yes", "capsize":2},
+                 "0":{"size":40, "color":"#6699ff", "capsize":2}},
+
+  "font_size":16,
+
+  "image_width": 700, 
+  "image_height": 450, 
+
+  "size_x": 700, 
+  "size_y": 450, 
+
+  "bound_lines":"no",
+
+  "separate_permanent_to_graphs":"no",
+
+  "out_repo_uoa":"ck-rpi-optimization-results",
+  "out_data_uoa":"rpi3-autotuning-zlib-decode-gcc7",
+
+  "out_common_meta":{
+                     "name":"Interactive graph for RPi3 auto/crowd-tuning of zlib decode workloads using GCC 7.1.0"
+                    },
+
+  "out_graph_meta":{"output":"html", "skip_control":"yes", "skip_reproduce":"yes"},
+
+  "out_to_file":"rpi3-autotuning-zlib-decode-gcc7-interactive.html",
+  "save_to_style":"rpi3-autotuning-zlib-decode-gcc7-interactive.style"
+}

@@ -1,0 +1,47 @@
+{
+  "experiment_module_uoa":"experiment",
+
+  "data_uoa_list":["rpi3-zlib-encode-gcc4-150bpc-rnd",
+                   "rpi3-zlib-encode-gcc4-150bpc-rnd-frontier",
+                   "rpi3-zlib-encode-gcc4-main",
+                   "rpi3-zlib-encode-gcc4-main-o3",
+                   "rpi3-zlib-encode-clang381-main",
+                   "rpi3-zlib-encode-clang381-main-o3"],
+
+  "flat_keys_list":[
+      "##characteristics#compile#binary_size#min",
+      "##characteristics#run#execution_time_kernel_0#center",
+      "##characteristics#run#execution_time_kernel_0#halfrange"
+  ],
+
+  "plot_type":"mpl_2d_scatter",
+  "display_x_error_bar":"no",
+  "display_y_error_bar":"yes",
+
+  "title":"Powered by Collective Knowledge",
+
+  "axis_x_desc":"Binary size (bytes)",
+  "axis_y_desc":"Execution time (sec.)",
+
+  "plot_grid":"yes",
+
+  "mpl_image_size_x":"14",
+  "mpl_image_size_y":"7",
+  "mpl_image_dpi":"100",
+
+  "bound_lines":"no",
+
+  "point_style":{"5":{"size":40, "elinewidth":"2", "color":"#3F0000", "fmt":"x", "capsize":4},
+                 "4":{"size":40, "elinewidth":"2", "color":"#6F0000", "fmt":"x", "capsize":4},
+                 "3":{"size":40, "elinewidth":"2", "color":"#000000", "fmt":".", "capsize":4},
+                 "2":{"size":40, "elinewidth":"2", "color":"#004F00", "fmt":".", "capsize":4},
+                 "1":{"size":10, "color":"#dc3912", "frontier":"yes", "line_style":"--", "remove_permanent":"yes", "capsize":2},
+                 "0":{"size":40, "color":"#6699ff", "capsize":2}},
+
+  "font_size":16,
+
+  "out_to_file":"graph.png",
+
+  "save_table_to_json_file":"graph.json",
+  "save_table_to_csv_file":"graph.csv"
+}

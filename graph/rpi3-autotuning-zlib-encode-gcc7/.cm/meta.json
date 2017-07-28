@@ -1,0 +1,204 @@
+{
+  "graphs": [
+    {
+      "id": "rpi3-autotuning-zlib-encode-gcc7",
+      "params": {
+        "add_x_loop": "no",
+        "axis_x_desc": "Binary size (bytes)",
+        "axis_y_desc": "Execution time (sec.)",
+        "bound_lines": "no",
+        "data_uoa_list": [
+          "rpi3-zlib-encode-gcc7-150bpc-rnd",
+          "rpi3-zlib-encode-gcc7-150bpc-rnd-frontier",
+          "rpi3-zlib-encode-gcc7-main",
+          "rpi3-zlib-encode-gcc7-main-o3",
+          "rpi3-zlib-encode-clang381-main",
+          "rpi3-zlib-encode-clang381-main-o3",
+          "rpi3-zlib-encode-gcc4-150b-rnd-frontier"
+        ],
+        "display_x_error_bar": "no",
+        "display_y_error_bar": "yes",
+        "experiment_module_uoa": "experiment",
+        "flat_keys_list": [
+          "##characteristics#compile#binary_size#min",
+          "##characteristics#run#execution_time_kernel_0#center",
+          "##characteristics#run#execution_time_kernel_0#halfrange"
+        ],
+        "font_size": 10,
+        "ignore_point_if_none": "yes",
+        "mpl_image_dpi": "100",
+        "mpl_image_size_x": "8",
+        "mpl_image_size_y": "4",
+        "plot_grid": "yes",
+        "plot_type": "mpl_2d_scatter",
+        "point_style": {
+          "0": {
+            "capsize": 2,
+            "color": "#6699ff",
+            "size": 40
+          },
+          "1": {
+            "capsize": 2,
+            "color": "#5f0000",
+            "frontier": "yes",
+            "line_style": "--",
+            "remove_permanent": "yes",
+            "size": 10
+          },
+          "2": {
+            "capsize": 4,
+            "color": "#004F00",
+            "elinewidth": "2",
+            "fmt": ".",
+            "size": 40
+          },
+          "3": {
+            "capsize": 4,
+            "color": "#000000",
+            "elinewidth": "2",
+            "fmt": ".",
+            "size": 40
+          },
+          "4": {
+            "capsize": 4,
+            "color": "#6F0000",
+            "elinewidth": "2",
+            "fmt": "x",
+            "size": 40
+          },
+          "5": {
+            "capsize": 4,
+            "color": "#3F0000",
+            "elinewidth": "2",
+            "fmt": "x",
+            "size": 40
+          },
+          "6": {
+            "capsize": 2,
+            "color": "#dc3912",
+            "frontier": "yes",
+            "line_style": "--",
+            "remove_permanent": "yes",
+            "reuse_dims": "yes",
+            "size": 10
+          }
+        },
+        "save_info_table_to_json_file": "rpi3-autotuning-zlib-encode-gcc7-info.json",
+        "save_table_to_csv_file": "rpi3-autotuning-zlib-encode-gcc7.csv",
+        "save_table_to_json_file": "rpi3-autotuning-zlib-encode-gcc7.json",
+        "separate_permanent_to_graphs": "no",
+        "size_x": 700,
+        "size_y": 400,
+        "title": "Powered by Collective Knowledge",
+        "xmax": 140000,
+        "xmin": 40000,
+        "ymax": 18,
+        "ymin": 12
+      }
+    },
+    {
+      "id": "rpi3-autotuning-zlib-encode-gcc7-interactive",
+      "output": "html",
+      "params": {
+        "add_x_loop": "no",
+        "axis_x_desc": "Binary size (bytes)",
+        "axis_y_desc": "Execution time (sec.)",
+        "bound_lines": "no",
+        "data_uoa_list": [
+          "rpi3-zlib-encode-gcc7-150bpc-rnd",
+          "rpi3-zlib-encode-gcc7-150bpc-rnd-frontier",
+          "rpi3-zlib-encode-gcc7-main",
+          "rpi3-zlib-encode-gcc7-main-o3",
+          "rpi3-zlib-encode-clang381-main",
+          "rpi3-zlib-encode-clang381-main-o3",
+          "rpi3-zlib-encode-gcc4-150b-rnd-frontier"
+        ],
+        "display_x_error_bar": "no",
+        "display_y_error_bar": "yes",
+        "experiment_module_uoa": "experiment",
+        "flat_keys_list": [
+          "##characteristics#compile#binary_size#min",
+          "##characteristics#run#execution_time_kernel_0#center",
+          "##characteristics#run#execution_time_kernel_0#halfrange"
+        ],
+        "font_size": 16,
+        "ignore_point_if_none": "yes",
+        "image_height": 450,
+        "image_width": 700,
+        "mpl_image_dpi": "100",
+        "mpl_image_size_x": "12",
+        "mpl_image_size_y": "6",
+        "out_graph_meta": {
+          "output": "html",
+          "skip_control": "yes",
+          "skip_reproduce": "yes"
+        },
+        "plot_grid": "yes",
+        "plot_type": "d3_2d_scatter",
+        "point_style": {
+          "0": {
+            "capsize": 2,
+            "color": "#6699ff",
+            "size": 40
+          },
+          "1": {
+            "capsize": 2,
+            "color": "#5f0000",
+            "frontier": "yes",
+            "line_style": "--",
+            "remove_permanent": "yes",
+            "size": 10
+          },
+          "2": {
+            "capsize": 4,
+            "color": "#004F00",
+            "elinewidth": "2",
+            "fmt": ".",
+            "size": 40
+          },
+          "3": {
+            "capsize": 4,
+            "color": "#000000",
+            "elinewidth": "2",
+            "fmt": ".",
+            "size": 40
+          },
+          "4": {
+            "capsize": 4,
+            "color": "#6F0000",
+            "elinewidth": "2",
+            "fmt": "x",
+            "size": 40
+          },
+          "5": {
+            "capsize": 4,
+            "color": "#3F0000",
+            "elinewidth": "2",
+            "fmt": "x",
+            "size": 40
+          },
+          "6": {
+            "capsize": 2,
+            "color": "#dc3912",
+            "frontier": "yes",
+            "line_style": "--",
+            "remove_permanent": "yes",
+            "reuse_dims": "yes",
+            "size": 10
+          }
+        },
+        "separate_permanent_to_graphs": "no",
+        "size_x": 700,
+        "size_y": 450,
+        "title": "Powered by Collective Knowledge",
+        "xmax": 140000,
+        "xmin": 40000,
+        "ymax": 18,
+        "ymin": 12
+      },
+      "skip_control": "yes",
+      "skip_reproduce": "yes"
+    }
+  ],
+  "name": "Interactive graph for RPi3 auto/crowd-tuning of zlib encode workloads using GCC 7.1.0"
+}

@@ -29,7 +29,7 @@ cbench-automotive-susan --cmd_key=corners --repeat=100 --dataset_uoa=image-pgm-0
  rpi3-susan-corners-gcc4-300-rnd-frontier
    bin_size=32808, time=4.599836 ± 0.8%
      "-O3 -fira-algorithm=priority -fcaller-saves -fno-devirtualize-speculatively -fno-function-cse -fgcse-sm -fno-guess-branch-probability -fno-if-conversion -fno-inline-functions-called-once -fipa-reference -fno-ira-loop-pressure -fira-share-save-slots -fno-isolate-erroneous-paths-dereference -fno-ivopts -floop-nest-optimize -fmath-errno -fmove-loop-invariants -fsched-last-insn-heuristic -fsched2-use-superblocks -fno-schedule-insns -fno-signed-zeros -fsingle-precision-constant -fno-tree-sink -fno-unsafe-loop-optimizations --param asan-instrument-reads=1 --param gcse-unrestricted-cost=5 --param l1-cache-size=11 --param large-function-growth=33 --param loop-invariant-max-bbs-in-loop=636 --param max-completely-peel-loop-nest-depth=7 --param max-delay-slot-live-search=163 --param max-gcse-insertion-ratio=28 --param max-inline-insns-single=282 --param max-inline-recursive-depth-auto=0 --param max-jump-thread-duplication-stmts=6 --param max-last-value-rtl=4062 --param max-pipeline-region-insns=326 --param max-sched-region-blocks=17 --param max-tail-merge-iterations=2 --param max-unswitch-insns=5 --param max-vartrack-expr-depth=6 --param min-spec-prob=1 --param omega-eliminate-redundant-constraints=1 --param omega-max-keys=366 --param omega-max-wild-cards=36 --param sms-dfa-history=0"
-     ck replay experiment:8556dbf4e51a825d --point=86ca1630895041c1 --prune --prune_md5 @zprune.json
+     ck replay experiment:8556dbf4e51a825d --point=86ca1630895041c1 --prune --prune_md5 @prune.json
 
         Characteristics' changes (in brackets):
            0 = ##characteristics#run#execution_time_kernel_0#min_imp
@@ -50,7 +50,7 @@ cbench-automotive-susan --cmd_key=corners --repeat=100 --dataset_uoa=image-pgm-0
 
    bin_size=33384, time=3.653642 ± 1.5%
      "-O3 -fbranch-probabilities -ffunction-cse -fno-ivopts -fno-live-range-shrinkage -fmodulo-sched-allow-regmoves -fno-sched-dep-count-heuristic -fno-sched2-use-superblocks -fno-sel-sched-pipelining -fno-tree-builtin-call-dce -ftree-copyrename -ftree-forwprop -fno-tree-reassoc -fno-vpt"
-     ck replay experiment:8556dbf4e51a825d --point=5ba25254bdbbc61e --prune --prune_md5 @zprune.json
+     ck replay experiment:8556dbf4e51a825d --point=5ba25254bdbbc61e --prune --prune_md5 @prune.json
 
         ##compiler_flags#base_opt                         (           ) : -O3
         ##compiler_flags#bool-branch-probabilities        (1.095;0.981) : -fbranch-probabilities
@@ -64,7 +64,7 @@ cbench-automotive-susan --cmd_key=corners --repeat=100 --dataset_uoa=image-pgm-0
 
    bin_size=33788, time=3.410111 ± 0.1%
      "-O3 -fno-btr-bb-exclusive -fno-cx-fortran-rules -fno-delete-null-pointer-checks -fno-dse -fgcse -fno-inline-small-functions -fno-ivopts -freciprocal-math -freorder-functions -fno-sched-last-insn-heuristic -fno-thread-jumps -fno-tree-bit-ccp -ftree-loop-ivcanon -fno-tree-partial-pre -fno-tree-pta -fno-use-linker-plugin"
-     ck replay experiment:8556dbf4e51a825d --point=1dd1493b955e950d --prune --prune_md5 @zprune.json
+     ck replay experiment:8556dbf4e51a825d --point=1dd1493b955e950d --prune --prune_md5 @prune.json
 
         ##compiler_flags#base_opt                        (           ) : -O3
         ##compiler_flags#bool-inline-small-functions     (0.996;0.995) : -fno-inline-small-functions
@@ -82,7 +82,7 @@ cbench-automotive-susan --cmd_key=corners --repeat=100 --dataset_uoa=image-pgm-0
                 ck benchmark program:cbench-automotive-susan --cmd_key=corners --repeat=100 --dataset_uoa=image-pgm-0001 --record --record_uoa=rpi3-susan-corners-gcc4-300-rnd-frontier-pruned3 --flags="-O3 -fno-inline-small-functions -fno-ivopts -fno-tree-partial-pre"
                 Can't be pruned since used cflags instead of choices ...
 
-     ck replay experiment:8556dbf4e51a825d --point=1dd1493b955e950d --prune --prune_md5 --prune_invert --prune_invert_do_not_remove_key @zprune.json
+     ck replay experiment:8556dbf4e51a825d --point=1dd1493b955e950d --prune --prune_md5 --prune_invert --prune_invert_do_not_remove_key @prune.json
 
             Final pruned choices (168) :
                     Characteristics' changes (in brackets):
@@ -277,7 +277,7 @@ cbench-automotive-susan --cmd_key=corners --repeat=100 --dataset_uoa=image-pgm-0
    bin_size=30952, time=4.685973 ± 1.7%
      "-Os -fdata-sections -fno-early-inlining -fno-ivopts -fkeep-static-consts -fno-split-wide-types -fno-strict-aliasing -ftracer -ftree-ccp -fno-unsafe-math-optimizations --param allow-packed-store-data-races=1 --param large-function-growth=118 --param max-last-value-rtl=240 --param max-pipeline-region-insns=125 --param max-sched-region-blocks=6 --param simultaneous-prefetches=2 --param sms-dfa-history=0"
 
-     ck replay experiment:13128ceb106432fb --point=467a9ed5c035efdf --prune --prune_md5 @zprune.json
+     ck replay experiment:13128ceb106432fb --point=467a9ed5c035efdf --prune --prune_md5 @prune.json
 
           Final pruned choices (2 vs 17) :
                   Characteristics' changes (in brackets):
@@ -324,7 +324,7 @@ cbench-automotive-susan --cmd_key=corners --repeat=100 --dataset_uoa=image-pgm-0
  rpi3-susan-corners-gcc7-300-rnd-frontier
    bin_size=31460, time=3.088903 ± 1.9%
      "-O3 -fno-cx-fortran-rules -fno-devirtualize -fno-expensive-optimizations -fno-if-conversion -finline -fira-share-save-slots -fno-ira-share-spill-slots -fno-ivopts -fno-loop-strip-mine -fno-math-errno -frounding-math -fno-sched-rank-heuristic -fno-sel-sched-pipelining-outer-loops -fno-semantic-interposition -fsplit-wide-types -fno-tree-ccp -ftree-dse"
-     ck replay experiment:f4f13d284194463a --point=5421ba4fdca2c4b6 --prune --prune_md5 @zprune.json
+     ck replay experiment:f4f13d284194463a --point=5421ba4fdca2c4b6 --prune --prune_md5 @prune.json
 
           Final pruned choices (4 vs 18) :
                  Characteristics' changes (in brackets):
@@ -351,7 +351,7 @@ cbench-automotive-susan --cmd_key=corners --repeat=100 --dataset_uoa=image-pgm-0
          ck benchmark program:cbench-automotive-susan --cmd_key=corners --repeat=100 --dataset_uoa=image-pgm-0001 --record --record_uoa=rpi3-susan-corners-gcc7-300-rnd-frontier-pruned1 --flags="-O3 -fno-expensive-optimizations -fno-ivopts -fno-math-errno"
            bin_size=28056, time=3.056954
 
-            ck replay experiment:f4f13d284194463a --point=5421ba4fdca2c4b6 --prune --prune_md5 --prune_invert --prune_invert_do_not_remove_key @zprune.json
+            ck replay experiment:f4f13d284194463a --point=5421ba4fdca2c4b6 --prune --prune_md5 --prune_invert --prune_invert_do_not_remove_key @prune.json
 
                   Final pruned choices (176) :
                         Characteristics' changes (in brackets):
@@ -553,7 +553,7 @@ cbench-automotive-susan --cmd_key=corners --repeat=100 --dataset_uoa=image-pgm-0
  rpi3-susan-corners-gcc7-150bpc-rnd-frontier
    bin_size=30320, time=3.515246 ± 0.6%
      "-Og -fno-btr-bb-exclusive -fno-check-data-deps -fcrossjumping -fno-cx-limited-range -fno-data-sections -fno-devirtualize-speculatively -fexpensive-optimizations -fno-fast-math -fforward-propagate -fno-gcse-after-reload -fno-inline-functions-called-once -fno-inline-small-functions -fno-ipa-sra -fno-isolate-erroneous-paths-attribute -fno-loop-interchange -fno-modulo-sched -fno-partial-inlining -fpeel-loops -frename-registers -fschedule-insns -fno-strict-overflow -ftree-pre -fno-tree-slsr -ftree-ter -falign-labels=0 --param case-values-threshold=0 --param gcse-after-reload-partial-fraction=5 --param l1-cache-line-size=46 --param l2-cache-size=595 --param lim-expensive=40 --param lra-max-considered-reload-pseudos=483 --param max-combine-insns=2 --param max-completely-peeled-insns=274 --param max-fields-for-field-sensitive=0 --param max-fsm-thread-length=912378 --param max-goto-duplication-insns=0 --param max-inline-insns-recursive=60 --param max-unswitch-insns=76 --param min-spec-prob=70 --param sched-autopref-queue-depth=0 --param sms-dfa-history=0"
-     ck replay experiment:93974bf451f957eb --point=74e9c9f14b424ba7 --prune --prune_md5 @zprune.json
+     ck replay experiment:93974bf451f957eb --point=74e9c9f14b424ba7 --prune --prune_md5 @prune.json
 
             Final pruned choices (4 vs 42) :
                   Characteristics' changes (in brackets):
@@ -581,7 +581,7 @@ cbench-automotive-susan --cmd_key=corners --repeat=100 --dataset_uoa=image-pgm-0
             bin_size=30320, time=3.537424
 
 
-             ck replay experiment:93974bf451f957eb --point=74e9c9f14b424ba7 --prune --prune_md5  --prune_invert --prune_invert_do_not_remove_key @zprune.json
+             ck replay experiment:93974bf451f957eb --point=74e9c9f14b424ba7 --prune --prune_md5  --prune_invert --prune_invert_do_not_remove_key @prune.json
 
                       Final pruned choices (169) :
                             Characteristics' changes (in brackets):

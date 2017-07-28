@@ -1,0 +1,102 @@
+Function: crowdsource program optimization
+
+
+Module: D:\Work1\CK\ck-repos\ck-crowdtuning\module\program.optimization\module.py
+
+API:
+    Input:  {
+              (host_os)                    - host OS (detect, if omitted)
+              (target_os)                  - OS module to check (if omitted, analyze host)
+              (device_id)                  - device id if remote (such as adb)
+
+              (once)                       - if 'yes', run scenario once (useful for autotuning a given program)
+
+              (iterations)                 - limit number of iterations, otherwise infinite (default=30)
+                                             if -1, infinite (or until all choices are explored)
+
+              (repetitions)                - statistical repetitions of a given experiment
+
+              (local_autotuning)           - if 'yes', local autotuning instead of collaborative optimization
+
+              (quiet)                      - do not ask questions, but select random ...
+              (skip_welcome)               - if 'yes', do not print welcome header
+
+              (skip_exchange)              - if 'yes', do not exchange platform info
+                                            (development mode)
+
+              (record_repo)                - repo where to search/record local experiments 
+                                             ("local" by default, to avoid polluting other repos)
+
+              (user)                       - user email/ID to record solutions (attribute found good solutions)
+
+              (local)                      - if 'yes', use local repo for exchange (local autotuning/benchmarking)
+              (exchange_repo)              - which repo to record/update info (remote-ck by default)
+              (exchange_subrepo)           - if remote, remote repo UOA
+
+              (force_platform_name)        - if !='', use this for platform name
+
+              (scenario)                   - module UOA of crowdsourcing scenario
+              (scenario_cfg)               - cfg of a scenario
+
+              (seed)                       - autotuning seed
+
+              (program_tags)               - force selection of programs by tags
+
+              (program_uoa)                - force program UOA
+              (cmd_key)                    - CMD key
+              (dataset_uoa)                - dataset UOA
+              (dataset_file)               - dataset filename (if more than one inside one entry - suggest to have a UID in name)
+              (extra_dataset_tags)         - list of extra data set tags (useful to set "small" during mobile phone crowdtuning)
+
+              (calibration_time)           - change calibration time (deafult 10 sec.)
+
+              (objective)                  - extension to flat characteristics (min,exp,mean,center) to tune on Pareto
+                                             (default: min - to see what we can squeeze from a given architecture)
+
+              (keep_tmp)                   - if 'yes', do not remove run batch
+
+              (ask_pipeline_choices)       - if 'yes', ask for each pipeline choice, otherwise random selection 
+
+              (experiment_meta)            - meta when recording experiment
+              (experiment_meta_extra)      - extra meta such as platform UIDs
+
+              (record_uoa)                 - use this UOA to recrod experiments instead of randomly generated ones
+
+              (compiler_description_uoa)   - force compiler description UOA (see module "compiler")
+
+              (flag_tags)                  - extra flag tags (must have)
+              (any_flag_tags)              - extra flag tags (any of these)
+
+              (pause_if_fail)              - if pipeline fails, ask to press Enter
+                                             (useful to analyze which flags fail during compiler flag autotuning)
+
+              (omit_probability)           - probability to omit optimization (for example, compiler flags during exploration/crowdtuning)
+              (parametric_flags)           - if 'yes', also tune parametric flags
+              (cpu_flags)                  - if 'yes', also tune cpu-specific flags
+
+              (compiler_env_uoa)           - fix compiler environment
+
+              (new)                        - if 'yes', do not search for existing experiment, but start new
+
+              (solutions)                  - list of solutions
+              (solutions_info)             - info (repo_uoa, module_uoa, data_uoa)
+
+              (gcc)                        - add tag 'gcc' to search optimization crowdsourcing scenarios
+              (llvm)                       - add tag 'llvm' to search optimization crowdsourcing scenarios
+              (opencl)                     - add tag 'opencl' to search optimization crowdsourcing scenarios
+              (cuda)                       - add tag 'cuda' to search optimization crowdsourcing scenarios
+              (openmp)                     - add tag 'openmp' to search optimization crowdsourcing scenarios
+              (mpi)                        - add tag 'mpi' to search optimization crowdsourcing scenarios
+              (tbb)                        - add tag 'tbb' to search optimization crowdsourcing scenarios
+              (opengl)                     - add tag 'opengl' to search optimization crowdsourcing scenarios
+              (bugs)                       - add tag 'bugs' to search optimization crowdsourcing scenarios
+              (explore)                    - add tags 'explore' to search optimization crowdsourcing scenarios
+            }
+
+    Output: {
+              return       - return code =  0, if successful
+                                         >  0, if error
+              (error)      - error text if return > 0
+            }
+
+

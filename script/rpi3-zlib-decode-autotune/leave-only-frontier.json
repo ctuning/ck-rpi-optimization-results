@@ -1,0 +1,26 @@
+{
+  "experiment_1_pipeline_update": {
+    "frontier_keys":["##characteristics#run#execution_time#min",
+                     "##characteristics#compile#binary_size#min"]
+  },
+  "customize_solution_conditions": [
+    [
+      "##characteristics#run#execution_time_kernel_0$#objective#$",
+      "_imp",
+      ">",
+      0.95
+    ],
+    [
+      "##characteristics#compile#obj_size$#objective#$",
+      "_imp",
+      ">",
+      0.95
+    ],
+    [
+      "##characteristics#compile#md5_sum$#objective#$",
+      "_imp",
+      "==",
+      0
+    ]
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "experiment_1_pipeline_update": {
+    "choices_order": [
+      [
+        "##compiler_flags#dummy"
+      ]
+    ],
+    "choices_selection": [
+      {
+        "notags": "",
+        "choice": [""],
+        "type": "loop"
+      }
+    ],
+    "pipeline_update": {
+      "skip_best_base_flag": "yes"
+    }
+  },
+
+  "customize_solution_conditions": [
+    [
+      "##characteristics#run#execution_time_kernel_0$#objective#$",
+      "_imp",
+      ">",
+      0
+    ]
+  ],
+
+  "iterations": 1
+}

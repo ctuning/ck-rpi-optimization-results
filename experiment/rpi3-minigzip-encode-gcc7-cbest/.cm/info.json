@@ -1,0 +1,15 @@
+{
+  "backup_data_uid": "cdd947048ccc6e92", 
+  "backup_module_uid": "bc0409fb61f0aa82", 
+  "backup_module_uoa": "experiment", 
+  "control": {
+    "engine": "CK", 
+    "iso_datetime": "2017-07-22T13:04:49.370149", 
+    "version": [
+      "1", 
+      "9", 
+      "1"
+    ]
+  }, 
+  "data_name": "rpi3-minigzip-encode-gcc7-cbest"
+}

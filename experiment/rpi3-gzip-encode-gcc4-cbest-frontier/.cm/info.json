@@ -1,0 +1,15 @@
+{
+  "backup_data_uid": "819a33f3e0a4efc3", 
+  "backup_module_uid": "bc0409fb61f0aa82", 
+  "backup_module_uoa": "experiment", 
+  "control": {
+    "engine": "CK", 
+    "iso_datetime": "2017-07-29T14:40:29.813569", 
+    "version": [
+      "1", 
+      "9", 
+      "1"
+    ]
+  }, 
+  "data_name": "rpi3-gzip-encode-gcc4-cbest-frontier"
+}

@@ -1,0 +1,19 @@
+{
+  "##choices#calibration_time": 10.0, 
+  "##choices#cmd_key": "encode", 
+  "##choices#compile_type": "dynamic", 
+  "##choices#compiler_description_uoa": "gcc-4.9.0-auto", 
+  "##choices#compiler_flags#base_opt": "-O3", 
+  "##choices#data_uoa": "7z", 
+  "##choices#dataset_file": "data.txt", 
+  "##choices#dataset_uoa": "txt-novel-0001", 
+  "##choices#device_id": "", 
+  "##choices#host_os": "linux-32", 
+  "##choices#module_uoa": "b0ac08fe1d3c2615", 
+  "##choices#no_state_check": "yes", 
+  "##choices#program_tags": "", 
+  "##choices#repeat": 1, 
+  "##choices#target": "", 
+  "##choices#target_os": "linux-32", 
+  "##choices#target_os_bits": "32"
+}

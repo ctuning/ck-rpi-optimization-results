@@ -1,0 +1,15 @@
+{
+  "backup_data_uid": "47b50bab5b884081", 
+  "backup_module_uid": "bc0409fb61f0aa82", 
+  "backup_module_uoa": "experiment", 
+  "control": {
+    "engine": "CK", 
+    "iso_datetime": "2017-07-21T21:44:46.208526", 
+    "version": [
+      "1", 
+      "9", 
+      "1"
+    ]
+  }, 
+  "data_name": "rpi3-rhash-sha3-gcc4-cbest"
+}

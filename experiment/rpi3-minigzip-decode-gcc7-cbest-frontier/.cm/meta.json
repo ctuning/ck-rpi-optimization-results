@@ -1,0 +1,30 @@
+{
+  "added": {
+    "engine": "CK", 
+    "iso_datetime": "2017-07-22T12:36:09.497597", 
+    "version": [
+      "1", 
+      "9", 
+      "1"
+    ]
+  }, 
+  "meta": {
+    "cmd_key": "decode", 
+    "compiler": "GCC 7.1.0", 
+    "cpu_name": "BCM2709", 
+    "dataset_file": "data", 
+    "dataset_uoa": "txt-novel-0001-deflated", 
+    "objective": "min", 
+    "program_uoa": "minigzip", 
+    "scenario_desc": "explore GCC compiler flags", 
+    "scenario_module_uoa": "9d88674c45b94971", 
+    "subscenario_desc": "explore random program/cmd/data set"
+  }, 
+  "pipeline_uid": "b0ac08fe1d3c2615", 
+  "pipeline_uoa": "b0ac08fe1d3c2615", 
+  "points": "5", 
+  "tags": [
+    "crowdtuning", 
+    "tmp"
+  ]
+}

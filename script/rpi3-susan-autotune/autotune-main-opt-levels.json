@@ -1,0 +1,31 @@
+{
+  "experiment_1_pipeline_update": {
+    "choices_order": [
+      [
+        "##compiler_flags#base_opt"
+      ]
+    ],
+    "choices_selection": [
+      {
+        "notags": "",
+        "choice": ["-Os","-O0","-O1","-O2","-O3"],
+        "default": "-O3",
+        "type": "loop"
+      }
+    ],
+    "pipeline_update": {
+      "skip_best_base_flag": "yes"
+    }
+  },
+
+  "customize_solution_conditions": [
+    [
+      "##characteristics#run#execution_time_kernel_0$#objective#$",
+      "_imp",
+      ">",
+      0
+    ]
+  ],
+
+  "iterations": -1
+}

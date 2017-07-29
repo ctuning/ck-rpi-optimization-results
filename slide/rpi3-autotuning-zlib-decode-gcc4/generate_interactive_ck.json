@@ -1,0 +1,61 @@
+{
+  "experiment_module_uoa":"experiment",
+
+  "data_uoa_list":["rpi3-zlib-decode-gcc4-150bpc-rnd",
+                   "rpi3-zlib-decode-gcc4-150bpc-rnd-frontier",
+                   "rpi3-zlib-decode-gcc4-main",
+                   "rpi3-zlib-decode-gcc4-main-o3",
+                   "rpi3-zlib-decode-clang381-main",
+                   "rpi3-zlib-decode-clang381-main-o3"],
+
+  "flat_keys_list":[
+      "##characteristics#compile#binary_size#min",
+      "##characteristics#run#execution_time_kernel_0#center",
+      "##characteristics#run#execution_time_kernel_0#halfrange"
+  ],
+
+  "plot_type":"mpl_2d_scatter",
+  "display_x_error_bar":"no",
+  "display_y_error_bar":"yes",
+
+  "title":"Powered by Collective Knowledge",
+
+  "axis_x_desc":"Binary size (bytes)",
+  "axis_y_desc":"Execution time (sec.)",
+
+  "plot_grid":"yes",
+
+  "mpl_image_size_x":"8",
+  "mpl_image_size_y":"4",
+  "mpl_image_dpi":"100",
+
+  "bound_lines":"no",
+
+  "point_style":{"5":{"size":40, "elinewidth":"2", "color":"#3F0000", "fmt":"x", "capsize":4},
+                 "4":{"size":40, "elinewidth":"2", "color":"#6F0000", "fmt":"x", "capsize":4},
+                 "3":{"size":40, "elinewidth":"2", "color":"#000000", "fmt":".", "capsize":4},
+                 "2":{"size":40, "elinewidth":"2", "color":"#004F00", "fmt":".", "capsize":4},
+                 "1":{"size":10, "color":"#dc3912", "frontier":"no", "line_style":"--", "remove_permanent":"yes", "capsize":2},
+                 "0":{"size":40, "color":"#6699ff", "capsize":2}},
+
+  "size_x": 700, 
+  "size_y": 400, 
+
+  "font_size":10,
+
+  "bound_lines":"no",
+
+  "separate_permanent_to_graphs":"no",
+
+  "out_repo_uoa":"ck-rpi-optimization-results",
+  "out_data_uoa":"rpi3-autotuning-zlib-decode-gcc4",
+
+  "out_to_file":"rpi3-autotuning-zlib-decode-gcc4.png",
+
+  "out_common_meta":{"name":"Interactive graph for RPi3 auto/crowd-tuning of zlib decode workloads using GCC 4.9.2"},
+
+  "save_table_to_json_file":"rpi3-autotuning-zlib-decode-gcc4.json",
+  "save_info_table_to_json_file":"rpi3-autotuning-zlib-decode-gcc4-info.json",
+  "save_table_to_csv_file":"rpi3-autotuning-zlib-decode-gcc4.csv"
+
+}

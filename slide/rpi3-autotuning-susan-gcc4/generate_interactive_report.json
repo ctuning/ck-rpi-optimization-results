@@ -1,0 +1,66 @@
+{
+  "experiment_module_uoa":"experiment",
+
+  "data_uoa_list":["rpi3-susan-corners-gcc4-300-rnd", 
+                   "rpi3-susan-corners-gcc4-300-rnd-frontier", 
+                   "rpi3-susan-corners-gcc4-main", 
+                   "rpi3-susan-corners-gcc4-main-o3", 
+                   "rpi3-susan-corners-clang381-main",
+                   "rpi3-susan-corners-clang381-main-o3"],
+
+  "flat_keys_list":[
+      "##characteristics#compile#binary_size#min",
+      "##characteristics#run#execution_time_kernel_0#center",
+      "##characteristics#run#execution_time_kernel_0#halfrange"
+  ],
+
+  "plot_type":"d3_2d_scatter",
+  "display_x_error_bar":"no",
+  "display_y_error_bar":"yes",
+
+  "title":"Powered by Collective Knowledge",
+
+  "axis_x_desc":"Binary size (bytes)",
+  "axis_y_desc":"Execution time (sec.)",
+
+  "plot_grid":"yes",
+
+  "bound_lines":"no",
+
+  "point_style":{"5":{"size":4, "elinewidth":"2", "color":"#3F0000", "fmt":"x", "capsize":4},
+                 "4":{"size":4, "elinewidth":"2", "color":"#6F0000", "fmt":"x", "capsize":4},
+                 "3":{"size":4, "elinewidth":"2", "color":"#000000", "fmt":".", "capsize":4},
+                 "2":{"size":4, "elinewidth":"2", "color":"#004F00", "fmt":".", "capsize":4},
+                 "1":{"size":3, "color":"#dc3912", "frontier":"no", "line_style":"--", "remove_permanent":"yes", "capsize":2},
+                 "0":{"size":4, "color":"#6699ff", "capsize":2}},
+
+  "font_size":16,
+
+  "ymin":2,
+  "ymax":12,
+
+  "xmin":30000,
+  "xmax":60000,
+
+  "image_width": 700, 
+  "image_height": 450, 
+
+  "size_x": 700, 
+  "size_y": 450, 
+
+  "bound_lines":"no",
+
+  "separate_permanent_to_graphs":"no",
+
+  "out_repo_uoa":"ck-rpi-optimization-results",
+  "out_data_uoa":"rpi3-autotuning-susan-gcc4",
+
+  "out_common_meta":{
+                     "name":"Interactive graph for RPi3 auto/crowd-tuning of susan corners workloads using GCC 4.9.2"
+                    },
+
+  "out_graph_meta":{"output":"html", "skip_control":"yes", "skip_reproduce":"yes"},
+
+  "out_to_file":"rpi3-autotuning-susan-gcc4-interactive.html",
+  "save_to_style":"rpi3-autotuning-susan-gcc4-interactive.style"
+}

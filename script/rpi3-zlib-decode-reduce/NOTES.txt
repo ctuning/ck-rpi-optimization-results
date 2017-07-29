@@ -1,0 +1,538 @@
+ZLIB decode (--repeat=100 --dataset_uoa=video-raw-0001-deflated)
+ ------------------------------
+ rpi3-zlib-decode-clang381-main-o3
+   bin_size=90076, time=12.874769 ± 0.8%
+     "-O3"
+     ck replay experiment:777b58443e536152 --point=e13b1e85e3e0c5d6
+
+ rpi3-zlib-decode-clang381-main-empty-opt
+   bin_size=132080, time=38.539592 ± 0.1%
+     ""
+     ck replay experiment:eca2f4aa2a3ab852 --point=a624bb4c10a1619f
+ ------------------------------
+ rpi3-zlib-decode-gcc4-main-empty-opt
+   bin_size=131140, time=41.255491 ± 0.1%
+     ""
+     ck replay experiment:07969231dd8f9474 --point=cfcb9327f42ddabd
+
+ rpi3-zlib-decode-gcc4-main-o3
+   bin_size=101448, time=12.201838 ± 0.2%
+     "-O3"
+     ck replay experiment:9b2b24a80c45aa9b --point=eb28149e9a71762d
+
+ rpi3-zlib-decode-gcc4-main
+   bin_size=78116, time=13.545546 ± 0.3%
+     "-Os"
+     ck replay experiment:9195c9fa4d5d89af --point=2432890269556b39
+
+ rpi3-zlib-decode-gcc4-150b-rnd-frontier
+   bin_size=54272, time=12.099431 ± 0.7%
+     "-O2 -fcaller-saves -fcse-follow-jumps -fgcse-lm -fno-gcse-sm -fira-share-save-slots -fno-ira-share-spill-slots -floop-interchange -flto -fmodulo-sched-allow-regmoves -fpeephole -freciprocal-math -fsched-spec -fno-sched-spec-load-dangerous -fsel-sched-pipelining-outer-loops -fselective-scheduling2 -fsignaling-nans -fsplit-ivs-in-unroller -ftree-dominator-opts -fno-tree-fre -ftree-loop-distribute-patterns -ftree-ter"
+     ck replay experiment:b0f31c56475aa510 --point=a25bca7292444d27 --prune --prune_md5 @zprune.json
+
+            Final pruned choices (3 vs 22) :
+                    Characteristics' changes (in brackets):
+                       0 = ##characteristics#run#execution_time_kernel_0#min_imp
+                       1 = ##characteristics#compile#binary_size#min_imp
+
+                ##compiler_flags#base_opt                              (           ) : -O2
+                ##compiler_flags#bool-lto                              (0.987;0.650) : -flto
+                ##compiler_flags#bool-tree-fre                         (0.999;1.000) : -fno-tree-fre
+
+                    Compiler flags: -O2 -flto -fno-tree-fre
+
+
+            ********************************************************************
+            Performing comparison on output dimensions (original vs new results)
+
+            Total binary size (bytes):  54272 vs 54272
+            Code MD5:  0f071ea44075c8d04e6b84af14f66f31 vs 0f071ea44075c8d04e6b84af14f66f31
+            Code size (bytes):  512944 vs 506004
+            Main kernel execution time (sec.) [max]:  12.184494 vs 12.187275
+            Main kernel execution time (sec.) [min]:  12.099431 vs 12.173678
+
+
+                    ck benchmark program:zlib --cmd_key=decode --repeat=100 --dataset_uoa=video-raw-0001-deflated --record --record_uoa=rpi3-zlib-decode-gcc4-150b-rnd-frontier-pruned1 --flags="-O2 -flto -fno-tree-fre"
+                        bin_size=54272, time=12.101711
+
+
+     ck replay experiment:b0f31c56475aa510 --point=a25bca7292444d27 --prune --prune_md5 --prune_invert --prune_invert_do_not_remove_key @zprune.json
+
+
+               Final pruned choices (160) :
+                     Characteristics' changes (in brackets):
+                        0 = ##characteristics#run#execution_time_kernel_0#min_imp
+                        1 = ##characteristics#compile#binary_size#min_imp
+
+                 ##compiler_flags#base_opt                                 (           ) : -O2
+                 ##compiler_flags#bool-lto                                 (1.011;0.657) : -flto
+                 ##compiler_flags#bool-tree-fre                            (1.003;1.000) : -fno-tree-fre
+                 ##compiler_flags#bool-associative-math                    (           ) : -fno-associative-math
+                 ##compiler_flags#bool-auto-inc-dec                        (           ) : -fno-auto-inc-dec
+                 ##compiler_flags#bool-branch-probabilities                (           ) : -fno-branch-probabilities
+                 ##compiler_flags#bool-branch-target-load-optimize         (           ) : -fno-branch-target-load-optimize
+                 ##compiler_flags#bool-branch-target-load-optimize2        (           ) : -fno-branch-target-load-optimize2
+                 ##compiler_flags#bool-btr-bb-exclusive                    (           ) : -fno-btr-bb-exclusive
+                 ##compiler_flags#bool-check-data-deps                     (           ) : -fno-check-data-deps
+                 ##compiler_flags#bool-combine-stack-adjustments           (           ) : -fno-combine-stack-adjustments
+                 ##compiler_flags#bool-conserve-stack                      (           ) : -fno-conserve-stack
+                 ##compiler_flags#bool-compare-elim                        (           ) : -fno-compare-elim
+                 ##compiler_flags#bool-cprop-registers                     (           ) : -fno-cprop-registers
+                 ##compiler_flags#bool-crossjumping                        (           ) : -fno-crossjumping
+                 ##compiler_flags#bool-cse-skip-blocks                     (           ) : -fno-cse-skip-blocks
+                 ##compiler_flags#bool-cx-fortran-rules                    (           ) : -fno-cx-fortran-rules
+                 ##compiler_flags#bool-cx-limited-range                    (           ) : -fno-cx-limited-range
+                 ##compiler_flags#bool-data-sections                       (           ) : -fno-data-sections
+                 ##compiler_flags#bool-dce                                 (           ) : -fno-dce
+                 ##compiler_flags#bool-delayed-branch                      (           ) : -fno-delayed-branch
+                 ##compiler_flags#bool-delete-null-pointer-checks          (           ) : -fno-delete-null-pointer-checks
+                 ##compiler_flags#bool-devirtualize                        (           ) : -fno-devirtualize
+                 ##compiler_flags#bool-devirtualize-speculatively          (           ) : -fno-devirtualize-speculatively
+                 ##compiler_flags#bool-dse                                 (           ) : -fno-dse
+                 ##compiler_flags#bool-early-inlining                      (           ) : -fno-early-inlining
+                 ##compiler_flags#bool-ipa-sra                             (           ) : -fno-ipa-sra
+                 ##compiler_flags#bool-expensive-optimizations             (           ) : -fno-expensive-optimizations
+                 ##compiler_flags#bool-fat-lto-objects                     (0.000;0.000) : -ffat-lto-objects
+                 ##compiler_flags#bool-fast-math                           (           ) : -fno-fast-math
+                 ##compiler_flags#bool-finite-math-only                    (           ) : -fno-finite-math-only
+                 ##compiler_flags#bool-float-store                         (           ) : -fno-float-store
+                 ##compiler_flags#bool-forward-propagate                   (           ) : -fno-forward-propagate
+                 ##compiler_flags#bool-function-sections                   (           ) : -fno-function-sections
+                 ##compiler_flags#bool-gcse                                (           ) : -fno-gcse
+                 ##compiler_flags#bool-gcse-after-reload                   (           ) : -fno-gcse-after-reload
+                 ##compiler_flags#bool-gcse-las                            (           ) : -fno-gcse-las
+                 ##compiler_flags#bool-graphite-identity                   (           ) : -fno-graphite-identity
+                 ##compiler_flags#bool-hoist-adjacent-loads                (           ) : -fno-hoist-adjacent-loads
+                 ##compiler_flags#bool-if-conversion                       (           ) : -fno-if-conversion
+                 ##compiler_flags#bool-if-conversion2                      (           ) : -fno-if-conversion2
+                 ##compiler_flags#bool-indirect-inlining                   (           ) : -fno-indirect-inlining
+                 ##compiler_flags#bool-inline-functions                    (           ) : -fno-inline-functions
+                 ##compiler_flags#bool-inline-functions-called-once        (           ) : -fno-inline-functions-called-once
+                 ##compiler_flags#bool-inline-small-functions              (           ) : -fno-inline-small-functions
+                 ##compiler_flags#bool-ipa-cp                              (           ) : -fno-ipa-cp
+                 ##compiler_flags#bool-ipa-cp-clone                        (           ) : -fno-ipa-cp-clone
+                 ##compiler_flags#bool-ipa-pta                             (           ) : -fno-ipa-pta
+                 ##compiler_flags#bool-ipa-pure-const                      (0.994;0.997) : -fipa-pure-const
+                 ##compiler_flags#bool-ipa-reference                       (           ) : -fno-ipa-reference
+                 ##compiler_flags#bool-ira-hoist-pressure                  (           ) : -fno-ira-hoist-pressure
+                 ##compiler_flags#bool-ira-loop-pressure                   (           ) : -fno-ira-loop-pressure
+                 ##compiler_flags#bool-isolate-erroneous-paths-dereference (           ) : -fno-isolate-erroneous-paths-dereference
+                 ##compiler_flags#bool-isolate-erroneous-paths-attribute   (           ) : -fno-isolate-erroneous-paths-attribute
+                 ##compiler_flags#bool-ivopts                              (           ) : -fno-ivopts
+                 ##compiler_flags#bool-keep-inline-functions               (           ) : -fno-keep-inline-functions
+                 ##compiler_flags#bool-keep-static-consts                  (           ) : -fno-keep-static-consts
+                 ##compiler_flags#bool-live-range-shrinkage                (           ) : -fno-live-range-shrinkage
+                 ##compiler_flags#bool-loop-block                          (           ) : -fno-loop-block
+                 ##compiler_flags#bool-loop-strip-mine                     (           ) : -fno-loop-strip-mine
+                 ##compiler_flags#bool-loop-nest-optimize                  (           ) : -fno-loop-nest-optimize
+                 ##compiler_flags#bool-loop-parallelize-all                (           ) : -fno-loop-parallelize-all
+                 ##compiler_flags#bool-merge-all-constants                 (           ) : -fno-merge-all-constants
+                 ##compiler_flags#bool-merge-constants                     (           ) : -fno-merge-constants
+                 ##compiler_flags#bool-modulo-sched                        (           ) : -fno-modulo-sched
+                 ##compiler_flags#bool-move-loop-invariants                (           ) : -fno-move-loop-invariants
+                 ##compiler_flags#bool-branch-count-reg                    (           ) : -fno-branch-count-reg
+                 ##compiler_flags#bool-defer-pop                           (           ) : -fno-defer-pop
+                 ##compiler_flags#bool-function-cse                        (           ) : -fno-function-cse
+                 ##compiler_flags#bool-guess-branch-probability            (           ) : -fno-guess-branch-probability
+                 ##compiler_flags#bool-inline                              (1.012;0.922) : -finline
+                 ##compiler_flags#bool-math-errno                          (           ) : -fno-math-errno
+                 ##compiler_flags#bool-peephole2                           (           ) : -fno-peephole2
+                 ##compiler_flags#bool-sched-interblock                    (           ) : -fno-sched-interblock
+                 ##compiler_flags#bool-signed-zeros                        (           ) : -fno-signed-zeros
+                 ##compiler_flags#bool-toplevel-reorder                    (1.001;0.946) : -ftoplevel-reorder
+                 ##compiler_flags#bool-trapping-math                       (           ) : -fno-trapping-math
+                 ##compiler_flags#bool-zero-initialized-in-bss             (           ) : -fno-zero-initialized-in-bss
+                 ##compiler_flags#bool-omit-frame-pointer                  (           ) : -fno-omit-frame-pointer
+                 ##compiler_flags#bool-optimize-sibling-calls              (           ) : -fno-optimize-sibling-calls
+                 ##compiler_flags#bool-partial-inlining                    (           ) : -fno-partial-inlining
+                 ##compiler_flags#bool-peel-loops                          (           ) : -fno-peel-loops
+                 ##compiler_flags#bool-predictive-commoning                (           ) : -fno-predictive-commoning
+                 ##compiler_flags#bool-prefetch-loop-arrays                (           ) : -fno-prefetch-loop-arrays
+                 ##compiler_flags#bool-ree                                 (           ) : -fno-ree
+                 ##compiler_flags#bool-rename-registers                    (           ) : -fno-rename-registers
+                 ##compiler_flags#bool-reorder-blocks                      (           ) : -fno-reorder-blocks
+                 ##compiler_flags#bool-reorder-blocks-and-partition        (           ) : -fno-reorder-blocks-and-partition
+                 ##compiler_flags#bool-reorder-functions                   (           ) : -fno-reorder-functions
+                 ##compiler_flags#bool-rerun-cse-after-loop                (           ) : -fno-rerun-cse-after-loop
+                 ##compiler_flags#bool-reschedule-modulo-scheduled-loops   (           ) : -fno-reschedule-modulo-scheduled-loops
+                 ##compiler_flags#bool-rounding-math                       (           ) : -fno-rounding-math
+                 ##compiler_flags#bool-sched2-use-superblocks              (           ) : -fno-sched2-use-superblocks
+                 ##compiler_flags#bool-sched-pressure                      (           ) : -fno-sched-pressure
+                 ##compiler_flags#bool-sched-spec-load                     (           ) : -fno-sched-spec-load
+                 ##compiler_flags#bool-sched-group-heuristic               (           ) : -fno-sched-group-heuristic
+                 ##compiler_flags#bool-sched-critical-path-heuristic       (           ) : -fno-sched-critical-path-heuristic
+                 ##compiler_flags#bool-sched-spec-insn-heuristic           (           ) : -fno-sched-spec-insn-heuristic
+                 ##compiler_flags#bool-sched-rank-heuristic                (           ) : -fno-sched-rank-heuristic
+                 ##compiler_flags#bool-sched-last-insn-heuristic           (           ) : -fno-sched-last-insn-heuristic
+                 ##compiler_flags#bool-sched-dep-count-heuristic           (           ) : -fno-sched-dep-count-heuristic
+                 ##compiler_flags#bool-schedule-insns                      (           ) : -fno-schedule-insns
+                 ##compiler_flags#bool-schedule-insns2                     (           ) : -fno-schedule-insns2
+                 ##compiler_flags#bool-section-anchors                     (           ) : -fno-section-anchors
+                 ##compiler_flags#bool-selective-scheduling                (           ) : -fno-selective-scheduling
+                 ##compiler_flags#bool-sel-sched-pipelining                (           ) : -fno-sel-sched-pipelining
+                 ##compiler_flags#bool-shrink-wrap                         (           ) : -fno-shrink-wrap
+                 ##compiler_flags#bool-single-precision-constant           (           ) : -fno-single-precision-constant
+                 ##compiler_flags#bool-split-wide-types                    (           ) : -fno-split-wide-types
+                 ##compiler_flags#bool-strict-aliasing                     (1.002;0.995) : -fstrict-aliasing
+                 ##compiler_flags#bool-strict-overflow                     (1.002;1.000) : -fstrict-overflow
+                 ##compiler_flags#bool-thread-jumps                        (           ) : -fno-thread-jumps
+                 ##compiler_flags#bool-tracer                              (           ) : -fno-tracer
+                 ##compiler_flags#bool-tree-bit-ccp                        (           ) : -fno-tree-bit-ccp
+                 ##compiler_flags#bool-tree-builtin-call-dce               (           ) : -fno-tree-builtin-call-dce
+                 ##compiler_flags#bool-tree-ccp                            (0.996;0.999) : -ftree-ccp
+                 ##compiler_flags#bool-tree-ch                             (           ) : -fno-tree-ch
+                 ##compiler_flags#bool-tree-coalesce-vars                  (           ) : -fno-tree-coalesce-vars
+                 ##compiler_flags#bool-tree-copy-prop                      (0.992;0.999) : -ftree-copy-prop
+                 ##compiler_flags#bool-tree-copyrename                     (           ) : -fno-tree-copyrename
+                 ##compiler_flags#bool-tree-dce                            (1.005;1.000) : -ftree-dce
+                 ##compiler_flags#bool-tree-dse                            (           ) : -fno-tree-dse
+                 ##compiler_flags#bool-tree-forwprop                       (           ) : -fno-tree-forwprop
+                 ##compiler_flags#bool-tree-loop-if-convert                (           ) : -fno-tree-loop-if-convert
+                 ##compiler_flags#bool-tree-loop-if-convert-stores         (           ) : -fno-tree-loop-if-convert-stores
+                 ##compiler_flags#bool-tree-loop-im                        (           ) : -fno-tree-loop-im
+                 ##compiler_flags#bool-tree-phiprop                        (           ) : -fno-tree-phiprop
+                 ##compiler_flags#bool-tree-loop-distribution              (           ) : -fno-tree-loop-distribution
+                 ##compiler_flags#bool-tree-loop-ivcanon                   (           ) : -fno-tree-loop-ivcanon
+                 ##compiler_flags#bool-tree-loop-linear                    (           ) : -fno-tree-loop-linear
+                 ##compiler_flags#bool-tree-loop-optimize                  (           ) : -fno-tree-loop-optimize
+                 ##compiler_flags#bool-tree-loop-vectorize                 (           ) : -fno-tree-loop-vectorize
+                 ##compiler_flags#bool-tree-pre                            (           ) : -fno-tree-pre
+                 ##compiler_flags#bool-tree-partial-pre                    (           ) : -fno-tree-partial-pre
+                 ##compiler_flags#bool-tree-pta                            (           ) : -fno-tree-pta
+                 ##compiler_flags#bool-tree-reassoc                        (           ) : -fno-tree-reassoc
+                 ##compiler_flags#bool-tree-sink                           (           ) : -fno-tree-sink
+                 ##compiler_flags#bool-tree-slsr                           (           ) : -fno-tree-slsr
+                 ##compiler_flags#bool-tree-sra                            (0.957;0.998) : -ftree-sra
+                 ##compiler_flags#bool-tree-switch-conversion              (           ) : -fno-tree-switch-conversion
+                 ##compiler_flags#bool-tree-tail-merge                     (           ) : -fno-tree-tail-merge
+                 ##compiler_flags#bool-tree-vectorize                      (           ) : -fno-tree-vectorize
+                 ##compiler_flags#bool-tree-vrp                            (           ) : -fno-tree-vrp
+                 ##compiler_flags#bool-unit-at-a-time                      (0.998;0.949) : -funit-at-a-time
+                 ##compiler_flags#bool-unroll-all-loops                    (           ) : -fno-unroll-all-loops
+                 ##compiler_flags#bool-unroll-loops                        (           ) : -fno-unroll-loops
+                 ##compiler_flags#bool-unsafe-loop-optimizations           (           ) : -fno-unsafe-loop-optimizations
+                 ##compiler_flags#bool-unsafe-math-optimizations           (           ) : -fno-unsafe-math-optimizations
+                 ##compiler_flags#bool-unswitch-loops                      (           ) : -fno-unswitch-loops
+                 ##compiler_flags#bool-variable-expansion-in-unroller      (           ) : -fno-variable-expansion-in-unroller
+                 ##compiler_flags#bool-vect-cost-model                     (           ) : -fno-vect-cost-model
+                 ##compiler_flags#bool-vpt                                 (           ) : -fno-vpt
+                 ##compiler_flags#bool-web                                 (           ) : -fno-web
+                 ##compiler_flags#bool-whole-program                       (           ) : -fno-whole-program
+                 ##compiler_flags#bool-wpa                                 (           ) : -fno-wpa
+                 ##compiler_flags#bool-use-linker-plugin                   (           ) : -fno-use-linker-plugin
+                 ##compiler_flags#bool--fexcess-precision=                 (           ) : -fexcess-precision=standard
+                 ##compiler_flags#bool--ffp-contract=                      (           ) : -ffp-contract=off
+                 ##compiler_flags#bool--fira-algorithm=                    (           ) : -fira-algorithm=priority
+                 ##compiler_flags#bool--fira-region=                       (           ) : -fira-region=one
+
+                     Compiler flags: -O2 -flto -fno-tree-fre -fno-associative-math -fno-auto-inc-dec -fno-branch-probabilities -fno-branch-target-load-optimize -fno-branch-target-load-optimize2 -fno-btr-bb-exclusive -fno-check-data-deps -fno-combine-stack-adjustments -fno-conserve-stack -fno-compare-elim -fno-cprop-registers -fno-crossjumping -fno-cse-skip-blocks -fno-cx-fortran-rules -fno-cx-limited-range -fno-data-sections -fno-dce -fno-delayed-branch -fno-delete-null-pointer-checks -fno-devirtualize -fno-devirtualize-speculatively -fno-dse -fno-early-inlining -fno-ipa-sra -fno-expensive-optimizations -ffat-lto-objects -fno-fast-math -fno-finite-math-only -fno-float-store -fno-forward-propagate -fno-function-sections -fno-gcse -fno-gcse-after-reload -fno-gcse-las -fno-graphite-identity -fno-hoist-adjacent-loads -fno-if-conversion -fno-if-conversion2 -fno-indirect-inlining -fno-inline-functions -fno-inline-functions-called-once -fno-inline-small-functions -fno-ipa-cp -fno-ipa-cp-clone -fno-ipa-pta -fipa-pure-const -fno-ipa-reference -fno-ira-hoist-pressure -fno-ira-loop-pressure -fno-isolate-erroneous-paths-dereference -fno-isolate-erroneous-paths-attribute -fno-ivopts -fno-keep-inline-functions -fno-keep-static-consts -fno-live-range-shrinkage -fno-loop-block -fno-loop-strip-mine -fno-loop-nest-optimize -fno-loop-parallelize-all -fno-merge-all-constants -fno-merge-constants -fno-modulo-sched -fno-move-loop-invariants -fno-branch-count-reg -fno-defer-pop -fno-function-cse -fno-guess-branch-probability -finline -fno-math-errno -fno-peephole2 -fno-sched-interblock -fno-signed-zeros -ftoplevel-reorder -fno-trapping-math -fno-zero-initialized-in-bss -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-partial-inlining -fno-peel-loops -fno-predictive-commoning -fno-prefetch-loop-arrays -fno-ree -fno-rename-registers -fno-reorder-blocks -fno-reorder-blocks-and-partition -fno-reorder-functions -fno-rerun-cse-after-loop -fno-reschedule-modulo-scheduled-loops -fno-rounding-math -fno-sched2-use-superblocks -fno-sched-pressure -fno-sched-spec-load -fno-sched-group-heuristic -fno-sched-critical-path-heuristic -fno-sched-spec-insn-heuristic -fno-sched-rank-heuristic -fno-sched-last-insn-heuristic -fno-sched-dep-count-heuristic -fno-schedule-insns -fno-schedule-insns2 -fno-section-anchors -fno-selective-scheduling -fno-sel-sched-pipelining -fno-shrink-wrap -fno-single-precision-constant -fno-split-wide-types -fstrict-aliasing -fstrict-overflow -fno-thread-jumps -fno-tracer -fno-tree-bit-ccp -fno-tree-builtin-call-dce -ftree-ccp -fno-tree-ch -fno-tree-coalesce-vars -ftree-copy-prop -fno-tree-copyrename -ftree-dce -fno-tree-dse -fno-tree-forwprop -fno-tree-loop-if-convert -fno-tree-loop-if-convert-stores -fno-tree-loop-im -fno-tree-phiprop -fno-tree-loop-distribution -fno-tree-loop-ivcanon -fno-tree-loop-linear -fno-tree-loop-optimize -fno-tree-loop-vectorize -fno-tree-pre -fno-tree-partial-pre -fno-tree-pta -fno-tree-reassoc -fno-tree-sink -fno-tree-slsr -ftree-sra -fno-tree-switch-conversion -fno-tree-tail-merge -fno-tree-vectorize -fno-tree-vrp -funit-at-a-time -fno-unroll-all-loops -fno-unroll-loops -fno-unsafe-loop-optimizations -fno-unsafe-math-optimizations -fno-unswitch-loops -fno-variable-expansion-in-unroller -fno-vect-cost-model -fno-vpt -fno-web -fno-whole-program -fno-wpa -fno-use-linker-plugin -fexcess-precision=standard -ffp-contract=off -fira-algorithm=priority -fira-region=one
+
+
+             ********************************************************************
+             Performing comparison on output dimensions (original vs new results)
+
+             Total binary size (bytes):  54272 vs 53868
+             Code MD5:  0f071ea44075c8d04e6b84af14f66f31 vs 151fa4f97e4a58ab44897a987c54e7c5
+             Code size (bytes):  512944 vs 633756
+             Main kernel execution time (sec.) [max]:  12.184494 vs 12.036973
+             Main kernel execution time (sec.) [min]:  12.099431 vs 11.970803
+
+
+                    ck benchmark program:zlib --cmd_key=decode --repeat=100 --dataset_uoa=video-raw-0001-deflated --record --record_uoa=rpi3-zlib-decode-gcc4-150b-rnd-frontier-pruned1-inverted --flags="-O2 -flto -fno-tree-fre -fno-associative-math -fno-auto-inc-dec -fno-branch-probabilities -fno-branch-target-load-optimize -fno-branch-target-load-optimize2 -fno-btr-bb-exclusive -fno-check-data-deps -fno-combine-stack-adjustments -fno-conserve-stack -fno-compare-elim -fno-cprop-registers -fno-crossjumping -fno-cse-skip-blocks -fno-cx-fortran-rules -fno-cx-limited-range -fno-data-sections -fno-dce -fno-delayed-branch -fno-delete-null-pointer-checks -fno-devirtualize -fno-devirtualize-speculatively -fno-dse -fno-early-inlining -fno-ipa-sra -fno-expensive-optimizations -ffat-lto-objects -fno-fast-math -fno-finite-math-only -fno-float-store -fno-forward-propagate -fno-function-sections -fno-gcse -fno-gcse-after-reload -fno-gcse-las -fno-graphite-identity -fno-hoist-adjacent-loads -fno-if-conversion -fno-if-conversion2 -fno-indirect-inlining -fno-inline-functions -fno-inline-functions-called-once -fno-inline-small-functions -fno-ipa-cp -fno-ipa-cp-clone -fno-ipa-pta -fipa-pure-const -fno-ipa-reference -fno-ira-hoist-pressure -fno-ira-loop-pressure -fno-isolate-erroneous-paths-dereference -fno-isolate-erroneous-paths-attribute -fno-ivopts -fno-keep-inline-functions -fno-keep-static-consts -fno-live-range-shrinkage -fno-loop-block -fno-loop-strip-mine -fno-loop-nest-optimize -fno-loop-parallelize-all -fno-merge-all-constants -fno-merge-constants -fno-modulo-sched -fno-move-loop-invariants -fno-branch-count-reg -fno-defer-pop -fno-function-cse -fno-guess-branch-probability -finline -fno-math-errno -fno-peephole2 -fno-sched-interblock -fno-signed-zeros -ftoplevel-reorder -fno-trapping-math -fno-zero-initialized-in-bss -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-partial-inlining -fno-peel-loops -fno-predictive-commoning -fno-prefetch-loop-arrays -fno-ree -fno-rename-registers -fno-reorder-blocks -fno-reorder-blocks-and-partition -fno-reorder-functions -fno-rerun-cse-after-loop -fno-reschedule-modulo-scheduled-loops -fno-rounding-math -fno-sched2-use-superblocks -fno-sched-pressure -fno-sched-spec-load -fno-sched-group-heuristic -fno-sched-critical-path-heuristic -fno-sched-spec-insn-heuristic -fno-sched-rank-heuristic -fno-sched-last-insn-heuristic -fno-sched-dep-count-heuristic -fno-schedule-insns -fno-schedule-insns2 -fno-section-anchors -fno-selective-scheduling -fno-sel-sched-pipelining -fno-shrink-wrap -fno-single-precision-constant -fno-split-wide-types -fstrict-aliasing -fstrict-overflow -fno-thread-jumps -fno-tracer -fno-tree-bit-ccp -fno-tree-builtin-call-dce -ftree-ccp -fno-tree-ch -fno-tree-coalesce-vars -ftree-copy-prop -fno-tree-copyrename -ftree-dce -fno-tree-dse -fno-tree-forwprop -fno-tree-loop-if-convert -fno-tree-loop-if-convert-stores -fno-tree-loop-im -fno-tree-phiprop -fno-tree-loop-distribution -fno-tree-loop-ivcanon -fno-tree-loop-linear -fno-tree-loop-optimize -fno-tree-loop-vectorize -fno-tree-pre -fno-tree-partial-pre -fno-tree-pta -fno-tree-reassoc -fno-tree-sink -fno-tree-slsr -ftree-sra -fno-tree-switch-conversion -fno-tree-tail-merge -fno-tree-vectorize -fno-tree-vrp -funit-at-a-time -fno-unroll-all-loops -fno-unroll-loops -fno-unsafe-loop-optimizations -fno-unsafe-math-optimizations -fno-unswitch-loops -fno-variable-expansion-in-unroller -fno-vect-cost-model -fno-vpt -fno-web -fno-whole-program -fno-wpa -fno-use-linker-plugin -fexcess-precision=standard -ffp-contract=off -fira-algorithm=priority -fira-region=one"
+                        bin_size=53868, time=11.965374
+
+ rpi3-zlib-decode-gcc4-150b-rnd-cbest
+   bin_size=64184, time=12.230201 ± 0.4%
+     "-O3 -fno-inline -flto"
+     ck replay experiment:dfc49b5be33c1813 --point=ec6a2e99da2e3445
+
+ ------------------------------
+ rpi3-zlib-decode-gcc7-main-empty-opt
+   bin_size=128376, time=41.25565 ± 0.1%
+     ""
+     ck replay experiment:1d1b423cb2567413 --point=f42caae168d92907
+
+ rpi3-zlib-decode-gcc7-main-o3
+   bin_size=119084, time=11.679064 ± 1.0%
+     "-O3"
+     ck replay experiment:45b844dc97bc88bb --point=c88f2a728405d8eb
+
+ rpi3-zlib-decode-gcc7-main
+   bin_size=74280, time=13.698655 ± 1.1%
+     "-Os"
+     ck replay experiment:a1e26d8e4858adf5 --point=bbf4d22b4e9b34d5
+
+ rpi3-zlib-decode-gcc7-150b-rnd-frontier
+   bin_size=78828, time=11.887244 ± 0.5%
+     "-O2 -flto-partition=max -fcombine-stack-adjustments -fno-early-inlining -fif-conversion2 -fno-ira-loop-pressure -fno-optimize-sibling-calls -free -fsingle-precision-constant -fno-split-ivs-in-unroller -fsplit-wide-types -fno-strict-overflow -fno-tree-fre -ftree-switch-conversion -ftree-ter -fno-vpt -fno-whole-program"
+     ck replay experiment:573db3c041a38224 --point=e90f644eaad337d3 --prune --prune_md5 @zprune.json --deps
+
+
+             Final pruned choices (3 vs 17) :
+                   Characteristics' changes (in brackets):
+                      0 = ##characteristics#run#execution_time_kernel_0#min_imp
+                      1 = ##characteristics#compile#binary_size#min_imp
+
+               ##compiler_flags#base_opt                       (           ) : -O2
+               ##compiler_flags#bool-early-inlining            (1.001;0.998) : -fno-early-inlining
+               ##compiler_flags#bool-tree-fre                  (1.002;0.997) : -fno-tree-fre
+
+                   Compiler flags: -O2 -fno-early-inlining -fno-tree-fre
+
+
+           ********************************************************************
+           Performing comparison on output dimensions (original vs new results)
+
+           Total binary size (bytes):  78828 vs 78700
+           Code MD5:  b01b6114ee7d5795f3e0402da0f7fd91 vs 6fdce718096a4200a4820c7d44c5dc57
+           Code size (bytes):  94056 vs 93928
+           Main kernel execution time (sec.) [max]:  11.947238 vs 11.972647
+           Main kernel execution time (sec.) [min]:  11.887244 vs 11.911313
+
+
+             ck benchmark program:zlib --cmd_key=decode --repeat=100 --dataset_uoa=video-raw-0001-deflated --record --record_uoa=rpi3-zlib-decode-gcc7-150b-rnd-frontier-pruned1 --flags="-O2 -fno-early-inlining -fno-tree-fre"
+              bin_size=78700, time=11.898532
+
+
+     ck replay experiment:573db3c041a38224 --point=e90f644eaad337d3 --prune --prune_md5 @zprune.json --prune_invert --prune_invert_do_not_remove_key --deps
+
+            Final pruned choices (176) :
+                  Characteristics' changes (in brackets):
+                     0 = ##characteristics#run#execution_time_kernel_0#min_imp
+                     1 = ##characteristics#compile#binary_size#min_imp
+
+              ##compiler_flags#base_opt                                 (           ) : -O2
+              ##compiler_flags#bool-early-inlining                      (0.999;0.998) : -fno-early-inlining
+              ##compiler_flags#bool-tree-fre                            (0.999;0.997) : -fno-tree-fre
+              ##compiler_flags#bool-associative-math                    (           ) : -fno-associative-math
+              ##compiler_flags#bool-auto-inc-dec                        (1.000;0.996) : -fauto-inc-dec
+              ##compiler_flags#bool-branch-probabilities                (           ) : -fno-branch-probabilities
+              ##compiler_flags#bool-branch-target-load-optimize         (           ) : -fno-branch-target-load-optimize
+              ##compiler_flags#bool-branch-target-load-optimize2        (           ) : -fno-branch-target-load-optimize2
+              ##compiler_flags#bool-btr-bb-exclusive                    (           ) : -fno-btr-bb-exclusive
+              ##compiler_flags#bool-caller-saves                        (1.000;1.000) : -fcaller-saves
+              ##compiler_flags#bool-check-data-deps                     (           ) : -fno-check-data-deps
+              ##compiler_flags#bool-conserve-stack                      (           ) : -fno-conserve-stack
+              ##compiler_flags#bool-compare-elim                        (           ) : -fno-compare-elim
+              ##compiler_flags#bool-cprop-registers                     (           ) : -fno-cprop-registers
+              ##compiler_flags#bool-crossjumping                        (1.002;0.973) : -fcrossjumping
+              ##compiler_flags#bool-cse-follow-jumps                    (1.001;0.987) : -fcse-follow-jumps
+              ##compiler_flags#bool-cse-skip-blocks                     (           ) : -fno-cse-skip-blocks
+              ##compiler_flags#bool-cx-fortran-rules                    (           ) : -fno-cx-fortran-rules
+              ##compiler_flags#bool-cx-limited-range                    (           ) : -fno-cx-limited-range
+              ##compiler_flags#bool-data-sections                       (           ) : -fno-data-sections
+              ##compiler_flags#bool-dce                                 (0.991;0.996) : -fdce
+              ##compiler_flags#bool-delayed-branch                      (           ) : -fno-delayed-branch
+              ##compiler_flags#bool-delete-null-pointer-checks          (           ) : -fno-delete-null-pointer-checks
+              ##compiler_flags#bool-devirtualize                        (           ) : -fno-devirtualize
+              ##compiler_flags#bool-devirtualize-speculatively          (           ) : -fno-devirtualize-speculatively
+              ##compiler_flags#bool-devirtualize-at-ltrans              (           ) : -fno-devirtualize-at-ltrans
+              ##compiler_flags#bool-dse                                 (           ) : -fno-dse
+              ##compiler_flags#bool-ipa-sra                             (           ) : -fno-ipa-sra
+              ##compiler_flags#bool-expensive-optimizations             (           ) : -fno-expensive-optimizations
+              ##compiler_flags#bool-fat-lto-objects                     (           ) : -fno-fat-lto-objects
+              ##compiler_flags#bool-fast-math                           (           ) : -fno-fast-math
+              ##compiler_flags#bool-finite-math-only                    (           ) : -fno-finite-math-only
+              ##compiler_flags#bool-float-store                         (           ) : -fno-float-store
+              ##compiler_flags#bool-forward-propagate                   (0.884;0.999) : -fforward-propagate
+              ##compiler_flags#bool-function-sections                   (           ) : -fno-function-sections
+              ##compiler_flags#bool-gcse                                (           ) : -fno-gcse
+              ##compiler_flags#bool-gcse-after-reload                   (           ) : -fno-gcse-after-reload
+              ##compiler_flags#bool-gcse-las                            (           ) : -fno-gcse-las
+              ##compiler_flags#bool-gcse-lm                             (           ) : -fno-gcse-lm
+              ##compiler_flags#bool-graphite-identity                   (           ) : -fno-graphite-identity
+              ##compiler_flags#bool-gcse-sm                             (           ) : -fno-gcse-sm
+              ##compiler_flags#bool-hoist-adjacent-loads                (           ) : -fno-hoist-adjacent-loads
+              ##compiler_flags#bool-if-conversion                       (           ) : -fno-if-conversion
+              ##compiler_flags#bool-indirect-inlining                   (           ) : -fno-indirect-inlining
+              ##compiler_flags#bool-inline-functions                    (           ) : -fno-inline-functions
+              ##compiler_flags#bool-inline-functions-called-once        (           ) : -fno-inline-functions-called-once
+              ##compiler_flags#bool-inline-small-functions              (1.003;0.991) : -finline-small-functions
+              ##compiler_flags#bool-ipa-cp                              (           ) : -fno-ipa-cp
+              ##compiler_flags#bool-ipa-cp-clone                        (           ) : -fno-ipa-cp-clone
+              ##compiler_flags#bool-ipa-cp-alignment                    (           ) : -fno-ipa-cp-alignment
+              ##compiler_flags#bool-ipa-pta                             (           ) : -fno-ipa-pta
+              ##compiler_flags#bool-ipa-pure-const                      (           ) : -fno-ipa-pure-const
+              ##compiler_flags#bool-ipa-reference                       (           ) : -fno-ipa-reference
+              ##compiler_flags#bool-ipa-icf                             (1.003;1.000) : -fipa-icf
+              ##compiler_flags#bool-ira-hoist-pressure                  (           ) : -fno-ira-hoist-pressure
+              ##compiler_flags#bool-ira-share-save-slots                (           ) : -fno-ira-share-save-slots
+              ##compiler_flags#bool-ira-share-spill-slots               (           ) : -fno-ira-share-spill-slots
+              ##compiler_flags#bool-isolate-erroneous-paths-dereference (           ) : -fno-isolate-erroneous-paths-dereference
+              ##compiler_flags#bool-isolate-erroneous-paths-attribute   (           ) : -fno-isolate-erroneous-paths-attribute
+              ##compiler_flags#bool-ivopts                              (0.998;0.995) : -fivopts
+              ##compiler_flags#bool-keep-inline-functions               (           ) : -fno-keep-inline-functions
+              ##compiler_flags#bool-keep-static-consts                  (           ) : -fno-keep-static-consts
+              ##compiler_flags#bool-live-range-shrinkage                (           ) : -fno-live-range-shrinkage
+              ##compiler_flags#bool-loop-block                          (           ) : -fno-loop-block
+              ##compiler_flags#bool-loop-interchange                    (           ) : -fno-loop-interchange
+              ##compiler_flags#bool-loop-strip-mine                     (           ) : -fno-loop-strip-mine
+              ##compiler_flags#bool-loop-unroll-and-jam                 (           ) : -fno-loop-unroll-and-jam
+              ##compiler_flags#bool-loop-nest-optimize                  (           ) : -fno-loop-nest-optimize
+              ##compiler_flags#bool-loop-parallelize-all                (           ) : -fno-loop-parallelize-all
+              ##compiler_flags#bool-lra-remat                           (           ) : -fno-lra-remat
+              ##compiler_flags#bool-lto                                 (           ) : -fno-lto
+              ##compiler_flags#bool-merge-all-constants                 (           ) : -fno-merge-all-constants
+              ##compiler_flags#bool-merge-constants                     (0.998;0.994) : -fmerge-constants
+              ##compiler_flags#bool-modulo-sched                        (           ) : -fno-modulo-sched
+              ##compiler_flags#bool-modulo-sched-allow-regmoves         (           ) : -fno-modulo-sched-allow-regmoves
+              ##compiler_flags#bool-move-loop-invariants                (           ) : -fno-move-loop-invariants
+              ##compiler_flags#bool-branch-count-reg                    (           ) : -fno-branch-count-reg
+              ##compiler_flags#bool-defer-pop                           (           ) : -fno-defer-pop
+              ##compiler_flags#bool-function-cse                        (           ) : -fno-function-cse
+              ##compiler_flags#bool-guess-branch-probability            (0.988;1.005) : -fguess-branch-probability
+              ##compiler_flags#bool-inline                              (1.000;0.990) : -finline
+              ##compiler_flags#bool-math-errno                          (           ) : -fno-math-errno
+              ##compiler_flags#bool-peephole                            (           ) : -fno-peephole
+              ##compiler_flags#bool-peephole2                           (           ) : -fno-peephole2
+              ##compiler_flags#bool-sched-interblock                    (           ) : -fno-sched-interblock
+              ##compiler_flags#bool-sched-spec                          (           ) : -fno-sched-spec
+              ##compiler_flags#bool-signed-zeros                        (           ) : -fno-signed-zeros
+              ##compiler_flags#bool-toplevel-reorder                    (           ) : -fno-toplevel-reorder
+              ##compiler_flags#bool-trapping-math                       (           ) : -fno-trapping-math
+              ##compiler_flags#bool-zero-initialized-in-bss             (           ) : -fno-zero-initialized-in-bss
+              ##compiler_flags#bool-omit-frame-pointer                  (0.980;0.983) : -fomit-frame-pointer
+              ##compiler_flags#bool-partial-inlining                    (           ) : -fno-partial-inlining
+              ##compiler_flags#bool-peel-loops                          (           ) : -fno-peel-loops
+              ##compiler_flags#bool-predictive-commoning                (           ) : -fno-predictive-commoning
+              ##compiler_flags#bool-prefetch-loop-arrays                (           ) : -fno-prefetch-loop-arrays
+              ##compiler_flags#bool-reciprocal-math                     (           ) : -fno-reciprocal-math
+              ##compiler_flags#bool-rename-registers                    (           ) : -fno-rename-registers
+              ##compiler_flags#bool-reorder-blocks                      (           ) : -fno-reorder-blocks
+              ##compiler_flags#bool-reorder-blocks-and-partition        (           ) : -fno-reorder-blocks-and-partition
+              ##compiler_flags#bool-reorder-functions                   (           ) : -fno-reorder-functions
+              ##compiler_flags#bool-rerun-cse-after-loop                (1.003;1.000) : -frerun-cse-after-loop
+              ##compiler_flags#bool-reschedule-modulo-scheduled-loops   (           ) : -fno-reschedule-modulo-scheduled-loops
+              ##compiler_flags#bool-rounding-math                       (           ) : -fno-rounding-math
+              ##compiler_flags#bool-sched2-use-superblocks              (           ) : -fno-sched2-use-superblocks
+              ##compiler_flags#bool-sched-pressure                      (1.003;0.998) : -fsched-pressure
+              ##compiler_flags#bool-sched-spec-load                     (           ) : -fno-sched-spec-load
+              ##compiler_flags#bool-sched-spec-load-dangerous           (           ) : -fno-sched-spec-load-dangerous
+              ##compiler_flags#bool-sched-group-heuristic               (           ) : -fno-sched-group-heuristic
+              ##compiler_flags#bool-sched-critical-path-heuristic       (0.988;1.000) : -fsched-critical-path-heuristic
+              ##compiler_flags#bool-sched-spec-insn-heuristic           (           ) : -fno-sched-spec-insn-heuristic
+              ##compiler_flags#bool-sched-rank-heuristic                (           ) : -fno-sched-rank-heuristic
+              ##compiler_flags#bool-sched-last-insn-heuristic           (           ) : -fno-sched-last-insn-heuristic
+              ##compiler_flags#bool-sched-dep-count-heuristic           (           ) : -fno-sched-dep-count-heuristic
+              ##compiler_flags#bool-schedule-fusion                     (           ) : -fno-schedule-fusion
+              ##compiler_flags#bool-schedule-insns                      (0.819;1.001) : -fschedule-insns
+              ##compiler_flags#bool-schedule-insns2                     (           ) : -fno-schedule-insns2
+              ##compiler_flags#bool-section-anchors                     (           ) : -fno-section-anchors
+              ##compiler_flags#bool-selective-scheduling                (           ) : -fno-selective-scheduling
+              ##compiler_flags#bool-selective-scheduling2               (           ) : -fno-selective-scheduling2
+              ##compiler_flags#bool-sel-sched-pipelining                (           ) : -fno-sel-sched-pipelining
+              ##compiler_flags#bool-sel-sched-pipelining-outer-loops    (           ) : -fno-sel-sched-pipelining-outer-loops
+              ##compiler_flags#bool-semantic-interposition              (           ) : -fno-semantic-interposition
+              ##compiler_flags#bool-shrink-wrap                         (           ) : -fno-shrink-wrap
+              ##compiler_flags#bool-signaling-nans                      (           ) : -fno-signaling-nans
+              ##compiler_flags#bool-ssa-phiopt                          (0.995;0.999) : -fssa-phiopt
+              ##compiler_flags#bool-stdarg-opt                          (           ) : -fno-stdarg-opt
+              ##compiler_flags#bool-strict-aliasing                     (0.992;0.999) : -fstrict-aliasing
+              ##compiler_flags#bool-thread-jumps                        (           ) : -fno-thread-jumps
+              ##compiler_flags#bool-tracer                              (           ) : -fno-tracer
+              ##compiler_flags#bool-tree-bit-ccp                        (           ) : -fno-tree-bit-ccp
+              ##compiler_flags#bool-tree-builtin-call-dce               (           ) : -fno-tree-builtin-call-dce
+              ##compiler_flags#bool-tree-ccp                            (0.998;1.000) : -ftree-ccp
+              ##compiler_flags#bool-tree-ch                             (0.939;1.013) : -ftree-ch
+              ##compiler_flags#bool-tree-coalesce-vars                  (0.989;0.998) : -ftree-coalesce-vars
+              ##compiler_flags#bool-tree-copy-prop                      (1.001;0.999) : -ftree-copy-prop
+              ##compiler_flags#bool-tree-copyrename                     (           ) : -fno-tree-copyrename
+              ##compiler_flags#bool-tree-dce                            (0.912;0.994) : -ftree-dce
+              ##compiler_flags#bool-tree-dominator-opts                 (           ) : -fno-tree-dominator-opts
+              ##compiler_flags#bool-tree-dse                            (0.998;1.000) : -ftree-dse
+              ##compiler_flags#bool-tree-forwprop                       (           ) : -fno-tree-forwprop
+              ##compiler_flags#bool-tree-loop-if-convert                (           ) : -fno-tree-loop-if-convert
+              ##compiler_flags#bool-tree-loop-if-convert-stores         (           ) : -fno-tree-loop-if-convert-stores
+              ##compiler_flags#bool-tree-loop-im                        (0.958;1.001) : -ftree-loop-im
+              ##compiler_flags#bool-tree-phiprop                        (           ) : -fno-tree-phiprop
+              ##compiler_flags#bool-tree-loop-distribution              (           ) : -fno-tree-loop-distribution
+              ##compiler_flags#bool-tree-loop-distribute-patterns       (           ) : -fno-tree-loop-distribute-patterns
+              ##compiler_flags#bool-tree-loop-ivcanon                   (           ) : -fno-tree-loop-ivcanon
+              ##compiler_flags#bool-tree-loop-linear                    (           ) : -fno-tree-loop-linear
+              ##compiler_flags#bool-tree-loop-optimize                  (0.991;0.997) : -ftree-loop-optimize
+              ##compiler_flags#bool-tree-loop-vectorize                 (           ) : -fno-tree-loop-vectorize
+              ##compiler_flags#bool-tree-pre                            (           ) : -fno-tree-pre
+              ##compiler_flags#bool-tree-partial-pre                    (           ) : -fno-tree-partial-pre
+              ##compiler_flags#bool-tree-pta                            (1.007;1.000) : -ftree-pta
+              ##compiler_flags#bool-tree-reassoc                        (0.992;0.999) : -ftree-reassoc
+              ##compiler_flags#bool-tree-sink                           (           ) : -fno-tree-sink
+              ##compiler_flags#bool-tree-slsr                           (1.021;1.000) : -ftree-slsr
+              ##compiler_flags#bool-tree-sra                            (0.869;1.000) : -ftree-sra
+              ##compiler_flags#bool-tree-tail-merge                     (           ) : -fno-tree-tail-merge
+              ##compiler_flags#bool-tree-vectorize                      (           ) : -fno-tree-vectorize
+              ##compiler_flags#bool-tree-vrp                            (0.995;0.999) : -ftree-vrp
+              ##compiler_flags#bool-unit-at-a-time                      (           ) : -fno-unit-at-a-time
+              ##compiler_flags#bool-unroll-all-loops                    (           ) : -fno-unroll-all-loops
+              ##compiler_flags#bool-unroll-loops                        (           ) : -fno-unroll-loops
+              ##compiler_flags#bool-unsafe-loop-optimizations           (           ) : -fno-unsafe-loop-optimizations
+              ##compiler_flags#bool-unsafe-math-optimizations           (           ) : -fno-unsafe-math-optimizations
+              ##compiler_flags#bool-unswitch-loops                      (           ) : -fno-unswitch-loops
+              ##compiler_flags#bool-ipa-ra                              (0.980;1.000) : -fipa-ra
+              ##compiler_flags#bool-variable-expansion-in-unroller      (           ) : -fno-variable-expansion-in-unroller
+              ##compiler_flags#bool-vect-cost-model                     (           ) : -fno-vect-cost-model
+              ##compiler_flags#bool-web                                 (           ) : -fno-web
+              ##compiler_flags#bool-wpa                                 (           ) : -fno-wpa
+              ##compiler_flags#bool-use-linker-plugin                   (           ) : -fno-use-linker-plugin
+              ##compiler_flags#bool--fexcess-precision=                 (           ) : -fexcess-precision=standard
+              ##compiler_flags#bool--ffp-contract=                      (           ) : -ffp-contract=off
+              ##compiler_flags#bool--fira-algorithm=                    (0.989;0.993) : -fira-algorithm=CB
+              ##compiler_flags#bool--fira-region=                       (           ) : -fira-region=one
+
+                  Compiler flags: -O2 -fno-early-inlining -fno-tree-fre -fno-associative-math -fauto-inc-dec -fno-branch-probabilities -fno-branch-target-load-optimize -fno-branch-target-load-optimize2 -fno-btr-bb-exclusive -fcaller-saves -fno-check-data-deps -fno-conserve-stack -fno-compare-elim -fno-cprop-registers -fcrossjumping -fcse-follow-jumps -fno-cse-skip-blocks -fno-cx-fortran-rules -fno-cx-limited-range -fno-data-sections -fdce -fno-delayed-branch -fno-delete-null-pointer-checks -fno-devirtualize -fno-devirtualize-speculatively -fno-devirtualize-at-ltrans -fno-dse -fno-ipa-sra -fno-expensive-optimizations -fno-fat-lto-objects -fno-fast-math -fno-finite-math-only -fno-float-store -fforward-propagate -fno-function-sections -fno-gcse -fno-gcse-after-reload -fno-gcse-las -fno-gcse-lm -fno-graphite-identity -fno-gcse-sm -fno-hoist-adjacent-loads -fno-if-conversion -fno-indirect-inlining -fno-inline-functions -fno-inline-functions-called-once -finline-small-functions -fno-ipa-cp -fno-ipa-cp-clone -fno-ipa-cp-alignment -fno-ipa-pta -fno-ipa-pure-const -fno-ipa-reference -fipa-icf -fno-ira-hoist-pressure -fno-ira-share-save-slots -fno-ira-share-spill-slots -fno-isolate-erroneous-paths-dereference -fno-isolate-erroneous-paths-attribute -fivopts -fno-keep-inline-functions -fno-keep-static-consts -fno-live-range-shrinkage -fno-loop-block -fno-loop-interchange -fno-loop-strip-mine -fno-loop-unroll-and-jam -fno-loop-nest-optimize -fno-loop-parallelize-all -fno-lra-remat -fno-lto -fno-merge-all-constants -fmerge-constants -fno-modulo-sched -fno-modulo-sched-allow-regmoves -fno-move-loop-invariants -fno-branch-count-reg -fno-defer-pop -fno-function-cse -fguess-branch-probability -finline -fno-math-errno -fno-peephole -fno-peephole2 -fno-sched-interblock -fno-sched-spec -fno-signed-zeros -fno-toplevel-reorder -fno-trapping-math -fno-zero-initialized-in-bss -fomit-frame-pointer -fno-partial-inlining -fno-peel-loops -fno-predictive-commoning -fno-prefetch-loop-arrays -fno-reciprocal-math -fno-rename-registers -fno-reorder-blocks -fno-reorder-blocks-and-partition -fno-reorder-functions -frerun-cse-after-loop -fno-reschedule-modulo-scheduled-loops -fno-rounding-math -fno-sched2-use-superblocks -fsched-pressure -fno-sched-spec-load -fno-sched-spec-load-dangerous -fno-sched-group-heuristic -fsched-critical-path-heuristic -fno-sched-spec-insn-heuristic -fno-sched-rank-heuristic -fno-sched-last-insn-heuristic -fno-sched-dep-count-heuristic -fno-schedule-fusion -fschedule-insns -fno-schedule-insns2 -fno-section-anchors -fno-selective-scheduling -fno-selective-scheduling2 -fno-sel-sched-pipelining -fno-sel-sched-pipelining-outer-loops -fno-semantic-interposition -fno-shrink-wrap -fno-signaling-nans -fssa-phiopt -fno-stdarg-opt -fstrict-aliasing -fno-thread-jumps -fno-tracer -fno-tree-bit-ccp -fno-tree-builtin-call-dce -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop -fno-tree-copyrename -ftree-dce -fno-tree-dominator-opts -ftree-dse -fno-tree-forwprop -fno-tree-loop-if-convert -fno-tree-loop-if-convert-stores -ftree-loop-im -fno-tree-phiprop -fno-tree-loop-distribution -fno-tree-loop-distribute-patterns -fno-tree-loop-ivcanon -fno-tree-loop-linear -ftree-loop-optimize -fno-tree-loop-vectorize -fno-tree-pre -fno-tree-partial-pre -ftree-pta -ftree-reassoc -fno-tree-sink -ftree-slsr -ftree-sra -fno-tree-tail-merge -fno-tree-vectorize -ftree-vrp -fno-unit-at-a-time -fno-unroll-all-loops -fno-unroll-loops -fno-unsafe-loop-optimizations -fno-unsafe-math-optimizations -fno-unswitch-loops -fipa-ra -fno-variable-expansion-in-unroller -fno-vect-cost-model -fno-web -fno-wpa -fno-use-linker-plugin -fexcess-precision=standard -ffp-contract=off -fira-algorithm=CB -fira-region=one
+ 
+         ********************************************************************
+          Performing comparison on output dimensions (original vs new results)
+
+          Total binary size (bytes):  78828 vs 76256
+          Code MD5:  b01b6114ee7d5795f3e0402da0f7fd91 vs 41cb43cba785db5e8d52e0c50bd984a4
+          Code size (bytes):  94056 vs 91448
+          Main kernel execution time (sec.) [max]:  11.947238 vs 11.839691
+          Main kernel execution time (sec.) [min]:  11.887244 vs 11.757919
+
+
+             ck benchmark program:zlib --cmd_key=decode --repeat=100 --dataset_uoa=video-raw-0001-deflated --record --record_uoa=rpi3-zlib-decode-gcc7-150b-rnd-frontier-pruned1-inverted --flags="-O2 -fno-early-inlining -fno-tree-fre -fno-associative-math -fauto-inc-dec -fno-branch-probabilities -fno-branch-target-load-optimize -fno-branch-target-load-optimize2 -fno-btr-bb-exclusive -fcaller-saves -fno-check-data-deps -fno-conserve-stack -fno-compare-elim -fno-cprop-registers -fcrossjumping -fcse-follow-jumps -fno-cse-skip-blocks -fno-cx-fortran-rules -fno-cx-limited-range -fno-data-sections -fdce -fno-delayed-branch -fno-delete-null-pointer-checks -fno-devirtualize -fno-devirtualize-speculatively -fno-devirtualize-at-ltrans -fno-dse -fno-ipa-sra -fno-expensive-optimizations -fno-fat-lto-objects -fno-fast-math -fno-finite-math-only -fno-float-store -fforward-propagate -fno-function-sections -fno-gcse -fno-gcse-after-reload -fno-gcse-las -fno-gcse-lm -fno-graphite-identity -fno-gcse-sm -fno-hoist-adjacent-loads -fno-if-conversion -fno-indirect-inlining -fno-inline-functions -fno-inline-functions-called-once -finline-small-functions -fno-ipa-cp -fno-ipa-cp-clone -fno-ipa-cp-alignment -fno-ipa-pta -fno-ipa-pure-const -fno-ipa-reference -fipa-icf -fno-ira-hoist-pressure -fno-ira-share-save-slots -fno-ira-share-spill-slots -fno-isolate-erroneous-paths-dereference -fno-isolate-erroneous-paths-attribute -fivopts -fno-keep-inline-functions -fno-keep-static-consts -fno-live-range-shrinkage -fno-loop-block -fno-loop-interchange -fno-loop-strip-mine -fno-loop-unroll-and-jam -fno-loop-nest-optimize -fno-loop-parallelize-all -fno-lra-remat -fno-lto -fno-merge-all-constants -fmerge-constants -fno-modulo-sched -fno-modulo-sched-allow-regmoves -fno-move-loop-invariants -fno-branch-count-reg -fno-defer-pop -fno-function-cse -fguess-branch-probability -finline -fno-math-errno -fno-peephole -fno-peephole2 -fno-sched-interblock -fno-sched-spec -fno-signed-zeros -fno-toplevel-reorder -fno-trapping-math -fno-zero-initialized-in-bss -fomit-frame-pointer -fno-partial-inlining -fno-peel-loops -fno-predictive-commoning -fno-prefetch-loop-arrays -fno-reciprocal-math -fno-rename-registers -fno-reorder-blocks -fno-reorder-blocks-and-partition -fno-reorder-functions -frerun-cse-after-loop -fno-reschedule-modulo-scheduled-loops -fno-rounding-math -fno-sched2-use-superblocks -fsched-pressure -fno-sched-spec-load -fno-sched-spec-load-dangerous -fno-sched-group-heuristic -fsched-critical-path-heuristic -fno-sched-spec-insn-heuristic -fno-sched-rank-heuristic -fno-sched-last-insn-heuristic -fno-sched-dep-count-heuristic -fno-schedule-fusion -fschedule-insns -fno-schedule-insns2 -fno-section-anchors -fno-selective-scheduling -fno-selective-scheduling2 -fno-sel-sched-pipelining -fno-sel-sched-pipelining-outer-loops -fno-semantic-interposition -fno-shrink-wrap -fno-signaling-nans -fssa-phiopt -fno-stdarg-opt -fstrict-aliasing -fno-thread-jumps -fno-tracer -fno-tree-bit-ccp -fno-tree-builtin-call-dce -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop -fno-tree-copyrename -ftree-dce -fno-tree-dominator-opts -ftree-dse -fno-tree-forwprop -fno-tree-loop-if-convert -fno-tree-loop-if-convert-stores -ftree-loop-im -fno-tree-phiprop -fno-tree-loop-distribution -fno-tree-loop-distribute-patterns -fno-tree-loop-ivcanon -fno-tree-loop-linear -ftree-loop-optimize -fno-tree-loop-vectorize -fno-tree-pre -fno-tree-partial-pre -ftree-pta -ftree-reassoc -fno-tree-sink -ftree-slsr -ftree-sra -fno-tree-tail-merge -fno-tree-vectorize -ftree-vrp -fno-unit-at-a-time -fno-unroll-all-loops -fno-unroll-loops -fno-unsafe-loop-optimizations -fno-unsafe-math-optimizations -fno-unswitch-loops -fipa-ra -fno-variable-expansion-in-unroller -fno-vect-cost-model -fno-web -fno-wpa -fno-use-linker-plugin -fexcess-precision=standard -ffp-contract=off -fira-algorithm=CB -fira-region=one"
+                    bin_size=76256, time=11.681095
+
+
+ rpi3-zlib-decode-gcc7-150bpc-rnd-frontier
+   bin_size=119648, time=11.532964 ± 0.6%
+     "-O3 -fira-algorithm=CB -fcombine-stack-adjustments -fno-cx-limited-range -fno-devirtualize -fno-fat-lto-objects -ffunction-cse -fno-gcse-las -fno-isolate-erroneous-paths-dereference -fno-ssa-phiopt -fno-strict-overflow -fno-trapping-math -ftree-forwprop -ftree-loop-if-convert-stores -fno-tree-reassoc -fno-use-linker-plugin -fvariable-expansion-in-unroller -fno-vpt -fno-whole-program -ftree-parallelize-loops=0 --param asan-instrument-reads=0 --param builtin-expect-probability=8 --param gcse-after-reload-partial-fraction=5 --param ipa-cp-array-index-hint-bonus=69 --param ipa-cp-eval-threshold=256 --param ipa-cp-recursion-penalty=18 --param ipa-cp-value-list-size=1 --param large-function-growth=42 --param lto-min-partition=1935 --param max-combine-insns=2 --param max-delay-slot-live-search=596 --param max-early-inliner-iterations=0 --param max-gcse-insertion-ratio=36 --param max-goto-duplication-insns=16 --param max-reload-search-insns=62 --param max-sched-insn-conflict-delay=8 --param max-slsr-cand-scan=1029 --param max-unrolled-insns=169 --param min-crossjump-insns=3 --param min-vect-loop-bound=2 --param sink-frequency-threshold=1 --param ssp-buffer-size=3 --param tracer-min-branch-probability=81"
+     ck replay experiment:98ea5327081ac0d9 --point=f3418a9e6bf71351 --prune --prune_md5 @zprune.json --deps
+
+                  Final pruned choices (6 vs 43) :
+                        Characteristics' changes (in brackets):
+                           0 = ##characteristics#run#execution_time_kernel_0#min_imp
+                           1 = ##characteristics#compile#binary_size#min_imp
+
+                    ##compiler_flags#base_opt                                 (           ) : -O3
+                    ##compiler_flags#bool-strict-overflow                     (0.983;0.996) : -fno-strict-overflow
+                    ##compiler_flags#bool-tree-reassoc                        (0.941;1.000) : -fno-tree-reassoc
+                    ##compiler_flags#param-min-vect-loop-bound                (0.981;0.996) : --param min-vect-loop-bound=2
+                    ##compiler_flags#param-min-crossjump-insns                (1.001;0.995) : --param min-crossjump-insns=3
+                    ##compiler_flags#param-ipa-cp-value-list-size             (0.978;1.001) : --param ipa-cp-value-list-size=1
+
+                        Compiler flags: -O3 -fno-strict-overflow -fno-tree-reassoc --param min-vect-loop-bound=2 --param min-crossjump-insns=3 --param ipa-cp-value-list-size=1
+
+
+                ********************************************************************
+                Performing comparison on output dimensions (original vs new results)
+
+                Total binary size (bytes):  119648 vs 117816
+                Code MD5:  b76793830f7b714278500d51be2733b6 vs 2df8c39af847ea87e96426de9b44609c
+                Code size (bytes):  138072 vs 136288
+                Main kernel execution time (sec.) [max]:  11.600456 vs 11.551405
+                Main kernel execution time (sec.) [min]:  11.532964 vs 11.48897
+
+
+             ck benchmark program:zlib --cmd_key=decode --repeat=100 --dataset_uoa=video-raw-0001-deflated --record --record_uoa=rpi3-zlib-decode-gcc7-150bpc-rnd-frontier-pruned1 --flags="-O3 -fno-strict-overflow -fno-tree-reassoc --param min-vect-loop-bound=2 --param min-crossjump-insns=3 --param ipa-cp-value-list-size=1"
+                    bin_size=117816, time=11.500343
+
+
+ rpi3-zlib-decode-gcc7-150b-rnd-cbest
+   bin_size=68464, time=11.984146 ± 0.4%
+     "-O3 -fno-inline -flto"
+     ck replay experiment:f89c04c152682687 --point=9a4548dd347699b7
+
+   bin_size=81880, time=11.607043 ± 0.0%
+     "-O3 -flto"
+     ck replay experiment:f89c04c152682687 --point=b5a6ade146d9b028

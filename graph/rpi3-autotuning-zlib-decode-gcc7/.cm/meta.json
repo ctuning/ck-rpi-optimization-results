@@ -135,43 +135,43 @@
           "0": {
             "capsize": 2,
             "color": "#6699ff",
-            "size": 40
+            "size": 4
           },
           "1": {
             "capsize": 2,
             "color": "#5f0000",
-            "frontier": "yes",
+            "frontier": "no",
             "line_style": "--",
             "remove_permanent": "yes",
-            "size": 10
+            "size": 3
           },
           "2": {
             "capsize": 4,
             "color": "#004F00",
             "elinewidth": "2",
             "fmt": ".",
-            "size": 40
+            "size": 4
           },
           "3": {
             "capsize": 4,
             "color": "#000000",
             "elinewidth": "2",
             "fmt": ".",
-            "size": 40
+            "size": 4
           },
           "4": {
             "capsize": 4,
             "color": "#6F0000",
             "elinewidth": "2",
             "fmt": "x",
-            "size": 40
+            "size": 4
           },
           "5": {
             "capsize": 4,
             "color": "#3F0000",
             "elinewidth": "2",
             "fmt": "x",
-            "size": 40
+            "size": 4
           },
           "6": {
             "capsize": 2,
@@ -180,7 +180,7 @@
             "line_style": "--",
             "remove_permanent": "yes",
             "reuse_dims": "yes",
-            "size": 10
+            "size": 3
           }
         },
         "separate_permanent_to_graphs": "no",

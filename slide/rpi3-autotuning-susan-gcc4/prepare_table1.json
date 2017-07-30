@@ -1,0 +1,92 @@
+{
+  "out_html_file":"4373f49dea7663db-table1.html",
+  "out_tex_file":"4373f49dea7663db-table1.tex",
+
+  "force_round":1,
+
+  "table_header":[
+              {"name":"ID", "html_before":"<b>", "html_after":"</b>", "tex":"l", "tex_before":"\\textbf{", "tex_after":"}"}, 
+              {"name":"Compiler", "html_change_space":"yes", "tex":"l"}, 
+              {"name":"Time (sec.)", "html_change_space":"yes", "tex":"l"}, 
+              {"name":"Size (bytes)", "html_change_space":"yes", "tex":"l"},
+              {"name":"Flags", "html_before":"<small>", "html_after":"</small>", "tex":"p{3.2in}", "tex_before":"{\\small", "tex_after":"}"}
+             ],
+
+  "entries":[
+         {
+          "note":"A1",
+          "extra_field":"GCC 4.9.2",
+          "data_uoa":"rpi3-susan-corners-gcc4-main-empty-opt", 
+          "data_uid":"f9e6ec8d198c36c3",
+          "point":"7cf654adb86fb606"
+         },
+
+         {
+          "note":"A2",
+          "extra_field":"GCC 4.9.2",
+          "custom":{"row_style":"style=\"color:#9f0000;\""},
+          "data_uoa":"rpi3-susan-corners-gcc4-main-o3", 
+          "data_uid":"0b867dd820354a8b",
+          "point":"5734f47e4214a783"
+         },
+
+         {
+          "note":"A3",
+          "extra_field":"GCC 4.9.2",
+          "data_uoa":"rpi3-susan-corners-gcc4-main", 
+          "data_uid":"b2b26ab783304fc4",
+          "point":"7d87c22a2425da10"
+         },
+
+         {
+          "note":"A4",
+          "extra_field":"GCC 4.9.2",
+          "data_uoa":"rpi3-susan-corners-gcc4-300-rnd-frontier", 
+          "data_uid":"8556dbf4e51a825d",
+          "point":"86ca1630895041c1",
+          "html_small":"yes"
+         },
+
+         {
+          "note":"A4R",
+          "extra_field":"GCC 4.9.2",
+          "data_uoa":"rpi3-susan-corners-gcc4-300-rnd-frontier-pruned1", 
+          "data_uid":"98688a71f99ac30b",
+          "point":"4bcd9dad6b249a79"
+         },
+
+         {
+          "note":"A5R",
+          "extra_field":"GCC 4.9.2",
+          "data_uoa":"rpi3-susan-corners-gcc4-300-rnd-frontier-pruned2", 
+          "data_uid":"984b2d8abc3c4415",
+          "point":"78c281b4cab897a6"
+         },
+
+         {
+          "note":"A6R",
+          "extra_field":"GCC 4.9.2",
+          "custom":{"row_style":"style=\"color:#9f0000;\""},
+          "data_uoa":"rpi3-susan-corners-gcc4-300-rnd-frontier-pruned3", 
+          "data_uid":"7af17ca204080b57",
+          "point":"5a464ecf81b60098"
+         },
+
+         {
+          "note":"X",
+          "extra_field":"CLANG 3.8.1",
+          "data_uoa":"rpi3-susan-corners-clang381-main-empty-opt", 
+          "data_uid":"a32e34c31b900930",
+          "point":"64ec888d2e6a0669"
+         },
+
+         {
+          "note":"X",
+          "custom":{"row_style":"style=\"color:#9f0000;\""},
+          "extra_field":"CLANG 3.8.1",
+          "data_uoa":"rpi3-susan-corners-clang381-main-o3",
+          "data_uid":"99141b3313132494",
+          "point":"a63f42ac837e38d0"
+         }
+        ]
+}

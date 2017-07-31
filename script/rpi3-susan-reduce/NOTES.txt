@@ -12,22 +12,23 @@ cbench-automotive-susan --cmd_key=corners --repeat=100 --dataset_uoa=image-pgm-0
 
  ------------------------------
  rpi3-susan-corners-gcc4-main-empty-opt
-   bin_size=60560, time=11.694953 ± 0.0%
+   A1) bin_size=60560, time=11.694953 ± 0.0%
      ""
      ck replay experiment:f9e6ec8d198c36c3 --point=7cf654adb86fb606
 
  rpi3-susan-corners-gcc4-main-o3
-   bin_size=36360, time=4.234187 ± 2.1%
+   A2) bin_size=36360, time=4.234187 ± 2.1%
      "-O3"
      ck replay experiment:0b867dd820354a8b --point=5734f47e4214a783
 
  rpi3-susan-corners-gcc4-main
-   bin_size=32184, time=6.136958 ± 0.8%
+   A3) bin_size=32184, time=6.136958 ± 0.8%
      "-Os"
      ck replay experiment:b2b26ab783304fc4 --point=7d87c22a2425da10
 
  rpi3-susan-corners-gcc4-300-rnd-frontier
-   bin_size=32808, time=4.599836 ± 0.8%
+
+   A4) bin_size=32808, time=4.599836 ± 0.8%
      "-O3 -fira-algorithm=priority -fcaller-saves -fno-devirtualize-speculatively -fno-function-cse -fgcse-sm -fno-guess-branch-probability -fno-if-conversion -fno-inline-functions-called-once -fipa-reference -fno-ira-loop-pressure -fira-share-save-slots -fno-isolate-erroneous-paths-dereference -fno-ivopts -floop-nest-optimize -fmath-errno -fmove-loop-invariants -fsched-last-insn-heuristic -fsched2-use-superblocks -fno-schedule-insns -fno-signed-zeros -fsingle-precision-constant -fno-tree-sink -fno-unsafe-loop-optimizations --param asan-instrument-reads=1 --param gcse-unrestricted-cost=5 --param l1-cache-size=11 --param large-function-growth=33 --param loop-invariant-max-bbs-in-loop=636 --param max-completely-peel-loop-nest-depth=7 --param max-delay-slot-live-search=163 --param max-gcse-insertion-ratio=28 --param max-inline-insns-single=282 --param max-inline-recursive-depth-auto=0 --param max-jump-thread-duplication-stmts=6 --param max-last-value-rtl=4062 --param max-pipeline-region-insns=326 --param max-sched-region-blocks=17 --param max-tail-merge-iterations=2 --param max-unswitch-insns=5 --param max-vartrack-expr-depth=6 --param min-spec-prob=1 --param omega-eliminate-redundant-constraints=1 --param omega-max-keys=366 --param omega-max-wild-cards=36 --param sms-dfa-history=0"
      ck replay experiment:8556dbf4e51a825d --point=86ca1630895041c1 --prune --prune_md5 @prune.json
 
@@ -48,7 +49,7 @@ cbench-automotive-susan --cmd_key=corners --repeat=100 --dataset_uoa=image-pgm-0
 
                ck benchmark program:cbench-automotive-susan --cmd_key=corners --repeat=100 --dataset_uoa=image-pgm-0001 --record --record_uoa=rpi3-susan-corners-gcc4-300-rnd-frontier-pruned1 --flags="-O3 -fno-guess-branch-probability -fno-if-conversion -fno-ivopts -fno-schedule-insns -fsingle-precision-constant --param max-unswitch-insns=5"
 
-   bin_size=33384, time=3.653642 ± 1.5%
+   A5) bin_size=33384, time=3.653642 ± 1.5%
      "-O3 -fbranch-probabilities -ffunction-cse -fno-ivopts -fno-live-range-shrinkage -fmodulo-sched-allow-regmoves -fno-sched-dep-count-heuristic -fno-sched2-use-superblocks -fno-sel-sched-pipelining -fno-tree-builtin-call-dce -ftree-copyrename -ftree-forwprop -fno-tree-reassoc -fno-vpt"
      ck replay experiment:8556dbf4e51a825d --point=5ba25254bdbbc61e --prune --prune_md5 @prune.json
 
@@ -62,7 +63,7 @@ cbench-automotive-susan --cmd_key=corners --repeat=100 --dataset_uoa=image-pgm-0
 
                ck benchmark program:cbench-automotive-susan --cmd_key=corners --repeat=100 --dataset_uoa=image-pgm-0001 --record --record_uoa=rpi3-susan-corners-gcc4-300-rnd-frontier-pruned2 --flags="-O3 -fbranch-probabilities -fno-ivopts -fno-sched-dep-count-heuristic"
 
-   bin_size=33788, time=3.410111 ± 0.1%
+   A6) bin_size=33788, time=3.410111 ± 0.1%
      "-O3 -fno-btr-bb-exclusive -fno-cx-fortran-rules -fno-delete-null-pointer-checks -fno-dse -fgcse -fno-inline-small-functions -fno-ivopts -freciprocal-math -freorder-functions -fno-sched-last-insn-heuristic -fno-thread-jumps -fno-tree-bit-ccp -ftree-loop-ivcanon -fno-tree-partial-pre -fno-tree-pta -fno-use-linker-plugin"
      ck replay experiment:8556dbf4e51a825d --point=1dd1493b955e950d --prune --prune_md5 @prune.json
 

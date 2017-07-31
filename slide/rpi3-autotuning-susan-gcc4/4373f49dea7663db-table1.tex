@@ -1,0 +1,23 @@
+    \begin{tabular}{|l|l|l|l|p{3.2in}|}
+     \hline
+      \textbf{ID} & \textbf{Compiler} & \textbf{Time (sec.)} & \textbf{Size (bytes)} & \textbf{Flags} \\ 
+     \hline
+      \textbf{ A1 } &  GCC 4.9.2  &  11.7 $\pm$ 0.0  &  60560  & {\small  }\\
+     \hline
+      \textbf{ A2 } &  GCC 4.9.2  &  4.3 $\pm$ 0.1  &  36360  & {\small -O3 }\\
+     \hline
+      \textbf{ A3 } &  GCC 4.9.2  &  5.6 $\pm$ 0.0  &  35032  & {\small -O1 }\\
+     \hline
+      \textbf{ A4 } &  GCC 4.9.2  &  3.4 $\pm$ 0.0  &  33788  & {\small -O3 -fno-btr-bb-exclusive -fno-cx-fortran-rules -fno-delete-null-pointer-checks -fno-dse -fgcse -fno-inline-small-functions -fno-ivopts -freciprocal-math -freorder-functions -fno-sched-last-insn-heuristic -fno-thread-jumps -fno-tree-bit-ccp -ftree-loop-ivcanon -fno-tree-partial-pre -fno-tree-pta -fno-use-linker-plugin }\\
+     \hline
+      \textbf{ A4R } &  GCC 4.9.2  &  4.2 $\pm$ 0.0  &  32448  & {\small -O3 -fno-guess-branch-probability -fno-if-conversion -fno-ivopts -fno-schedule-insns -fsingle-precision-constant --param max-unswitch-insns=5 }\\
+     \hline
+      \textbf{ A5R } &  GCC 4.9.2  &  3.7 $\pm$ 0.1  &  33376  & {\small -O3 -fbranch-probabilities -fno-ivopts -fno-sched-dep-count-heuristic }\\
+     \hline
+      \textbf{ A6R } &  GCC 4.9.2  &  3.4 $\pm$ 0.0  &  33804  & {\small -O3 -fno-inline-small-functions -fno-ivopts -fno-tree-partial-pre }\\
+     \hline
+      \textbf{ X } &  CLANG 3.8.1  &  11.1 $\pm$ 0.1  &  58368  & {\small  }\\
+     \hline
+      \textbf{ X } &  CLANG 3.8.1  &  4.5 $\pm$ 0.1  &  35552  & {\small -O3 }\\
+     \hline
+    \end{tabular}    

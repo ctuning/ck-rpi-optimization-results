@@ -1,0 +1,61 @@
+{
+  "out_html_file":"9e4b1594d3b99443-table1.html",
+  "out_tex_file":"9e4b1594d3b99443-table1.tex",
+
+  "force_round":1,
+
+  "table_header":[
+              {"name":"ID", "html_before":"<b>", "html_after":"</b>", "tex":"l", "tex_before":"\\textbf{", "tex_after":"}"}, 
+              {"name":"Compiler", "html_change_space":"yes", "tex":"l"}, 
+              {"name":"Time (sec.)", "html_change_space":"yes", "tex":"l"}, 
+              {"name":"Size (bytes)", "html_change_space":"yes", "tex":"l"},
+              {"name":"Flags", "html_before":"<small>", "html_after":"</small>", "tex":"p{3.2in}", "tex_before":"{\\small", "tex_after":"}"}
+             ],
+
+  "entries":[
+         {
+          "note":"B1",
+          "extra_field":"GCC 7.1.0",
+          "data_uoa":"rpi3-susan-corners-gcc7-main-empty-opt", 
+          "data_uid":"ea8ded6ddee6093a",
+          "point":"6006d3eadf403088"
+         },
+
+         {
+          "note":"B2",
+          "extra_field":"GCC 7.1.0",
+          "custom":{"row_style":"style=\"color:#4f0000;\""},
+          "data_uoa":"rpi3-susan-corners-gcc7-main-o3", 
+          "data_uid":"00fa4e108053ac7b",
+          "point":"de68bdc517447085"
+         },
+
+         {
+          "note":"B3",
+          "extra_field":"GCC 7.1.0",
+          "custom":{"row_style":"style=\"color:#4f0000;\""},
+          "data_uoa":"rpi3-susan-corners-gcc7-main", 
+          "data_uid":"eeba1f30493b8bd4",
+          "point":"5d64cf89c67817be"
+         },
+
+         {
+          "note":"B4",
+          "extra_field":"GCC 7.1.0",
+          "data_uoa":"rpi3-susan-corners-gcc7-300-rnd-frontier", 
+          "data_uid":"f4f13d284194463a",
+          "point":"5421ba4fdca2c4b6",
+          "html_small":"yes"
+         },
+
+         {
+          "note":"B4R",
+          "extra_field":"GCC 7.1.0",
+          "custom":{"row_style":"style=\"color:#af0000;\""},
+          "data_uoa":"rpi3-susan-corners-gcc7-300-rnd-frontier-pruned1", 
+          "data_uid":"2b6646924c79bf81",
+          "point":"e8a36aa042438771"
+         }
+
+        ]
+}

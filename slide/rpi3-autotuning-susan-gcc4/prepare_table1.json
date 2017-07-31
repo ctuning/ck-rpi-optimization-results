@@ -24,7 +24,7 @@
          {
           "note":"A2",
           "extra_field":"GCC 4.9.2",
-          "custom":{"row_style":"style=\"color:#9f0000;\""},
+          "custom":{"row_style":"style=\"color:#4f0000;\""},
           "data_uoa":"rpi3-susan-corners-gcc4-main-o3", 
           "data_uid":"0b867dd820354a8b",
           "point":"5734f47e4214a783"
@@ -33,18 +33,10 @@
          {
           "note":"A3",
           "extra_field":"GCC 4.9.2",
+          "custom":{"row_style":"style=\"color:#4f0000;\""},
           "data_uoa":"rpi3-susan-corners-gcc4-main", 
           "data_uid":"b2b26ab783304fc4",
           "point":"7d87c22a2425da10"
-         },
-
-         {
-          "note":"A4",
-          "extra_field":"GCC 4.9.2",
-          "data_uoa":"rpi3-susan-corners-gcc4-300-rnd-frontier", 
-          "data_uid":"8556dbf4e51a825d",
-          "point":"86ca1630895041c1",
-          "html_small":"yes"
          },
 
          {
@@ -66,14 +58,23 @@
          {
           "note":"A6R",
           "extra_field":"GCC 4.9.2",
-          "custom":{"row_style":"style=\"color:#9f0000;\""},
+          "custom":{"row_style":"style=\"color:#af0000;\""},
           "data_uoa":"rpi3-susan-corners-gcc4-300-rnd-frontier-pruned3", 
           "data_uid":"7af17ca204080b57",
           "point":"5a464ecf81b60098"
          },
 
          {
-          "note":"X",
+          "note":"A7R",
+          "extra_field":"GCC 4.9.2",
+          "custom":{"row_style":"style=\"color:#af0000;\""},
+          "data_uoa":"rpi3-susan-corners-gcc4-150bpc-rnd-frontier-pruned1", 
+          "data_uid":"992855e25efa2c4a",
+          "point":"c6b45e2c3e414452"
+         },
+
+         {
+          "note":"A8",
           "extra_field":"CLANG 3.8.1",
           "data_uoa":"rpi3-susan-corners-clang381-main-empty-opt", 
           "data_uid":"a32e34c31b900930",
@@ -81,8 +82,8 @@
          },
 
          {
-          "note":"X",
-          "custom":{"row_style":"style=\"color:#9f0000;\""},
+          "note":"A9",
+          "custom":{"row_style":"style=\"color:#4f0000;\""},
           "extra_field":"CLANG 3.8.1",
           "data_uoa":"rpi3-susan-corners-clang381-main-o3",
           "data_uid":"99141b3313132494",

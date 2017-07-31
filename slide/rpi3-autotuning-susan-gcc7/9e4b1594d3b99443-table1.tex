@@ -1,0 +1,15 @@
+    \begin{tabular}{|l|l|l|l|p{3.2in}|}
+     \hline
+      \textbf{ID} & \textbf{Compiler} & \textbf{Time (sec.)} & \textbf{Size (bytes)} & \textbf{Flags} \\ 
+     \hline
+      \textbf{ B1 } &  GCC 7.1.0  &  11.5 $\pm$ 0.0  &  58008  & {\small  }\\
+     \hline
+      \textbf{ B2 } &  GCC 7.1.0  &  3.2 $\pm$ 0.0  &  34432  & {\small -O3 }\\
+     \hline
+      \textbf{ B3 } &  GCC 7.1.0  &  4.4 $\pm$ 0.0  &  29980  & {\small -Os }\\
+     \hline
+      \textbf{ B4 } &  GCC 7.1.0  &  3.1 $\pm$ 0.1  &  31460  & {\small -O3 -fno-cx-fortran-rules -fno-devirtualize -fno-expensive-optimizations -fno-if-conversion -fira-share-save-slots -fno-ira-share-spill-slots -fno-ivopts -fno-loop-strip-mine -finline -fno-math-errno -frounding-math -fno-sched-rank-heuristic -fno-sel-sched-pipelining-outer-loops -fno-semantic-interposition -fsplit-wide-types -fno-tree-ccp -ftree-dse }\\
+     \hline
+      \textbf{ B4R } &  GCC 7.1.0  &  3.1 $\pm$ 0.1  &  31420  & {\small -O3 -fno-expensive-optimizations -fno-ivopts -fno-math-errno }\\
+     \hline
+    \end{tabular}    

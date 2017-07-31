@@ -13,21 +13,20 @@
 
   "entries":[
          {
-          "note":"A6R",
+          "note":"A4",
           "extra_field":"GCC 4.9.2",
-          "data_uoa":"rpi3-susan-corners-gcc4-300-rnd-frontier-pruned3", 
-          "data_uid":"7af17ca204080b57",
-          "point":"5a464ecf81b60098"
+          "data_uoa":"rpi3-susan-corners-gcc4-300-rnd-frontier", 
+          "data_uid":"8556dbf4e51a825d",
+          "point":"86ca1630895041c1",
+          "html_small":"yes"
          },
 
          {
-          "note":"A6RI",
+          "note":"A4R",
           "extra_field":"GCC 4.9.2",
-          "data_uoa":"rpi3-susan-corners-gcc4-300-rnd-frontier-pruned3-inverted", 
-          "data_uid":"f594f90a1545babf",
-          "point":"de11e85953947388",
-          "html_small":"yes",
-          "bold_flags":"yes"
+          "data_uoa":"rpi3-susan-corners-gcc4-300-rnd-frontier-pruned1", 
+          "data_uid":"98688a71f99ac30b",
+          "point":"4bcd9dad6b249a79"
          }
         ]
 }

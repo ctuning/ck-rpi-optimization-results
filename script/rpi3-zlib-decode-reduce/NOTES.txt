@@ -1,31 +1,31 @@
 ZLIB decode (--repeat=100 --dataset_uoa=video-raw-0001-deflated)
  ------------------------------
- rpi3-zlib-decode-clang381-main-o3
+ A6) rpi3-zlib-decode-clang381-main-o3
    bin_size=90076, time=12.874769 ± 0.8%
      "-O3"
      ck replay experiment:777b58443e536152 --point=e13b1e85e3e0c5d6
 
- rpi3-zlib-decode-clang381-main-empty-opt
+ A7) rpi3-zlib-decode-clang381-main-empty-opt
    bin_size=132080, time=38.539592 ± 0.1%
      ""
      ck replay experiment:eca2f4aa2a3ab852 --point=a624bb4c10a1619f
  ------------------------------
- rpi3-zlib-decode-gcc4-main-empty-opt
+ A1) rpi3-zlib-decode-gcc4-main-empty-opt
    bin_size=131140, time=41.255491 ± 0.1%
      ""
      ck replay experiment:07969231dd8f9474 --point=cfcb9327f42ddabd
 
- rpi3-zlib-decode-gcc4-main-o3
+ A2) rpi3-zlib-decode-gcc4-main-o3
    bin_size=101448, time=12.201838 ± 0.2%
      "-O3"
      ck replay experiment:9b2b24a80c45aa9b --point=eb28149e9a71762d
 
- rpi3-zlib-decode-gcc4-main
+ A3) rpi3-zlib-decode-gcc4-main
    bin_size=78116, time=13.545546 ± 0.3%
      "-Os"
      ck replay experiment:9195c9fa4d5d89af --point=2432890269556b39
 
- rpi3-zlib-decode-gcc4-150b-rnd-frontier
+ A4) rpi3-zlib-decode-gcc4-150b-rnd-frontier
    bin_size=54272, time=12.099431 ± 0.7%
      "-O2 -fcaller-saves -fcse-follow-jumps -fgcse-lm -fno-gcse-sm -fira-share-save-slots -fno-ira-share-spill-slots -floop-interchange -flto -fmodulo-sched-allow-regmoves -fpeephole -freciprocal-math -fsched-spec -fno-sched-spec-load-dangerous -fsel-sched-pipelining-outer-loops -fselective-scheduling2 -fsignaling-nans -fsplit-ivs-in-unroller -ftree-dominator-opts -fno-tree-fre -ftree-loop-distribute-patterns -ftree-ter"
      ck replay experiment:b0f31c56475aa510 --point=a25bca7292444d27 --prune --prune_md5 @zprune.json
@@ -52,7 +52,7 @@ ZLIB decode (--repeat=100 --dataset_uoa=video-raw-0001-deflated)
             Main kernel execution time (sec.) [min]:  12.099431 vs 12.173678
 
 
-                    ck benchmark program:zlib --cmd_key=decode --repeat=100 --dataset_uoa=video-raw-0001-deflated --record --record_uoa=rpi3-zlib-decode-gcc4-150b-rnd-frontier-pruned1 --flags="-O2 -flto -fno-tree-fre"
+                    A4R) ck benchmark program:zlib --cmd_key=decode --repeat=100 --dataset_uoa=video-raw-0001-deflated --record --record_uoa=rpi3-zlib-decode-gcc4-150b-rnd-frontier-pruned1 --flags="-O2 -flto -fno-tree-fre"
                         bin_size=54272, time=12.101711
 
 
@@ -241,23 +241,23 @@ ZLIB decode (--repeat=100 --dataset_uoa=video-raw-0001-deflated)
                     ck benchmark program:zlib --cmd_key=decode --repeat=100 --dataset_uoa=video-raw-0001-deflated --record --record_uoa=rpi3-zlib-decode-gcc4-150b-rnd-frontier-pruned1-inverted --flags="-O2 -flto -fno-tree-fre -fno-associative-math -fno-auto-inc-dec -fno-branch-probabilities -fno-branch-target-load-optimize -fno-branch-target-load-optimize2 -fno-btr-bb-exclusive -fno-check-data-deps -fno-combine-stack-adjustments -fno-conserve-stack -fno-compare-elim -fno-cprop-registers -fno-crossjumping -fno-cse-skip-blocks -fno-cx-fortran-rules -fno-cx-limited-range -fno-data-sections -fno-dce -fno-delayed-branch -fno-delete-null-pointer-checks -fno-devirtualize -fno-devirtualize-speculatively -fno-dse -fno-early-inlining -fno-ipa-sra -fno-expensive-optimizations -ffat-lto-objects -fno-fast-math -fno-finite-math-only -fno-float-store -fno-forward-propagate -fno-function-sections -fno-gcse -fno-gcse-after-reload -fno-gcse-las -fno-graphite-identity -fno-hoist-adjacent-loads -fno-if-conversion -fno-if-conversion2 -fno-indirect-inlining -fno-inline-functions -fno-inline-functions-called-once -fno-inline-small-functions -fno-ipa-cp -fno-ipa-cp-clone -fno-ipa-pta -fipa-pure-const -fno-ipa-reference -fno-ira-hoist-pressure -fno-ira-loop-pressure -fno-isolate-erroneous-paths-dereference -fno-isolate-erroneous-paths-attribute -fno-ivopts -fno-keep-inline-functions -fno-keep-static-consts -fno-live-range-shrinkage -fno-loop-block -fno-loop-strip-mine -fno-loop-nest-optimize -fno-loop-parallelize-all -fno-merge-all-constants -fno-merge-constants -fno-modulo-sched -fno-move-loop-invariants -fno-branch-count-reg -fno-defer-pop -fno-function-cse -fno-guess-branch-probability -finline -fno-math-errno -fno-peephole2 -fno-sched-interblock -fno-signed-zeros -ftoplevel-reorder -fno-trapping-math -fno-zero-initialized-in-bss -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-partial-inlining -fno-peel-loops -fno-predictive-commoning -fno-prefetch-loop-arrays -fno-ree -fno-rename-registers -fno-reorder-blocks -fno-reorder-blocks-and-partition -fno-reorder-functions -fno-rerun-cse-after-loop -fno-reschedule-modulo-scheduled-loops -fno-rounding-math -fno-sched2-use-superblocks -fno-sched-pressure -fno-sched-spec-load -fno-sched-group-heuristic -fno-sched-critical-path-heuristic -fno-sched-spec-insn-heuristic -fno-sched-rank-heuristic -fno-sched-last-insn-heuristic -fno-sched-dep-count-heuristic -fno-schedule-insns -fno-schedule-insns2 -fno-section-anchors -fno-selective-scheduling -fno-sel-sched-pipelining -fno-shrink-wrap -fno-single-precision-constant -fno-split-wide-types -fstrict-aliasing -fstrict-overflow -fno-thread-jumps -fno-tracer -fno-tree-bit-ccp -fno-tree-builtin-call-dce -ftree-ccp -fno-tree-ch -fno-tree-coalesce-vars -ftree-copy-prop -fno-tree-copyrename -ftree-dce -fno-tree-dse -fno-tree-forwprop -fno-tree-loop-if-convert -fno-tree-loop-if-convert-stores -fno-tree-loop-im -fno-tree-phiprop -fno-tree-loop-distribution -fno-tree-loop-ivcanon -fno-tree-loop-linear -fno-tree-loop-optimize -fno-tree-loop-vectorize -fno-tree-pre -fno-tree-partial-pre -fno-tree-pta -fno-tree-reassoc -fno-tree-sink -fno-tree-slsr -ftree-sra -fno-tree-switch-conversion -fno-tree-tail-merge -fno-tree-vectorize -fno-tree-vrp -funit-at-a-time -fno-unroll-all-loops -fno-unroll-loops -fno-unsafe-loop-optimizations -fno-unsafe-math-optimizations -fno-unswitch-loops -fno-variable-expansion-in-unroller -fno-vect-cost-model -fno-vpt -fno-web -fno-whole-program -fno-wpa -fno-use-linker-plugin -fexcess-precision=standard -ffp-contract=off -fira-algorithm=priority -fira-region=one"
                         bin_size=53868, time=11.965374
 
- rpi3-zlib-decode-gcc4-150b-rnd-cbest
+ C1) rpi3-zlib-decode-gcc4-150b-rnd-cbest
    bin_size=64184, time=12.230201 ± 0.4%
      "-O3 -fno-inline -flto"
      ck replay experiment:dfc49b5be33c1813 --point=ec6a2e99da2e3445
 
  ------------------------------
- rpi3-zlib-decode-gcc7-main-empty-opt
+ B1) rpi3-zlib-decode-gcc7-main-empty-opt
    bin_size=128376, time=41.25565 ± 0.1%
      ""
      ck replay experiment:1d1b423cb2567413 --point=f42caae168d92907
 
- rpi3-zlib-decode-gcc7-main-o3
+ B2) rpi3-zlib-decode-gcc7-main-o3
    bin_size=119084, time=11.679064 ± 1.0%
      "-O3"
      ck replay experiment:45b844dc97bc88bb --point=c88f2a728405d8eb
 
- rpi3-zlib-decode-gcc7-main
+ B3) rpi3-zlib-decode-gcc7-main
    bin_size=74280, time=13.698655 ± 1.1%
      "-Os"
      ck replay experiment:a1e26d8e4858adf5 --point=bbf4d22b4e9b34d5
@@ -291,7 +291,7 @@ ZLIB decode (--repeat=100 --dataset_uoa=video-raw-0001-deflated)
 
 
              ck benchmark program:zlib --cmd_key=decode --repeat=100 --dataset_uoa=video-raw-0001-deflated --record --record_uoa=rpi3-zlib-decode-gcc7-150b-rnd-frontier-pruned1 --flags="-O2 -fno-early-inlining -fno-tree-fre"
-              bin_size=78700, time=11.898532
+               B4R) bin_size=78700, time=11.898532
 
 
      ck replay experiment:573db3c041a38224 --point=e90f644eaad337d3 --prune --prune_md5 @zprune.json --prune_invert --prune_invert_do_not_remove_key --deps
@@ -529,10 +529,10 @@ ZLIB decode (--repeat=100 --dataset_uoa=video-raw-0001-deflated)
 
 
  rpi3-zlib-decode-gcc7-150b-rnd-cbest
-   bin_size=68464, time=11.984146 ± 0.4%
+   C1) bin_size=68464, time=11.984146 ± 0.4%
      "-O3 -fno-inline -flto"
      ck replay experiment:f89c04c152682687 --point=9a4548dd347699b7
 
-   bin_size=81880, time=11.607043 ± 0.0%
+   C2) bin_size=81880, time=11.607043 ± 0.0%
      "-O3 -flto"
      ck replay experiment:f89c04c152682687 --point=b5a6ade146d9b028

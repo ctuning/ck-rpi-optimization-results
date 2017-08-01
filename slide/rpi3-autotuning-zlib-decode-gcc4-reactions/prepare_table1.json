@@ -1,0 +1,44 @@
+{
+  "out_html_file":"749a8998a2e29db5-table1.html",
+  "out_tex_file":"749a8998a2e29db5-table1.tex",
+
+  "force_round":1,
+
+  "table_header":[
+              {"name":"ID", "html_before":"<b>", "html_after":"</b>", "tex":"l", "tex_before":"\\textbf{", "tex_after":"}"}, 
+              {"name":"Compiler", "html_change_space":"yes", "tex":"l"}, 
+              {"name":"Time (sec.)", "html_change_space":"yes", "tex":"l"}, 
+              {"name":"Size (bytes)", "html_change_space":"yes", "tex":"l"},
+              {"name":"Flags", "html_before":"<small>", "html_after":"</small>", "tex":"p{3.2in}", "tex_before":"{\\small", "tex_after":"}"}
+             ],
+
+  "entries":[
+
+         {
+          "note":"A2",
+          "extra_field":"GCC 4.9.2",
+          "custom":{"row_style":"style=\"color:#4f0000;\""},
+          "data_uoa":"rpi3-zlib-decode-gcc4-main-o3", 
+          "data_uid":"9b2b24a80c45aa9b",
+          "point":"eb28149e9a71762d"
+         },
+
+         {
+          "note":"A4R",
+          "extra_field":"GCC 4.9.2",
+          "custom":{"row_style":"style=\"color:#af0000;\""},
+          "data_uoa":"rpi3-zlib-decode-gcc4-150b-rnd-frontier-pruned1", 
+          "data_uid":"f5489592a3a15bf3",
+          "point":"6236b2e4742629aa"
+         },
+
+         {
+          "note":"C1",
+          "extra_field":"GCC 4.9.2",
+          "data_uoa":"rpi3-zlib-decode-gcc4-150b-rnd-cbest", 
+          "data_uid":"dfc49b5be33c1813",
+          "point":"ec6a2e99da2e3445"
+         }
+
+        ]
+}

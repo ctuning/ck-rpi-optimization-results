@@ -1,27 +1,27 @@
 ZLIB --cmd_key=encode --repeat=10 --dataset_uoa=video-raw-0001
  ------------------------------
- rpi3-zlib-encode-clang381-main-o3
-   bin_size=90076, time=14.638866 ± 0.8% 
-     "-O3"
-     ck replay experiment:90dc03e42974d27a --point=47ebb3b545c2e220
-
- rpi3-zlib-encode-clang381-main-empty-opt
+ A5) rpi3-zlib-encode-clang381-main-empty-opt
    bin_size=132080, time=38.183177 ± 0.2%
      ""
      ck replay experiment:731a468f9643496a --point=9ca6c418285e121a
 
+ A6) rpi3-zlib-encode-clang381-main-o3
+   bin_size=90076, time=14.638866 ± 0.8% 
+     "-O3"
+     ck replay experiment:90dc03e42974d27a --point=47ebb3b545c2e220
+
  ------------------------------
- rpi3-zlib-encode-gcc4-main-empty-opt
+ A1) rpi3-zlib-encode-gcc4-main-empty-opt
    bin_size=131140, time=38.929745 ± 0.5%
      ""
      ck replay experiment:28ee633f4192a488 --point=463438f9b5e50e55
 
- rpi3-zlib-encode-gcc4-main-o3
+ A2) rpi3-zlib-encode-gcc4-main-o3
    bin_size=101448, time=13.991835 ± 0.5%
      "-O3"
      ck replay experiment:21f631290c7846ee --point=b3d50b1184e6ebed
 
- rpi3-zlib-encode-gcc4-main
+ A3) rpi3-zlib-encode-gcc4-main
    bin_size=78116, time=16.622874 ± 0.5%
      "-Os"
      ck replay experiment:2bdb07edb41aabb0 --point=877f5d27c47b8845
@@ -55,7 +55,7 @@ ZLIB --cmd_key=encode --repeat=10 --dataset_uoa=video-raw-0001
 
 
            ck benchmark program:zlib --cmd_key=encode --repeat=10 --dataset_uoa=video-raw-0001 --record --record_uoa=rpi3-zlib-encode-gcc4-150b-rnd-frontier-pruned1 --flags="-O2 -flto"
-                bin_size=54284, time=14.181083
+             A4R)   bin_size=54284, time=14.181083
 
 
      ck replay experiment:4897acf04c987bff --point=41b1e6eb94b92949 --prune --prune_md5 @zprune.json --deps --repetitions=2 --prune_invert --prune_invert_do_not_remove_key
@@ -255,22 +255,25 @@ ZLIB --cmd_key=encode --repeat=10 --dataset_uoa=video-raw-0001
 
 
 
- rpi3-zlib-encode-gcc4-cbest
+ C1) rpi3-zlib-encode-gcc4-cbest
    bin_size=64184, time=14.192039 ± 0.0%
      "-O3 -fno-inline -flto"
      ck replay experiment:872541a6bf29037e --point=f9fa9a3effb5c863
+
+
+
  ------------------------------
- rpi3-zlib-encode-gcc7-main-empty-opt
+ B1) rpi3-zlib-encode-gcc7-main-empty-opt
    bin_size=128376, time=38.736096 ± 0.1% 
      ""
      ck replay experiment:755bdc4154a3240e --point=479684c44854800c
 
- rpi3-zlib-encode-gcc7-main-o3
+ B2) rpi3-zlib-encode-gcc7-main-o3
    bin_size=119084, time=13.163361 ± 1.0%
      "-O3"
      ck replay experiment:50948cede943469a --point=381aef856bc24d3d
 
- rpi3-zlib-encode-gcc7-main
+ B3) rpi3-zlib-encode-gcc7-main
    bin_size=74280, time=15.858199 ± 0.6%
      "-Os"
      ck replay experiment:4cc78e1a736bc05e --point=7177c749f6b5004a
@@ -773,7 +776,7 @@ ZLIB --cmd_key=encode --repeat=10 --dataset_uoa=video-raw-0001
 
 
              ck benchmark program:zlib --cmd_key=encode --repeat=10 --dataset_uoa=video-raw-0001 --record --record_uoa=rpi3-zlib-encode-gcc7-150bpc-rnd-frontier-pruned1 --flags="-O2 -fgcse-after-reload -flto -fschedule-fusion -fno-ssa-phiopt -fno-tree-fre"
-                 bin_size=52424, time=13.690111
+                 B4R) bin_size=52424, time=13.690111
 
 
      ck replay experiment:95e252e774ac59a3 --point=2eccd1855684abba --prune --prune_md5 @zprune.json --deps --repetitions=2  --prune_invert --prune_invert_do_not_remove_key
@@ -966,10 +969,9 @@ ZLIB --cmd_key=encode --repeat=10 --dataset_uoa=video-raw-0001
 
 
  rpi3-zlib-encode-gcc7-cbest
-   bin_size=68464, time=13.343255 ± 0.8%
+   C1) bin_size=68464, time=13.343255 ± 0.8%
      "-O3 -fno-inline -flto"
      ck replay experiment:047ddbe5ef0ab588 --point=0b17daf9418aaa6d
 
 
 REMARK: Can't invert with -O3 on GCC 7 since compiled without --graphite optimizations and this messes up logic (should add option to avoid some flags)
-

@@ -1,12 +1,12 @@
 cbench-automotive-susan --cmd_key=corners --repeat=100 --dataset_uoa=image-pgm-0001
  ------------------------------
  rpi3-susan-corners-clang381-main-o3
-   bin_size=35552, time=4.463335 ± 1.4%
+  A8) bin_size=35552, time=4.463335 ± 1.4%
      "-O3"
      ck replay experiment:99141b3313132494 --point=a63f42ac837e38d0
 
  rpi3-susan-corners-clang381-main-empty-opt
-   bin_size=58368, time=11.108505 ± 0.7%
+  A9) bin_size=58368, time=11.108505 ± 0.7%
      ""
      ck replay experiment:a32e34c31b900930 --point=64ec888d2e6a0669
 
@@ -300,6 +300,7 @@ cbench-automotive-susan --cmd_key=corners --repeat=100 --dataset_uoa=image-pgm-0
           Main kernel execution time (sec.) [min]:  4.685973 vs 4.692143
 
           ck benchmark program:cbench-automotive-susan --cmd_key=corners --repeat=100 --dataset_uoa=image-pgm-0001 --record --record_uoa=rpi3-susan-corners-gcc4-150bpc-rnd-frontier-pruned1 --flags="-Os -fno-ivopts"
+            A7R) bin_size=30952, time=4.706641
 
  rpi3-susan-corners-gcc4-cbest
    bin_size=34032, time=3.428386 ± 0.4%
@@ -307,22 +308,22 @@ cbench-automotive-susan --cmd_key=corners --repeat=100 --dataset_uoa=image-pgm-0
      ck replay experiment:99d077450f87aeb1 --point=7aa9b3b544e4a8a7
 
  ------------------------------
- rpi3-susan-corners-gcc7-main-empty-opt
+ B1) rpi3-susan-corners-gcc7-main-empty-opt
    bin_size=54436, time=11.539004 ± 0.0%
      ""
      ck replay experiment:ea8ded6ddee6093a --point=6006d3eadf403088
 
- rpi3-susan-corners-gcc7-main-o3
+ B2) rpi3-susan-corners-gcc7-main-o3
    bin_size=34432, time=3.194389 ± 0.7%
      "-O3"
      ck replay experiment:00fa4e108053ac7b --point=de68bdc517447085
 
- rpi3-susan-corners-gcc7-main
+ B3) rpi3-susan-corners-gcc7-main
    bin_size=29980, time=4.355312 ± 0.1%
      "-Os"
      ck replay experiment:eeba1f30493b8bd4 --point=5d64cf89c67817be
 
- rpi3-susan-corners-gcc7-300-rnd-frontier
+ B4) rpi3-susan-corners-gcc7-300-rnd-frontier
    bin_size=31460, time=3.088903 ± 1.9%
      "-O3 -fno-cx-fortran-rules -fno-devirtualize -fno-expensive-optimizations -fno-if-conversion -finline -fira-share-save-slots -fno-ira-share-spill-slots -fno-ivopts -fno-loop-strip-mine -fno-math-errno -frounding-math -fno-sched-rank-heuristic -fno-sel-sched-pipelining-outer-loops -fno-semantic-interposition -fsplit-wide-types -fno-tree-ccp -ftree-dse"
      ck replay experiment:f4f13d284194463a --point=5421ba4fdca2c4b6 --prune --prune_md5 @prune.json
@@ -350,7 +351,8 @@ cbench-automotive-susan --cmd_key=corners --repeat=100 --dataset_uoa=image-pgm-0
          Main kernel execution time (sec.) [min]:  3.088903 vs 3.092005
 
          ck benchmark program:cbench-automotive-susan --cmd_key=corners --repeat=100 --dataset_uoa=image-pgm-0001 --record --record_uoa=rpi3-susan-corners-gcc7-300-rnd-frontier-pruned1 --flags="-O3 -fno-expensive-optimizations -fno-ivopts -fno-math-errno"
-           bin_size=28056, time=3.056954
+           B4R) bin_size=28056, time=3.056954
+
 
             ck replay experiment:f4f13d284194463a --point=5421ba4fdca2c4b6 --prune --prune_md5 --prune_invert --prune_invert_do_not_remove_key @prune.json
 
@@ -549,7 +551,7 @@ cbench-automotive-susan --cmd_key=corners --repeat=100 --dataset_uoa=image-pgm-0
                 Main kernel execution time (sec.) [min]:  3.088903 vs 2.973729
 
                 ck benchmark program:cbench-automotive-susan --cmd_key=corners --repeat=100 --dataset_uoa=image-pgm-0001 --record --record_uoa=rpi3-susan-corners-gcc7-300-rnd-frontier-pruned1-inverted --flags="-O3 -fno-expensive-optimizations -fno-ivopts -fno-math-errno -fno-associative-math -fauto-inc-dec -fno-branch-probabilities -fno-branch-target-load-optimize -fno-branch-target-load-optimize2 -fno-btr-bb-exclusive -fno-caller-saves -fno-check-data-deps -fno-combine-stack-adjustments -fno-conserve-stack -fno-compare-elim -fcprop-registers -fcrossjumping -fcse-follow-jumps -fno-cse-skip-blocks -fno-cx-limited-range -fno-data-sections -fdce -fno-delayed-branch -fno-delete-null-pointer-checks -fno-devirtualize-speculatively -fno-devirtualize-at-ltrans -fno-dse -fno-early-inlining -fno-ipa-sra -fno-fat-lto-objects -ffast-math -fno-finite-math-only -fno-float-store -fno-forward-propagate -fno-function-sections -fgcse -fno-gcse-after-reload -fno-gcse-las -fno-gcse-lm -fno-graphite-identity -fno-gcse-sm -fno-hoist-adjacent-loads -fif-conversion2 -fno-indirect-inlining -fno-inline-functions -fno-inline-functions-called-once -fno-inline-small-functions -fno-ipa-cp -fno-ipa-cp-clone -fno-ipa-cp-alignment -fno-ipa-pta -fipa-pure-const -fno-ipa-reference -fno-ipa-icf -fno-ira-hoist-pressure -fno-ira-loop-pressure -fno-isolate-erroneous-paths-dereference -fno-isolate-erroneous-paths-attribute -fno-keep-inline-functions -fno-keep-static-consts -fno-live-range-shrinkage -fno-loop-block -fno-loop-interchange -fno-loop-unroll-and-jam -fno-loop-nest-optimize -fno-loop-parallelize-all -flra-remat -fno-lto -fno-merge-all-constants -fno-merge-constants -fno-modulo-sched -fno-modulo-sched-allow-regmoves -fmove-loop-invariants -fno-branch-count-reg -fno-defer-pop -fno-function-cse -fguess-branch-probability -fno-peephole -fpeephole2 -fno-sched-interblock -fno-sched-spec -fno-signed-zeros -fno-toplevel-reorder -fno-trapping-math -fno-zero-initialized-in-bss -fomit-frame-pointer -foptimize-sibling-calls -fno-partial-inlining -fno-peel-loops -fno-predictive-commoning -fno-prefetch-loop-arrays -fno-reciprocal-math -fno-ree -fno-rename-registers -fno-reorder-blocks -fno-reorder-blocks-and-partition -freorder-functions -frerun-cse-after-loop -fno-reschedule-modulo-scheduled-loops -fno-sched2-use-superblocks -fsched-pressure -fno-sched-spec-load -fno-sched-spec-load-dangerous -fno-sched-group-heuristic -fsched-critical-path-heuristic -fno-sched-spec-insn-heuristic -fsched-last-insn-heuristic -fno-sched-dep-count-heuristic -fno-schedule-fusion -fschedule-insns -fschedule-insns2 -fno-section-anchors -fno-selective-scheduling -fno-selective-scheduling2 -fno-sel-sched-pipelining -fno-shrink-wrap -fno-signaling-nans -fno-single-precision-constant -fno-split-ivs-in-unroller -fno-ssa-phiopt -fno-stdarg-opt -fno-strict-aliasing -fstrict-overflow -fno-thread-jumps -fno-tracer -ftree-bit-ccp -fno-tree-builtin-call-dce -fno-tree-ch -ftree-coalesce-vars -fno-tree-copy-prop -fno-tree-copyrename -fno-tree-dce -ftree-dominator-opts -ftree-forwprop -fno-tree-fre -fno-tree-loop-if-convert -fno-tree-loop-if-convert-stores -ftree-loop-im -fno-tree-phiprop -fno-tree-loop-distribution -fno-tree-loop-distribute-patterns -fno-tree-loop-ivcanon -fno-tree-loop-linear -fno-tree-loop-optimize -fno-tree-loop-vectorize -fno-tree-pre -fno-tree-partial-pre -fno-tree-pta -fno-tree-reassoc -ftree-sink -fno-tree-slsr -ftree-sra -fno-tree-switch-conversion -fno-tree-tail-merge -ftree-ter -fno-tree-vectorize -ftree-vrp -fno-unit-at-a-time -fno-unroll-all-loops -fno-unroll-loops -fno-unsafe-loop-optimizations -fno-unsafe-math-optimizations -fno-unswitch-loops -fno-ipa-ra -fno-variable-expansion-in-unroller -fno-vect-cost-model -fno-vpt -fno-web -fno-whole-program -fno-wpa -fno-use-linker-plugin -fexcess-precision=standard -ffp-contract=off -fira-algorithm=CB -fira-region=all -flto-partition=none"
-                 bin_size=30300, time=2.963241
+                 B4RI) bin_size=30300, time=2.963241
 
  rpi3-susan-corners-gcc7-150bpc-rnd-frontier
    bin_size=30320, time=3.515246 ± 0.6%

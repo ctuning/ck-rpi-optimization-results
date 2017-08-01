@@ -1,8 +1,8 @@
 {
   "experiment_module_uoa":"experiment",
 
-  "data_uoa_list":["rpi3-zlib-encode-gcc7-150b-rnd",
-                   "rpi3-zlib-encode-gcc7-150b-rnd-frontier",
+  "data_uoa_list":["rpi3-zlib-encode-gcc7-150bpc-rnd",
+                   "rpi3-zlib-encode-gcc7-150bpc-rnd-frontier",
                    "rpi3-zlib-encode-gcc7-cbest"],
 
   "flat_keys_list":[

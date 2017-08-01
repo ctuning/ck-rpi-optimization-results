@@ -8,8 +8,8 @@
         "axis_y_desc": "Execution time (sec.)",
         "bound_lines": "no",
         "data_uoa_list": [
-          "rpi3-zlib-decode-gcc7-150b-rnd",
-          "rpi3-zlib-decode-gcc7-150b-rnd-frontier",
+          "rpi3-zlib-decode-gcc7-150bpc-rnd",
+          "rpi3-zlib-decode-gcc7-150bpc-rnd-frontier",
           "rpi3-zlib-decode-gcc7-cbest"
         ],
         "display_x_error_bar": "no",
@@ -97,8 +97,8 @@
         "axis_y_desc": "Execution time (sec.)",
         "bound_lines": "no",
         "data_uoa_list": [
-          "rpi3-zlib-decode-gcc7-150b-rnd",
-          "rpi3-zlib-decode-gcc7-150b-rnd-frontier",
+          "rpi3-zlib-decode-gcc7-150bpc-rnd",
+          "rpi3-zlib-decode-gcc7-150bpc-rnd-frontier",
           "rpi3-zlib-decode-gcc7-cbest"
         ],
         "display_x_error_bar": "no",

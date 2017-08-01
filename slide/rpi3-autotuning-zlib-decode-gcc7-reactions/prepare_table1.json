@@ -1,0 +1,66 @@
+{
+  "out_html_file":"74ba8b07475626f5-table1.html",
+  "out_tex_file":"74ba8b07475626f5-table1.tex",
+
+  "force_round":1,
+
+  "table_header":[
+              {"name":"ID", "html_before":"<b>", "html_after":"</b>", "tex":"l", "tex_before":"\\textbf{", "tex_after":"}"}, 
+              {"name":"Compiler", "html_change_space":"yes", "tex":"l"}, 
+              {"name":"Time (sec.)", "html_change_space":"yes", "tex":"l"}, 
+              {"name":"Size (bytes)", "html_change_space":"yes", "tex":"l"},
+              {"name":"Flags", "html_before":"<small>", "html_after":"</small>", "tex":"p{3.2in}", "tex_before":"{\\small", "tex_after":"}"}
+             ],
+
+  "entries":[
+
+         {
+          "note":"A4R",
+          "extra_field":"GCC 4.9.2",
+          "custom":{"row_style":"style=\"color:#af0000;\""},
+          "data_uoa":"rpi3-zlib-decode-gcc4-150b-rnd-frontier-pruned1", 
+          "data_uid":"f5489592a3a15bf3",
+          "point":"6236b2e4742629aa"
+         },
+
+         {
+          "note":"B2",
+          "extra_field":"GCC 7.1.0",
+          "custom":{"row_style":"style=\"color:#4f0000;\""},
+          "data_uoa":"rpi3-zlib-decode-gcc7-main-o3", 
+          "data_uid":"45b844dc97bc88bb",
+          "point":"c88f2a728405d8eb"
+         },
+
+         {
+          "note":"B4R",
+          "extra_field":"GCC 7.1.0",
+          "custom":{"row_style":"style=\"color:#af0000;\""},
+          "data_uoa":"rpi3-zlib-decode-gcc7-150b-rnd-frontier-pruned1", 
+          "data_uid":"b642fbace509ae5a",
+          "point":"cd944d398d208b53",
+          "html_small":"yes"
+         },
+
+         {
+          "note":"C1",
+          "extra_field":"GCC 7.1.0",
+          "custom":{"row_style":"style=\"color:#af0000;\""},
+          "data_uoa":"rpi3-zlib-decode-gcc7-150b-rnd-cbest", 
+          "data_uid":"f89c04c152682687",
+          "point":"9a4548dd347699b7",
+          "html_small":"yes"
+         },
+
+         {
+          "note":"C2",
+          "extra_field":"GCC 7.1.0",
+          "custom":{"row_style":"style=\"color:#af0000;\""},
+          "data_uoa":"rpi3-zlib-decode-gcc7-150b-rnd-cbest", 
+          "data_uid":"f89c04c152682687",
+          "point":"b5a6ade146d9b028",
+          "html_small":"yes"
+         }
+
+        ]
+}

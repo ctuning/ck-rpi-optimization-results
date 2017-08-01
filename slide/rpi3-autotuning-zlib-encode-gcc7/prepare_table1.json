@@ -1,0 +1,72 @@
+{
+  "out_html_file":"2318dcb514171ad4-table1.html",
+  "out_tex_file":"2318dcb514171ad4-table1.tex",
+
+  "force_round":1,
+
+  "table_header":[
+              {"name":"ID", "html_before":"<b>", "html_after":"</b>", "tex":"l", "tex_before":"\\textbf{", "tex_after":"}"}, 
+              {"name":"Compiler", "html_change_space":"yes", "tex":"l"}, 
+              {"name":"Time (sec.)", "html_change_space":"yes", "tex":"l"}, 
+              {"name":"Size (bytes)", "html_change_space":"yes", "tex":"l"},
+              {"name":"Flags", "html_before":"<small>", "html_after":"</small>", "tex":"p{3.2in}", "tex_before":"{\\small", "tex_after":"}"}
+             ],
+
+  "entries":[
+
+         {
+          "note":"A2",
+          "extra_field":"GCC 4.9.2",
+          "custom":{"row_style":"style=\"color:#4f0000;\""},
+          "data_uoa":"rpi3-zlib-encode-gcc4-main-o3", 
+          "data_uid":"21f631290c7846ee",
+          "point":"b3d50b1184e6ebed"
+         },
+
+         {
+          "note":"A4R",
+          "extra_field":"GCC 4.9.2",
+          "custom":{"row_style":"style=\"color:#af0000;\""},
+          "data_uoa":"rpi3-zlib-encode-gcc4-150b-rnd-frontier-pruned1", 
+          "data_uid":"85a9d07941d187e4",
+          "point":"c59cc63440c795a7"
+         },
+
+         {
+          "note":"B1",
+          "extra_field":"GCC 7.1.0",
+          "data_uoa":"rpi3-zlib-encode-gcc7-main-empty-opt", 
+          "data_uid":"755bdc4154a3240e",
+          "point":"479684c44854800c"
+         },
+
+         {
+          "note":"B2",
+          "extra_field":"GCC 7.1.0",
+          "custom":{"row_style":"style=\"color:#4f0000;\""},
+          "data_uoa":"rpi3-zlib-encode-gcc7-main-o3", 
+          "data_uid":"50948cede943469a",
+          "point":"381aef856bc24d3d"
+         },
+
+         {
+          "note":"B3",
+          "extra_field":"GCC 7.1.0",
+          "custom":{"row_style":"style=\"color:#4f0000;\""},
+          "data_uoa":"rpi3-zlib-encode-gcc7-main", 
+          "data_uid":"4cc78e1a736bc05e",
+          "point":"7177c749f6b5004a"
+         },
+
+         {
+          "note":"B4R",
+          "extra_field":"GCC 7.1.0",
+          "custom":{"row_style":"style=\"color:#af0000;\""},
+          "data_uoa":"rpi3-zlib-encode-gcc7-150bpc-rnd-frontier-pruned1", 
+          "data_uid":"3a9a0b4e4740a607",
+          "point":"a8e09e075b5b4a38",
+          "html_small":"yes"
+         }
+
+        ]
+}

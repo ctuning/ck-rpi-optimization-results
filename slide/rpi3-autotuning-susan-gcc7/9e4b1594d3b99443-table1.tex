@@ -2,6 +2,14 @@
      \hline
       \textbf{ID} & \textbf{Compiler} & \textbf{Time (sec.)} & \textbf{Size (bytes)} & \textbf{Flags} \\ 
      \hline
+      \textbf{ A2 } &  GCC 4.9.2  &  4.3 $\pm$ 0.1  &  36360  & {\small -O3 }\\
+     \hline
+      \textbf{ A5R } &  GCC 4.9.2  &  3.7 $\pm$ 0.1  &  33376  & {\small -O3 -fbranch-probabilities -fno-ivopts -fno-sched-dep-count-heuristic }\\
+     \hline
+      \textbf{ A6R } &  GCC 4.9.2  &  3.4 $\pm$ 0.0  &  33804  & {\small -O3 -fno-inline-small-functions -fno-ivopts -fno-tree-partial-pre }\\
+     \hline
+      \textbf{ A7R } &  GCC 4.9.2  &  4.7 $\pm$ 0.1  &  30952  & {\small -Os -fno-ivopts }\\
+     \hline
       \textbf{ B1 } &  GCC 7.1.0  &  11.5 $\pm$ 0.0  &  58008  & {\small  }\\
      \hline
       \textbf{ B2 } &  GCC 7.1.0  &  3.2 $\pm$ 0.0  &  34432  & {\small -O3 }\\

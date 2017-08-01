@@ -14,6 +14,38 @@
 
   "entries":[
          {
+          "note":"A2",
+          "extra_field":"GCC 4.9.2",
+          "data_uoa":"rpi3-susan-corners-gcc4-main-o3", 
+          "data_uid":"0b867dd820354a8b",
+          "point":"5734f47e4214a783"
+         },
+
+         {
+          "note":"A5R",
+          "extra_field":"GCC 4.9.2",
+          "data_uoa":"rpi3-susan-corners-gcc4-300-rnd-frontier-pruned2", 
+          "data_uid":"984b2d8abc3c4415",
+          "point":"78c281b4cab897a6"
+         },
+
+         {
+          "note":"A6R",
+          "extra_field":"GCC 4.9.2",
+          "data_uoa":"rpi3-susan-corners-gcc4-300-rnd-frontier-pruned3", 
+          "data_uid":"7af17ca204080b57",
+          "point":"5a464ecf81b60098"
+         },
+
+         {
+          "note":"A7R",
+          "extra_field":"GCC 4.9.2",
+          "data_uoa":"rpi3-susan-corners-gcc4-150bpc-rnd-frontier-pruned1", 
+          "data_uid":"992855e25efa2c4a",
+          "point":"c6b45e2c3e414452"
+         },
+
+         {
           "note":"B1",
           "extra_field":"GCC 7.1.0",
           "data_uoa":"rpi3-susan-corners-gcc7-main-empty-opt", 

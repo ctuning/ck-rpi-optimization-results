@@ -1,0 +1,15 @@
+    \begin{tabular}{|l|l|l|l|p{3.2in}|}
+     \hline
+      \textbf{ID} & \textbf{Compiler} & \textbf{Time (sec.)} & \textbf{Size (bytes)} & \textbf{Flags} \\ 
+     \hline
+      \textbf{ A4R } &  GCC 4.9.2  &  12.1 $\pm$ 0.1  &  54272  & {\small -O2 -flto -fno-tree-fre }\\
+     \hline
+      \textbf{ B2 } &  GCC 7.1.0  &  11.7 $\pm$ 0.1  &  119084  & {\small -O3 }\\
+     \hline
+      \textbf{ B4R } &  GCC 7.1.0  &  11.9 $\pm$ 0.1  &  78700  & {\small -O2 -fno-early-inlining -fno-tree-fre }\\
+     \hline
+      \textbf{ C1 } &  GCC 7.1.0  &  12.0 $\pm$ 0.0  &  68464  & {\small -O3 -fno-inline -flto }\\
+     \hline
+      \textbf{ C2 } &  GCC 7.1.0  &  11.6 $\pm$ 0.1  &  81880  & {\small -O3 -flto }\\
+     \hline
+    \end{tabular}    

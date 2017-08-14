@@ -4,6 +4,8 @@
 
   "force_round":1,
 
+  "url_prefix":"http://cknowledge.org/repo/web.php?",
+
   "table_header":[
               {"name":"ID", "html_before":"<b>", "html_after":"</b>", "tex":"l", "tex_before":"\\textbf{", "tex_after":"}"}, 
               {"name":"Compiler", "html_change_space":"yes", "tex":"l"}, 

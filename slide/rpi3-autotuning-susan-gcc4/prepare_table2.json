@@ -4,6 +4,8 @@
 
   "force_round":1,
 
+  "url_prefix":"http://cknowledge.org/repo/web.php?",
+
   "skip_stats":"yes",
 
   "table_header":[

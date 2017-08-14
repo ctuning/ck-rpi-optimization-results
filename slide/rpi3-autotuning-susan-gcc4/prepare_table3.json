@@ -6,6 +6,8 @@
 
   "skip_stats":"yes",
 
+  "url_prefix":"http://cknowledge.org/repo/web.php?",
+
   "table_header":[
               {"name":"ID", "html_before":"<b>", "html_after":"</b>", "tex":"l", "tex_before":"\\textbf{", "tex_after":"}"}, 
               {"name":"Flags", "html_before":"<small>", "html_after":"</small>", "tex":"p{6.2in}", "tex_before":"{\\small", "tex_after":"}"}

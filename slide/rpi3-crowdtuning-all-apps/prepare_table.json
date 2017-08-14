@@ -4,12 +4,14 @@
 
   "force_round":1,
 
+  "url_prefix":"http://cknowledge.org/repo/web.php?",
+
   "table_header":[
               {"name":"Workload", "html_before":"<b>", "html_after":"</b>", "tex":"l", "tex_before":"\\textbf{", "tex_after":"}"}, 
               {"name":"Compiler", "html_change_space":"yes", "tex":"l"}, 
-              {"name":"Time improvement over -O3 (-O3 time in brackets)", "html_change_space":"yes", "tex":"p{0.9in}"}, 
+              {"name":"Time improvement over -O3 (-O3 time in brackets)", "html_change_space":"yes", "tex":"p{1.2in}"}, 
               {"name":"Binary size improvement over -O3 (-O3 size in brackets)", "html_change_space":"yes", "tex":"p{0.9in}"},
-              {"name":"Flags", "html_before":"<small>", "html_after":"</small>", "tex":"p{3.0in}", "tex_before":"{\\small", "tex_after":"}"}
+              {"name":"Flags", "html_before":"<small>", "html_after":"</small>", "tex":"p{1.8in}", "tex_before":"{\\small", "tex_after":"}"}
              ],
 
   "entries":[
@@ -47,15 +49,6 @@
           "data_uid":"264c8a9a86776fcb",
           "point":"a298c432287ae676",
           "point_improvement":"f8130c563953d484"
-         },
-
-         {
-          "note":"ccrypt encrypt",
-          "extra_field":"GCC 7.1.0",
-          "data_uoa":"rpi3-ccrypt-encrypt-gcc7-cbest-frontier", 
-          "data_uid":"264c8a9a86776fcb",
-          "point":"a298c432287ae676",
-          "point_improvement":"4181f974404040ac"
          },
 
          {

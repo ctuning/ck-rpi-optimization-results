@@ -1,0 +1,233 @@
+{
+  "out_html_file":"1ea731443e29f6ce-table.html",
+  "out_tex_file":"1ea731443e29f6ce-table.tex",
+
+  "force_round":1,
+
+  "table_header":[
+              {"name":"Workload", "html_before":"<b>", "html_after":"</b>", "tex":"l", "tex_before":"\\textbf{", "tex_after":"}"}, 
+              {"name":"Compiler", "html_change_space":"yes", "tex":"l"}, 
+              {"name":"Time improvement over -O3 (-O3 time in brackets)", "html_change_space":"yes", "tex":"p{0.9in}"}, 
+              {"name":"Binary size improvement over -O3 (-O3 size in brackets)", "html_change_space":"yes", "tex":"p{0.9in}"},
+              {"name":"Flags", "html_before":"<small>", "html_after":"</small>", "tex":"p{3.0in}", "tex_before":"{\\small", "tex_after":"}"}
+             ],
+
+  "entries":[
+         {
+          "note":"7z encode",
+          "extra_field":"GCC 4.9.2",
+          "data_uoa":"rpi3-7z-encode-gcc4-cbest-frontier", 
+          "data_uid":"860174fc1b709377",
+          "point":"283243d90c54a3b8",
+          "point_improvement":"ec934e93826572d2"
+         },
+
+         {
+          "note":"7z encode",
+          "extra_field":"GCC 7.1.0",
+          "data_uoa":"rpi3-7z-encode-gcc7-cbest-frontier", 
+          "data_uid":"03af5407d14468eb",
+          "point":"6d4d4e8e1c6daac6",
+          "no_improvement":"yes"
+         },
+
+         {
+          "note":"ccrypt encrypt",
+          "extra_field":"GCC 4.9.2",
+          "data_uoa":"rpi3-ccrypt-encrypt-gcc4-cbest-frontier", 
+          "data_uid":"89fd652535db438e",
+          "point":"24844209902c136a",
+          "no_improvement":"yes"
+         },
+
+         {
+          "note":"ccrypt encrypt",
+          "extra_field":"GCC 7.1.0",
+          "data_uoa":"rpi3-ccrypt-encrypt-gcc7-cbest-frontier", 
+          "data_uid":"264c8a9a86776fcb",
+          "point":"a298c432287ae676",
+          "point_improvement":"f8130c563953d484"
+         },
+
+         {
+          "note":"ccrypt encrypt",
+          "extra_field":"GCC 7.1.0",
+          "data_uoa":"rpi3-ccrypt-encrypt-gcc7-cbest-frontier", 
+          "data_uid":"264c8a9a86776fcb",
+          "point":"a298c432287ae676",
+          "point_improvement":"4181f974404040ac"
+         },
+
+         {
+          "note":"gzip decode",
+          "extra_field":"GCC 4.9.2",
+          "data_uoa":"rpi3-gzip-decode-gcc4-cbest-frontier", 
+          "data_uid":"59dbd50c4fa98b6c",
+          "point":"a466d84c013c7448",
+          "point_improvement":"f4f3baa9717f1cee"
+         },
+
+         {
+          "note":"gzip decode",
+          "extra_field":"GCC 7.1.0",
+          "data_uoa":"rpi3-gzip-decode-gcc7-cbest-frontier", 
+          "data_uid":"d2044082a58f5f78",
+          "point":"d4b70a92ee16328c",
+          "point_improvement":"64f3736c4460e87f"
+         },
+
+         {
+          "note":"gzip decode",
+          "extra_field":"GCC 7.1.0",
+          "data_uoa":"rpi3-gzip-decode-gcc7-cbest-frontier", 
+          "data_uid":"d2044082a58f5f78",
+          "point":"d4b70a92ee16328c",
+          "point_improvement":"d6ae97514d86a01a"
+         },
+
+         {
+          "note":"gzip encode",
+          "extra_field":"GCC 4.9.2",
+          "data_uoa":"rpi3-gzip-encode-gcc4-cbest-frontier", 
+          "data_uid":"819a33f3e0a4efc3",
+          "point":"1515b69b24962b1f",
+          "point_improvement":"d8685bf484cb1d9c"
+         },
+
+         {
+          "note":"gzip encode",
+          "extra_field":"GCC 7.1.0",
+          "data_uoa":"rpi3-gzip-encode-gcc7-cbest-frontier", 
+          "data_uid":"7bd35343c393218c",
+          "point":"05f64fba892c0d01",
+          "point_improvement":"ea66fb473741f8ba"
+         },
+
+         {
+          "note":"minigzip decode",
+          "extra_field":"GCC 4.9.2",
+          "data_uoa":"rpi3-minigzip-decode-gcc4-cbest-frontier", 
+          "data_uid":"3308b411e99c6c19",
+          "point":"bcc69e3240de4df8",
+          "point_improvement":"1970017ea1e6fd3f"
+         },
+
+         {
+          "note":"minigzip decode",
+          "extra_field":"GCC 4.9.2",
+          "data_uoa":"rpi3-minigzip-decode-gcc4-cbest-frontier", 
+          "data_uid":"3308b411e99c6c19",
+          "point":"bcc69e3240de4df8",
+          "point_improvement":"704e0a8e94359933"
+         },
+
+         {
+          "note":"minigzip decode",
+          "extra_field":"GCC 7.1.0",
+          "data_uoa":"rpi3-minigzip-decode-gcc7-cbest-frontier", 
+          "data_uid":"b9728f4c7b36ac8a",
+          "point":"e196af4823adc41b",
+          "point_improvement":"f72e2b4f5e47b98c"
+         },
+
+         {
+          "note":"minigzip encode",
+          "extra_field":"GCC 4.9.2",
+          "data_uoa":"rpi3-minigzip-encode-gcc4-cbest-frontier", 
+          "data_uid":"8c4b2b03f4aa21a7",
+          "point":"1bc96e1d32db00e1",
+          "point_improvement":"243c5a4fc20ee826"
+         },
+
+         {
+          "note":"minigzip encode",
+          "extra_field":"GCC 7.1.0",
+          "data_uoa":"rpi3-minigzip-encode-gcc7-cbest-frontier", 
+          "data_uid":"18828143558b3c2f",
+          "point":"c06d7d458fe4c539",
+          "point_improvement":"0e1438a8a38e6fd6"
+         },
+
+         {
+          "note":"rhash sha3",
+          "extra_field":"GCC 4.9.2",
+          "data_uoa":"rpi3-rhash-sha3-gcc4-cbest-frontier", 
+          "data_uid":"7ca1118331485cb4",
+          "point":"5449fe39d40f4a59",
+          "point_improvement":"4b74181efc011cbd"
+         },
+
+         {
+          "note":"rhash sha3",
+          "extra_field":"GCC 7.1.0",
+          "data_uoa":"rpi3-rhash-sha3-gcc7-cbest-frontier", 
+          "data_uid":"94a5792a3a4b925f",
+          "point":"34496b1d31c063e9",
+          "point_improvement":"fc8e3a495ab4298c"
+         },
+
+         {
+          "note":"rhash sha3",
+          "extra_field":"GCC 7.1.0",
+          "data_uoa":"rpi3-rhash-sha3-gcc7-cbest-frontier", 
+          "data_uid":"94a5792a3a4b925f",
+          "point":"34496b1d31c063e9",
+          "point_improvement":"dab8b6c57a392ca5"
+         },
+
+         {
+          "note":"sha512sum sha512",
+          "extra_field":"GCC 4.9.2",
+          "data_uoa":"rpi3-sha512sum-sha512-gcc4-cbest-frontier", 
+          "data_uid":"b8ab612f1524fa3b",
+          "point":"d78dc2093deecbd7",
+          "point_improvement":"042129a7110f3e31"
+         },
+
+         {
+          "note":"sha512sum sha512",
+          "extra_field":"GCC 7.1.0",
+          "data_uoa":"rpi3-sha512sum-sha512-gcc7-cbest-frontier", 
+          "data_uid":"20995294bf184644",
+          "point":"96a48979a63ae54c",
+          "point_improvement":"fa8f9e4af29f3a8c"
+         },
+
+         {
+          "note":"unrar",
+          "extra_field":"GCC 4.9.2",
+          "data_uoa":"rpi3-unrar-unrar-gcc4-cbest-frontier", 
+          "data_uid":"1a89c378d17ce4d0",
+          "point":"1b275fce4f476499",
+          "point_improvement":"981b7b9de6f50286"
+         },
+
+         {
+          "note":"unrar",
+          "extra_field":"GCC 4.9.2",
+          "data_uoa":"rpi3-unrar-unrar-gcc4-cbest-frontier", 
+          "data_uid":"1a89c378d17ce4d0",
+          "point":"1b275fce4f476499",
+          "point_improvement":"94451a72a5aadda2"
+         },
+
+         {
+          "note":"unrar",
+          "extra_field":"GCC 7.1.0",
+          "data_uoa":"rpi3-unrar-unrar-gcc7-cbest-frontier", 
+          "data_uid":"cbeb48dd9eaec742",
+          "point":"843ff642fb984a8a",
+          "point_improvement":"82db107f34066a74"
+         },
+
+         {
+          "note":"unrar",
+          "extra_field":"GCC 7.1.0",
+          "data_uoa":"rpi3-unrar-unrar-gcc7-cbest-frontier", 
+          "data_uid":"cbeb48dd9eaec742",
+          "point":"843ff642fb984a8a",
+          "point_improvement":"8a5a431da242467a"
+         }
+
+        ]
+}

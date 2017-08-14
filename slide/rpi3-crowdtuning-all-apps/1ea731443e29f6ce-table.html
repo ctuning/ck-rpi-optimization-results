@@ -1,0 +1,427 @@
+<table border="1" cellpadding="5" cellspacing="0">
+ <tr style="background-color:#cfcfcf;">
+  <td valign="top">
+   <b>Workload</b>
+  </td>
+  <td valign="top">
+   <b>Compiler</b>
+  </td>
+  <td valign="top">
+   <b>Time&nbsp;improvement&nbsp;over&nbsp;-O3&nbsp;(-O3&nbsp;time&nbsp;in&nbsp;brackets)</b>
+  </td>
+  <td valign="top">
+   <b>Binary&nbsp;size&nbsp;improvement&nbsp;over&nbsp;-O3&nbsp;(-O3&nbsp;size&nbsp;in&nbsp;brackets)</b>
+  </td>
+  <td valign="top">
+   <b>Flags</b>
+  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   7z encode
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;4.9.2
+  </td>
+  <td valign="top">
+   ~&nbsp;1.02&nbsp;<i>(5.5&nbsp;&plusmn;&nbsp;0.1)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;1.52&nbsp;<i>(859728)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -fno-inline -flto
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   7z encode
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;7.1.0
+  </td>
+  <td valign="top">
+   no&nbsp;<i>(6.0&nbsp;&plusmn;&nbsp;1.0)</i>
+  </td>
+  <td valign="top">
+   no&nbsp;<i>(887464)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   ccrypt encrypt
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;4.9.2
+  </td>
+  <td valign="top">
+   no&nbsp;<i>(7.0&nbsp;&plusmn;&nbsp;2.0)</i>
+  </td>
+  <td valign="top">
+   no&nbsp;<i>(61772)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   ccrypt encrypt
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;7.1.0
+  </td>
+  <td valign="top">
+   ~&nbsp;1.16&nbsp;<i>(7.6&nbsp;&plusmn;&nbsp;0.1)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;1.00&nbsp;<i>(59996)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -fno-auto-inc-dec -fguess-branch-probability -fipa-pure-const -freorder-blocks -fselective-scheduling2 -ftree-ccp -fno-tree-pre -ftree-tail-merge
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   ccrypt encrypt
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;7.1.0
+  </td>
+  <td valign="top">
+   ~&nbsp;1.06&nbsp;<i>(7.6&nbsp;&plusmn;&nbsp;0.1)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;1.04&nbsp;<i>(59996)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -fdelete-null-pointer-checks -fno-indirect-inlining -fipa-cp-alignment -fno-ipa-pure-const -freciprocal-math -fsched-spec-insn-heuristic -fschedule-insns2 -fno-ssa-phiopt -fno-tree-ch -ftree-copy-prop -fno-tree-sink -fno-tree-switch-conversion -funsafe-loop-optimizations -funsafe-math-optimizations
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   gzip decode
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;4.9.2
+  </td>
+  <td valign="top">
+   ~&nbsp;1.04&nbsp;<i>(4.2&nbsp;&plusmn;&nbsp;0.0)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;1.12&nbsp;<i>(85956)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -fno-inline -flto
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   gzip decode
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;7.1.0
+  </td>
+  <td valign="top">
+   ~&nbsp;1.04&nbsp;<i>(4.2&nbsp;&plusmn;&nbsp;0.0)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;1.18&nbsp;<i>(90568)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -fno-inline -flto
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   gzip decode
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;7.1.0
+  </td>
+  <td valign="top">
+   ~&nbsp;1.08&nbsp;<i>(4.2&nbsp;&plusmn;&nbsp;0.0)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;0.81&nbsp;<i>(90568)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -fno-cprop-registers -flto -funroll-all-loops
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   gzip encode
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;4.9.2
+  </td>
+  <td valign="top">
+   ~&nbsp;0.98&nbsp;<i>(12.3&nbsp;&plusmn;&nbsp;0.1)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;1.10&nbsp;<i>(85956)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -fno-omit-frame-pointer -fno-tree-loop-optimize
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   gzip encode
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;7.1.0
+  </td>
+  <td valign="top">
+   ~&nbsp;1.01&nbsp;<i>(12.3&nbsp;&plusmn;&nbsp;0.8)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;1.18&nbsp;<i>(90568)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -fno-inline -flto
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   minigzip decode
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;4.9.2
+  </td>
+  <td valign="top">
+   ~&nbsp;1.24&nbsp;<i>(10.0&nbsp;&plusmn;&nbsp;4.0)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;1.60&nbsp;<i>(101432)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -fno-inline -flto
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   minigzip decode
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;4.9.2
+  </td>
+  <td valign="top">
+   ~&nbsp;1.32&nbsp;<i>(10.0&nbsp;&plusmn;&nbsp;4.0)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;1.00&nbsp;<i>(101432)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -fselective-scheduling2 -fno-tree-pre
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   minigzip decode
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;7.1.0
+  </td>
+  <td valign="top">
+   ~&nbsp;1.14&nbsp;<i>(8.0&nbsp;&plusmn;&nbsp;3.0)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;1.76&nbsp;<i>(119088)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -fno-inline -flto
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   minigzip encode
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;4.9.2
+  </td>
+  <td valign="top">
+   ~&nbsp;0.89&nbsp;<i>(9.9&nbsp;&plusmn;&nbsp;0.0)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;1.60&nbsp;<i>(101432)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -fno-inline -flto
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   minigzip encode
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;7.1.0
+  </td>
+  <td valign="top">
+   ~&nbsp;1.00&nbsp;<i>(9.6&nbsp;&plusmn;&nbsp;0.0)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;1.76&nbsp;<i>(119088)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -fno-inline -flto
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   rhash sha3
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;4.9.2
+  </td>
+  <td valign="top">
+   ~&nbsp;1.00&nbsp;<i>(4.8&nbsp;&plusmn;&nbsp;0.0)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;1.12&nbsp;<i>(14848)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -flto
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   rhash sha3
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;7.1.0
+  </td>
+  <td valign="top">
+   ~&nbsp;1.35&nbsp;<i>(5.2&nbsp;&plusmn;&nbsp;0.0)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;1.30&nbsp;<i>(16396)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -fno-inline -flto
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   rhash sha3
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;7.1.0
+  </td>
+  <td valign="top">
+   ~&nbsp;1.48&nbsp;<i>(5.2&nbsp;&plusmn;&nbsp;0.0)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;1.07&nbsp;<i>(16396)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -fno-schedule-insns -ftracer
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   sha512sum sha512
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;4.9.2
+  </td>
+  <td valign="top">
+   ~&nbsp;1.12&nbsp;<i>(7.8&nbsp;&plusmn;&nbsp;0.0)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;1.06&nbsp;<i>(125372)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -fno-schedule-insns -fselective-scheduling2
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   sha512sum sha512
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;7.1.0
+  </td>
+  <td valign="top">
+   ~&nbsp;1.22&nbsp;<i>(7.3&nbsp;&plusmn;&nbsp;0.0)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;1.07&nbsp;<i>(121180)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -fno-predictive-commoning -fno-schedule-insns -funroll-loops
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   unrar
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;4.9.2
+  </td>
+  <td valign="top">
+   ~&nbsp;0.97&nbsp;<i>(18.0&nbsp;&plusmn;&nbsp;4.0)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;1.38&nbsp;<i>(326572)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -fno-inline -flto
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   unrar
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;4.9.2
+  </td>
+  <td valign="top">
+   ~&nbsp;1.13&nbsp;<i>(18.0&nbsp;&plusmn;&nbsp;4.0)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;0.80&nbsp;<i>(326572)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -fno-section-anchors -fselective-scheduling2 -fno-tree-forwprop -funroll-all-loops
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   unrar
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;7.1.0
+  </td>
+  <td valign="top">
+   ~&nbsp;0.96&nbsp;<i>(18.0&nbsp;&plusmn;&nbsp;6.0)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;1.38&nbsp;<i>(326572)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -fno-inline -flto
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   unrar
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;7.1.0
+  </td>
+  <td valign="top">
+   ~&nbsp;1.07&nbsp;<i>(18.0&nbsp;&plusmn;&nbsp;6.0)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;0.78&nbsp;<i>(326572)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -fno-tree-ter -funroll-all-loops
+   </small>  </td>
+ </tr>
+</table>

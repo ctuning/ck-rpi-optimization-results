@@ -1,0 +1,21 @@
+{
+  "backup_data_uid": "2e8011124cb0c24d",
+  "backup_module_uid": "757c34ce8a0a808d",
+  "backup_module_uoa": "slide",
+  "control": {
+    "author": "Grigori Fursin",
+    "author_email": "Grigori.Fursin@cTuning.org",
+    "author_webpage": "http://fursin.net",
+    "copyright": "See CK COPYRIGHT.txt for copyright details",
+    "engine": "CK",
+    "iso_datetime": "2017-08-13T19:14:37.206944",
+    "license": "See CK LICENSE.txt for licensing details",
+    "version": [
+      "1",
+      "9",
+      "1",
+      "1"
+    ]
+  },
+  "data_name": "rpi3-crowdtuning-all-apps"
+}

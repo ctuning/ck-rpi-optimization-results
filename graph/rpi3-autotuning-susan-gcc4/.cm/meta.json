@@ -101,8 +101,8 @@
         "axis_y_desc": "Execution time (sec.)",
         "bound_lines": "no",
         "data_uoa_list": [
-          "rpi3-susan-corners-gcc4-300-rnd",
-          "rpi3-susan-corners-gcc4-300-rnd-frontier",
+          "rpi3-susan-corners-gcc4-150bpc-rnd",
+          "rpi3-susan-corners-gcc4-150bpc-rnd-frontier",
           "rpi3-susan-corners-gcc4-main",
           "rpi3-susan-corners-gcc4-main-o3",
           "rpi3-susan-corners-clang381-main",

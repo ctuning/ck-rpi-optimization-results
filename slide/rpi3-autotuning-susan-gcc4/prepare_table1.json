@@ -67,16 +67,7 @@
          },
 
          {
-          "note":"A7R",
-          "extra_field":"GCC 4.9.2",
-          "custom":{"row_style":"style=\"color:#af0000;\""},
-          "data_uoa":"rpi3-susan-corners-gcc4-150bpc-rnd-frontier-pruned1", 
-          "data_uid":"992855e25efa2c4a",
-          "point":"c6b45e2c3e414452"
-         },
-
-         {
-          "note":"A8",
+          "note":"A7",
           "extra_field":"CLANG 3.8.1",
           "data_uoa":"rpi3-susan-corners-clang381-main-empty-opt", 
           "data_uid":"a32e34c31b900930",
@@ -84,7 +75,7 @@
          },
 
          {
-          "note":"A9",
+          "note":"A8",
           "custom":{"row_style":"style=\"color:#4f0000;\""},
           "extra_field":"CLANG 3.8.1",
           "data_uoa":"rpi3-susan-corners-clang381-main-o3",

@@ -1,0 +1,59 @@
+GCC 4.9.2
+
+ck replay experiment:f14372bd49376cd5 --point=05df924a4f02adc2
+
+gcc -c    -I../ -DCK_HOST_OS_NAME2_LINUX=1 -DCK_HOST_OS_NAME_LINUX=1 -DCK_TARGET_OS_NAME2_LINUX=1 -DCK_TARGET_OS_NAME_LINUX=1 -DXOPENME -I/home/fursin/CK-TOOLS/lib-rtl-xopenme-0.3-gcc-4.9.2-linux-32/include -O3 -fcheck-data-deps -fno-function-sections -fno-gcse-lm -fgraphite-identity -fno-gcse-sm -fno-ivopts -fzero-initialized-in-bss -fomit-frame-pointer -frename-registers -frounding-math -fno-tree-coalesce-vars -fno-tree-forwprop -funsafe-math-optimizations ../susan.c  -o susan.o
+
+ ck compile program:*susan --flags="-O3 -fcheck-data-deps -fno-function-sections -fno-gcse-lm -fgraphite-identity -fno-gcse-sm -fno-ivopts -fzero-initialized-in-bss -fomit-frame-pointer -frename-registers -frounding-math -fno-tree-coalesce-vars -fno-tree-forwprop -funsafe-math-optimizations"
+
+(Number of distance vectors differ: Banerjee has 1, Omega has 0.
+Banerjee dist vectors:
+  4
+Omega dist vectors:
+data dependence relation:
+(Data Dep:
+#(Data Ref:
+#  bb: 5
+#  stmt: _59 = *p_57;
+#  ref: *p_57;
+#  base_object: *in_22(D) + ((sizetype) x_size_6(D) + (sizetype) pretmp_1219);
+#  Access function 0: {1B(OVF), +, 1}_2
+#)
+#(Data Ref:
+#  bb: 5
+#  stmt: _90 = *p_82;
+#  ref: *p_82;
+#  base_object: *in_22(D) + ((sizetype) x_size_6(D) + (sizetype) pretmp_1219);
+#  Access function 0: {5B(OVF), +, 1}_2
+#)
+  access_fn_A: {1B(OVF), +, 1}_2
+  access_fn_B: {5B(OVF), +, 1}_2
+
+ (subscript
+  iterations_that_access_an_element_twice_in_A: [4 + 1 * x_1]
+  last_conflict: 2147483637
+  iterations_that_access_an_element_twice_in_B: [0 + 1 * x_1]
+  last_conflict: 2147483637
+  (Subscript distance: 4 ))
+  inner loop index: 0
+  loop nest: (2 )
+)
+)
+../susan.c: In function ‘susan_principle’:
+../susan.c:495:6: internal compiler error: in compute_affine_dependence, at tree-data-ref.c:4253
+ void susan_principle(uchar* in, int* r, uchar* bp,
+      ^
+Please submit a full bug report,
+with preprocessed source if appropriate.
+See <file:///usr/share/doc/gcc-4.9/README.Bugs> for instructions.
+Preprocessed source stored into /tmp/ccW0PUrM.out file, please attach this to your bugreport.
+
+
+Reduction:
+
+ ck compile program:*susan --flags="-Wall -Wextra -O3 -fcheck-data-deps -fno-function-sections -fno-gcse-lm -fgraphite-identity -fno-gcse-sm -fno-ivopts -fzero-initialized-in-bss -fomit-frame-pointer -frename-registers -frounding-math -fno-tree-coalesce-vars -fno-tree-forwprop"
+ ck compile program:*susan --flags="-Wall -Wextra -O3 -fcheck-data-deps -fno-function-sections -fno-gcse-lm -fgraphite-identity -fno-gcse-sm -fno-ivopts -fzero-initialized-in-bss -fomit-frame-pointer -frename-registers"
+ ck compile program:*susan --flags="-Wall -Wextra -O3 -fcheck-data-deps -fno-function-sections -fno-gcse-lm -fgraphite-identity -fno-gcse-sm -fno-ivopts -fzero-initialized-in-bss -fomit-frame-pointer"
+ ck compile program:*susan --flags="-Wall -Wextra -O3 -fcheck-data-deps -fno-function-sections -fno-gcse-lm -fgraphite-identity"
+ ck compile program:*susan --flags="-Wall -Wextra -O3 -fcheck-data-deps -fno-function-sections -fno-gcse-lm"
+ ck compile program:*susan --flags="-Wall -Wextra -O3 -fcheck-data-deps"

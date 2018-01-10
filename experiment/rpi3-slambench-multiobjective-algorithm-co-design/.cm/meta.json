@@ -1,0 +1,16 @@
+{
+  "added": {
+    "engine": "CK",
+    "iso_datetime": "2018-01-09T15:52:30.431736",
+    "version": [
+      "1",
+      "9",
+      "4"
+    ]
+  },
+  "meta": {},
+  "pipeline_uid": "b0ac08fe1d3c2615",
+  "pipeline_uoa": "program",
+  "points": "74",
+  "subview_uoa": "ab8a38b04b984718"
+}

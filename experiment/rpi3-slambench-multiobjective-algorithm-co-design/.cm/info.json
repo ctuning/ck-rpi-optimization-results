@@ -1,0 +1,15 @@
+{
+  "backup_data_uid": "a44e8add877b408c",
+  "backup_module_uid": "bc0409fb61f0aa82",
+  "backup_module_uoa": "experiment",
+  "control": {
+    "engine": "CK",
+    "iso_datetime": "2018-01-09T15:52:30.125843",
+    "version": [
+      "1",
+      "9",
+      "4"
+    ]
+  },
+  "data_name": "rpi3-slambench-multiobjective-algorithm-co-design"
+}

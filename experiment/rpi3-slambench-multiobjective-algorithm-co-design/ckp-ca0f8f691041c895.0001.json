@@ -1,0 +1,614 @@
+{
+  "characteristics_list": [
+    {
+      "current_freq": {
+        "0": 1200.0, 
+        "1": 1200.0, 
+        "2": 1200.0, 
+        "3": 1200.0
+      }, 
+      "run": {
+        "accuracy_ate_max": 0.013785, 
+        "accuracy_ate_mean": 0.007967, 
+        "accuracy_ate_min": 0.0, 
+        "execution_time": 9.338284, 
+        "execution_time_kernel_0": 9.338284, 
+        "execution_time_kernel_X": "@@0.000000,0.000000,0.000000,0.000000,0.000000,0.000410,0.001129,-0.003244,-0.006645,0.000093,-0.004517,-0.005386,-0.007592,-0.004702,-0.008863,-0.004152,-0.007684,-0.015714,-0.018946,-0.020768", 
+        "execution_time_kernel_Y": "@@0.000000,0.000000,0.000000,0.000000,0.000000,-0.004154,-0.008774,-0.005247,-0.007438,-0.006950,-0.005854,-0.007578,-0.005922,-0.005863,-0.005166,-0.006802,-0.008376,-0.007803,-0.005269,-0.003685", 
+        "execution_time_kernel_Z": "@@0.000000,0.000000,0.000000,0.000000,0.000000,-0.000064,-0.000378,0.000142,-0.000131,-0.000167,0.000469,0.001540,0.000426,0.000827,0.000008,0.000476,-0.000581,-0.002146,-0.001225,-0.001778", 
+        "execution_time_kernel_acquisition": "@@0.002854,0.001743,0.001724,0.001750,0.008088,0.001785,0.001768,0.008155,0.001856,0.001965,0.008114,0.001750,0.001945,0.008247,0.001959,0.002053,0.008334,0.001933,0.002019,0.008283", 
+        "execution_time_kernel_computation": "@@0.122547,0.121096,0.172473,0.309397,0.294043,0.293078,0.309057,0.292962,0.293416,0.293373,0.293366,0.293379,0.310122,0.294492,0.294239,0.293488,0.293884,0.294914,0.310370,0.295251", 
+        "execution_time_kernel_frame": "@@0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19", 
+        "execution_time_kernel_integrated": "@@1,1,1,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0", 
+        "execution_time_kernel_integration": "@@0.016085,0.016084,0.016060,0.016144,0.000002,0.000002,0.016036,0.000002,0.000002,0.000002,0.000002,0.000002,0.016103,0.000002,0.000002,0.000002,0.000002,0.000002,0.016059,0.000002", 
+        "execution_time_kernel_preprocessing": "@@0.094860,0.094595,0.145922,0.094566,0.094640,0.094550,0.094559,0.094602,0.094641,0.094589,0.094612,0.094567,0.094563,0.094693,0.094559,0.094542,0.094613,0.094654,0.094591,0.094640", 
+        "execution_time_kernel_raycasting": "@@0.000001,0.000001,0.000001,0.188104,0.186742,0.185917,0.185766,0.185716,0.186032,0.186002,0.186079,0.186124,0.186747,0.187039,0.186968,0.186245,0.186433,0.187379,0.186951,0.187870", 
+        "execution_time_kernel_rendering": "@@0.190896,0.190586,0.190256,0.189667,0.188851,0.188053,0.188018,0.187689,0.187996,0.188218,0.188043,0.188150,0.188781,0.189002,0.189022,0.188186,0.188411,0.189454,0.189089,0.189825", 
+        "execution_time_kernel_total": "@@0.316297,0.313426,0.364453,0.500813,0.490981,0.482916,0.498843,0.488806,0.483268,0.483555,0.489522,0.483279,0.500848,0.491740,0.485219,0.483727,0.490628,0.486300,0.501478,0.493359", 
+        "execution_time_kernel_tracked": "@@0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1", 
+        "execution_time_kernel_tracking": "@@0.011601,0.010416,0.010490,0.010582,0.012659,0.012609,0.012696,0.012643,0.012741,0.012780,0.012672,0.012687,0.012709,0.012758,0.012710,0.012699,0.012836,0.012879,0.012768,0.012739", 
+        "execution_time_with_module": 10.494478940963745, 
+        "fps": 2.1437472573433527, 
+        "frames": 20, 
+        "repeat": 1, 
+        "return_code": 0, 
+        "run_success": "yes", 
+        "run_success_bool": true, 
+        "run_time_state": {
+          "frames": 20, 
+          "input_size_x": 640, 
+          "input_size_y": 480, 
+          "openmp_max_threads": 1, 
+          "run_time_fps": 2.143747, 
+          "run_time_total": 9.329461
+        }, 
+        "total_execution_time": 9.338284, 
+        "total_execution_time_from_kernels": 9.329457999999999
+      }
+    }, 
+    {
+      "current_freq": {
+        "0": 1200.0, 
+        "1": 1200.0, 
+        "2": 1200.0, 
+        "3": 1200.0
+      }, 
+      "run": {
+        "accuracy_ate_max": 0.013785, 
+        "accuracy_ate_mean": 0.007967, 
+        "accuracy_ate_min": 0.0, 
+        "execution_time": 9.30549, 
+        "execution_time_kernel_0": 9.30549, 
+        "execution_time_kernel_X": "@@0.000000,0.000000,0.000000,0.000000,0.000000,0.000410,0.001129,-0.003244,-0.006645,0.000093,-0.004517,-0.005386,-0.007592,-0.004702,-0.008863,-0.004152,-0.007684,-0.015714,-0.018946,-0.020768", 
+        "execution_time_kernel_Y": "@@0.000000,0.000000,0.000000,0.000000,0.000000,-0.004154,-0.008774,-0.005247,-0.007438,-0.006950,-0.005854,-0.007578,-0.005922,-0.005863,-0.005166,-0.006802,-0.008376,-0.007803,-0.005269,-0.003685", 
+        "execution_time_kernel_Z": "@@0.000000,0.000000,0.000000,0.000000,0.000000,-0.000064,-0.000378,0.000142,-0.000131,-0.000167,0.000469,0.001540,0.000426,0.000827,0.000008,0.000476,-0.000581,-0.002146,-0.001225,-0.001778", 
+        "execution_time_kernel_acquisition": "@@0.002840,0.001787,0.001712,0.001803,0.008190,0.001783,0.001776,0.008229,0.001936,0.001979,0.008153,0.001782,0.001955,0.008537,0.002028,0.002006,0.008336,0.001946,0.002028,0.008436", 
+        "execution_time_kernel_computation": "@@0.123107,0.121675,0.122053,0.310375,0.294909,0.294122,0.310305,0.293768,0.294113,0.294442,0.294158,0.294383,0.310894,0.295225,0.295005,0.294216,0.294647,0.295574,0.311202,0.296084", 
+        "execution_time_kernel_frame": "@@0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19", 
+        "execution_time_kernel_integrated": "@@1,1,1,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0", 
+        "execution_time_kernel_integration": "@@0.016130,0.016125,0.016418,0.016120,0.000002,0.000002,0.016108,0.000002,0.000002,0.000002,0.000002,0.000002,0.016094,0.000002,0.000002,0.000002,0.000002,0.000002,0.016126,0.000002", 
+        "execution_time_kernel_preprocessing": "@@0.095284,0.094990,0.095013,0.095009,0.095111,0.095134,0.095061,0.095093,0.094978,0.095359,0.095072,0.095179,0.095026,0.095152,0.094980,0.094997,0.095094,0.094989,0.095102,0.095058", 
+        "execution_time_kernel_raycasting": "@@0.000001,0.000001,0.000001,0.188666,0.187028,0.186231,0.186276,0.185931,0.186337,0.186262,0.186345,0.186423,0.186943,0.187142,0.187255,0.186495,0.186645,0.187694,0.187061,0.188187", 
+        "execution_time_kernel_rendering": "@@0.191783,0.191161,0.190539,0.189962,0.189173,0.188456,0.188594,0.187987,0.188358,0.188475,0.188598,0.188420,0.189114,0.189276,0.189318,0.188571,0.188699,0.189612,0.189457,0.190234", 
+        "execution_time_kernel_total": "@@0.317730,0.314622,0.314304,0.502140,0.492272,0.484362,0.500675,0.489984,0.484407,0.484896,0.490909,0.484585,0.501963,0.493039,0.486351,0.484793,0.491681,0.487131,0.502687,0.494754", 
+        "execution_time_kernel_tracked": "@@0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1", 
+        "execution_time_kernel_tracking": "@@0.011693,0.010558,0.010620,0.010580,0.012768,0.012755,0.012860,0.012742,0.012797,0.012819,0.012739,0.012779,0.012832,0.012929,0.012768,0.012723,0.012906,0.012890,0.012914,0.012837", 
+        "execution_time_with_module": 10.458556175231934, 
+        "fps": 2.149778277242931, 
+        "frames": 20, 
+        "repeat": 1, 
+        "return_code": 0, 
+        "run_success": "yes", 
+        "run_success_bool": true, 
+        "run_time_state": {
+          "frames": 20, 
+          "input_size_x": 640, 
+          "input_size_y": 480, 
+          "openmp_max_threads": 1, 
+          "run_time_fps": 2.149778, 
+          "run_time_total": 9.303287
+        }, 
+        "total_execution_time": 9.30549, 
+        "total_execution_time_from_kernels": 9.303285
+      }
+    }, 
+    {
+      "current_freq": {
+        "0": 1200.0, 
+        "1": 1200.0, 
+        "2": 1200.0, 
+        "3": 1200.0
+      }, 
+      "run": {
+        "accuracy_ate_max": 0.013785, 
+        "accuracy_ate_mean": 0.007967, 
+        "accuracy_ate_min": 0.0, 
+        "execution_time": 9.388955, 
+        "execution_time_kernel_0": 9.388955, 
+        "execution_time_kernel_X": "@@0.000000,0.000000,0.000000,0.000000,0.000000,0.000410,0.001129,-0.003244,-0.006645,0.000093,-0.004517,-0.005386,-0.007592,-0.004702,-0.008863,-0.004152,-0.007684,-0.015714,-0.018946,-0.020768", 
+        "execution_time_kernel_Y": "@@0.000000,0.000000,0.000000,0.000000,0.000000,-0.004154,-0.008774,-0.005247,-0.007438,-0.006950,-0.005854,-0.007578,-0.005922,-0.005863,-0.005166,-0.006802,-0.008376,-0.007803,-0.005269,-0.003685", 
+        "execution_time_kernel_Z": "@@0.000000,0.000000,0.000000,0.000000,0.000000,-0.000064,-0.000378,0.000142,-0.000131,-0.000167,0.000469,0.001540,0.000426,0.000827,0.000008,0.000476,-0.000581,-0.002146,-0.001225,-0.001778", 
+        "execution_time_kernel_acquisition": "@@0.002843,0.001721,0.001743,0.001739,0.008221,0.001740,0.001789,0.008172,0.001866,0.001984,0.008734,0.001752,0.001951,0.008368,0.001982,0.001996,0.008284,0.001953,0.002010,0.008413", 
+        "execution_time_kernel_computation": "@@0.123181,0.121672,0.121821,0.312759,0.296882,0.296287,0.313188,0.297113,0.296369,0.297325,0.296830,0.296099,0.313365,0.298295,0.297326,0.296021,0.296983,0.297596,0.313726,0.298090", 
+        "execution_time_kernel_frame": "@@0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19", 
+        "execution_time_kernel_integrated": "@@1,1,1,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0", 
+        "execution_time_kernel_integration": "@@0.016160,0.016118,0.016196,0.016145,0.000001,0.000002,0.016211,0.000002,0.000002,0.000002,0.000002,0.000002,0.016131,0.000002,0.000002,0.000002,0.000002,0.000002,0.016147,0.000002", 
+        "execution_time_kernel_preprocessing": "@@0.095408,0.095003,0.095063,0.095025,0.095091,0.095563,0.095141,0.095229,0.094979,0.094987,0.095376,0.095008,0.095333,0.095092,0.095050,0.095018,0.095118,0.095015,0.095102,0.095088", 
+        "execution_time_kernel_raycasting": "@@0.000001,0.000001,0.000001,0.191022,0.188919,0.187991,0.189063,0.189111,0.188595,0.189431,0.188686,0.188290,0.189079,0.190354,0.189472,0.188200,0.188796,0.189540,0.189441,0.190012", 
+        "execution_time_kernel_rendering": "@@0.193589,0.192846,0.192445,0.192391,0.191382,0.191486,0.191264,0.190285,0.190329,0.191089,0.190482,0.190431,0.191095,0.191527,0.191357,0.190799,0.190589,0.191604,0.191321,0.192253", 
+        "execution_time_kernel_total": "@@0.319613,0.316239,0.316008,0.506888,0.496486,0.489513,0.506241,0.495570,0.488564,0.490399,0.496046,0.488282,0.506411,0.498190,0.490666,0.488817,0.495855,0.491153,0.507058,0.498756", 
+        "execution_time_kernel_tracked": "@@0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1", 
+        "execution_time_kernel_tracking": "@@0.011611,0.010550,0.010560,0.010566,0.012870,0.012732,0.012773,0.012771,0.012792,0.012905,0.012766,0.012799,0.012822,0.012848,0.012802,0.012801,0.013067,0.013039,0.013036,0.012989", 
+        "execution_time_with_module": 10.542392015457153, 
+        "fps": 2.130661767565042, 
+        "frames": 20, 
+        "repeat": 1, 
+        "return_code": 0, 
+        "run_success": "yes", 
+        "run_success_bool": true, 
+        "run_time_state": {
+          "frames": 20, 
+          "input_size_x": 640, 
+          "input_size_y": 480, 
+          "openmp_max_threads": 1, 
+          "run_time_fps": 2.130662, 
+          "run_time_total": 9.386754
+        }, 
+        "total_execution_time": 9.388955, 
+        "total_execution_time_from_kernels": 9.386755
+      }
+    }
+  ], 
+  "choices": {
+    "cmd_key": "cmd_dse", 
+    "compile_only_once": "yes", 
+    "compile_type": "dynamic", 
+    "compiler_description_uoa": "gcc-7.1.0-auto", 
+    "compiler_flags": {
+      "base_opt": "-O3"
+    }, 
+    "data_uoa": "slambench-1.1-cpu-openmp", 
+    "dataset_file": "living_room_traj2_loop_20frames.raw", 
+    "dataset_uoa": "slambench-living-room-traj2-loop-20frames", 
+    "device_id": "", 
+    "energy": "no", 
+    "env": {
+      "CK_CPU_FREQUENCY": "max", 
+      "CK_DATASET_FILENAME": "living_room_traj2_loop_20frames.raw", 
+      "CK_GPU_FREQUENCY": "max", 
+      "KERNEL_TIMINGS": "1", 
+      "OMP_NUM_THREADS": 1, 
+      "XOPENME_DUMP_MEMORY_DEPTHRENDER": "1", 
+      "XOPENME_DUMP_MEMORY_INPUT_RGB": "1", 
+      "XOPENME_DUMP_MEMORY_TRACKRENDER": "1", 
+      "XOPENME_DUMP_MEMORY_VOLUMERENDER": "1"
+    }, 
+    "host_os": "linux-32", 
+    "module_uoa": "b0ac08fe1d3c2615", 
+    "repeat": 1, 
+    "run_cmd_key_c": "4", 
+    "run_cmd_key_l": 39.516, 
+    "run_cmd_key_m": 0.11, 
+    "run_cmd_key_r": 6, 
+    "run_cmd_key_v": 64, 
+    "run_cmd_key_y1": 5, 
+    "run_cmd_key_y2": 8, 
+    "run_cmd_key_y3": 8, 
+    "target": "", 
+    "target_os": "linux-32", 
+    "target_os_bits": "32"
+  }, 
+  "choices_order": [
+    "##compiler_flags#base_opt", 
+    "##choices#run_cmd_key_c", 
+    "##choices#run_cmd_key_r", 
+    "##choices#run_cmd_key_l", 
+    "##choices#run_cmd_key_m", 
+    "##choices#run_cmd_key_y1", 
+    "##choices#run_cmd_key_y2", 
+    "##choices#run_cmd_key_y3", 
+    "##choices#run_cmd_key_v", 
+    "##env#OMP_NUM_THREADS"
+  ], 
+  "features": {
+    "compiler_version": {
+      "list": [
+        7, 
+        1, 
+        0
+      ], 
+      "raw": [], 
+      "str": "7.1.0"
+    }, 
+    "dataset": {
+      "total_size": 30720320
+    }, 
+    "number_of_selected_compiler_flags": 1, 
+    "platform": {
+      "cpu": {
+        "all_freqs": {
+          "0": [
+            600000, 
+            1200000
+          ], 
+          "1": [
+            600000, 
+            1200000
+          ], 
+          "2": [
+            600000, 
+            1200000
+          ], 
+          "3": [
+            600000, 
+            1200000
+          ]
+        }, 
+        "cpu_abi": "", 
+        "cpu_features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+        "current_freq": {
+          "0": 1200.0, 
+          "1": 1200.0, 
+          "2": 1200.0, 
+          "3": 1200.0
+        }, 
+        "max_freq": {
+          "0": 1200.0, 
+          "1": 1200.0, 
+          "2": 1200.0, 
+          "3": 1200.0
+        }, 
+        "name": "BCM2709", 
+        "num_proc": "4", 
+        "sub_name": "ARMv7 Processor rev 4 (v7l)", 
+        "workload_automation": {
+          "device_config": {
+            "core_clusters": [
+              0, 
+              0, 
+              0, 
+              1
+            ], 
+            "core_names": [
+              "ARMv7 Processor rev 4 (v7l)", 
+              "ARMv7 Processor rev 4 (v7l)", 
+              "ARMv7 Processor rev 4 (v7l)", 
+              "BCM2709"
+            ]
+          }
+        }
+      }, 
+      "cpu_misc": {
+        "0": {
+          "BogoMIPS": "76.80", 
+          "CPU architecture": "7", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd03", 
+          "CPU revision": "4", 
+          "CPU variant": "0x0", 
+          "Features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "all_freqs": [
+            "0", 
+            "0"
+          ], 
+          "ck_cpu_name": "ARMv7 Processor rev 4 (v7l)", 
+          "ck_cpu_subname": "ARMv7 Processor rev 4 (v7l)", 
+          "cpu_features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "cur_freq": 1200.0, 
+          "max_freq": 1200.0, 
+          "model name": "ARMv7 Processor rev 4 (v7l)", 
+          "processor": "0"
+        }, 
+        "1": {
+          "BogoMIPS": "76.80", 
+          "CPU architecture": "7", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd03", 
+          "CPU revision": "4", 
+          "CPU variant": "0x0", 
+          "Features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "all_freqs": [
+            "1", 
+            "1"
+          ], 
+          "ck_cpu_name": "ARMv7 Processor rev 4 (v7l)", 
+          "ck_cpu_subname": "ARMv7 Processor rev 4 (v7l)", 
+          "cpu_features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "cur_freq": 1200.0, 
+          "max_freq": 1200.0, 
+          "model name": "ARMv7 Processor rev 4 (v7l)", 
+          "processor": "1"
+        }, 
+        "2": {
+          "BogoMIPS": "76.80", 
+          "CPU architecture": "7", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd03", 
+          "CPU revision": "4", 
+          "CPU variant": "0x0", 
+          "Features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "all_freqs": [
+            "2", 
+            "2"
+          ], 
+          "ck_cpu_name": "ARMv7 Processor rev 4 (v7l)", 
+          "ck_cpu_subname": "ARMv7 Processor rev 4 (v7l)", 
+          "cpu_features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "cur_freq": 1200.0, 
+          "max_freq": 1200.0, 
+          "model name": "ARMv7 Processor rev 4 (v7l)", 
+          "processor": "2"
+        }, 
+        "3": {
+          "BogoMIPS": "76.80", 
+          "CPU architecture": "7", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd03", 
+          "CPU revision": "4", 
+          "CPU variant": "0x0", 
+          "Features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "Hardware": "BCM2709", 
+          "Revision": "a02082", 
+          "Serial": "00000000e27f2dc3", 
+          "all_freqs": [
+            "3", 
+            "3"
+          ], 
+          "ck_cpu_name": "BCM2709", 
+          "ck_cpu_subname": "ARMv7 Processor rev 4 (v7l)", 
+          "cpu_features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "cur_freq": 1200.0, 
+          "max_freq": 1200.0, 
+          "model name": "ARMv7 Processor rev 4 (v7l)", 
+          "processor": "3"
+        }
+      }, 
+      "cpu_new_format": "", 
+      "cpu_unique": [
+        {
+          "BogoMIPS": "76.80", 
+          "CPU architecture": "7", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd03", 
+          "CPU revision": "4", 
+          "CPU variant": "0x0", 
+          "Features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "all_freqs": [
+            "0", 
+            "0"
+          ], 
+          "ck_cpu_name": "ARMv7 Processor rev 4 (v7l)", 
+          "ck_cpu_subname": "ARMv7 Processor rev 4 (v7l)", 
+          "cpu_features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "cur_freq": 1200.0, 
+          "max_freq": 1200.0, 
+          "model name": "ARMv7 Processor rev 4 (v7l)", 
+          "processor": "0"
+        }, 
+        {
+          "BogoMIPS": "76.80", 
+          "CPU architecture": "7", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd03", 
+          "CPU revision": "4", 
+          "CPU variant": "0x0", 
+          "Features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "Hardware": "BCM2709", 
+          "Revision": "a02082", 
+          "Serial": "00000000e27f2dc3", 
+          "all_freqs": [
+            "3", 
+            "3"
+          ], 
+          "ck_cpu_name": "BCM2709", 
+          "ck_cpu_subname": "ARMv7 Processor rev 4 (v7l)", 
+          "cpu_features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "cur_freq": 1200.0, 
+          "max_freq": 1200.0, 
+          "model name": "ARMv7 Processor rev 4 (v7l)", 
+          "processor": "3"
+        }
+      ], 
+      "gpu": {
+        "name": "", 
+        "vendor": ""
+      }, 
+      "gpu_misc": {}, 
+      "os": {
+        "abi": "armv7l", 
+        "bits": "32", 
+        "ck_os_base_uoa": "", 
+        "ck_os_uoa": "linux-32", 
+        "name": "Raspbian GNU/Linux 8 (jessie)", 
+        "name_long": "Linux-4.4.50-v7+-armv7l-with-debian-8.0", 
+        "name_short": "Linux 4.4.50", 
+        "serial_number": ""
+      }, 
+      "os_misc": {}, 
+      "platform": {
+        "model": "Raspberry Pi 3 Model B", 
+        "name": "Raspberry Pi (Raspberry Pi 3 Model B)", 
+        "vendor": "Sony"
+      }, 
+      "platform_misc": {}
+    }, 
+    "platform.cpu": {
+      "cpu": {
+        "all_freqs": {
+          "0": [
+            600000, 
+            1200000
+          ], 
+          "1": [
+            600000, 
+            1200000
+          ], 
+          "2": [
+            600000, 
+            1200000
+          ], 
+          "3": [
+            600000, 
+            1200000
+          ]
+        }, 
+        "cpu_abi": "", 
+        "cpu_features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+        "current_freq": {
+          "0": 1200.0, 
+          "1": 1200.0, 
+          "2": 1200.0, 
+          "3": 1200.0
+        }, 
+        "max_freq": {
+          "0": 1200.0, 
+          "1": 1200.0, 
+          "2": 1200.0, 
+          "3": 1200.0
+        }, 
+        "name": "BCM2709", 
+        "num_proc": "4", 
+        "sub_name": "ARMv7 Processor rev 4 (v7l)", 
+        "workload_automation": {
+          "device_config": {
+            "core_clusters": [
+              0, 
+              0, 
+              0, 
+              1
+            ], 
+            "core_names": [
+              "ARMv7 Processor rev 4 (v7l)", 
+              "ARMv7 Processor rev 4 (v7l)", 
+              "ARMv7 Processor rev 4 (v7l)", 
+              "BCM2709"
+            ]
+          }
+        }
+      }, 
+      "cpu_misc": {
+        "0": {
+          "BogoMIPS": "76.80", 
+          "CPU architecture": "7", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd03", 
+          "CPU revision": "4", 
+          "CPU variant": "0x0", 
+          "Features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "all_freqs": [
+            "0", 
+            "0"
+          ], 
+          "ck_cpu_name": "ARMv7 Processor rev 4 (v7l)", 
+          "ck_cpu_subname": "ARMv7 Processor rev 4 (v7l)", 
+          "cpu_features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "cur_freq": 1200.0, 
+          "max_freq": 1200.0, 
+          "model name": "ARMv7 Processor rev 4 (v7l)", 
+          "processor": "0"
+        }, 
+        "1": {
+          "BogoMIPS": "76.80", 
+          "CPU architecture": "7", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd03", 
+          "CPU revision": "4", 
+          "CPU variant": "0x0", 
+          "Features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "all_freqs": [
+            "1", 
+            "1"
+          ], 
+          "ck_cpu_name": "ARMv7 Processor rev 4 (v7l)", 
+          "ck_cpu_subname": "ARMv7 Processor rev 4 (v7l)", 
+          "cpu_features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "cur_freq": 1200.0, 
+          "max_freq": 1200.0, 
+          "model name": "ARMv7 Processor rev 4 (v7l)", 
+          "processor": "1"
+        }, 
+        "2": {
+          "BogoMIPS": "76.80", 
+          "CPU architecture": "7", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd03", 
+          "CPU revision": "4", 
+          "CPU variant": "0x0", 
+          "Features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "all_freqs": [
+            "2", 
+            "2"
+          ], 
+          "ck_cpu_name": "ARMv7 Processor rev 4 (v7l)", 
+          "ck_cpu_subname": "ARMv7 Processor rev 4 (v7l)", 
+          "cpu_features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "cur_freq": 1200.0, 
+          "max_freq": 1200.0, 
+          "model name": "ARMv7 Processor rev 4 (v7l)", 
+          "processor": "2"
+        }, 
+        "3": {
+          "BogoMIPS": "76.80", 
+          "CPU architecture": "7", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd03", 
+          "CPU revision": "4", 
+          "CPU variant": "0x0", 
+          "Features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "Hardware": "BCM2709", 
+          "Revision": "a02082", 
+          "Serial": "00000000e27f2dc3", 
+          "all_freqs": [
+            "3", 
+            "3"
+          ], 
+          "ck_cpu_name": "BCM2709", 
+          "ck_cpu_subname": "ARMv7 Processor rev 4 (v7l)", 
+          "cpu_features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "cur_freq": 1200.0, 
+          "max_freq": 1200.0, 
+          "model name": "ARMv7 Processor rev 4 (v7l)", 
+          "processor": "3"
+        }
+      }, 
+      "cpu_new_format": "", 
+      "cpu_unique": [
+        {
+          "BogoMIPS": "76.80", 
+          "CPU architecture": "7", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd03", 
+          "CPU revision": "4", 
+          "CPU variant": "0x0", 
+          "Features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "all_freqs": [
+            "0", 
+            "0"
+          ], 
+          "ck_cpu_name": "ARMv7 Processor rev 4 (v7l)", 
+          "ck_cpu_subname": "ARMv7 Processor rev 4 (v7l)", 
+          "cpu_features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "cur_freq": 1200.0, 
+          "max_freq": 1200.0, 
+          "model name": "ARMv7 Processor rev 4 (v7l)", 
+          "processor": "0"
+        }, 
+        {
+          "BogoMIPS": "76.80", 
+          "CPU architecture": "7", 
+          "CPU implementer": "0x41", 
+          "CPU part": "0xd03", 
+          "CPU revision": "4", 
+          "CPU variant": "0x0", 
+          "Features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "Hardware": "BCM2709", 
+          "Revision": "a02082", 
+          "Serial": "00000000e27f2dc3", 
+          "all_freqs": [
+            "3", 
+            "3"
+          ], 
+          "ck_cpu_name": "BCM2709", 
+          "ck_cpu_subname": "ARMv7 Processor rev 4 (v7l)", 
+          "cpu_features": "half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32", 
+          "cur_freq": 1200.0, 
+          "max_freq": 1200.0, 
+          "model name": "ARMv7 Processor rev 4 (v7l)", 
+          "processor": "3"
+        }
+      ], 
+      "os": {
+        "abi": "armv7l", 
+        "bits": "32", 
+        "ck_os_base_uoa": "", 
+        "ck_os_uoa": "linux-32", 
+        "name": "Raspbian GNU/Linux 8 (jessie)", 
+        "name_long": "Linux-4.4.50-v7+-armv7l-with-debian-8.0", 
+        "name_short": "Linux 4.4.50", 
+        "serial_number": ""
+      }, 
+      "os_misc": {}
+    }, 
+    "statistical_repetitions": 3
+  }
+}

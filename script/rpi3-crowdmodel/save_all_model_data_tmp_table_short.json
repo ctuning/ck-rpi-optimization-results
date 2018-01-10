@@ -1,0 +1,258 @@
+{
+  "table": [
+    [
+      "decision trees with cross validation; depth 1",
+      "ft1 .. ft65",
+      "0.26",
+      "0.33"
+    ],
+    [
+      "decision trees with cross validation; depth 2",
+      "ft1 .. ft65",
+      "0.26",
+      "0.36"
+    ],
+    [
+      "decision trees with cross validation; depth 4",
+      "ft1 .. ft65",
+      "0.27",
+      "0.39"
+    ],
+    [
+      "decision trees with cross validation; depth 8",
+      "ft1 .. ft65",
+      "0.40",
+      "0.36"
+    ],
+    [
+      "decision trees with cross validation; depth 16",
+      "ft1 .. ft65",
+      "0.36",
+      "0.35"
+    ],
+    [
+      "decision trees with cross validation; depth 20",
+      "ft1 .. ft65",
+      "0.37",
+      "0.33"
+    ],
+    [
+      "decision trees with cross validation; depth 25",
+      "ft1 .. ft65",
+      "0.37",
+      "0.37"
+    ],
+    [
+      "decision trees with cross validation; depth 29",
+      "ft1 .. ft65",
+      "0.35",
+      "0.37"
+    ],
+    [
+      "decision trees without cross validation; depth 1",
+      "ft1 .. ft65",
+      "0.39",
+      "0.36"
+    ],
+    [
+      "decision trees without cross validation; depth 2",
+      "ft1 .. ft65",
+      "0.40",
+      "0.40"
+    ],
+    [
+      "decision trees without cross validation; depth 4",
+      "ft1 .. ft65",
+      "0.49",
+      "0.47"
+    ],
+    [
+      "decision trees without cross validation; depth 8",
+      "ft1 .. ft65",
+      "0.69",
+      "0.68"
+    ],
+    [
+      "decision trees without cross validation; depth 16",
+      "ft1 .. ft65",
+      "0.94",
+      "0.96"
+    ],
+    [
+      "decision trees without cross validation; depth 20",
+      "ft1 .. ft65",
+      "0.98",
+      "0.96"
+    ],
+    [
+      "decision trees without cross validation; depth 25",
+      "ft1 .. ft65",
+      "0.98",
+      "0.96"
+    ],
+    [
+      "decision trees without cross validation; depth 29",
+      "ft1 .. ft65",
+      "0.98",
+      "0.96"
+    ],
+    [
+      "dnn tf with cross validation; iteration 1",
+      "ft1 .. ft65",
+      "0.68",
+      "0.30"
+    ],
+    [
+      "dnn tf with cross validation; iteration 2",
+      "ft1 .. ft65",
+      "0.64",
+      "0.33"
+    ],
+    [
+      "dnn tf with cross validation; iteration 3",
+      "ft1 .. ft65",
+      "0.61",
+      "0.45"
+    ],
+    [
+      "dnn tf with cross validation; iteration 4",
+      "ft1 .. ft65",
+      "0.64",
+      "0.44"
+    ],
+    [
+      "dnn tf without cross validation; iteration 1",
+      "ft1 .. ft65",
+      "0.72",
+      "0.29"
+    ],
+    [
+      "dnn tf without cross validation; iteration 2",
+      "ft1 .. ft65",
+      "0.72",
+      "0.47"
+    ],
+    [
+      "dnn tf without cross validation; iteration 3",
+      "ft1 .. ft65",
+      "0.72",
+      "0.48"
+    ],
+    [
+      "dnn tf without cross validation; iteration 4",
+      "ft1 .. ft65",
+      "0.68",
+      "0.62"
+    ],
+    [
+      "milepost nn",
+      "ft1 .. ft121",
+      "0.30",
+      "0.30"
+    ],
+    [
+      "milepost nn",
+      "ft1 .. ft56",
+      "0.37",
+      "0.30"
+    ],
+    [
+      "milepost nn",
+      "ft1 .. ft65",
+      "0.30",
+      "0.30"
+    ],
+    [
+      "milepost nn",
+      "ft57 .. ft121",
+      "0.30",
+      "0.30"
+    ],
+    [
+      "milepost nn",
+      "ft57 .. ft65",
+      "0.30",
+      "0.30"
+    ],
+    [
+      "milepost nn",
+      "ft66 .. ft121",
+      "0.36",
+      "0.32"
+    ],
+    [
+      "milepost nn",
+      "ft1 .. ft121\\newline(normalized)",
+      "0.37",
+      "0.37"
+    ],
+    [
+      "milepost nn",
+      "ft1 .. ft56\\newline(normalized)",
+      "0.37",
+      "0.33"
+    ],
+    [
+      "milepost nn",
+      "ft1 .. ft65\\newline(normalized)",
+      "0.39",
+      "0.32"
+    ],
+    [
+      "milepost nn",
+      "ft57 .. ft121\\newline(normalized)",
+      "0.37",
+      "0.39"
+    ],
+    [
+      "milepost nn",
+      "ft57 .. ft65\\newline(normalized)",
+      "0.37",
+      "0.35"
+    ],
+    [
+      "milepost nn",
+      "ft66 .. ft121\\newline(normalized)",
+      "0.38",
+      "0.38"
+    ],
+    [
+      "milepost nn (reduce complexity1)",
+      "ft1 .. ft121\\newline(normalized)",
+      "0.45",
+      "0.44"
+    ],
+    [
+      "milepost nn (reduce complexity2)",
+      "ft1 .. ft121\\newline(normalized)",
+      "0.45",
+      "0.40"
+    ]
+  ],
+  "table_header": [
+    {
+      "html_after": "</b>",
+      "html_before": "<b>",
+      "name": "Model",
+      "tex": "l",
+      "tex_after": "}",
+      "tex_before": "\\textbf{"
+    },
+    {
+      "html_change_space": "yes",
+      "name": "Features",
+      "tex": "p{1.2in}"
+    },
+    {
+      "html_change_space": "yes",
+      "name": "Accuracy (GCC 4.9.2)",
+      "tex": "p{0.9in}"
+    },
+    {
+      "html_change_space": "yes",
+      "name": "Accuracy (GCC 7.1.0)",
+      "tex": "p{0.9in}"
+    }
+  ],
+  "table_style": "border=\"1\""
+}

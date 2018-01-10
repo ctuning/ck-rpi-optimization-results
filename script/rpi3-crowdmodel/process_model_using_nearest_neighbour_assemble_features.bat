@@ -1,0 +1,2 @@
+mkdir process_model_using_nearest_neighbour_assemble_features
+python process_model_using_nearest_neighbour_assemble_features.py

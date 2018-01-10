@@ -1,0 +1,26 @@
+{
+  "1": {
+    "dot_label": "1",
+    "value": 1,
+    "decision": [
+      "",
+      {
+        "feature": "25",
+        "comparison": "<=",
+        "value": "0.401"
+      }
+    ]
+  },
+  "2": {
+    "dot_label": "2",
+    "value": 0,
+    "decision": [
+      "not ",
+      {
+        "feature": "25",
+        "comparison": "<=",
+        "value": "0.401"
+      }
+    ]
+  }
+}

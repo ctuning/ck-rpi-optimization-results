@@ -1,0 +1,21 @@
+{
+  "backup_data_uid": "a0464dc299d2c8dc",
+  "backup_module_uid": "757c34ce8a0a808d",
+  "backup_module_uoa": "slide",
+  "control": {
+    "author": "Grigori Fursin",
+    "author_email": "Grigori.Fursin@cTuning.org",
+    "author_webpage": "http://fursin.net",
+    "copyright": "See CK COPYRIGHT.txt for copyright details",
+    "engine": "CK",
+    "iso_datetime": "2017-11-25T14:33:25.028697",
+    "license": "See CK LICENSE.txt for licensing details",
+    "version": [
+      "1",
+      "9",
+      "4",
+      "1"
+    ]
+  },
+  "data_name": "rpi3-crowdmodeling-all-apps"
+}

@@ -1,0 +1,2 @@
+mkdir process_model_using_decision_trees
+python process_model_using_decision_trees.py

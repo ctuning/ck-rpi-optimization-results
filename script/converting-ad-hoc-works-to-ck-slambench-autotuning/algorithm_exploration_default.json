@@ -1,0 +1,39 @@
+{
+  "iterations":1,
+
+  "pipeline_update":{
+
+   "cpu_freq":"max",
+   "gpu_freq":"max",
+
+   "env": {
+     "OMP_NUM_THREADS":4
+   },
+
+   "run_cmd_substitutes":{
+       "run_cmd_key_c":"1",
+       "run_cmd_key_r":1,
+       "run_cmd_key_l":1,
+       "run_cmd_key_m":1,
+       "run_cmd_key_y1":10,
+       "run_cmd_key_y2":5,
+       "run_cmd_key_y3":4,
+       "run_cmd_key_v":128
+   }
+  },
+
+  "repetitions":3,
+
+  "record":"yes",
+  "record_uoa":"rpi3-slambench-multiobjective-algorithm-co-design-default",
+
+  "features_keys_to_process":["##choices#*"],
+
+  "record_failed":"yes",
+
+  "record_dict":{"subview_uoa":"ab8a38b04b984718"},
+
+  "record_params": {
+    "search_point_by_features":"yes"
+  }
+}

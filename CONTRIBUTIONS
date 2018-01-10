@@ -8,15 +8,15 @@ N: Dmitry Savenko
 E: 
 O: Xored
 C: added various realistic benchmarks including zlib and tested autotuning
-W: 2016
+W: 
 
 ================================================================================
 N: Grigori Fursin
 E: grigori@dividiti.com
 H: http://fursin.net/research
 O: dividiti / cTuning foundation
-C: Implementation, CK support, processing all results, adding interactive report
-W: 2016-2017
+C: Concept, implementation, CK support, processing all results, adding interactive report
+W: 
 
 ================================================================================
 N: Anton Lokhmotov
@@ -24,7 +24,7 @@ E: anton@dividiti.com
 H: https://www.hipeac.net/~anton
 O: dividiti
 C: Concept, implementation.
-W: 2016-2017
+W: 
 
 ================================================================================
 N: Eben Upton
@@ -32,4 +32,4 @@ E:
 H: https://en.wikipedia.org/wiki/Eben_Upton
 O: Raspberry Pi Foundation
 C: Concept
-W: 2016
+W: 

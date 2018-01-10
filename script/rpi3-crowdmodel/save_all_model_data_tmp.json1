@@ -1,0 +1,34 @@
+{
+  "GCC 4.9.2": {
+    "milepost_reduce_complexity1_normalized_ft1_ft121": 0.44884488448844884,
+    "milepost_ft1_ft56": 0.36633663366336633,
+    "milepost_normalized_ft1_ft56": 0.3696369636963696,
+    "milepost_ft1_ft65": 0.297029702970297,
+    "milepost_normalized_ft1_ft65": 0.3927392739273927,
+    "milepost_ft1_ft121": 0.297029702970297,
+    "milepost_normalized_ft1_ft121": 0.3696369636963696,
+    "milepost_ft57_ft65": 0.297029702970297,
+    "milepost_normalized_ft57_ft65": 0.36633663366336633,
+    "milepost_ft57_ft121": 0.297029702970297,
+    "milepost_normalized_ft57_ft121": 0.3696369636963696,
+    "milepost_ft66_ft121": 0.35973597359735976,
+    "milepost_normalized_ft66_ft121": 0.3795379537953795,
+    "milepost_reduce_complexity2_normalized_ft1_ft121": 0.4521452145214521
+  },
+  "GCC 7.1.0": {
+    "milepost_reduce_complexity1_normalized_ft1_ft121": 0.43564356435643564,
+    "milepost_ft1_ft56": 0.297029702970297,
+    "milepost_normalized_ft1_ft56": 0.3333333333333333,
+    "milepost_ft1_ft65": 0.297029702970297,
+    "milepost_normalized_ft1_ft65": 0.3201320132013201,
+    "milepost_ft1_ft121": 0.297029702970297,
+    "milepost_normalized_ft1_ft121": 0.37293729372937295,
+    "milepost_ft57_ft65": 0.297029702970297,
+    "milepost_normalized_ft57_ft65": 0.34983498349834985,
+    "milepost_ft57_ft121": 0.297029702970297,
+    "milepost_normalized_ft57_ft121": 0.38613861386138615,
+    "milepost_ft66_ft121": 0.3234323432343234,
+    "milepost_normalized_ft66_ft121": 0.38283828382838286,
+    "milepost_reduce_complexity2_normalized_ft1_ft121": 0.40264026402640263
+  }
+}

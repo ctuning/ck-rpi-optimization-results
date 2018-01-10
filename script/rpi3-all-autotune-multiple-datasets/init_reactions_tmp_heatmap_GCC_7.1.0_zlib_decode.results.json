@@ -1,0 +1,132 @@
+{
+  "1": {
+    "audio-mp3-0001-deflated": "1.035",
+    "audio-wav-0001-deflated": "0.975",
+    "image-tiff-0001-deflated": "0.996",
+    "source-code-sqlite3-deflated": "0.984",
+    "txt-0001-deflated": "0.975",
+    "txt-novel-0001-deflated": "0.992",
+    "txt-verse-novel-0001-deflated": "0.995",
+    "video-raw-0001-deflated": "1.013"
+  },
+  "2": {
+    "audio-mp3-0001-deflated": "1.041",
+    "audio-wav-0001-deflated": "0.979",
+    "image-tiff-0001-deflated": "0.995",
+    "source-code-sqlite3-deflated": "0.990",
+    "txt-0001-deflated": "0.980",
+    "txt-novel-0001-deflated": "0.994",
+    "txt-verse-novel-0001-deflated": "0.996",
+    "video-raw-0001-deflated": "1.012"
+  },
+  "3": {
+    "audio-mp3-0001-deflated": "0.994",
+    "audio-wav-0001-deflated": "0.965",
+    "image-tiff-0001-deflated": "0.967",
+    "source-code-sqlite3-deflated": "0.965",
+    "txt-0001-deflated": "0.961",
+    "txt-novel-0001-deflated": "0.960",
+    "txt-verse-novel-0001-deflated": "0.968",
+    "video-raw-0001-deflated": "0.973"
+  },
+  "4": {
+    "audio-mp3-0001-deflated": "0.949",
+    "audio-wav-0001-deflated": "0.901",
+    "image-tiff-0001-deflated": "0.931",
+    "source-code-sqlite3-deflated": "0.950",
+    "txt-0001-deflated": "0.919",
+    "txt-novel-0001-deflated": "0.926",
+    "txt-verse-novel-0001-deflated": "0.930",
+    "video-raw-0001-deflated": "0.942"
+  },
+  "5": {
+    "audio-mp3-0001-deflated": "0.954",
+    "audio-wav-0001-deflated": "0.934",
+    "image-tiff-0001-deflated": "0.939",
+    "source-code-sqlite3-deflated": "0.953",
+    "txt-0001-deflated": "0.944",
+    "txt-novel-0001-deflated": "0.954",
+    "txt-verse-novel-0001-deflated": "0.954",
+    "video-raw-0001-deflated": "0.941"
+  },
+  "6": {
+    "audio-mp3-0001-deflated": "0.975",
+    "audio-wav-0001-deflated": "0.883",
+    "image-tiff-0001-deflated": "0.928",
+    "source-code-sqlite3-deflated": "0.910",
+    "txt-0001-deflated": "0.935",
+    "txt-novel-0001-deflated": "0.904",
+    "txt-verse-novel-0001-deflated": "0.906",
+    "video-raw-0001-deflated": "0.938"
+  },
+  "7": {
+    "audio-mp3-0001-deflated": "0.951",
+    "audio-wav-0001-deflated": "0.927",
+    "image-tiff-0001-deflated": "0.932",
+    "source-code-sqlite3-deflated": "0.949",
+    "txt-0001-deflated": "0.939",
+    "txt-novel-0001-deflated": "0.943",
+    "txt-verse-novel-0001-deflated": "0.946",
+    "video-raw-0001-deflated": "0.939"
+  },
+  "8": {
+    "audio-mp3-0001-deflated": "0.954",
+    "audio-wav-0001-deflated": "0.932",
+    "image-tiff-0001-deflated": "0.938",
+    "source-code-sqlite3-deflated": "0.958",
+    "txt-0001-deflated": "0.945",
+    "txt-novel-0001-deflated": "0.953",
+    "txt-verse-novel-0001-deflated": "0.956",
+    "video-raw-0001-deflated": "0.941"
+  },
+  "9": {
+    "audio-mp3-0001-deflated": "0.955",
+    "audio-wav-0001-deflated": "0.913",
+    "image-tiff-0001-deflated": "0.924",
+    "source-code-sqlite3-deflated": "0.936",
+    "txt-0001-deflated": "0.923",
+    "txt-novel-0001-deflated": "0.938",
+    "txt-verse-novel-0001-deflated": "0.936",
+    "video-raw-0001-deflated": "0.931"
+  },
+  "10": {
+    "audio-mp3-0001-deflated": "0.987",
+    "audio-wav-0001-deflated": "0.972",
+    "image-tiff-0001-deflated": "0.966",
+    "source-code-sqlite3-deflated": "0.974",
+    "txt-0001-deflated": "0.972",
+    "txt-novel-0001-deflated": "0.971",
+    "txt-verse-novel-0001-deflated": "0.974",
+    "video-raw-0001-deflated": "0.970"
+  },
+  "11": {
+    "audio-mp3-0001-deflated": "0.923",
+    "audio-wav-0001-deflated": "0.963",
+    "image-tiff-0001-deflated": "0.940",
+    "source-code-sqlite3-deflated": "0.955",
+    "txt-0001-deflated": "0.948",
+    "txt-novel-0001-deflated": "0.951",
+    "txt-verse-novel-0001-deflated": "0.949",
+    "video-raw-0001-deflated": "0.932"
+  },
+  "12": {
+    "audio-mp3-0001-deflated": "0.775",
+    "audio-wav-0001-deflated": "0.905",
+    "image-tiff-0001-deflated": "0.844",
+    "source-code-sqlite3-deflated": "0.878",
+    "txt-0001-deflated": "0.868",
+    "txt-novel-0001-deflated": "0.892",
+    "txt-verse-novel-0001-deflated": "0.896",
+    "video-raw-0001-deflated": "0.825"
+  },
+  "13": {
+    "audio-mp3-0001-deflated": "0.995",
+    "audio-wav-0001-deflated": "0.956",
+    "image-tiff-0001-deflated": "0.961",
+    "source-code-sqlite3-deflated": "0.963",
+    "txt-0001-deflated": "0.956",
+    "txt-novel-0001-deflated": "0.947",
+    "txt-verse-novel-0001-deflated": "0.959",
+    "video-raw-0001-deflated": "0.966"
+  }
+}

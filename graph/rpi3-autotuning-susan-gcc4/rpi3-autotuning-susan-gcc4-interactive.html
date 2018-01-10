@@ -14581,6 +14581,11 @@ for (graph=0; graph < 100; graph++) {
 
      if (pymin=="" && (ymin==-1 || v[1]<ymin)) ymin=v[1];
      if (pymax=="" && (ymax==-1 || v[1]>ymax)) ymax=v[1];
+
+     if (yerr2=='yes') {
+       if (pymin=="" && (ymin==-1 || v[2]<ymin)) ymin=v[2];
+       if (pymax=="" && (ymax==-1 || v[2]>ymax)) ymax=v[2];
+     }
    }
 }
 
@@ -14666,9 +14671,11 @@ for (graph=0; graph < 100; graph++) {
 
      var size=5;
      if ("size" in ps) size=ps.size;
+     if ("size" in inf) size=inf.size;
 
      var color="#0000bf";
      if ("color" in ps) color=ps.color;
+     if ("color" in inf) color=inf.color;
 
      var connect_lines=false;
      if (("connect_lines" in ps) && (ps.connect_lines=="yes"))
@@ -14680,6 +14687,7 @@ for (graph=0; graph < 100; graph++) {
 
      if ('url' in inf) dat['url']=inf.url;
      if ('url_ext' in inf) dat['url_ext']=inf.url_ext;
+     if ('anchor' in inf) dat['anchor']=inf.anchor;
 
      var xx=data[q][0];
      var yy=data[q][1];
@@ -14778,6 +14786,7 @@ svg.selectAll(".dot")
 
    .on("click", function(d) {
       var cid='';
+
       if ('cid' in d) {
          cid=d['cid'];
 
@@ -14787,12 +14796,15 @@ svg.selectAll(".dot")
          window.open("$#ck_root_url#$wcid="+cid+'&subpoint='+subpoint);
       } else {
          var url='';
-         if ('url' in d) {
+         if ('url' in d && d['url']!='') {
             url=d['url'];
             var url_ext='';
             if ('url_ext' in d)
                url_ext=d['url_ext'];
             window.open(url+url_ext);
+         } else if ('anchor' in d) {
+           var position = document.getElementById(d['anchor']).offsetTop;
+           document.getElementById(d['anchor']).scrollIntoView();
          }
       }
    })
@@ -14801,7 +14813,7 @@ svg.selectAll(".dot")
        tooltip_scatter.transition()
             .duration(200)
             .style("opacity", .9);
-       tooltip_scatter.html("<div style=\"text-align:left;background-color:yellow;opacity:0.8;filter:alpha(opacity=80);\"><small><b>x=" + xValue(d) + ", y=" + yValue(d) + "</b><br>"+d.features+"\n</small></div>")
+       tooltip_scatter.html("<div style=\"text-align:left;background-color:yellow;opacity:0.9;filter:alpha(opacity=80);\"><small><b>x=" + xValue(d) + ", y=" + yValue(d) + "</b><br>"+d.features+"\n</small></div>")
             .style("left", (d3.event.pageX + 5) + "px")
             .style("top", (d3.event.pageY - 28) + "px");
    })

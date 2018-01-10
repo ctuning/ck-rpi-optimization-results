@@ -1,0 +1,11 @@
+ {
+  "url_base":"http://cknowledge.org/repo/web.php?",
+
+  "repo_uoa":"remote-ck",
+
+  "minimal":"yes",
+  "all":"no",
+
+  "out":"json_file",
+  "out_file":"32c0b60dcc114aa8.json"
+ }

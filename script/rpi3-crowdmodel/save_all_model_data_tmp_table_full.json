@@ -1,0 +1,570 @@
+{
+  "table": [
+    [
+      "decision trees with cross validation; depth 1",
+      "ft1 .. ft65",
+      "0.26",
+      "0.33"
+    ],
+    [
+      "decision trees with cross validation; depth 2",
+      "ft1 .. ft65",
+      "0.26",
+      "0.36"
+    ],
+    [
+      "decision trees with cross validation; depth 3",
+      "ft1 .. ft65",
+      "0.27",
+      "0.35"
+    ],
+    [
+      "decision trees with cross validation; depth 4",
+      "ft1 .. ft65",
+      "0.27",
+      "0.39"
+    ],
+    [
+      "decision trees with cross validation; depth 5",
+      "ft1 .. ft65",
+      "0.25",
+      "0.34"
+    ],
+    [
+      "decision trees with cross validation; depth 6",
+      "ft1 .. ft65",
+      "0.33",
+      "0.34"
+    ],
+    [
+      "decision trees with cross validation; depth 7",
+      "ft1 .. ft65",
+      "0.36",
+      "0.32"
+    ],
+    [
+      "decision trees with cross validation; depth 8",
+      "ft1 .. ft65",
+      "0.40",
+      "0.36"
+    ],
+    [
+      "decision trees with cross validation; depth 9",
+      "ft1 .. ft65",
+      "0.38",
+      "0.31"
+    ],
+    [
+      "decision trees with cross validation; depth 10",
+      "ft1 .. ft65",
+      "0.37",
+      "0.30"
+    ],
+    [
+      "decision trees with cross validation; depth 11",
+      "ft1 .. ft65",
+      "0.34",
+      "0.33"
+    ],
+    [
+      "decision trees with cross validation; depth 12",
+      "ft1 .. ft65",
+      "0.36",
+      "0.32"
+    ],
+    [
+      "decision trees with cross validation; depth 13",
+      "ft1 .. ft65",
+      "0.35",
+      "0.34"
+    ],
+    [
+      "decision trees with cross validation; depth 14",
+      "ft1 .. ft65",
+      "0.36",
+      "0.34"
+    ],
+    [
+      "decision trees with cross validation; depth 15",
+      "ft1 .. ft65",
+      "0.34",
+      "0.34"
+    ],
+    [
+      "decision trees with cross validation; depth 16",
+      "ft1 .. ft65",
+      "0.36",
+      "0.35"
+    ],
+    [
+      "decision trees with cross validation; depth 17",
+      "ft1 .. ft65",
+      "0.34",
+      "0.36"
+    ],
+    [
+      "decision trees with cross validation; depth 18",
+      "ft1 .. ft65",
+      "0.36",
+      "0.34"
+    ],
+    [
+      "decision trees with cross validation; depth 19",
+      "ft1 .. ft65",
+      "0.35",
+      "0.34"
+    ],
+    [
+      "decision trees with cross validation; depth 20",
+      "ft1 .. ft65",
+      "0.37",
+      "0.33"
+    ],
+    [
+      "decision trees with cross validation; depth 21",
+      "ft1 .. ft65",
+      "0.36",
+      "0.36"
+    ],
+    [
+      "decision trees with cross validation; depth 22",
+      "ft1 .. ft65",
+      "0.37",
+      "0.34"
+    ],
+    [
+      "decision trees with cross validation; depth 23",
+      "ft1 .. ft65",
+      "0.36",
+      "0.35"
+    ],
+    [
+      "decision trees with cross validation; depth 24",
+      "ft1 .. ft65",
+      "0.36",
+      "0.33"
+    ],
+    [
+      "decision trees with cross validation; depth 25",
+      "ft1 .. ft65",
+      "0.37",
+      "0.37"
+    ],
+    [
+      "decision trees with cross validation; depth 26",
+      "ft1 .. ft65",
+      "0.37",
+      "0.33"
+    ],
+    [
+      "decision trees with cross validation; depth 27",
+      "ft1 .. ft65",
+      "0.37",
+      "0.36"
+    ],
+    [
+      "decision trees with cross validation; depth 28",
+      "ft1 .. ft65",
+      "0.34",
+      "0.34"
+    ],
+    [
+      "decision trees with cross validation; depth 29",
+      "ft1 .. ft65",
+      "0.35",
+      "0.37"
+    ],
+    [
+      "decision trees without cross validation; depth 1",
+      "ft1 .. ft65",
+      "0.39",
+      "0.36"
+    ],
+    [
+      "decision trees without cross validation; depth 2",
+      "ft1 .. ft65",
+      "0.40",
+      "0.40"
+    ],
+    [
+      "decision trees without cross validation; depth 3",
+      "ft1 .. ft65",
+      "0.46",
+      "0.41"
+    ],
+    [
+      "decision trees without cross validation; depth 4",
+      "ft1 .. ft65",
+      "0.49",
+      "0.47"
+    ],
+    [
+      "decision trees without cross validation; depth 5",
+      "ft1 .. ft65",
+      "0.55",
+      "0.52"
+    ],
+    [
+      "decision trees without cross validation; depth 6",
+      "ft1 .. ft65",
+      "0.60",
+      "0.57"
+    ],
+    [
+      "decision trees without cross validation; depth 7",
+      "ft1 .. ft65",
+      "0.65",
+      "0.61"
+    ],
+    [
+      "decision trees without cross validation; depth 8",
+      "ft1 .. ft65",
+      "0.69",
+      "0.68"
+    ],
+    [
+      "decision trees without cross validation; depth 9",
+      "ft1 .. ft65",
+      "0.73",
+      "0.72"
+    ],
+    [
+      "decision trees without cross validation; depth 10",
+      "ft1 .. ft65",
+      "0.75",
+      "0.79"
+    ],
+    [
+      "decision trees without cross validation; depth 11",
+      "ft1 .. ft65",
+      "0.79",
+      "0.83"
+    ],
+    [
+      "decision trees without cross validation; depth 12",
+      "ft1 .. ft65",
+      "0.83",
+      "0.87"
+    ],
+    [
+      "decision trees without cross validation; depth 13",
+      "ft1 .. ft65",
+      "0.85",
+      "0.90"
+    ],
+    [
+      "decision trees without cross validation; depth 14",
+      "ft1 .. ft65",
+      "0.88",
+      "0.94"
+    ],
+    [
+      "decision trees without cross validation; depth 15",
+      "ft1 .. ft65",
+      "0.91",
+      "0.95"
+    ],
+    [
+      "decision trees without cross validation; depth 16",
+      "ft1 .. ft65",
+      "0.94",
+      "0.96"
+    ],
+    [
+      "decision trees without cross validation; depth 17",
+      "ft1 .. ft65",
+      "0.95",
+      "0.96"
+    ],
+    [
+      "decision trees without cross validation; depth 18",
+      "ft1 .. ft65",
+      "0.97",
+      "0.96"
+    ],
+    [
+      "decision trees without cross validation; depth 19",
+      "ft1 .. ft65",
+      "0.97",
+      "0.96"
+    ],
+    [
+      "decision trees without cross validation; depth 20",
+      "ft1 .. ft65",
+      "0.98",
+      "0.96"
+    ],
+    [
+      "decision trees without cross validation; depth 21",
+      "ft1 .. ft65",
+      "0.98",
+      "0.96"
+    ],
+    [
+      "decision trees without cross validation; depth 22",
+      "ft1 .. ft65",
+      "0.98",
+      "0.96"
+    ],
+    [
+      "decision trees without cross validation; depth 23",
+      "ft1 .. ft65",
+      "0.98",
+      "0.96"
+    ],
+    [
+      "decision trees without cross validation; depth 24",
+      "ft1 .. ft65",
+      "0.98",
+      "0.96"
+    ],
+    [
+      "decision trees without cross validation; depth 25",
+      "ft1 .. ft65",
+      "0.98",
+      "0.96"
+    ],
+    [
+      "decision trees without cross validation; depth 26",
+      "ft1 .. ft65",
+      "0.98",
+      "0.96"
+    ],
+    [
+      "decision trees without cross validation; depth 27",
+      "ft1 .. ft65",
+      "0.98",
+      "0.96"
+    ],
+    [
+      "decision trees without cross validation; depth 28",
+      "ft1 .. ft65",
+      "0.98",
+      "0.96"
+    ],
+    [
+      "decision trees without cross validation; depth 29",
+      "ft1 .. ft65",
+      "0.98",
+      "0.96"
+    ],
+    [
+      "dnn tf with cross validation; iteration 1",
+      "ft1 .. ft65",
+      "0.68",
+      "0.30"
+    ],
+    [
+      "dnn tf with cross validation; iteration 2",
+      "ft1 .. ft65",
+      "0.64",
+      "0.33"
+    ],
+    [
+      "dnn tf with cross validation; iteration 3",
+      "ft1 .. ft65",
+      "0.61",
+      "0.45"
+    ],
+    [
+      "dnn tf with cross validation; iteration 4",
+      "ft1 .. ft65",
+      "0.64",
+      "0.44"
+    ],
+    [
+      "dnn tf with cross validation; iteration 5",
+      "ft1 .. ft65",
+      "0.60",
+      "0.48"
+    ],
+    [
+      "dnn tf with cross validation; iteration 6",
+      "ft1 .. ft65",
+      "0.58",
+      "0.30"
+    ],
+    [
+      "dnn tf with cross validation; iteration 7",
+      "ft1 .. ft65",
+      "0.57",
+      "0.43"
+    ],
+    [
+      "dnn tf with cross validation; iteration 8",
+      "ft1 .. ft65",
+      "0.55",
+      "0.37"
+    ],
+    [
+      "dnn tf with cross validation; iteration 9",
+      "ft1 .. ft65",
+      "0.68",
+      "0.44"
+    ],
+    [
+      "dnn tf without cross validation; iteration 1",
+      "ft1 .. ft65",
+      "0.72",
+      "0.29"
+    ],
+    [
+      "dnn tf without cross validation; iteration 2",
+      "ft1 .. ft65",
+      "0.72",
+      "0.47"
+    ],
+    [
+      "dnn tf without cross validation; iteration 3",
+      "ft1 .. ft65",
+      "0.72",
+      "0.48"
+    ],
+    [
+      "dnn tf without cross validation; iteration 4",
+      "ft1 .. ft65",
+      "0.68",
+      "0.62"
+    ],
+    [
+      "dnn tf without cross validation; iteration 5",
+      "ft1 .. ft65",
+      "0.70",
+      "0.48"
+    ],
+    [
+      "dnn tf without cross validation; iteration 6",
+      "ft1 .. ft65",
+      "0.55",
+      "0.45"
+    ],
+    [
+      "dnn tf without cross validation; iteration 7",
+      "ft1 .. ft65",
+      "0.72",
+      "0.43"
+    ],
+    [
+      "dnn tf without cross validation; iteration 8",
+      "ft1 .. ft65",
+      "0.62",
+      "0.32"
+    ],
+    [
+      "dnn tf without cross validation; iteration 9",
+      "ft1 .. ft65",
+      "0.72",
+      "0.53"
+    ],
+    [
+      "milepost nn",
+      "ft1 .. ft121",
+      "0.30",
+      "0.30"
+    ],
+    [
+      "milepost nn",
+      "ft1 .. ft56",
+      "0.37",
+      "0.30"
+    ],
+    [
+      "milepost nn",
+      "ft1 .. ft65",
+      "0.30",
+      "0.30"
+    ],
+    [
+      "milepost nn",
+      "ft57 .. ft121",
+      "0.30",
+      "0.30"
+    ],
+    [
+      "milepost nn",
+      "ft57 .. ft65",
+      "0.30",
+      "0.30"
+    ],
+    [
+      "milepost nn",
+      "ft66 .. ft121",
+      "0.36",
+      "0.32"
+    ],
+    [
+      "milepost nn",
+      "ft1 .. ft121\\newline(normalized)",
+      "0.37",
+      "0.37"
+    ],
+    [
+      "milepost nn",
+      "ft1 .. ft56\\newline(normalized)",
+      "0.37",
+      "0.33"
+    ],
+    [
+      "milepost nn",
+      "ft1 .. ft65\\newline(normalized)",
+      "0.39",
+      "0.32"
+    ],
+    [
+      "milepost nn",
+      "ft57 .. ft121\\newline(normalized)",
+      "0.37",
+      "0.39"
+    ],
+    [
+      "milepost nn",
+      "ft57 .. ft65\\newline(normalized)",
+      "0.37",
+      "0.35"
+    ],
+    [
+      "milepost nn",
+      "ft66 .. ft121\\newline(normalized)",
+      "0.38",
+      "0.38"
+    ],
+    [
+      "milepost nn (reduce complexity1)",
+      "ft1 .. ft121\\newline(normalized)",
+      "0.45",
+      "0.44"
+    ],
+    [
+      "milepost nn (reduce complexity2)",
+      "ft1 .. ft121\\newline(normalized)",
+      "0.45",
+      "0.40"
+    ]
+  ],
+  "table_header": [
+    {
+      "html_after": "</b>",
+      "html_before": "<b>",
+      "name": "Model",
+      "tex": "l",
+      "tex_after": "}",
+      "tex_before": "\\textbf{"
+    },
+    {
+      "html_change_space": "yes",
+      "name": "Features",
+      "tex": "p{1.2in}"
+    },
+    {
+      "html_change_space": "yes",
+      "name": "Accuracy (GCC 4.9.2)",
+      "tex": "p{0.9in}"
+    },
+    {
+      "html_change_space": "yes",
+      "name": "Accuracy (GCC 7.1.0)",
+      "tex": "p{0.9in}"
+    }
+  ],
+  "table_style": "border=\"1\""
+}

@@ -1,0 +1,9 @@
+{
+  "accuracy": 0.1192052960395813,
+  "feature_length": 121,
+  "hidden_units": [
+    17
+  ],
+  "n_classes": 14,
+  "output_dir": "tmp-model-tf-dnn-classifier-GCC_7.1.0_7.tf.dir"
+}

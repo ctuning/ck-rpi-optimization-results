@@ -1,0 +1,36 @@
+{
+  "table": [
+    [
+      "milepost nn",
+      "ft1 .. ft56",
+      "0.37",
+      "0.30"
+    ]
+  ],
+  "table_header": [
+    {
+      "html_after": "</b>",
+      "html_before": "<b>",
+      "name": "Model",
+      "tex": "l",
+      "tex_after": "}",
+      "tex_before": "\\textbf{"
+    },
+    {
+      "html_change_space": "yes",
+      "name": "Features",
+      "tex": "p{1.2in}"
+    },
+    {
+      "html_change_space": "yes",
+      "name": "Accuracy (GCC 4.9.2)",
+      "tex": "p{0.9in}"
+    },
+    {
+      "html_change_space": "yes",
+      "name": "Accuracy (GCC 7.1.0)",
+      "tex": "p{0.9in}"
+    }
+  ],
+  "table_style": "border=\"1\""
+}

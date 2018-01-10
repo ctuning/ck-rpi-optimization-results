@@ -1,0 +1,2 @@
+mkdir process_model_using_nearest_neighbour
+python process_model_using_nearest_neighbour.py

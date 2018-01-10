@@ -1,0 +1,16 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="X[25] <= 0.401\nsamples = 303\n"] ;
+1 [label="X[18] <= 1.5\nsamples = 60\n"] ;
+0 -> 1 [label="yes"];
+2 [label="*L1*\nsamples = 56\nS1 (40)\n"] ;
+1 -> 2 [label="yes"];
+3 [label="*L2*\nsamples = 4\nS0 (4)\n"] ;
+1 -> 3 [label="no"];
+4 [label="X[62] <= 81.007\nsamples = 243\n"] ;
+0 -> 4 [label="no"];
+5 [label="*L3*\nsamples = 204\nS0 (53)\n"] ;
+4 -> 5 [label="yes"];
+6 [label="*L4*\nsamples = 39\nS0 (25)\n"] ;
+4 -> 6 [label="no"];
+}

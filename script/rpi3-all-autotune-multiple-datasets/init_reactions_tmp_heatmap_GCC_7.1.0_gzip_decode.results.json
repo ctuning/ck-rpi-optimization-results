@@ -1,0 +1,119 @@
+{
+  "1": {
+    "audio-mp3-0001-gzipped": "0.969",
+    "audio-wav-0001-gzipped": "0.792",
+    "image-tiff-0001-gzipped": "0.817",
+    "txt-0001-gzipped": "0.744",
+    "txt-novel-0001-gzipped": "0.930",
+    "txt-verse-novel-0001-gzipped": "0.788",
+    "video-raw-0001-gzipped": "1.003"
+  },
+  "2": {
+    "audio-mp3-0001-gzipped": "0.950",
+    "audio-wav-0001-gzipped": "0.862",
+    "image-tiff-0001-gzipped": "0.799",
+    "txt-0001-gzipped": "0.689",
+    "txt-novel-0001-gzipped": "0.926",
+    "txt-verse-novel-0001-gzipped": "0.613",
+    "video-raw-0001-gzipped": "1.100"
+  },
+  "3": {
+    "audio-mp3-0001-gzipped": "0.747",
+    "audio-wav-0001-gzipped": "0.630",
+    "image-tiff-0001-gzipped": "1.263",
+    "txt-0001-gzipped": "0.935",
+    "txt-novel-0001-gzipped": "0.970",
+    "txt-verse-novel-0001-gzipped": "0.872",
+    "video-raw-0001-gzipped": "0.887"
+  },
+  "4": {
+    "audio-mp3-0001-gzipped": "0.930",
+    "audio-wav-0001-gzipped": "0.658",
+    "image-tiff-0001-gzipped": "0.947",
+    "txt-0001-gzipped": "1.011",
+    "txt-novel-0001-gzipped": "1.044",
+    "txt-verse-novel-0001-gzipped": "0.692",
+    "video-raw-0001-gzipped": "0.810"
+  },
+  "5": {
+    "audio-mp3-0001-gzipped": "0.788",
+    "audio-wav-0001-gzipped": "0.651",
+    "image-tiff-0001-gzipped": "0.785",
+    "txt-0001-gzipped": "0.897",
+    "txt-novel-0001-gzipped": "0.859",
+    "txt-verse-novel-0001-gzipped": "1.040",
+    "video-raw-0001-gzipped": "0.899"
+  },
+  "6": {
+    "audio-mp3-0001-gzipped": "0.738",
+    "audio-wav-0001-gzipped": "0.602",
+    "image-tiff-0001-gzipped": "0.879",
+    "txt-0001-gzipped": "0.957",
+    "txt-novel-0001-gzipped": "1.289",
+    "txt-verse-novel-0001-gzipped": "0.960",
+    "video-raw-0001-gzipped": "0.794"
+  },
+  "7": {
+    "audio-mp3-0001-gzipped": "0.739",
+    "audio-wav-0001-gzipped": "0.880",
+    "image-tiff-0001-gzipped": "0.949",
+    "txt-0001-gzipped": "0.846",
+    "txt-novel-0001-gzipped": "1.032",
+    "txt-verse-novel-0001-gzipped": "0.787",
+    "video-raw-0001-gzipped": "0.885"
+  },
+  "8": {
+    "audio-mp3-0001-gzipped": "0.748",
+    "audio-wav-0001-gzipped": "0.660",
+    "image-tiff-0001-gzipped": "0.661",
+    "txt-0001-gzipped": "0.909",
+    "txt-novel-0001-gzipped": "1.255",
+    "txt-verse-novel-0001-gzipped": "0.795",
+    "video-raw-0001-gzipped": "0.873"
+  },
+  "9": {
+    "audio-mp3-0001-gzipped": "0.668",
+    "audio-wav-0001-gzipped": "0.596",
+    "image-tiff-0001-gzipped": "1.057",
+    "txt-0001-gzipped": "0.668",
+    "txt-novel-0001-gzipped": "1.068",
+    "txt-verse-novel-0001-gzipped": "1.069",
+    "video-raw-0001-gzipped": "0.800"
+  },
+  "10": {
+    "audio-mp3-0001-gzipped": "0.952",
+    "audio-wav-0001-gzipped": "0.792",
+    "image-tiff-0001-gzipped": "1.035",
+    "txt-0001-gzipped": "0.669",
+    "txt-novel-0001-gzipped": "0.869",
+    "txt-verse-novel-0001-gzipped": "0.930",
+    "video-raw-0001-gzipped": "0.768"
+  },
+  "11": {
+    "audio-mp3-0001-gzipped": "0.890",
+    "audio-wav-0001-gzipped": "0.809",
+    "image-tiff-0001-gzipped": "0.798",
+    "txt-0001-gzipped": "0.837",
+    "txt-novel-0001-gzipped": "0.954",
+    "txt-verse-novel-0001-gzipped": "1.002",
+    "video-raw-0001-gzipped": "0.740"
+  },
+  "12": {
+    "audio-mp3-0001-gzipped": "0.788",
+    "audio-wav-0001-gzipped": "0.707",
+    "image-tiff-0001-gzipped": "1.181",
+    "txt-0001-gzipped": "0.987",
+    "txt-novel-0001-gzipped": "0.612",
+    "txt-verse-novel-0001-gzipped": "1.019",
+    "video-raw-0001-gzipped": "0.923"
+  },
+  "13": {
+    "audio-mp3-0001-gzipped": "0.938",
+    "audio-wav-0001-gzipped": "0.530",
+    "image-tiff-0001-gzipped": "1.001",
+    "txt-0001-gzipped": "0.956",
+    "txt-novel-0001-gzipped": "0.863",
+    "txt-verse-novel-0001-gzipped": "1.005",
+    "video-raw-0001-gzipped": "0.948"
+  }
+}

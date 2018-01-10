@@ -1,16 +1,9 @@
-=======================================================================
-N: Dmitry Savenko 
-E: 
-O: Xored
-C: added various realistic benchmarks including zlib and tested autotuning
-W: 2016
-
 ================================================================================
 N: Grigori Fursin
 E: grigori@dividiti.com
 H: http://fursin.net/research
 O: dividiti / cTuning foundation
-C: Implementation, CK support, processing all results, adding interactive report
+C: Implementation, CK support, processing all results, predictive modeling, interactive report
 W: 2016-2017
 
 ================================================================================
@@ -20,6 +13,13 @@ H: https://www.hipeac.net/~anton
 O: dividiti
 C: Concept, implementation.
 W: 2016-2017
+
+=======================================================================
+N: Dmitry Savenko 
+E: 
+O: Xored
+C: added various realistic benchmarks including zlib and tested autotuning
+W: 2016
 
 ================================================================================
 N: Eben Upton

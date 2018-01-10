@@ -20,14 +20,12 @@
      \hline
       9 & -O3 -fno-merge-all-constants -fselective-scheduling2 -funroll-loops & 1 & 0 \\
      \hline
-      10 & -O3 -funroll-loops & 1 & 0 \\
+      10 & -O3 -fno-devirtualize-at-ltrans -fno-predictive-commoning -fno-tree-pre & 1 & 2 \\
      \hline
-      11 & -O3 -fno-devirtualize-at-ltrans -fno-predictive-commoning -fno-tree-pre & 1 & 2 \\
+      11 & -O3 -fcheck-data-deps -fira-loop-pressure -fno-isolate-erroneous-paths-dereference -fno-sched-dep-count-heuristic -fsection-anchors -fsemantic-interposition -fno-tree-ch -fno-tree-loop-linear -fno-tree-partial-pre & 2 & 2 \\
      \hline
-      12 & -O3 -fcheck-data-deps -fira-loop-pressure -fno-isolate-erroneous-paths-dereference -fno-sched-dep-count-heuristic -fsection-anchors -fsemantic-interposition -fno-tree-ch -fno-tree-loop-linear -fno-tree-partial-pre & 2 & 2 \\
+      12 & -O3 -fno-schedule-insns -ftracer & 2 & 3 \\
      \hline
-      13 & -O3 -fno-schedule-insns -ftracer & 2 & 3 \\
-     \hline
-      14 & -O3 -fno-auto-inc-dec -fguess-branch-probability -fipa-pure-const -freorder-blocks -fselective-scheduling2 -ftree-ccp -fno-tree-pre -ftree-tail-merge & 1 & 1 \\
+      13 & -O3 -fno-auto-inc-dec -fguess-branch-probability -fipa-pure-const -freorder-blocks -fselective-scheduling2 -ftree-ccp -fno-tree-pre -ftree-tail-merge & 1 & 1 \\
      \hline
     \end{tabular}

@@ -1,0 +1,26 @@
+{
+  "plot_type":"mpl_2d_heatmap",
+  "display_x_error_bar":"no",
+  "display_y_error_bar":"no",
+
+  "title":"Powered by Collective Knowledge",
+
+  "axis_x_desc":"Workloads",
+  "axis_y_desc":"Unique optimizations (choices)",
+  "axis_z_desc":"Improvement",
+
+  "plot_grid":"no",
+
+  "mpl_image_size_x":"12",
+  "mpl_image_size_y":"6",
+  "mpl_image_dpi":"100",
+
+  "shifted_colormap":"yes",
+  "shifted_colormap_mid":1,
+
+  "skip_colorbar":"yes",
+
+  "out_to_file":"plot_heatmap_gcc4_clustered.pdf",
+
+  "point_style":{"0":{"elinewidth":"3", "marker":"|", "size":245, "colorbar_orietation":"horizontal", "colorbar_label":"Reaction to optimization (speedup when > 1.0)"}}
+}

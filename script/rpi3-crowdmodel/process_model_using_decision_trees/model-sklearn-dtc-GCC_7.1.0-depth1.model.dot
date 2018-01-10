@@ -1,0 +1,8 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="X[22] <= 13.5\nsamples = 303\n"] ;
+1 [label="*L1*\nsamples = 251\nS4 (72)\n"] ;
+0 -> 1 [label="yes"];
+2 [label="*L2*\nsamples = 52\nS0 (38)\n"] ;
+0 -> 2 [label="no"];
+}

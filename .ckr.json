@@ -13,6 +13,9 @@
        },
        {
          "repo_uoa": "ck-assets"
+       },
+       {
+         "repo_uoa": "ck-docker"
        }
      ]
   }

@@ -55,6 +55,17 @@ via CK for susan corners benchmark in the following entry:
  $ ls
 ```
 
+Two CK repositories with additional experimental results in a reproducible form are available at FigShare:
+* https://doi.org/10.6084/m9.figshare.5789007.v1
+
+You can download and install them directly via CK as following (note that each zip is around 150Mb archived
+and ~1-1.5GB unzipped):
+```
+ $ ck add repo:ck-rpi-optimization-results-reactions --zip=https://ndownloader.figshare.com/files/10218435 --quiet
+ $ ck add repo:ck-rpi-optimization-results-reactions-multiple-datasets --zip=https://ndownloader.figshare.com/files/10218441 --quiet
+ $ ck ls experiment:rpi3-*
+```
+
 We continue gradually documenting all scripts in above entry together with the community - 
 your help is appreciated. Feel free to get in touch with the community via CK mailing list:
 * https://groups.google.com/forum/#!forum/collective-knowledge

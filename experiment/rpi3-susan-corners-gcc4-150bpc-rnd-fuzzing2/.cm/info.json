@@ -1,15 +1,20 @@
 {
-  "backup_data_uid": "f14372bd49376cd5", 
-  "backup_module_uid": "bc0409fb61f0aa82", 
-  "backup_module_uoa": "experiment", 
+  "backup_data_uid": "f14372bd49376cd5",
+  "backup_module_uid": "bc0409fb61f0aa82",
+  "backup_module_uoa": "experiment",
   "control": {
-    "engine": "CK", 
-    "iso_datetime": "2017-08-27T15:21:29.309943", 
+    "author": "cTuning foundation",
+    "author_email": "admin@cTuning.org",
+    "author_webpage": "http://cTuning.org",
+    "copyright": "2015-2018 (c) cTuning foundation",
+    "engine": "CK",
+    "iso_datetime": "2017-08-27T15:21:29.309943",
+    "license": "CC BY 4.0",
     "version": [
-      "1", 
-      "9", 
+      "1",
+      "9",
       "1"
     ]
-  }, 
+  },
   "data_name": "rpi3-susan-corners-gcc4-150bpc-rnd-fuzzing2"
 }

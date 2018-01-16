@@ -5,11 +5,16 @@
 Introduction
 ============
 
-Optimization results during compiler autotuning and crowd-tuning on RPi3 in a reusable and reproducible Collective Knowledge format (CK)
+Optimization results to demonstrate compiler autotuning, crowd-tuning and machine learning on RPi3 
+via customizable Collective Knowledge workflow framework with a portable package manager.
 
 License
 =======
-* BSD, 3-clause 
+* CC BY 4.0 
+
+License
+=======
+* 2015-2018 (ñ) cTuning foundation and volunteers
 
 Prerequisites
 =============
@@ -37,12 +42,31 @@ Update all CK repositories at any time
  $ ck pull all
 ```
 
+Check out report and see related scripts in the following entries:
+```
+ $ ck ls script:rpi3-*
+
+```
+
+For example, you can see individual scripts we used to prepare, run and reproduce autotuning experiments 
+via CK for susan corners benchmark in the following entry:
+```
+ $ cd `ck find:scriptrpi3-susan-autotune`
+ $ ls
+```
+
+We continue gradually documenting all scripts in above entry together with the community - 
+your help is appreciated. Feel free to get in touch with the community via CK mailing list:
+* https://groups.google.com/forum/#!forum/collective-knowledge
+
+Next steps:
+* We plan to use reproducible optimization methodology prototyped here to support Pareto-efficient co-design
+  competitions of the whole software and hardware stack for emerging workloads such as deep learning
+  in terms of speed, accuracy, energy and costs: http://cKnowledge.org/request
+
 Notes
 =====
-I could not build GCC 7.1.0 for RPi3 via CK with Graphite support (outdated libraries and missing deps).
-
-This may reduce optimization possibilities during autotuning:
-
+We could not build GCC 7.1.0 for RPi3 via CK with Graphite support (outdated libraries and missing deps). This may reduce optimization possibilities during autotuning:
 
 ```
 gcc -c    -I../ -DCK_HOST_OS_NAME2_LINUX=1 -DCK_HOST_OS_NAME_LINUX=1 -DCK_TARGET_OS_NAME2_LINUX=1 -DCK_TARGET_OS_NAME_LINUX=1 -DXOPENME -I/home/fursin/CK-TOOLS/lib-rtl-xopenme-0.3-gcc-4.9.2-linux-32/include -O3 -fcaller-saves -fcse-follow-jumps -fgcse-lm -fno-gcse-sm -fira-share-save-slots -fno-ira-share-spill-slots -floop-interchange -flto -fmodulo-sched-allow-regmoves -fpeephole -fsched-spec -freciprocal-math -fno-sched-spec-load-dangerous -fselective-scheduling2 -fsel-sched-pipelining-outer-loops -fsignaling-nans -fsplit-ivs-in-unroller -ftree-dominator-opts -fno-tree-fre -ftree-loop-distribute-patterns -ftree-ter ../adler32.c  -o adler32.o

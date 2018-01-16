@@ -2,5 +2,12 @@
   "backup_data_uid": "3a97d1f6494f9d45",
   "backup_module_uid": "2d41f89bcf32d4d4",
   "backup_module_uoa": "graph",
+  "control": {
+    "author": "cTuning foundation",
+    "author_email": "admin@cTuning.org",
+    "author_webpage": "http://cTuning.org",
+    "copyright": "2015-2018 (c) cTuning foundation",
+    "license": "CC BY 4.0"
+  },
   "data_name": "rpi3-autotuning-zlib-decode-gcc4"
 }

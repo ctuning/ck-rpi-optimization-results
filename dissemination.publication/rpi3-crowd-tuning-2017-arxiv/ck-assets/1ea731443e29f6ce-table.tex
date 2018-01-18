@@ -1,0 +1,51 @@
+    \begin{tabular}{|l|l|p{1.2in}|p{0.9in}|p{1.8in}|}
+     \hline
+      \textbf{Workload} & \textbf{Compiler} & \textbf{Time improvement over -O3 (-O3 time in brackets)} & \textbf{Binary size improvement over -O3 (-O3 size in brackets)} & \textbf{Flags} \\ 
+     \hline
+      \textbf{ \href{http://cknowledge.org/repo/web.php?wcid=experiment:860174fc1b709377\&subpoint=ec934e93826572d2}{7z encode} } &  GCC 4.9.2  &  ~ 1.02 (5.5 $\pm$ 0.1)  &  ~ 1.52 (859728)  & {\small -O3 -fno-inline -flto }\\
+     \hline
+      \textbf{ \href{http://cknowledge.org/repo/web.php?wcid=experiment:03af5407d14468eb\&subpoint=6d4d4e8e1c6daac6}{7z encode} } &  GCC 7.1.0  &  no (6.0 $\pm$ 1.0)  &  no (887464)  & {\small -O3 }\\
+     \hline
+      \textbf{ \href{http://cknowledge.org/repo/web.php?wcid=experiment:89fd652535db438e\&subpoint=24844209902c136a}{ccrypt encrypt} } &  GCC 4.9.2  &  no (7.0 $\pm$ 2.0)  &  no (61772)  & {\small -O3 }\\
+     \hline
+      \textbf{ \href{http://cknowledge.org/repo/web.php?wcid=experiment:264c8a9a86776fcb\&subpoint=f8130c563953d484}{ccrypt encrypt} } &  GCC 7.1.0  &  ~ 1.16 (7.6 $\pm$ 0.1)  &  ~ 1.00 (59996)  & {\small -O3 -fno-auto-inc-dec -fguess-branch-probability -fipa-pure-const -freorder-blocks -fselective-scheduling2 -ftree-ccp -fno-tree-pre -ftree-tail-merge }\\
+     \hline
+      \textbf{ \href{http://cknowledge.org/repo/web.php?wcid=experiment:59dbd50c4fa98b6c\&subpoint=f4f3baa9717f1cee}{gzip decode} } &  GCC 4.9.2  &  ~ 1.04 (4.2 $\pm$ 0.0)  &  ~ 1.12 (85956)  & {\small -O3 -fno-inline -flto }\\
+     \hline
+      \textbf{ \href{http://cknowledge.org/repo/web.php?wcid=experiment:d2044082a58f5f78\&subpoint=64f3736c4460e87f}{gzip decode} } &  GCC 7.1.0  &  ~ 1.04 (4.2 $\pm$ 0.0)  &  ~ 1.18 (90568)  & {\small -O3 -fno-inline -flto }\\
+     \hline
+      \textbf{ \href{http://cknowledge.org/repo/web.php?wcid=experiment:d2044082a58f5f78\&subpoint=d6ae97514d86a01a}{gzip decode} } &  GCC 7.1.0  &  ~ 1.08 (4.2 $\pm$ 0.0)  &  ~ 0.81 (90568)  & {\small -O3 -fno-cprop-registers -flto -funroll-all-loops }\\
+     \hline
+      \textbf{ \href{http://cknowledge.org/repo/web.php?wcid=experiment:819a33f3e0a4efc3\&subpoint=d8685bf484cb1d9c}{gzip encode} } &  GCC 4.9.2  &  ~ 0.98 (12.3 $\pm$ 0.1)  &  ~ 1.10 (85956)  & {\small -O3 -fno-omit-frame-pointer -fno-tree-loop-optimize }\\
+     \hline
+      \textbf{ \href{http://cknowledge.org/repo/web.php?wcid=experiment:7bd35343c393218c\&subpoint=ea66fb473741f8ba}{gzip encode} } &  GCC 7.1.0  &  ~ 1.01 (12.3 $\pm$ 0.8)  &  ~ 1.18 (90568)  & {\small -O3 -fno-inline -flto }\\
+     \hline
+      \textbf{ \href{http://cknowledge.org/repo/web.php?wcid=experiment:3308b411e99c6c19\&subpoint=1970017ea1e6fd3f}{minigzip decode} } &  GCC 4.9.2  &  ~ 1.24 (10.0 $\pm$ 4.0)  &  ~ 1.60 (101432)  & {\small -O3 -fno-inline -flto }\\
+     \hline
+      \textbf{ \href{http://cknowledge.org/repo/web.php?wcid=experiment:3308b411e99c6c19\&subpoint=704e0a8e94359933}{minigzip decode} } &  GCC 4.9.2  &  ~ 1.32 (10.0 $\pm$ 4.0)  &  ~ 1.00 (101432)  & {\small -O3 -fselective-scheduling2 -fno-tree-pre }\\
+     \hline
+      \textbf{ \href{http://cknowledge.org/repo/web.php?wcid=experiment:b9728f4c7b36ac8a\&subpoint=f72e2b4f5e47b98c}{minigzip decode} } &  GCC 7.1.0  &  ~ 1.14 (8.0 $\pm$ 3.0)  &  ~ 1.76 (119088)  & {\small -O3 -fno-inline -flto }\\
+     \hline
+      \textbf{ \href{http://cknowledge.org/repo/web.php?wcid=experiment:8c4b2b03f4aa21a7\&subpoint=243c5a4fc20ee826}{minigzip encode} } &  GCC 4.9.2  &  ~ 0.89 (9.9 $\pm$ 0.0)  &  ~ 1.60 (101432)  & {\small -O3 -fno-inline -flto }\\
+     \hline
+      \textbf{ \href{http://cknowledge.org/repo/web.php?wcid=experiment:18828143558b3c2f\&subpoint=0e1438a8a38e6fd6}{minigzip encode} } &  GCC 7.1.0  &  ~ 1.00 (9.6 $\pm$ 0.0)  &  ~ 1.76 (119088)  & {\small -O3 -fno-inline -flto }\\
+     \hline
+      \textbf{ \href{http://cknowledge.org/repo/web.php?wcid=experiment:7ca1118331485cb4\&subpoint=4b74181efc011cbd}{rhash sha3} } &  GCC 4.9.2  &  ~ 1.00 (4.8 $\pm$ 0.0)  &  ~ 1.12 (14848)  & {\small -O3 -flto }\\
+     \hline
+      \textbf{ \href{http://cknowledge.org/repo/web.php?wcid=experiment:94a5792a3a4b925f\&subpoint=fc8e3a495ab4298c}{rhash sha3} } &  GCC 7.1.0  &  ~ 1.35 (5.2 $\pm$ 0.0)  &  ~ 1.30 (16396)  & {\small -O3 -fno-inline -flto }\\
+     \hline
+      \textbf{ \href{http://cknowledge.org/repo/web.php?wcid=experiment:94a5792a3a4b925f\&subpoint=dab8b6c57a392ca5}{rhash sha3} } &  GCC 7.1.0  &  ~ 1.48 (5.2 $\pm$ 0.0)  &  ~ 1.07 (16396)  & {\small -O3 -fno-schedule-insns -ftracer }\\
+     \hline
+      \textbf{ \href{http://cknowledge.org/repo/web.php?wcid=experiment:b8ab612f1524fa3b\&subpoint=042129a7110f3e31}{sha512sum sha512} } &  GCC 4.9.2  &  ~ 1.12 (7.8 $\pm$ 0.0)  &  ~ 1.06 (125372)  & {\small -O3 -fno-schedule-insns -fselective-scheduling2 }\\
+     \hline
+      \textbf{ \href{http://cknowledge.org/repo/web.php?wcid=experiment:20995294bf184644\&subpoint=fa8f9e4af29f3a8c}{sha512sum sha512} } &  GCC 7.1.0  &  ~ 1.22 (7.3 $\pm$ 0.0)  &  ~ 1.07 (121180)  & {\small -O3 -fno-predictive-commoning -fno-schedule-insns -funroll-loops }\\
+     \hline
+      \textbf{ \href{http://cknowledge.org/repo/web.php?wcid=experiment:1a89c378d17ce4d0\&subpoint=981b7b9de6f50286}{unrar} } &  GCC 4.9.2  &  ~ 0.97 (18.0 $\pm$ 4.0)  &  ~ 1.38 (326572)  & {\small -O3 -fno-inline -flto }\\
+     \hline
+      \textbf{ \href{http://cknowledge.org/repo/web.php?wcid=experiment:1a89c378d17ce4d0\&subpoint=94451a72a5aadda2}{unrar} } &  GCC 4.9.2  &  ~ 1.13 (18.0 $\pm$ 4.0)  &  ~ 0.80 (326572)  & {\small -O3 -fno-section-anchors -fselective-scheduling2 -fno-tree-forwprop -funroll-all-loops }\\
+     \hline
+      \textbf{ \href{http://cknowledge.org/repo/web.php?wcid=experiment:cbeb48dd9eaec742\&subpoint=82db107f34066a74}{unrar} } &  GCC 7.1.0  &  ~ 0.96 (18.0 $\pm$ 6.0)  &  ~ 1.38 (326572)  & {\small -O3 -fno-inline -flto }\\
+     \hline
+      \textbf{ \href{http://cknowledge.org/repo/web.php?wcid=experiment:cbeb48dd9eaec742\&subpoint=8a5a431da242467a}{unrar} } &  GCC 7.1.0  &  ~ 1.07 (18.0 $\pm$ 6.0)  &  ~ 0.78 (326572)  & {\small -O3 -fno-tree-ter -funroll-all-loops }\\
+     \hline
+    \end{tabular}    

@@ -1,0 +1,100 @@
+<table border="1" cellpadding="3" cellspacing="0">
+ <tr>
+  <td align="right"><b>Solution</b></td>
+  <td><b>Pruned flags (complexity reduction)</b></td>
+  <td><b>Best species</b></td>
+  <td><b>Worst species</b></td>
+ </tr>
+ <tr>  <td>1</td>
+  <td>-O3 -flto</td>
+  <td>6</td>
+  <td>3</td>
+ </tr> <tr>  <td>2</td>
+  <td>-O3 -fno-inline -flto</td>
+  <td>1</td>
+  <td>1</td>
+ </tr> <tr>  <td>3</td>
+  <td>-O3 -fno-if-conversion2 -funroll-loops</td>
+  <td>2</td>
+  <td>1</td>
+ </tr> <tr>  <td>4</td>
+  <td>-O3 -fpeel-loops -ftracer</td>
+  <td>1</td>
+  <td>3</td>
+ </tr> <tr>  <td>5</td>
+  <td>-O3 -floop-nest-optimize -fno-sched-interblock -fno-tree-copy-prop -funroll-all-loops</td>
+  <td>4</td>
+  <td>1</td>
+ </tr> <tr>  <td>6</td>
+  <td>-O3 -funroll-loops</td>
+  <td>2</td>
+  <td>3</td>
+ </tr> <tr>  <td>7</td>
+  <td>-O3 -floop-strip-mine -funroll-loops</td>
+  <td>1</td>
+  <td>1</td>
+ </tr> <tr>  <td>8</td>
+  <td>-O3 -fno-inline -fno-merge-all-constants -fno-tree-ccp -funroll-all-loops</td>
+  <td>2</td>
+  <td>3</td>
+ </tr> <tr>  <td>9</td>
+  <td>-O3 -fno-tree-loop-if-convert -funroll-all-loops</td>
+  <td>3</td>
+  <td>2</td>
+ </tr> <tr>  <td>10</td>
+  <td>-O3 -fno-section-anchors -fselective-scheduling2 -fno-tree-forwprop -funroll-all-loops</td>
+  <td>2</td>
+  <td>2</td>
+ </tr> <tr>  <td>11</td>
+  <td>-O3 -fno-ivopts -funroll-loops</td>
+  <td>4</td>
+  <td>1</td>
+ </tr> <tr>  <td>12</td>
+  <td>-O3 -fno-tree-ch -funroll-all-loops</td>
+  <td>1</td>
+  <td>1</td>
+ </tr> <tr>  <td>13</td>
+  <td>-O3 -fno-move-loop-invariants -fno-tree-ch -funroll-loops</td>
+  <td>1</td>
+  <td>2</td>
+ </tr> <tr>  <td>14</td>
+  <td>-O3 -fira-algorithm=priority -fno-ivopts</td>
+  <td>1</td>
+  <td>2</td>
+ </tr> <tr>  <td>15</td>
+  <td>-O3 -fno-ivopts</td>
+  <td>2</td>
+  <td>4</td>
+ </tr> <tr>  <td>16</td>
+  <td>-O3 -fno-sched-spec -fno-tree-ch</td>
+  <td>1</td>
+  <td>2</td>
+ </tr> <tr>  <td>17</td>
+  <td>-O3 -fno-ivopts -fselective-scheduling -fwhole-program</td>
+  <td>1</td>
+  <td>1</td>
+ </tr> <tr>  <td>18</td>
+  <td>-O3 -fno-omit-frame-pointer -fno-tree-loop-optimize</td>
+  <td>1</td>
+  <td>4</td>
+ </tr> <tr>  <td>19</td>
+  <td>-O3 -fno-auto-inc-dec -ffinite-math-only</td>
+  <td>1</td>
+  <td>2</td>
+ </tr> <tr>  <td>20</td>
+  <td>-O3 -fno-guess-branch-probability -fira-loop-pressure -fno-toplevel-reorder</td>
+  <td>1</td>
+  <td>5</td>
+ </tr> <tr>  <td>21</td>
+  <td>-O3 -fselective-scheduling2 -fno-tree-pre</td>
+  <td>2</td>
+  <td>2</td>
+ </tr> <tr>  <td>22</td>
+  <td>-O3 -fgcse-sm -fno-move-loop-invariants -fno-tree-forwprop -funroll-all-loops -fno-web</td>
+  <td>1</td>
+  <td>0</td>
+ </tr> <tr>  <td>23</td>
+  <td>-O3 -fno-schedule-insns -fselective-scheduling2</td>
+  <td>1</td>
+  <td>2</td>
+ </tr></table>

@@ -1,0 +1,312 @@
+%CK_APPENDIX={A}%
+\section{Artifact Appendix}
+\label{artifact_appendix}
+
+\textbf{Submission guidelines:}\begin{center}{\it \href{http://ctuning.org/ae/submission-20161020.html}{cTuning.org/ae/submission-20161020.html}}\end{center}
+
+This is an example of an Artifact Appendix which we introduced 
+at the computer systems conferences including CGO, PPoPP, PACT and SuperComputing
+to gradually unify artifact evaluation, sharing and reuse~\cite{ctuning-ae1,childers2016artifact,new_pub_model,Fur2009}.
+%
+We briefly describe how to install and use our autotuning workflow, visualize optimization results and reproduce them.
+%
+We also shared all scripts which we used to generate data and
+graphs in all sections from this report though we did not yet 
+have time to thoroughly document them.
+%
+In fact, we plan to gradually document them and standardize APIs 
+of shared CK modules with the help of the community and motivated students.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Abstract}
+
+We provided the whole Collective Knowledge workflow with all dependencies
+for collaborative, customizable, multi-dimensional and multi-objective autotuning 
+of realistic workloads on Raspberry Pi 3 and other devices.
+
+Current optimization results are available for GCC 7.1.0 (\href{http://cknowledge.org/repo/web.php?wcid=8289e0cf24346aa7:79bca2b76876b5c6}{link})
+and for GCC 4.9.2 (\href{http://cknowledge.org/repo/web.php?wcid=8289e0cf24346aa7:d24a4fde9f120e10}{link}).
+They are also available as a \href{https://github.com/ctuning/ck-rpi-optimization-results}{CK repository} 
+and can be replayed on another platform via CK.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Description}
+
+\subsubsection{Check-list (artifact meta information)}
+
+{\small
+\begin{itemize}
+  \item {\bf Algorithm:} -
+  \item {\bf Program:} shared programs from the \href{https://github.com/ctuning/ctuning-programs}{CK ctuning-programs repository}
+  \item {\bf Compilation:} any GCC
+  \item {\bf Transformations:} compiler flag optimizations
+  \item {\bf Binary:} will be produced during autotuning
+  \item {\bf Data set:} real inputs from the \href{https://github.com/ctuning/ctuning-datasets-min}{CK ctuning-datasets-min repository}
+  \item {\bf Run-time environment:} Raspbian (or any other)
+  \item {\bf Hardware:} Raspberry Pi 3 (or any other)
+  \item {\bf Run-time state:} will be monitored by CK (CPU frequency)
+  \item {\bf Execution:} empirical measurements of the execution time of autotuned workloads via CK workflow
+  \item {\bf Output:} best combinations of GCC compiler flags that improve execution time and code size 
+  \item {\bf Experiment workflow:} autotuning, crowd-tuning  and collaborative machine learning workflow implemented using CK framework
+  \item {\bf Experiment customization:} standard customization via CK API: select compiler, programs and data sets for autotuning, crowd-tuning and predictive modeling
+  \item {\bf Publicly available?:} yes - CK autotuning and machine learning workflow (available under BSD 3-clause license) and all related artifacts are shared as reusable and customizable components via GitHub. 
+\end{itemize}
+}
+
+\subsubsection{How software can be obtained (if available)}
+
+You can obtain CK repositories with optimization results, shared programs and data sets, workflow for autotuning and crowd-tuning as following:
+
+\begin{flushleft}
+\texttt{\$ sudo pip install ck \newline
+\$ ck pull repo:ck-rpi-optimization-results}
+\end{flushleft}
+
+Note that you may need around 1GB of free space. You can install 2 additional CK repositories~\cite{fursin_lokhmotov_upton_2018} 
+from the public FigShare repository as following (need ~3GB of free space):
+
+\begin{flushleft}
+\texttt{\$ ck add repo:ck-rpi-optimization-results-reactions --zip=https://ndownloader.figshare.com/files/10218435 --quiet \newline
+\$ ck add repo:ck-rpi-optimization-results-reactions2 --zip=https://ndownloader.figshare.com/files/10218441 --quiet \newline
+\$ ck ls experiment:rpi3-* \newline}
+\end{flushleft}
+
+These repositories are so large because they contain all experiments from this report in a reproducible way
+(we also plan to considerably reduce this size by removing duplicate information in the future). 
+But if you want to prepare and run your own repositories you will likely need less than 100MB. 
+See this artifact in the CK from the ACM CGO'17 paper~\cite{Ainsworth:2017:SPI:3049832.3049865} as example: 
+\href{https://github.com/SamAinsworth/reproduce-cgo2017-paper}{github.com/SamAinsworth/reproduce-cgo2017-paper}
+
+\subsubsection{Hardware dependencies}
+
+Tested on Raspberry Pi Model B 3 devices with 4-core BCM2709 processor but should work on any platform.
+
+\subsubsection{Software dependencies}
+
+\begin{itemize}
+  \item Raspbian GNU/Linux 8 (jessie)
+  \item Collective Knowledge Framework~\cite{ck,ck-date16}
+  \item Python 2.7+ or 3.4+
+  \item Git client
+  \item GCC 4.9.2 or GCC 7.1.0
+\end{itemize}
+
+\subsubsection{Data sets}
+
+A minimal set of inputs for cTuning benchmarks available from the \href{https://github.com/ctuning/ctuning-datasets-min}{CK ctuning-datasets-min repository}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Installation}
+
+Installation is performed using CK with the help of integrated cross-platform package manager~\cite{ck-env}:
+
+\begin{flushleft}
+\texttt{\$ sudo pip install ck \newline
+\$ ck pull repo:ck-rpi-optimization-results \newline
+\$ ck compile program:zlib --speed \newline}
+\end{flushleft}
+
+CK will automatically detect required software which is already installed on your platform, 
+install missing packages, and prepare autotuning workflow for execution.
+
+Note that CK allows multiple versions of different software to natively co-exist.
+%
+Therefore, you can install several versions of GCC which will be automatically
+detected by CK and their environment prepared accordingly.
+%
+For example, you can install (build) GCC 7.1.0 on RPi 3 via CK as following:
+
+\begin{flushleft}
+\texttt{\$ ck pull repo:ck-dev-compilers \newline
+\$ ck install package:compiler-gcc-any-src-linux-no-deps --env.PARALLEL\_BUILDS=1 --env.GCC\_COMPILE\_CFLAGS=-O0 --env.GCC\_COMPILE\_CXXFLAGS=-O0 --env.EXTRA\_CFG\_GCC=--disable-bootstrap --env.RPI3=YES --force\_version=7.1.0 \newline
+\$ ck show env --tags=gcc}
+\end{flushleft}
+
+Note that you may need to install extra dependencies including
+
+\begin{flushleft}
+\texttt{\$ sudo apt-get install texinfo build-essential libgmp-dev libmpfr-dev libisl-dev libcloog-isl-dev libmpc-dev}
+\end{flushleft}
+
+You may also want to increase swap size on RPi 3 to speed up GCC building. 
+You can change "CONF\_SWAPSIZE=100" in /etc/dphys-swapfile to "CONF\_SWAPSIZE=1000". 
+But do not forget to change it back after successful build to avoid damaging your SD card.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Experiment workflow}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{Autotuning example}
+
+You can run zlib autotuning via CK as following:
+
+\begin{flushleft}
+\texttt{\$ ck autotune program:zlib --iterations=150 --repetitions=3 --scenario=9d88674c45b94971 --cmd\_key=decode --record\_uoa=my-first-experiment}
+\end{flushleft}
+
+CK will automatically detect available compilers, will ask user to select data set, 
+and will evaluate 150 combinations of random compiler flags 
+(repeating each experiment 3 times for statistical analysis 
+of empirical variation of results).
+
+Experimental results will be aggregated in a CK entry "experiment:my-first-experiment" a local CK repository:
+
+\begin{flushleft}
+\texttt{\$ ck find experiment:my-first-experiment}
+\end{flushleft}
+
+You can plot graph (execution time vs binary size) or view results in a web browser as following:
+
+\begin{flushleft}
+\texttt{\$ ck plot graph:my-first-experiment \newline
+\$ ck browser experiment:my-first-experiment}
+\end{flushleft}
+
+You can compile and run zlib program via CK as following:
+\begin{flushleft}
+\texttt{\$ ck compile program:zlib --flags="some flags" \newline
+\$ ck run program:zlib}
+\end{flushleft}
+
+Finally, you can participate in GCC crowd-tuning as following:
+\begin{flushleft}
+\texttt{\$ ck crowdsource program.optimization --gcc}
+\end{flushleft}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Evaluation and expected result}
+
+You can find all scripts to perform experiments from this article as following:
+
+\begin{flushleft}
+\texttt{\$ ck ls ck-rpi-optimization-results:script:* | sort}
+\end{flushleft}
+
+You can then go to each individual entry and see related scripts:
+\begin{flushleft}
+\texttt{\$ ls `ck find script:rpi3-susan-autotune`}
+\end{flushleft}
+
+You can find all experimental results in the following entries:
+\begin{flushleft}
+\texttt{\$ ck ls ck-rpi-optimization-results:experiment:* | sort}
+\end{flushleft}
+
+You can then browse all results in your web browser as following:
+\begin{flushleft}
+\texttt{\$ ck browser experiment:rpi3-zlib-decode-gcc4-150b-rnd-frontier}
+\end{flushleft}
+
+You can find information about how to replay each autotuning iteration there, for example:
+\begin{flushleft}
+\texttt{\$ ck replay experiment:b0f31c56475aa510 --point=46049203405c5347}
+\end{flushleft}
+
+CK should normally show expected and new results while reporting any unexpected 
+behavior (if difference is more than some threshold such as 5\%).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Experimental methodology}
+\label{experimental_methodology}
+
+One of the most important points of using Collective Knowledge framework
+is to take advantage of the experimental methodology for computer systems research
+continuously improved by the community.
+%
+For this purpose, we instrument programs using small xOpenME library
+which allows us to monitor behavior of some code regions and dump 
+final statistics to a JSON file in the CK format.
+%
+CK will then repeat each autotuning iteration N times,
+apply statistical analysis on all exposed characteristics, report min, max and mean values,
+and calculate expected value based on a histogram of all results (if supported by used Python)
+as shown in Figure~\ref{fig:reproducibility} (a).
+
+We then calculate improvements of a given optimization over reference one (-O3)
+using minimal and expected execution times, and record differences.
+%
+If the difference is more than 5\%, we mark such experient is noise and untrustable 
+to be analyzed and improved later by the community.
+%
+If several system states are detected as shown in Figure~\ref{fig:reproducibility} (b),
+CK will not be able to reproduce them - it then means that the common CK experimental workflow
+should also be improved for this hardware and environment to be able to distinguish such
+states (such as CPU and GPU frequency due to DVFS for example).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Notes}
+\label{notes}
+
+We did not have time to thoroughly document experiments from sections~\ref{sec:crowdfuzzing}+ of this report.
+However we shared all CK modules, workflows and scripts we used in this report 
+in the following CK entries:
+
+\begin{flushleft}
+\texttt{\$ ck ls script:rpi3-*} \newline
+\texttt{\$ ck ls converting-ad-hoc-works-to-ck-*} \newline
+\end{flushleft}
+
+Scripts from Sections~\ref{sec:autotuning} and \ref{sec:flag_autotuning}
+to invoke portable and customizable CK autotuning workflow:
+
+\begin{flushleft}
+\texttt{\$ ck find script:rpi3-susan-autotune} \newline
+\texttt{\$ ck find script:rpi3-susan-graphs} \newline
+\texttt{\$ ck find script:rpi3-susan-reduce} \newline
+\texttt{\$ ck find script:rpi3-all-autotune} \newline
+\end{flushleft}
+
+Scripts from Section~\ref{sec:crowdtuning}:
+
+\begin{flushleft}
+\texttt{\$ ck find script:rpi3-all-autotune} \newline
+\texttt{\$ ck find script:rpi3-crowdtune} \newline
+\end{flushleft}
+
+Scripts from Section~\ref{sec:collaborative}:
+
+\begin{flushleft}
+\texttt{\$ ck find script:rpi3-zlib-decode-autotune} \newline
+\texttt{\$ ck find script:rpi3-zlib-decode-graphs} \newline
+\texttt{\$ ck find script:rpi3-zlib-decode-reduce} \newline
+\texttt{\$ ck find script:rpi3-zlib-encode-autotune} \newline
+\texttt{\$ ck find script:rpi3-zlib-encode-graphs} \newline
+\texttt{\$ ck find script:rpi3-zlib-encode-reduce} \newline
+\end{flushleft}
+
+Scripts from Section~\ref{sec:crowdfuzzing}:
+
+\begin{flushleft}
+\texttt{\$ ck find script:rpi3-susan-fuzz-bugs} \newline
+\end{flushleft}
+
+Scripts from Sections~\ref{sec:crowdmodeling} and \ref{sec:features}:
+
+\begin{flushleft}
+\texttt{\$ ck find script:rpi3-crowdmodel} \newline
+\end{flushleft}
+
+Scripts from Section~\ref{sec:datasets}: //input-aware
+
+\begin{flushleft}
+\texttt{\$ ck find script:rpi3-all-autotune-multiple-datasets} \newline
+\texttt{\$ ck find script:rpi3-input-aware-autotune-blas} \newline
+\end{flushleft}
+
+Scripts from Section~\ref{sec:competitions}:
+
+\begin{flushleft}
+\texttt{\$ ck find script:converting-ad-hoc-works-to-ck-slambench-autotuning} \newline
+\end{flushleft}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Conclusion}
+
+We hope that our customizable autotuning and machine learning workflow 
+can teach students, scientists and engineers learn how to collaboratively
+co-design Pareto-efficient software and hardware stack for emerging workloads.
+%
+Please feel free to send us updates and patches to fix, help us to improve or extend
+our artifacts with documentation, and keep in touch with our community via
+CK mailing list:~\href{https://groups.google.com/d/forum/collective-knowledge}{groups.google.com/d/forum/collective-knowledge}!

@@ -1,0 +1,196 @@
+\documentclass[10pt,letterpaper,twocolumn]{article}
+\usepackage[margin=2cm]{geometry}
+
+\special{papersize=8.3in,11.7in} % A4
+
+%\usepackage{multicol}
+%\usepackage{ifpdf}
+%\usepackage{cite}
+\usepackage{graphicx}
+\usepackage{array}
+%\usepackage{caption}
+\usepackage{subfig}
+%\usepackage{subfigure}
+%\usepackage{fixltx2e}
+\usepackage{algorithm,algorithmic}
+\usepackage{color}
+%\usepackage[hyphens]{url}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage[none]{hyphenat} 
+
+\newenvironment{packed_itemize}{
+\begin{itemize}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}{\end{itemize}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\date{August 15, 2017 (first draft)}
+
+%\title{Open research SDK to build self-optimizing computer systems\\with the help of the Raspberry Pi community}
+%\title{Open research SDK to collaboratively learn\\how to build self-optimizing computer systems}
+%\title{Open SDK to research self-optimizing computer systems\\with the help of Raspberry Pi community and volunteers}
+
+%\title{Open research SDK to learn how to build\\self-optimizing computer systems}
+%\title{Open research SDK to build self-optimizing computer systems\\}
+
+%\title{Collective Knowledge workflow to collaboratively research\\self-optimizing computer systems}
+
+%\title{Collective Knowledge workflow to collaboratively research\\autotuning techniques across Raspberry Pi and other devices}
+
+
+
+%\title{A Collective Knowledge workflow for collaborative research into\\multi-objective autotuning and crowdtuning techniques}
+\title{A Collective Knowledge workflow for collaborative research into\\multi-objective autotuning and machine learning techniques}
+
+
+
+\author{Grigori Fursin$^{1,2}$, Dmitry Savenko$^3$, Anton Lokhmotov$^1$, and Eben Upton$^{4,5}$ \\
+\\
+$^1$~dividiti, UK ; $^2$~cTuning foundation, France ; $^3$~Xored, Russia \\
+$^4$~Raspberry Pi foundation, UK ; $^5$~Broadcom, UK\\
+}
+
+\maketitle
+
+\begin{abstract}
+ \input{abstract}
+\end{abstract}
+
+{\bf Keywords:}
+{\it\small 
+ \input{keywords}
+}
+
+%\vspace{2cm}
+{\bf Live CK repository:} \newline
+\textit{\href{https://github.com/ctuning/ck-rpi-optimization-results}{github.com/ctuning/ck-rpi-optimization-results}} (0.9GB)
+
+{\bf Interactive report:} \newline
+\textit{\href{http://cKnowledge.org/rpi-crowd-tuning}{cKnowledge.org/rpi-crowd-tuning}}
+
+{\bf Archives of CK repositories at FigShare:} \newline
+\textit{\href{https://doi.org/10.6084/m9.figshare.5789007.v2}{doi.org/10.6084/m9.figshare.5789007.v2}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%CK_INTERACTIVE_START
+
+%CK_ABSTRACT={abstract.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction} % Has to be here (for interactive report!)
+\label{introduction} % Has to be here (for interactive report!)
+\input{paper_intro}
+%CK_TEX={paper_intro.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Converting ad-hoc artifacts to portable and reusable components with JSON API}
+\label{sec:converting}
+\input{paper_converting}
+%CK_TEX={paper_converting.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Assembling portable and customizable autotuning workflow}
+\label{sec:autotuning}
+\input{paper_autotuning}
+%CK_TEX={paper_autotuning.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Implementing universal compiler flag autotuning}
+\label{sec:flag_autotuning}
+\input{paper_compiler_flag_autotuning}
+%CK_TEX={paper_compiler_flag_autotuning.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\clearpage
+\section{Crowdsourcing autotuning}
+\label{sec:crowdtuning}
+\input{paper_crowdtuning}
+%CK_TEX={paper_crowdtuning.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Autotuning and crowd-tuning real workloads}
+\label{sec:collaborative}
+\input{paper_collaborative}
+%CK_TEX={paper_collaborative.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Crowd-fuzzing compilers}
+\label{sec:crowdfuzzing}
+\input{paper_crowdfuzzing}
+%CK_TEX={paper_crowdfuzzing.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\clearpage
+\section{Unifying and crowdsourcing machine learning}
+\label{sec:crowdmodeling}
+\input{paper_crowdmodeling}
+%CK_TEX={paper_crowdmodeling.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\clearpage 
+\section{Improving and autotuning models and features}
+\label{sec:features}
+\input{paper_features}
+%CK_TEX={paper_features.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\clearpage 
+\section{Enabling input-aware optimization}
+\label{sec:datasets}
+\input{paper_datasets}
+%CK_TEX={paper_datasets.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\clearpage 
+\section{Reinventing computer engineering via reproducible competitions}
+\label{sec:competitions}
+\input{paper_competitions}
+%CK_TEX={paper_competitions.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\clearpage
+\section{Conclusions and Future Work}
+\label{sec:conclusions}
+\input{paper_conclusions}
+%CK_TEX={paper_conclusions.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Acknowledgments}
+\label{sec:ack}
+
+We would like to thank Raspberry Pi foundation for initial financial support.
+We are also grateful to dividiti and cTuning foundation colleagues, 
+Flavio Vella, Marco Cianfriglia, Nikolay Chunosov, Daniil Efremov, Yuriy Kashnikov, 
+Peter Green, Thierry Moreau and ReQuEST colleagues, and the Collective Knowledge community 
+for evaluating Collective Knowledge concepts and providing useful feedback.
+
+%CK_IMG={http://cknowledge.org/images/logo-dividiti2.png ; http://dividiti.com}
+%CK_IMG={http://cknowledge.org/images/CTuning_foundation_logo2.png ; http://cTuning.org}
+%xK_IMG={http://cknowledge.org/images/logo-xored.jpg ; http:/xored.com}
+%CK_IMG={http://cknowledge.org/images/logo-rpi2.png ; https://www.raspberrypi.org}
+
+%CK_TEX={appendix1.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+
+\bibliographystyle{abbrv}
+\bibliography{ck-assets/paper}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\appendix
+
+\clearpage
+\newpage
+\pagebreak
+
+\input{appendix1.tex}
+
+\end{document}

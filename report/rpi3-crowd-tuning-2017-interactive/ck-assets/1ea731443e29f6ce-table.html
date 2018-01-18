@@ -1,0 +1,410 @@
+<table border="1" cellpadding="5" cellspacing="0">
+ <tr style="background-color:#cfcfcf;">
+  <td valign="top">
+   <b>Workload</b>
+  </td>
+  <td valign="top">
+   <b>Compiler</b>
+  </td>
+  <td valign="top">
+   <b>Time&nbsp;improvement&nbsp;over&nbsp;-O3&nbsp;(-O3&nbsp;time&nbsp;in&nbsp;brackets)</b>
+  </td>
+  <td valign="top">
+   <b>Binary&nbsp;size&nbsp;improvement&nbsp;over&nbsp;-O3&nbsp;(-O3&nbsp;size&nbsp;in&nbsp;brackets)</b>
+  </td>
+  <td valign="top">
+   <b>Flags</b>
+  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   <a href="http://cknowledge.org/repo/web.php?wcid=experiment:860174fc1b709377&subpoint=ec934e93826572d2">7z encode</a>
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;4.9.2
+  </td>
+  <td valign="top">
+   ~&nbsp;1.02&nbsp;<i>(5.5&nbsp;&plusmn;&nbsp;0.1)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;1.52&nbsp;<i>(859728)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -fno-inline -flto
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   <a href="http://cknowledge.org/repo/web.php?wcid=experiment:03af5407d14468eb&subpoint=6d4d4e8e1c6daac6">7z encode</a>
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;7.1.0
+  </td>
+  <td valign="top">
+   no&nbsp;<i>(6.0&nbsp;&plusmn;&nbsp;1.0)</i>
+  </td>
+  <td valign="top">
+   no&nbsp;<i>(887464)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   <a href="http://cknowledge.org/repo/web.php?wcid=experiment:89fd652535db438e&subpoint=24844209902c136a">ccrypt encrypt</a>
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;4.9.2
+  </td>
+  <td valign="top">
+   no&nbsp;<i>(7.0&nbsp;&plusmn;&nbsp;2.0)</i>
+  </td>
+  <td valign="top">
+   no&nbsp;<i>(61772)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   <a href="http://cknowledge.org/repo/web.php?wcid=experiment:264c8a9a86776fcb&subpoint=f8130c563953d484">ccrypt encrypt</a>
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;7.1.0
+  </td>
+  <td valign="top">
+   ~&nbsp;1.16&nbsp;<i>(7.6&nbsp;&plusmn;&nbsp;0.1)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;1.00&nbsp;<i>(59996)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -fno-auto-inc-dec -fguess-branch-probability -fipa-pure-const -freorder-blocks -fselective-scheduling2 -ftree-ccp -fno-tree-pre -ftree-tail-merge
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   <a href="http://cknowledge.org/repo/web.php?wcid=experiment:59dbd50c4fa98b6c&subpoint=f4f3baa9717f1cee">gzip decode</a>
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;4.9.2
+  </td>
+  <td valign="top">
+   ~&nbsp;1.04&nbsp;<i>(4.2&nbsp;&plusmn;&nbsp;0.0)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;1.12&nbsp;<i>(85956)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -fno-inline -flto
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   <a href="http://cknowledge.org/repo/web.php?wcid=experiment:d2044082a58f5f78&subpoint=64f3736c4460e87f">gzip decode</a>
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;7.1.0
+  </td>
+  <td valign="top">
+   ~&nbsp;1.04&nbsp;<i>(4.2&nbsp;&plusmn;&nbsp;0.0)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;1.18&nbsp;<i>(90568)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -fno-inline -flto
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   <a href="http://cknowledge.org/repo/web.php?wcid=experiment:d2044082a58f5f78&subpoint=d6ae97514d86a01a">gzip decode</a>
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;7.1.0
+  </td>
+  <td valign="top">
+   ~&nbsp;1.08&nbsp;<i>(4.2&nbsp;&plusmn;&nbsp;0.0)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;0.81&nbsp;<i>(90568)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -fno-cprop-registers -flto -funroll-all-loops
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   <a href="http://cknowledge.org/repo/web.php?wcid=experiment:819a33f3e0a4efc3&subpoint=d8685bf484cb1d9c">gzip encode</a>
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;4.9.2
+  </td>
+  <td valign="top">
+   ~&nbsp;0.98&nbsp;<i>(12.3&nbsp;&plusmn;&nbsp;0.1)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;1.10&nbsp;<i>(85956)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -fno-omit-frame-pointer -fno-tree-loop-optimize
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   <a href="http://cknowledge.org/repo/web.php?wcid=experiment:7bd35343c393218c&subpoint=ea66fb473741f8ba">gzip encode</a>
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;7.1.0
+  </td>
+  <td valign="top">
+   ~&nbsp;1.01&nbsp;<i>(12.3&nbsp;&plusmn;&nbsp;0.8)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;1.18&nbsp;<i>(90568)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -fno-inline -flto
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   <a href="http://cknowledge.org/repo/web.php?wcid=experiment:3308b411e99c6c19&subpoint=1970017ea1e6fd3f">minigzip decode</a>
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;4.9.2
+  </td>
+  <td valign="top">
+   ~&nbsp;1.24&nbsp;<i>(10.0&nbsp;&plusmn;&nbsp;4.0)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;1.60&nbsp;<i>(101432)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -fno-inline -flto
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   <a href="http://cknowledge.org/repo/web.php?wcid=experiment:3308b411e99c6c19&subpoint=704e0a8e94359933">minigzip decode</a>
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;4.9.2
+  </td>
+  <td valign="top">
+   ~&nbsp;1.32&nbsp;<i>(10.0&nbsp;&plusmn;&nbsp;4.0)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;1.00&nbsp;<i>(101432)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -fselective-scheduling2 -fno-tree-pre
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   <a href="http://cknowledge.org/repo/web.php?wcid=experiment:b9728f4c7b36ac8a&subpoint=f72e2b4f5e47b98c">minigzip decode</a>
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;7.1.0
+  </td>
+  <td valign="top">
+   ~&nbsp;1.14&nbsp;<i>(8.0&nbsp;&plusmn;&nbsp;3.0)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;1.76&nbsp;<i>(119088)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -fno-inline -flto
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   <a href="http://cknowledge.org/repo/web.php?wcid=experiment:8c4b2b03f4aa21a7&subpoint=243c5a4fc20ee826">minigzip encode</a>
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;4.9.2
+  </td>
+  <td valign="top">
+   ~&nbsp;0.89&nbsp;<i>(9.9&nbsp;&plusmn;&nbsp;0.0)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;1.60&nbsp;<i>(101432)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -fno-inline -flto
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   <a href="http://cknowledge.org/repo/web.php?wcid=experiment:18828143558b3c2f&subpoint=0e1438a8a38e6fd6">minigzip encode</a>
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;7.1.0
+  </td>
+  <td valign="top">
+   ~&nbsp;1.00&nbsp;<i>(9.6&nbsp;&plusmn;&nbsp;0.0)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;1.76&nbsp;<i>(119088)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -fno-inline -flto
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   <a href="http://cknowledge.org/repo/web.php?wcid=experiment:7ca1118331485cb4&subpoint=4b74181efc011cbd">rhash sha3</a>
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;4.9.2
+  </td>
+  <td valign="top">
+   ~&nbsp;1.00&nbsp;<i>(4.8&nbsp;&plusmn;&nbsp;0.0)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;1.12&nbsp;<i>(14848)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -flto
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   <a href="http://cknowledge.org/repo/web.php?wcid=experiment:94a5792a3a4b925f&subpoint=fc8e3a495ab4298c">rhash sha3</a>
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;7.1.0
+  </td>
+  <td valign="top">
+   ~&nbsp;1.35&nbsp;<i>(5.2&nbsp;&plusmn;&nbsp;0.0)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;1.30&nbsp;<i>(16396)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -fno-inline -flto
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   <a href="http://cknowledge.org/repo/web.php?wcid=experiment:94a5792a3a4b925f&subpoint=dab8b6c57a392ca5">rhash sha3</a>
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;7.1.0
+  </td>
+  <td valign="top">
+   ~&nbsp;1.48&nbsp;<i>(5.2&nbsp;&plusmn;&nbsp;0.0)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;1.07&nbsp;<i>(16396)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -fno-schedule-insns -ftracer
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   <a href="http://cknowledge.org/repo/web.php?wcid=experiment:b8ab612f1524fa3b&subpoint=042129a7110f3e31">sha512sum sha512</a>
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;4.9.2
+  </td>
+  <td valign="top">
+   ~&nbsp;1.12&nbsp;<i>(7.8&nbsp;&plusmn;&nbsp;0.0)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;1.06&nbsp;<i>(125372)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -fno-schedule-insns -fselective-scheduling2
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   <a href="http://cknowledge.org/repo/web.php?wcid=experiment:20995294bf184644&subpoint=fa8f9e4af29f3a8c">sha512sum sha512</a>
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;7.1.0
+  </td>
+  <td valign="top">
+   ~&nbsp;1.22&nbsp;<i>(7.3&nbsp;&plusmn;&nbsp;0.0)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;1.07&nbsp;<i>(121180)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -fno-predictive-commoning -fno-schedule-insns -funroll-loops
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   <a href="http://cknowledge.org/repo/web.php?wcid=experiment:1a89c378d17ce4d0&subpoint=981b7b9de6f50286">unrar</a>
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;4.9.2
+  </td>
+  <td valign="top">
+   ~&nbsp;0.97&nbsp;<i>(18.0&nbsp;&plusmn;&nbsp;4.0)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;1.38&nbsp;<i>(326572)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -fno-inline -flto
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   <a href="http://cknowledge.org/repo/web.php?wcid=experiment:1a89c378d17ce4d0&subpoint=94451a72a5aadda2">unrar</a>
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;4.9.2
+  </td>
+  <td valign="top">
+   ~&nbsp;1.13&nbsp;<i>(18.0&nbsp;&plusmn;&nbsp;4.0)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;0.80&nbsp;<i>(326572)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -fno-section-anchors -fselective-scheduling2 -fno-tree-forwprop -funroll-all-loops
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   <a href="http://cknowledge.org/repo/web.php?wcid=experiment:cbeb48dd9eaec742&subpoint=82db107f34066a74">unrar</a>
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;7.1.0
+  </td>
+  <td valign="top">
+   ~&nbsp;0.96&nbsp;<i>(18.0&nbsp;&plusmn;&nbsp;6.0)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;1.38&nbsp;<i>(326572)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -fno-inline -flto
+   </small>  </td>
+ </tr>
+ <tr  >
+  <td valign="top">
+   <b>   <a href="http://cknowledge.org/repo/web.php?wcid=experiment:cbeb48dd9eaec742&subpoint=8a5a431da242467a">unrar</a>
+   </b>  </td>
+  <td valign="top">
+   GCC&nbsp;7.1.0
+  </td>
+  <td valign="top">
+   ~&nbsp;1.07&nbsp;<i>(18.0&nbsp;&plusmn;&nbsp;6.0)</i>
+  </td>
+  <td valign="top">
+   ~&nbsp;0.78&nbsp;<i>(326572)</i>
+  </td>
+  <td valign="top">
+   <small>   -O3 -fno-tree-ter -funroll-all-loops
+   </small>  </td>
+ </tr>
+</table>

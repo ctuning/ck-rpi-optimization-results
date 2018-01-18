@@ -1,0 +1,31 @@
+    \begin{tabular}{|r|p{4.5in}|p{0.5in}|p{0.5in}|}
+     \hline
+     \textbf{Solution} & \textbf{Pruned flags (complexity reduction)} & \textbf{Best species} & \textbf{Worst species} \\ 
+     \hline
+      1 & -O3 -fno-delayed-branch -flto -fno-selective-scheduling2 -fno-whole-program & 6 & 0 \\
+     \hline
+      2 & -O3 -flto & 4 & 1 \\
+     \hline
+      3 & -O3 -fno-inline -flto & 2 & 1 \\
+     \hline
+      4 & -O3 -fno-cprop-registers -flto -funroll-all-loops & 3 & 1 \\
+     \hline
+      5 & -O3 -fno-tree-fre -funroll-all-loops & 2 & 1 \\
+     \hline
+      6 & -O3 -fno-predictive-commoning -fno-schedule-insns -funroll-loops & 3 & 3 \\
+     \hline
+      7 & -O3 -funroll-loops & 3 & 0 \\
+     \hline
+      8 & -O3 -fno-tree-ter -funroll-all-loops & 3 & 1 \\
+     \hline
+      9 & -O3 -fno-merge-all-constants -fselective-scheduling2 -funroll-loops & 1 & 0 \\
+     \hline
+      10 & -O3 -fno-devirtualize-at-ltrans -fno-predictive-commoning -fno-tree-pre & 1 & 2 \\
+     \hline
+      11 & -O3 -fcheck-data-deps -fira-loop-pressure -fno-isolate-erroneous-paths-dereference -fno-sched-dep-count-heuristic -fsection-anchors -fsemantic-interposition -fno-tree-ch -fno-tree-loop-linear -fno-tree-partial-pre & 2 & 2 \\
+     \hline
+      12 & -O3 -fno-schedule-insns -ftracer & 2 & 3 \\
+     \hline
+      13 & -O3 -fno-auto-inc-dec -fguess-branch-probability -fipa-pure-const -freorder-blocks -fselective-scheduling2 -ftree-ccp -fno-tree-pre -ftree-tail-merge & 1 & 1 \\
+     \hline
+    \end{tabular}

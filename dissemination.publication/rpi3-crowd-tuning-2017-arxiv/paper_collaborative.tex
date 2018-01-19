@@ -28,13 +28,13 @@ specific ones, and will record results in a local repository:
 
 Figure~\ref{fig:autotuning-zlib-decode-gcc4} 
 (\href{http://cknowledge.org/repo/web.php?wcid=graph:3a97d1f6494f9d45&subgraph=rpi3-autotuning-zlib-decode-gcc4-interactive}{link with interactive graph}) 
-shows manually annotated graph with the outcome of such autotuning 
+shows a manually annotated graph with the outcome of such autotuning 
 when using GCC 4.9.2 compiler on RPi3 device
 in terms of execution time with variation and code size.
 %
 Each blue point on this graph is related to one combination of random compiler flags.
 %
-Red line highlights the frontier of all autotuning results 
+The red line highlights the frontier of all autotuning results 
 to let users trade off execution time and code size 
 during multi-objective optimization.
 %
@@ -55,7 +55,7 @@ when using several main GCC and Clang optimization levels.
      \caption{
       Results of GCC 4.9.2 random compiler flag autotuning of a zlib decode workload on RPi3
       device using CK with a highlighted frontier (trading-off execution time and code size) 
-      and best found combinations of flags on this frontier.
+      and the best found combinations of flags on this frontier.
      }
      \label{fig:autotuning-zlib-decode-gcc4}
    \end{figure*}
@@ -80,7 +80,7 @@ on these programs similar to leave-one-out cross-validation in machine learning.
 
 Figure~\ref{fig:autotuning-zlib-decode-gcc4-reactions} shows "reactions" 
 of \textit{zlib decode} to these optimizations in terms of execution time and code size 
-(\href{http://cknowledge.org/repo/web.php?wcid=graph:47f0b282396776c4&subgraph=rpi3-autotuning-zlib-decode-gcc4-reactions-interactive}{online interactive graph}).
+(\href{http://cknowledge.org/repo/web.php?wcid=graph:47f0b282396776c4&subgraph=rpi3-autotuning-zlib-decode-gcc4-reactions-interactive}{the online interactive graph}).
 %
 We can see that crowd-tuning solutions indeed cluster in a relatively small area 
 close to \textit{-O3} with one collaborative solution (\textbf{C1}) close to the 
@@ -109,13 +109,13 @@ thus providing a good trade off between autotuning time, execution time and code
 
 Autotuning \textit{zlib decode} using \textit{GCC 7.1.0} revels even more interesting results
 in comparison with \textit{susan corners} as shown in Figure~\ref{fig:autotuning-zlib-decode-gcc7} 
-(\href{http://cknowledge.org/repo/web.php?wcid=graph:2bf38fd88a0e3ba1&subgraph=rpi3-autotuning-zlib-decode-gcc7-interactive}{online interactive graph}).
+(\href{http://cknowledge.org/repo/web.php?wcid=graph:2bf38fd88a0e3ba1&subgraph=rpi3-autotuning-zlib-decode-gcc7-interactive}{the online interactive graph}).
 %
 While there is practically no execution time improvements when switching from \textit{GCC 4.9.2} to \textit{GCC 7.1.0}
 on \textit{-O3} and \textit{-Os} optimization levels, \textit{GCC 7.1.0 -O3} considerably degraded code size by nearly 20\%.
 %
 Autotuning also shows few opportunities on \textit{GCC 7.1.0} in comparison with \textit{GCC 4.9.2}
-where best found optimization \textbf{B4R} is worse in terms of code size than \textbf{A4R} also by around 20\%.
+where the best found optimization \textbf{B4R} is worse in terms of a code size than \textbf{A4R} also by around 20\%.
 %
 These results highlight issues which both end-users and compiler designers face
 when searching for efficient combinations of compiler flags or preparing the 
@@ -136,7 +136,7 @@ default optimization levels -Ox.
      \caption{
        Results of GCC 7.1.0 random compiler flag autotuning of zlib decode on RPi3 device 
        with a highlighted frontier (trading-off execution time and code size), 
-       best combinations of flags on this frontier, and comparison with the results from GCC 4.9.2.
+       the best combinations of flags on this frontier, and comparison with the results from GCC 4.9.2.
      }
      \label{fig:autotuning-zlib-decode-gcc7}
    \end{figure*}
@@ -145,7 +145,7 @@ default optimization levels -Ox.
 CK crowd-tuning can assist in this case too - Figure~\ref{fig:autotuning-zlib-decode-gcc7-reactions}
 shows reactions of \textit{zlib decode} to the most efficient combinations of GCC 7.1.0 compiler flags
 shared by the community for RPi3 
-(\href{http://cknowledge.org/repo/web.php?wcid=graph:a53089441c68c978&subgraph=rpi3-autotuning-zlib-decode-gcc7-reactions-interactive}{online interactive graph}).
+(\href{http://cknowledge.org/repo/web.php?wcid=graph:a53089441c68c978&subgraph=rpi3-autotuning-zlib-decode-gcc7-reactions-interactive}{the online interactive graph}).
 %
 Shared optimization solution~\textbf{C2} achieved the same results in terms of execution time and code size
 as reduced solution \textbf{B4R} found during 150 random autotuning iterations.
@@ -154,7 +154,7 @@ Furthermore, another shared optimization solution~\textbf{C1} improved code size
 with GCC 7.1.0 autotuning solution~\textbf{B4R} and is close to the best solution GCC 4.9.2 autotuning solution~\textbf{A4R}.
 %
 These results suggest that 150 iterations with random combinations of compiler flags 
-may not be enough to find efficient solution for \textit{zlib decode}.
+may not be enough to find an efficient solution for \textit{zlib decode}.
 %
 In turn, crowd-tuning can help considerably accelerate and focus such optimization space exploration.
 
@@ -177,13 +177,13 @@ In turn, crowd-tuning can help considerably accelerate and focus such optimizati
    %\url{http://cknowledge.org/repo/web.php?wcid=graph:a53089441c68c978&subgraph=rpi3-autotuning-zlib-decode-gcc7-reactions-interactive}
 
 We performed the same autotuning and crowd-tuning experiments for \textit{zlib encode} workload
-with results shown in Figures~\ref{fig:autotuning-zlib-encode-gcc4},~\ref{fig:autotuning-zlib-encode-gcc4-reactions},~\ref{fig:autotuning-zlib-encode-gcc7},~\ref{fig:autotuning-zlib-encode-gcc7-reactions}.
+with the results shown in Figures~\ref{fig:autotuning-zlib-encode-gcc4},~\ref{fig:autotuning-zlib-encode-gcc4-reactions},~\ref{fig:autotuning-zlib-encode-gcc7},~\ref{fig:autotuning-zlib-encode-gcc7-reactions}.
 %
 The results show similar trend that \textit{-O3} optimization level of both \textit{GCC 4.7.2} and \textit{GCC 7.1.0} 
-perform well in terms of execution time, while there is the same degradation in code size when moving to a new compiler
+perform well in terms of execution time, while there is the same degradation in the code size when moving to a new compiler
 (since we monitor the whole zlib binary size for both decode and encode functions).
 %
-Crowd-tuning also helped improve code size though optimizations~\textbf{A4R},~\textbf{B4R} and \textbf{C1}
+Crowd-tuning also helped improve the code size though optimizations~\textbf{A4R},~\textbf{B4R} and \textbf{C1}
 are not the same as in case of \textit{zlib decode}.
 %
 The reason is that algorithms are different and need different optimizations 
@@ -206,7 +206,7 @@ already available in GCC.
      \caption{
       Results of GCC 4.9.2 random compiler flag autotuning of a zlib encode workload on RPi3
       device using CK with a highlighted frontier (trading-off execution time and code size) 
-      and best found combinations of flags on this frontier.
+      and the best found combinations of flags on this frontier.
      }
      \label{fig:autotuning-zlib-encode-gcc4}
    \end{figure*}
@@ -249,7 +249,7 @@ already available in GCC.
      \caption{
        Results of GCC 7.1.0 random compiler flag autotuning of zlib encode on RPi3 device 
        with a highlighted frontier (trading-off execution time and code size), 
-       best combinations of flags on this frontier, and comparison with the results from GCC 4.9.2.
+       the best combinations of flags on this frontier, and comparison with the results from GCC 4.9.2.
      }
      \label{fig:autotuning-zlib-encode-gcc7}
    \end{figure*}
@@ -273,18 +273,18 @@ already available in GCC.
    \end{figure*}
    %\url{http://cknowledge.org/repo/web.php?wcid=graph:47bfb7c243e4e907&subgraph=rpi3-autotuning-zlib-encode-gcc7-reactions-interactive}
 
-Besides \textit{zlib}, we applied crowd-tuning with best found and shared optimizations 
+Besides \textit{zlib}, we applied crowd-tuning with the best found and shared optimizations 
 to other RPi programs using \textit{GCC 4.9.2} and \textit{GCC 7.1.0}.
 %
 Table~\ref{fig:crowdtuning-all-rpi3-progs} shows reactions of these optimizations
-with best trade-offs for execution time and code size.
+with the best trade-offs for execution time and code size.
 %
 One may notice that though \textit{GCC 7.1.0 -O3} level improves execution time
 of most of the programs apart from a few exceptions, it also considerably degrades
-code size in comparison \textit{GCC 4.9.2 -O3} level.
+code size in comparison with \textit{GCC 4.9.2 -O3} level.
 %
 These results also confirm that neither \textit{-O3} nor \textit{-Os} on both 
-\textit{GCC 4.9.2} and \textit{GCC 7.1.0} achieves best trade-offs for execution
+\textit{GCC 4.9.2} and \textit{GCC 7.1.0} achieves the best trade-offs for execution
 time and code size thus motivating again our collaborative and continuous optimization
 approach.
 
@@ -295,7 +295,7 @@ approach.
     \centering
      \input{ck-assets/1ea731443e29f6ce-table.tex} %CK_HTML={ck-assets/1ea731443e29f6ce-table.html}
     \caption{
-      Best found improvements (degradations) in execution time and binary size 
+      The highest found improvements (degradations) in execution time and binary size 
       for several important RPi3 programs 
       as reactions to top most efficient shared optimizations 
       for GCC 4.9.2 and GCC 7.1.0.
@@ -307,17 +307,17 @@ Indeed, a dozen of shared most efficient optimizations at \href{http://cKnowledg
 is enough to either improve execution time of above programs by up to 1.5x or code size by up to 1.8x or even
 improve both size and speed at the same time.
 %
-It also helps end-users find best optimization no matter which compiler, environment and hardware are used.
+It also helps end-users find the most efficient optimization no matter which compiler, environment and hardware are used.
 
 We can also notice that 11 workloads (computational species) 
 share \textit{-O3 -fno-inline -flto} combination of flags 
-to achieve best trade-off between execution time and code size.
+to achieve the best trade-off between execution time and code size.
 %
 This result supports our original research to use workload features, 
 hardware properties, crowd-tuning and  machine learning
 to predict such optimizations~\cite{Fur2009,29db2248aba45e59:a31e374796869125,cm:29db2248aba45e59:cd11e3a188574d80}.
 %
-However, in contrast with past work, we are now able
+However, in contrast with the past work, we are now able
 to gradually collect a large, realistic (i.e. not randomly
 synthesized) set of diverse workloads with the help of the
 community to make machine learning statistically meaningful.

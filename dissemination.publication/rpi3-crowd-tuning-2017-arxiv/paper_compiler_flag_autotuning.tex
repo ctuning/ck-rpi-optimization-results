@@ -195,15 +195,15 @@ We can now visualize these autotuning results using the following command line:
 \texttt{\$ ck plot graph:tmp-susan-corners-gcc4-300-rnd}
 \end{flushleft}
 
-Figure~\ref{fig:autotuning-susan-gcc4} shows manually annotated graph 
+Figure~\ref{fig:autotuning-susan-gcc4} shows a manually annotated graph 
 with the outcome of GCC 4.9.2 random compiler flags autotuning 
 applied to susan corners on an RPi3 device in terms of execution 
 time with variation and code size.
 %
 Each blue point on this graph is related to one combination of random compiler flags.
 %
-Red line highlights the frontier of all autotuning results (not necessarily Pareto optimal) 
-to trade off execution time and code size during multi-objective optimization.
+The red line highlights the frontier of all autotuning results (not necessarily Pareto optimal) 
+which trade off execution time and code size during multi-objective optimization.
 %
 We also plotted points when default GCC compilation is used without any flags 
 or with \textit{-O3} and \textit{-Os} optimization levels.
@@ -270,7 +270,7 @@ and then report any differences in the output.
 This simplifies validation of shared experimental results 
 (optimizations, models, bugs) by the community
 and possibly with a different software and hardware setup
-(CK will automatically adapt workflow to a user platform).
+(CK will automatically adapt the workflow to a user platform).
 
 We also provided support to help researchers 
 visualize their results as interactive graphs 
@@ -283,9 +283,10 @@ has ~40 optimization flags, while \textbf{A4R} only 7 as shown in Table~\ref{fig
 %
 The natural reason is that not all randomly selected flags contribute to improvements.
 %
-That is why we developed a simple and universal complexity reduction algorithm
-which iteratively and randomly removes selected those choices from a found solution 
-which do not influence monitored characteristics such as execution time and code size
+That is why we developed a simple and universal complexity reduction algorithm.
+%
+It iteratively and randomly removes choices from a found solution one by one
+if they do not influence monitored characteristics such as execution time and code size
 in our example.
 
   % === GCC 4.9.2 complexity reduction ==================================================================
@@ -362,7 +363,7 @@ when reducing complexity of a given solution such as:
    \centering
     \input{ck-assets/4373f49dea7663db-table3.tex} %CK_HTML={ck-assets/4373f49dea7663db-table3.html}
    \caption{
-     Explicitly switching off all compiler flags one by one if they do not influence optimization result - 
+     Explicitly switching off all compiler flags one by one if they do not influence the optimization result - 
      useful to understand all compiler optimizations which contributed to the found solution. 
    }
    \label{fig:autotuning-susan-gcc4-invert}
@@ -422,7 +423,7 @@ and record results in the \textit{experiment:tmp-susan-corners-gcc7-300-rnd}:
   --cmd\_key=corners --record\_uoa=tmp-susan-corners-gcc7-300-rnd}
 \end{flushleft}
 
-Figure~\ref{fig:autotuning-susan-gcc7} shows results of such \textit{GCC 7.1.0}
+Figure~\ref{fig:autotuning-susan-gcc7} shows the results of such \textit{GCC 7.1.0}
 compiler flag autotuning (\textbf{B} points) and compares them 
 against \textit{GCC 4.9.2} (\textbf{A} points).
 %
@@ -450,7 +451,7 @@ Note that this graph is also available in interactive form~\href{http://cknowled
 It is interesting to see considerable improvement in execution time of susan corners 
 when moving from GCC 4.9 to GCC 7.1 with the best optimization level \textit{-O3}.
 %
-This graph also shows that new optimization added during past 3 years opened up
+This graph also shows that new optimization added during the past 3 years opened up
 many new opportunities thus considerably expanding autotuning frontier (light red
 dashed line versus dark red dashed line).
 %
@@ -459,7 +460,7 @@ Autotuning only managed to achieve a modest improvement of a few percent over \t
 On the other hand, GCC \textit{-O3} and \textit{-Os} are still far from achieving
 best trade-offs for execution time and code size.
 %
-For example, it is still possible to improve program binary size 
+For example, it is still possible to improve a program binary size 
 by ~10\% (reduced solution \textbf{B4R}) without degrading best achieved 
 execution time with the \textit{-O3} level (\textbf{-O3}), or improve 
 execution time of \textbf{-Os} level by ~28\% while slightly degrading code size by ~5\%.

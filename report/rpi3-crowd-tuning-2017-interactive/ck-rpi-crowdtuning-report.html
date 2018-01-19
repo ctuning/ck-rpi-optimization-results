@@ -77,7 +77,7 @@ After evaluating more than 100 artifacts from the leading computer systems confe
 in the past 4 years, we noticed that only a small fraction of research artifacts 
 could be easily customized, ported to other environments and hardware, reused, 
 and built upon.
-We have grown to believe that this due to a lack of a common workflow framework
+We have grown to believe that is this due to a lack of a common workflow framework
 that could simplify implementation and sharing of artifacts and workflows as
 portable, customizable and reusable components with some common API and meta information
 vital for open science&nbsp;[<a href="#ref_9">9</a>].
@@ -91,8 +91,8 @@ and ``reinvented'' from time to time.
 <p>Autotuning is one such example: this very popular technique has been actively
 researched since the 1990s to automatically explore large optimization spaces
 and improve efficiency of computer systems&nbsp;[<a href="#ref_10">10</a>, <a href="#ref_11">11</a>, <a href="#ref_12">12</a>, <a href="#ref_13">13</a>, <a href="#ref_14">14</a>, <a href="#ref_15">15</a>, <a href="#ref_16">16</a>, <a href="#ref_17">17</a>, <a href="#ref_18">18</a>, <a href="#ref_19">19</a>, <a href="#ref_20">20</a>, <a href="#ref_21">21</a>, <a href="#ref_22">22</a>, <a href="#ref_23">23</a>, <a href="#ref_24">24</a>, <a href="#ref_25">25</a>, <a href="#ref_26">26</a>, <a href="#ref_27">27</a>, <a href="#ref_28">28</a>, <a href="#ref_29">29</a>, <a href="#ref_30">30</a>, <a href="#ref_31">31</a>, <a href="#ref_32">32</a>, <a href="#ref_33">33</a>].
-Every year, dozens of autotuning papers get published to optimize some computer
-system components, improve and speed up exploration and co-design strategies,
+Every year, dozens of autotuning papers get published to optimize some components
+of computer systems, improve and speed up exploration and co-design strategies,
 and enable run-time adaptation.
 Yet, when trying to make autotuning practical (in particular, by applying
 machine learning) we faced numerous challenges with integrating such published
@@ -141,7 +141,7 @@ validated and reproduced by the community.
 for open, reproducible and sustainable computer systems research
 by connecting students, scientists, end-users, hardware designers
 and software developers to learn together how to co-design
-next generation of efficient and self-optimizing computer systems,
+the next generation of efficient and self-optimizing computer systems,
 particularly via reproducible competitions such as ReQuEST&nbsp;[<a href="#ref_40">40</a>].
 <p>This technical report is organized as follows.
 Section&nbsp;<a href="#sec_converting">2</a> introduces the Collective Knowledge framework (CK)
@@ -242,7 +242,7 @@ for such a framework:
 <li>
  it should be able to help researchers quickly organize their local code
 and data into discoverable and reusable components with a unique ID, common API
-and unified meta information, rather then being forced to upload them to the
+and unified meta information, rather than being forced to upload them to the
 web from the start;
 <p>
 <li>
@@ -490,13 +490,13 @@ to automatically index and discover all modules similar to DOI.
    </div></center>
 
    <p>The open, file-based format of CK repositories allows researchers
-to continue editing entries and their meta directly using their favourite editors
+to continue editing entries and their meta directly using their favourite editors.
 It also simplifies exchange of these entries using Git repositories, zip archives, Docker images 
 and any other popular tool.
 At the same time, schema-free and human readable Python dictionaries
-and JSON files allows users to collaboratively extend actions, API and meta information
+and JSON files helps users to collaboratively extend actions, API and meta information
 while keeping backward compatibility.
-Such approach should allow the community to gradually and collaboratively convert and
+Such approach should let the community to gradually and collaboratively convert and
 cross-link all existing ad-hoc code and data into unified components
 with extensible API and meta information.
 This, in turn, allows users organize their own research while reusing existing artifacts,
@@ -594,7 +594,7 @@ Researchers can also use unified machine learning CK modules
 to model the relationship between <b>c</b>, <b>f</b>, <b>s</b>
 and the observed behavior&nbsp;<b>b</b>, increase coverage, speed up (focus) exploration,
 and predict efficient optimizations&nbsp;[<a href="#ref_4">4</a>, <a href="#ref_6">6</a>].
-They can also take take advantage of a universal complexity reduction module
+They can also take advantage of a universal complexity reduction module
 which can automatically simplify found solutions without changing their behavior,
 reduce models and features without sacrificing accuracy,
 localize performance issues via differential analysis&nbsp;[<a href="#ref_75">75</a>],
@@ -858,13 +858,13 @@ We can now visualize these autotuning results using the following command line:
 <pre>$ ck plot graph:tmp-susan-corners-gcc4-300-rnd</pre>
 
 
-<p>Figure&nbsp;<a href="#fig_autotuning_susan_gcc4">12</a> shows manually annotated graph 
+<p>Figure&nbsp;<a href="#fig_autotuning_susan_gcc4">12</a> shows a manually annotated graph 
 with the outcome of GCC 4.9.2 random compiler flags autotuning 
 applied to susan corners on an RPi3 device in terms of execution 
 time with variation and code size.
 Each blue point on this graph is related to one combination of random compiler flags.
-Red line highlights the frontier of all autotuning results (not necessarily Pareto optimal) 
-to trade off execution time and code size during multi-objective optimization.
+The red line highlights the frontier of all autotuning results (not necessarily Pareto optimal) 
+which trade off execution time and code size during multi-objective optimization.
 We also plotted points when default GCC compilation is used without any flags 
 or with <i>-O3</i> and <i>-Os</i> optimization levels.
 Finally, we decided to compare optimization results with <i>Clang 3.8.1</i> also available on RPi3.
@@ -1085,7 +1085,7 @@ and then report any differences in the output.
 This simplifies validation of shared experimental results 
 (optimizations, models, bugs) by the community
 and possibly with a different software and hardware setup
-(CK will automatically adapt workflow to a user platform).
+(CK will automatically adapt the workflow to a user platform).
 <p>We also provided support to help researchers 
 visualize their results as interactive graphs 
 using popular D3.js library as demonstrated in this 
@@ -1094,9 +1094,9 @@ using popular D3.js library as demonstrated in this
 that one of the original optimization solutions on a frontier <b>A4</b> 
 has &nbsp;40 optimization flags, while <b>A4R</b> only 7 as shown in Table&nbsp;<a href="#fig_autotuning_susan_gcc4_reduce">1</a>.
 The natural reason is that not all randomly selected flags contribute to improvements.
-That is why we developed a simple and universal complexity reduction algorithm
-which iteratively and randomly removes selected those choices from a found solution 
-which do not influence monitored characteristics such as execution time and code size
+That is why we developed a simple and universal complexity reduction algorithm.
+It iteratively and randomly removes choices from a found solution one by one
+if they do not influence monitored characteristics such as execution time and code size
 in our example.
 <p>    
   
@@ -1235,7 +1235,7 @@ when reducing complexity of a given solution such as:
  </tr>
 </table>
 <p>   <br><i>
-     Explicitly switching off all compiler flags one by one if they do not influence optimization result - 
+     Explicitly switching off all compiler flags one by one if they do not influence the optimization result - 
      useful to understand all compiler optimizations which contributed to the found solution. 
    </i><br><br>
 
@@ -1289,7 +1289,7 @@ and record results in the <i>experiment:tmp-susan-corners-gcc7-300-rnd</i>:
   --cmd_key=corners --record_uoa=tmp-susan-corners-gcc7-300-rnd</pre>
 
 
-<p>Figure&nbsp;<a href="#fig_autotuning_susan_gcc7">15</a> shows results of such <i>GCC 7.1.0</i>
+<p>Figure&nbsp;<a href="#fig_autotuning_susan_gcc7">15</a> shows the results of such <i>GCC 7.1.0</i>
 compiler flag autotuning (<b>B</b> points) and compares them 
 against <i>GCC 4.9.2</i> (<b>A</b> points).
 Note that this graph is also available in interactive form&nbsp;<a href="http://cknowledge.org/repo/web.php?wcid=graph:96fd8e4c8394b1bc&subgraph=rpi3-autotuning-susan-gcc7-interactive">online</a>.
@@ -1473,13 +1473,13 @@ Note that this graph is also available in interactive form&nbsp;<a href="http://
 
 <p>It is interesting to see considerable improvement in execution time of susan corners 
 when moving from GCC 4.9 to GCC 7.1 with the best optimization level <i>-O3</i>.
-This graph also shows that new optimization added during past 3 years opened up
+This graph also shows that new optimization added during the past 3 years opened up
 many new opportunities thus considerably expanding autotuning frontier (light red
 dashed line versus dark red dashed line).
 Autotuning only managed to achieve a modest improvement of a few percent over <i>-O3</i>.
 <p>On the other hand, GCC <i>-O3</i> and <i>-Os</i> are still far from achieving
 best trade-offs for execution time and code size.
-For example, it is still possible to improve program binary size 
+For example, it is still possible to improve a program binary size 
 by &nbsp;10&#37; (reduced solution <b>B4R</b>) without degrading best achieved 
 execution time with the <i>-O3</i> level (<b>-O3</b>), or improve 
 execution time of <b>-Os</b> level by &nbsp;28&#37; while slightly degrading code size by &nbsp;5&#37;.
@@ -1551,7 +1551,8 @@ of given shared workloads in a cloud or across diverse platforms simply by using
 repositories instead of local ones.
 On the other hand, it does not address the problem of optimizing larger applications
 with multiple hot spots.
-It also does not solve the "big data" problem when large amount of data from multiple participants
+It also does not solve the "big data" problem 
+when a large amount of data from multiple participants
 needed for reproducibility will be continuously aggregated in a CK server.
 <p>However, we have been already addressing the first problem by either 
 instrumenting, monitoring and optimizing hot code regions in large applications 
@@ -1764,7 +1765,7 @@ on RPi3 devices which minimize execution time of shared CK workloads
 (programs and data sets) in comparison with <i>-O3</i> optimization level.
 It also shows the highest speedup and the worse degradation achieved
 across all CK workloads for a given optimization solution, as well
-as number of workloads where this solution was the best or the worst
+as a number of workloads where this solution was the best or the worst
 (online classification of all optimization solutions).
 Naturally this snapshot automatically generated from the public repository 
 at the time of publication may slightly differ from continuously updated 
@@ -1945,11 +1946,11 @@ specific ones, and will record results in a local repository:
 
 <p>Figure&nbsp;<a href="#fig_autotuning_zlib_decode_gcc4">19</a> 
 (<a href="http://cknowledge.org/repo/web.php?wcid=graph:3a97d1f6494f9d45&subgraph=rpi3-autotuning-zlib-decode-gcc4-interactive">link with interactive graph</a>) 
-shows manually annotated graph with the outcome of such autotuning 
+shows a manually annotated graph with the outcome of such autotuning 
 when using GCC 4.9.2 compiler on RPi3 device
 in terms of execution time with variation and code size.
 Each blue point on this graph is related to one combination of random compiler flags.
-Red line highlights the frontier of all autotuning results 
+The red line highlights the frontier of all autotuning results 
 to let users trade off execution time and code size 
 during multi-objective optimization.
 Similar to graphs in Section&nbsp;<a href="#sec_flag_autotuning">4</a>, we also plotted points 
@@ -2090,7 +2091,7 @@ when using several main GCC and Clang optimization levels.
      <br><i>
       Results of GCC 4.9.2 random compiler flag autotuning of a zlib decode workload on RPi3
       device using CK with a highlighted frontier (trading-off execution time and code size) 
-      and best found combinations of flags on this frontier.
+      and the best found combinations of flags on this frontier.
      </i><br><br>
 
      <!-- CK_LABEL={fig_autotuning_zlib_decode_gcc4} -->
@@ -2114,7 +2115,7 @@ to let us have a fair evaluation of the influence of shared optimizations
 on these programs similar to leave-one-out cross-validation in machine learning.
 <p>Figure&nbsp;<a href="#fig_autotuning_zlib_decode_gcc4_reactions">20</a> shows "reactions" 
 of <i>zlib decode</i> to these optimizations in terms of execution time and code size 
-(<a href="http://cknowledge.org/repo/web.php?wcid=graph:47f0b282396776c4&subgraph=rpi3-autotuning-zlib-decode-gcc4-reactions-interactive">online interactive graph</a>).
+(<a href="http://cknowledge.org/repo/web.php?wcid=graph:47f0b282396776c4&subgraph=rpi3-autotuning-zlib-decode-gcc4-reactions-interactive">the online interactive graph</a>).
 We can see that crowd-tuning solutions indeed cluster in a relatively small area 
 close to <i>-O3</i> with one collaborative solution (<b>C1</b>) close to the 
 best optimization solution found during lengthy autotuning (<b>A4R</b>) 
@@ -2214,11 +2215,11 @@ thus providing a good trade off between autotuning time, execution time and code
 
    <p>Autotuning <i>zlib decode</i> using <i>GCC 7.1.0</i> revels even more interesting results
 in comparison with <i>susan corners</i> as shown in Figure&nbsp;<a href="#fig_autotuning_zlib_decode_gcc7">21</a> 
-(<a href="http://cknowledge.org/repo/web.php?wcid=graph:2bf38fd88a0e3ba1&subgraph=rpi3-autotuning-zlib-decode-gcc7-interactive">online interactive graph</a>).
+(<a href="http://cknowledge.org/repo/web.php?wcid=graph:2bf38fd88a0e3ba1&subgraph=rpi3-autotuning-zlib-decode-gcc7-interactive">the online interactive graph</a>).
 While there is practically no execution time improvements when switching from <i>GCC 4.9.2</i> to <i>GCC 7.1.0</i>
 on <i>-O3</i> and <i>-Os</i> optimization levels, <i>GCC 7.1.0 -O3</i> considerably degraded code size by nearly 20&#37;.
 Autotuning also shows few opportunities on <i>GCC 7.1.0</i> in comparison with <i>GCC 4.9.2</i>
-where best found optimization <b>B4R</b> is worse in terms of code size than <b>A4R</b> also by around 20&#37;.
+where the best found optimization <b>B4R</b> is worse in terms of a code size than <b>A4R</b> also by around 20&#37;.
 These results highlight issues which both end-users and compiler designers face
 when searching for efficient combinations of compiler flags or preparing the 
 default optimization levels -Ox.
@@ -2362,7 +2363,7 @@ $#ck_include_stop#$
 <p>     <br><i>
        Results of GCC 7.1.0 random compiler flag autotuning of zlib decode on RPi3 device 
        with a highlighted frontier (trading-off execution time and code size), 
-       best combinations of flags on this frontier, and comparison with the results from GCC 4.9.2.
+       the best combinations of flags on this frontier, and comparison with the results from GCC 4.9.2.
      </i><br><br>
 
      <!-- CK_LABEL={fig_autotuning_zlib_decode_gcc7} -->
@@ -2373,13 +2374,13 @@ $#ck_include_stop#$
    <p>CK crowd-tuning can assist in this case too - Figure&nbsp;<a href="#fig_autotuning_zlib_decode_gcc7_reactions">22</a>
 shows reactions of <i>zlib decode</i> to the most efficient combinations of GCC 7.1.0 compiler flags
 shared by the community for RPi3 
-(<a href="http://cknowledge.org/repo/web.php?wcid=graph:a53089441c68c978&subgraph=rpi3-autotuning-zlib-decode-gcc7-reactions-interactive">online interactive graph</a>).
+(<a href="http://cknowledge.org/repo/web.php?wcid=graph:a53089441c68c978&subgraph=rpi3-autotuning-zlib-decode-gcc7-reactions-interactive">the online interactive graph</a>).
 Shared optimization solution&nbsp;<b>C2</b> achieved the same results in terms of execution time and code size
 as reduced solution <b>B4R</b> found during 150 random autotuning iterations.
 Furthermore, another shared optimization solution&nbsp;<b>C1</b> improved code size by &nbsp;15&#37; in comparison
 with GCC 7.1.0 autotuning solution&nbsp;<b>B4R</b> and is close to the best solution GCC 4.9.2 autotuning solution&nbsp;<b>A4R</b>.
 These results suggest that 150 iterations with random combinations of compiler flags 
-may not be enough to find efficient solution for <i>zlib decode</i>.
+may not be enough to find an efficient solution for <i>zlib decode</i>.
 In turn, crowd-tuning can help considerably accelerate and focus such optimization space exploration.
 <p>      
    
@@ -2507,11 +2508,11 @@ In turn, crowd-tuning can help considerably accelerate and focus such optimizati
    </div></center>
 
    <p>We performed the same autotuning and crowd-tuning experiments for <i>zlib encode</i> workload
-with results shown in Figures&nbsp;<a href="#fig_autotuning_zlib_encode_gcc4">23</a>,&nbsp;<a href="#fig_autotuning_zlib_encode_gcc4_reactions">24</a>,&nbsp;<a href="#fig_autotuning_zlib_encode_gcc7">25</a>,&nbsp;<a href="#fig_autotuning_zlib_encode_gcc7_reactions">26</a>.
+with the results shown in Figures&nbsp;<a href="#fig_autotuning_zlib_encode_gcc4">23</a>,&nbsp;<a href="#fig_autotuning_zlib_encode_gcc4_reactions">24</a>,&nbsp;<a href="#fig_autotuning_zlib_encode_gcc7">25</a>,&nbsp;<a href="#fig_autotuning_zlib_encode_gcc7_reactions">26</a>.
 The results show similar trend that <i>-O3</i> optimization level of both <i>GCC 4.7.2</i> and <i>GCC 7.1.0</i> 
-perform well in terms of execution time, while there is the same degradation in code size when moving to a new compiler
+perform well in terms of execution time, while there is the same degradation in the code size when moving to a new compiler
 (since we monitor the whole zlib binary size for both decode and encode functions).
-Crowd-tuning also helped improve code size though optimizations&nbsp;<b>A4R</b>,&nbsp;<b>B4R</b> and <b>C1</b>
+Crowd-tuning also helped improve the code size though optimizations&nbsp;<b>A4R</b>,&nbsp;<b>B4R</b> and <b>C1</b>
 are not the same as in case of <i>zlib decode</i>.
 The reason is that algorithms are different and need different optimizations 
 to keep execution time intact while improving code size.
@@ -2653,7 +2654,7 @@ already available in GCC.
      <br><i>
       Results of GCC 4.9.2 random compiler flag autotuning of a zlib encode workload on RPi3
       device using CK with a highlighted frontier (trading-off execution time and code size) 
-      and best found combinations of flags on this frontier.
+      and the best found combinations of flags on this frontier.
      </i><br><br>
 
      <!-- CK_LABEL={fig_autotuning_zlib_encode_gcc4} -->
@@ -2895,7 +2896,7 @@ $#ck_include_stop#$
 <p>     <br><i>
        Results of GCC 7.1.0 random compiler flag autotuning of zlib encode on RPi3 device 
        with a highlighted frontier (trading-off execution time and code size), 
-       best combinations of flags on this frontier, and comparison with the results from GCC 4.9.2.
+       the best combinations of flags on this frontier, and comparison with the results from GCC 4.9.2.
      </i><br><br>
 
      <!-- CK_LABEL={fig_autotuning_zlib_encode_gcc7} -->
@@ -3011,15 +3012,15 @@ $#ck_include_stop#$
 
    </div></center>
 
-   <p>Besides <i>zlib</i>, we applied crowd-tuning with best found and shared optimizations 
+   <p>Besides <i>zlib</i>, we applied crowd-tuning with the best found and shared optimizations 
 to other RPi programs using <i>GCC 4.9.2</i> and <i>GCC 7.1.0</i>.
 Table&nbsp;<a href="#fig_crowdtuning_all_rpi3_progs">3</a> shows reactions of these optimizations
-with best trade-offs for execution time and code size.
+with the best trade-offs for execution time and code size.
 One may notice that though <i>GCC 7.1.0 -O3</i> level improves execution time
 of most of the programs apart from a few exceptions, it also considerably degrades
-code size in comparison <i>GCC 4.9.2 -O3</i> level.
+code size in comparison with <i>GCC 4.9.2 -O3</i> level.
 These results also confirm that neither <i>-O3</i> nor <i>-Os</i> on both 
-<i>GCC 4.9.2</i> and <i>GCC 7.1.0</i> achieves best trade-offs for execution
+<i>GCC 4.9.2</i> and <i>GCC 7.1.0</i> achieves the best trade-offs for execution
 time and code size thus motivating again our collaborative and continuous optimization
 approach.
 <p>    
@@ -3440,7 +3441,7 @@ approach.
  </tr>
 </table>
 <p>    <br><i>
-      Best found improvements (degradations) in execution time and binary size 
+      The highest found improvements (degradations) in execution time and binary size 
       for several important RPi3 programs 
       as reactions to top most efficient shared optimizations 
       for GCC 4.9.2 and GCC 7.1.0.
@@ -3454,14 +3455,14 @@ approach.
 <p>Indeed, a dozen of shared most efficient optimizations at <a href="http://cKnowledge.org/repo">cKnowledge.org/repo</a> 
 is enough to either improve execution time of above programs by up to 1.5x or code size by up to 1.8x or even
 improve both size and speed at the same time.
-It also helps end-users find best optimization no matter which compiler, environment and hardware are used.
+It also helps end-users find the most efficient optimization no matter which compiler, environment and hardware are used.
 <p>We can also notice that 11 workloads (computational species) 
 share <i>-O3 -fno-inline -flto</i> combination of flags 
-to achieve best trade-off between execution time and code size.
+to achieve the best trade-off between execution time and code size.
 This result supports our original research to use workload features, 
 hardware properties, crowd-tuning and  machine learning
 to predict such optimizations&nbsp;[<a href="#ref_5">5</a>, <a href="#ref_24">24</a>, <a href="#ref_6">6</a>].
-However, in contrast with past work, we are now able
+However, in contrast with the past work, we are now able
 to gradually collect a large, realistic (i.e. not randomly
 synthesized) set of diverse workloads with the help of the
 community to make machine learning statistically meaningful.
@@ -3491,7 +3492,7 @@ $ ck find script:rpi3-all-autotune</pre>
 
 When distributing compiler autotuning and learning across diverse environments, 
 compilers and devices&nbsp;[<a href="#ref_5">5</a>, <a href="#ref_6">6</a>] 
-we have noticed that about 10..15&#37; of randomly generated combinations 
+we noticed that about 10..15&#37; of randomly generated combinations 
 of flags can crash a compiler or produce wrong code with segmentation faults
 or incorrect output.
 Indeed our approach stresses various unexpected combinations 
@@ -3566,7 +3567,7 @@ Compiling the same program with the same combination of flags on the same platfo
 using <i>GCC 7.1.0</i> showed that this bug has been fixed in the latest compiler.
 <p>We hope that our extensible and portable benchmarking workflow will help students and engineers 
 prototype and crowdsource different types of fuzzers.
-It may also also assist even existing projects&nbsp;[<a href="#ref_81">81</a>, <a href="#ref_82">82</a>]
+It may also assist even existing projects&nbsp;[<a href="#ref_81">81</a>, <a href="#ref_82">82</a>]
 to crowdsource fuzzing across diverse platforms and workloads.
 For example, we collaborate with colleagues from Imperial College London
 to develop CK-based, continuous and collaborative OpenGL and OpenCL compiler 
@@ -3681,7 +3682,7 @@ to CK modules.
 We then assembled them to a universal Collective Knowledge workflow 
 shown in Figure&nbsp;<a href="#fig_ck_crowdmodeling">28</a>.
 If you do not know about machine learning based compiler optimizations, 
-we suggest you to start from our MILEPOST GCC paper&nbsp;[<a href="#ref_24">24</a>]
+we suggest that you start from our MILEPOST GCC paper&nbsp;[<a href="#ref_24">24</a>]
 to make yourself familiar with terminology 
 and methodology for machine learning training 
 and prediction used further.
@@ -3743,7 +3744,7 @@ In our compiler flag optimization scenario, we retrieve all
 most efficient compiler flags combinations found and shared
 by the community when crowd-tuning GCC 4.9.2 on RPi3 device
 (Figure&nbsp;<a href="#fig_ck_snapshot_of_results_gcc4">17</a>).
-<p>Note that our CK crowd-tuning workflow also continuously apply
+<p>Note that our CK crowd-tuning workflow also continuously applies
 such optimization to all shared workloads.
 This allows us to analyze "reaction" of any given workload 
 to all most efficient optimizations.
@@ -3760,7 +3761,7 @@ the highest speedup for a common optimization as shown in the bottom graph
 in Figure&nbsp;<a href="#fig_ck_reactions_gcc4">29</a>.
 Figure&nbsp;<a href="#fig_ck_reactions_gcc7">30</a> shows similar trends for GCC 7.1.0 on the same RPi3 device
 even though the overall number of the most efficient combinations of compiler flags is smaller 
-than for GCC 4.9.2 likely due to considerably improved internal optimization heuristics over past years
+than for GCC 4.9.2 likely due to considerably improved internal optimization heuristics over the past years
 (see Figure&nbsp;<a href="#fig_ck_snapshot_of_results_gcc7">18</a>).
 <p>Having such groups of labeled objects (where labels are the most efficient optimizations
 and objects are workloads) allows us to use standard machine learning classification methodology.
@@ -3873,7 +3874,7 @@ to trade off prediction accuracy, speed, size and the ease of interpretation.
 
 <p>For a proof-of-concept of such collaborative learning approach, 
 we shared a number of customizable CK modules (see&nbsp;<i>ck search module:*model*</i>)
-for several popular classifiers including nearest neighbor,
+for several popular classifiers including the nearest neighbor,
 decision trees and deep learning.
 These modules serve as wrappers with a common CK API for
 TensorFlow, scikit-learn, R and other machine learning frameworks.
@@ -3907,7 +3908,7 @@ that decision trees of depth 8 and 4 are enough
 to achieve maximum prediction accuracy of 0.4&#37; for GCC 4.9.2 
 and GCC 7.1.0 respectively.
 Model autotuning thus helped improve prediction accuracy in comparison 
-with original nearest neighbor classifier from the MILEPOST project. 
+with the original nearest neighbor classifier from the MILEPOST project. 
 <p>      
    
    
@@ -3936,7 +3937,7 @@ Such trees are easy to interpret and can therefore help compiler and hardware
 developers quickly understand the most influential features and analyze
 relationships between different features and the most efficient
 optimizations.
-For example, above results suggest that the number of binary integer operations (ft22) 
+For example, the above results suggest that the number of binary integer operations (ft22) 
 and the number of distinct operators (ft59) can help predict optimizations 
 which can considerably improve execution time of a given method over -O3.
 <p>Turning off cross-validation can also help developers understand 
@@ -5341,8 +5342,8 @@ a choice of 20 related images from the above data sets:
 
    </div></center>
 
-<p>Next, we can apply all most efficient compiler optimizations to all data sets 
-for a given programs.
+<p>Next, we can apply all most efficient compiler optimizations 
+to a given program with all data sets.
 Figure&nbsp;<a href="#fig_ck_datasets_jpeg_d_reactions">33</a> shows such reactions 
 (ratio of an execution time with a given optimization to an execution time 
 with the default -O3 compiler optimization) of a jpeg decoder across 
@@ -5667,7 +5668,7 @@ across diverse models, data sets and platforms in terms of speed, accuracy,
 size, energy usage and other costs,
   
 <li>
- build upon each others' work to develop next generation 
+ build upon each others' work to develop the next generation 
 of efficient software and hardware stack for emerging workloads.
 </ul>
 
@@ -5688,7 +5689,7 @@ of efficient software and hardware stack for emerging workloads.
 Researchers are now in a race to bring artificial intelligence to all possible
 devices from IoT to supercomputers which will require 
 much more efficient software and hardware then currently available.
-At the same time, computer engineers already struggle for many years 
+At the same time, computer engineers have already been struggling for many years 
 to develop efficient sub-components of computer systems including
 algorithms, compilers and run-time systems.
 <p>The major issues including raising complexity, lack of a common experimental framework 
@@ -5698,7 +5699,7 @@ writing their own, ad-hoc and not easily customizable support tools
 to perform experiments such as multi-objective autotuning.
 <p>
 We presented our long-term educational initiative to teach
-students and researchers how to solve above problems 
+students and researchers how to solve the above problems 
 using customizable workflow frameworks similar to other sciences.
 We showed how to convert ad-hoc, multi-objective
 and multi-dimensional autotuning into a portable and customizable workflow 
@@ -5707,9 +5708,9 @@ We then demonstrated how to use it to implement various scenarios
 such as compiler flag autotuning of benchmarks and realistic workloads
 across Raspberry Pi 3 devices in terms of speed and size.
 We also demonstrated how to crowdsource such autotuning across different
-devices provided by volunteers similar to SETI@home, collect most efficient optimizations
+devices provided by volunteers similar to SETI@home, collect the most efficient optimizations
 in a reproducible way in a public repository of knowledge at &nbsp;<a href="http://cknowledge.org/repo">cKnowledge.org/repo</a>, 
-apply various machine learning techniques including decision trees, nearest neighbor classifier
+apply various machine learning techniques including decision trees, the nearest neighbor classifier
 and deep learning to predict the most efficient optimizations for previously
 unseen workloads, and then continue improving models and features
 as a community effort.
@@ -5985,7 +5986,7 @@ $ ck show env --tags=gcc</pre>
 <pre>$ sudo apt-get install texinfo build-essential libgmp-dev libmpfr-dev libisl-dev libcloog-isl-dev libmpc-dev</pre>
 
 
-<p>You may also want to increase swap size on RPi 3 to speed up GCC building. 
+<p>You may also want to increase a swap size on RPi 3 to speed up GCC building. 
 You can change "CONF_SWAPSIZE=100" in /etc/dphys-swapfile to "CONF_SWAPSIZE=1000". 
 But do not forget to change it back after successful build to avoid damaging your SD card.
 <p>
@@ -6092,7 +6093,7 @@ behavior (if difference is more than some threshold such as 5&#37;).
 <p>One of the most important points of using Collective Knowledge framework
 is to take advantage of the experimental methodology for computer systems research
 continuously improved by the community.
-For this purpose, we instrument programs using small xOpenME library
+For this purpose, we instrument programs using a small xOpenME library&nbsp;[<a href="#ref_4">4</a>]
 which allows us to monitor behavior of some code regions and dump 
 final statistics to a JSON file in the CK format.
 CK will then repeat each autotuning iteration N times,
@@ -6211,7 +6212,7 @@ to invoke portable and customizable CK autotuning workflow:
 <p>We hope that our customizable autotuning and machine learning workflow 
 can teach students, scientists and engineers learn how to collaboratively
 co-design Pareto-efficient software and hardware stack for emerging workloads.
-Please feel free to send us updates and patches to fix, help us to improve or extend
+Please feel free to send us updates and patches to fix, help us improve or extend
 our artifacts with documentation, and keep in touch with our community via
 CK mailing list:&nbsp;<a href="https://groups.google.com/d/forum/collective-knowledge">groups.google.com/d/forum/collective-knowledge</a>!
 <p>

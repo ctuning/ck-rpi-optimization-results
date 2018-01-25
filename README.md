@@ -8,12 +8,15 @@ Introduction
 Optimization results to demonstrate compiler autotuning, crowd-tuning and machine learning on RPi3 
 via customizable Collective Knowledge workflow framework with a portable package manager.
 
+* arXiv report: http://arxiv.org/abs/1801.08024
+* interactive CK report: http://cknowledge.org/rpi-crowd-tuning
+
 License
 =======
 * CC BY 4.0 
 
-License
-=======
+Copyright
+=========
 * 2015-2018 (ñ) cTuning foundation and volunteers
 
 Prerequisites

@@ -44,7 +44,7 @@
     "artifacts"
   ],
   "template": "ck-rpi-crowdtuning-report.html",
-  "title": "Collective Knowledge workflow to collaboratively research multi-objective autotuning and crowdtuning techniques",
+  "title": "A Collective Knowledge workflow for collaborative research into multi-objective autotuning and machine learning techniques",
   "top": "no",
   "type": {
     "name": "arxiv"

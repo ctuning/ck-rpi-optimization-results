@@ -1,18 +1,36 @@
 {
+  "affiliations": {
+    "1": {
+      "name": "dividiti, UK"
+    },
+    "2": {
+      "name": "cTuning Foundation, France"
+    },
+    "3": {
+      "name": "Xored, Russia"
+    },
+    "4": {
+      "name": "Raspberry Pi foundation, UK"
+    }
+  },
   "authors": [
     {
+      "affiliation": "1,2",
       "name": "Grigori Fursin",
       "url": "http://fursin.net/research"
     },
     {
+      "affiliation": "1",
       "name": "Anton Lokhmotov",
       "url": "https://www.linkedin.com/in/lokhmotov"
     },
     {
+      "affiliation": "3",
       "name": "Dmitry Savenko",
       "url": "https://www.linkedin.com/in/dsavenko"
     },
     {
+      "affiliation": "4",
       "name": "Eben Upton",
       "url": "https://en.wikipedia.org/wiki/Eben_Upton"
     }

@@ -26,13 +26,30 @@ Prerequisites
 * Python PIP
 * Git client
 
-Installation
-============
-Install CK:
+Minimal CK installation
+=======================
+
+The minimal installation requires:
+
+* Python 2.7 or 3.3+ (limitation is mainly due to unitests)
+* Git command line client.
+
+You can install CK in your local user space as following:
 
 ```
- $ sudo pip install ck
+$ git clone http://github.com/ctuning/ck
+$ export PATH=$PWD/ck/bin:$PATH
+$ export PYTHONPATH=$PWD/ck:$PYTHONPATH
 ```
+
+You can also install CK via PIP with sudo to avoid setting up environment variables yourself:
+
+```
+$ sudo pip install ck
+```
+
+CK repository installation
+==========================
 
 Install this CK repository:
 

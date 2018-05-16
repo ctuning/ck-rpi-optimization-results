@@ -34,7 +34,7 @@ The minimal installation requires:
 * Python 2.7 or 3.3+ (limitation is mainly due to unitests)
 * Git command line client.
 
-You can install CK in your local user space as following:
+You can install CK in your local user space as follows:
 
 ```
 $ git clone http://github.com/ctuning/ck
@@ -78,7 +78,7 @@ via CK for susan corners benchmark in the following entry:
 Two CK repositories with additional experimental results in a reproducible form are available at FigShare:
 * https://doi.org/10.6084/m9.figshare.5789007.v1
 
-You can download and install them directly via CK as following (note that each zip is around 150Mb archived
+You can download and install them directly via CK as follows (note that each zip is around 150Mb archived
 and ~1-1.5GB unzipped):
 ```
  $ ck add repo:ck-rpi-optimization-results-reactions --zip=https://ndownloader.figshare.com/files/10218435 --quiet

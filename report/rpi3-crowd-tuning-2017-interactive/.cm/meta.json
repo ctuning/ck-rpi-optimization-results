@@ -17,7 +17,6 @@
       "url": "https://en.wikipedia.org/wiki/Eben_Upton"
     }
   ],
-  "top_url":{"name":"arXiv", "url":"https://arxiv.org/abs/1801.08024"},
   "live": "yes",
   "publish_iso_date": "2017-06-25",
   "tags": [
@@ -28,6 +27,16 @@
   "template": "ck-rpi-crowdtuning-report.html",
   "title": "A Collective Knowledge workflow for collaborative research into multi-objective autotuning and machine learning techniques",
   "top": "no",
+  "top_urls": [
+    {
+      "name": "arXiv",
+      "url": "https://arxiv.org/abs/1801.08024"
+    },
+    {
+      "name": "BibTex",
+      "url": "http://cKnowledge.org/_resources/ck2.bib"
+    }
+  ],
   "type": {
     "name": "arxiv"
   },

@@ -5,6 +5,10 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2455637.svg)](https://doi.org/10.5281/zenodo.2455637)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by/4.0/)
 
+**All CK components can be found at [cKnowledge.io](https://cKnowledge.io) and in [one GitHub repository](https://github.com/ctuning/ai)!**
+
+*This project is hosted by the [cTuning foundation](https://cTuning.org).*
+
 Introduction
 ============
 
@@ -17,10 +21,6 @@ via customizable Collective Knowledge workflow framework with a portable package
 License
 =======
 * CC BY 4.0 
-
-Copyright
-=========
-* 2015-2018 (ñ) cTuning foundation and volunteers
 
 Prerequisites
 =============
@@ -54,7 +54,7 @@ $ sudo pip install ck
 CK repository installation
 ==========================
 
-Install this CK repository:
+Install the CK repository:
 
 ```
  $ ck pull repo --url=https://github.com/dividiti/ck-rpi-optimization
